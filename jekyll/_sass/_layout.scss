@@ -43,6 +43,10 @@ div.content {
     min-height: 500px;
     margin-top: 50px;
     position: relative;
+
+    h3.release-channel {
+        text-align: center;
+    }
 }
 div.page {
     padding-top: 10px;
@@ -86,10 +90,14 @@ div.sidebar {
     background: #e0e0e0;
   }
   h3 {
-    margin: 6px 0 10px 0;
+    margin: 6px 0;
     font-weight: 500;
     letter-spacing: .08em;
     text-transform: uppercase;
+    text-align: center;
+  }
+  h4 {
+    margin: 0 0 20px 0;
     text-align: center;
   }
   ul {

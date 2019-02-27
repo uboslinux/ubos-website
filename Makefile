@@ -1,28 +1,17 @@
-# Makefile for ubos.net
+# Makefile for all of ubos.net, except ubos.net/docs*
 
-UBOS_AWS_IMAGE_URL = https://console.aws.amazon.com/ec2/v2/home?region=us-east-1\#LaunchInstanceWizard:ami=ami-053931a948e3ea97d
+UBOS_AWS_IMAGE_URL = https://console.aws.amazon.com/ec2/v2/home?region=us-east-1\#LaunchInstanceWizard:ami=ami-0bd18d0ebd2745237
 
 # ubos.net variables
 STAGEDIR = stage
 CACHEDIR = cache
 
-# You can set these variables from the command line.
-SPHINXOPTS    = -v
-DOCTREEDIR    = $(CACHEDIR)/doctrees
+.PHONY: all clean jekyll static message open
 
-ALLSPHINXOPTS   = -d $(BUILDDIR)/doctrees $(PAPEROPT_$(PAPER)) $(SPHINXOPTS) source
-# the i18n builder cannot share the environment and doctrees with the others
-I18NSPHINXOPTS  = $(PAPEROPT_$(PAPER)) $(SPHINXOPTS) source
-
-.PHONY: all clean jekyll sphinx open
-
-all: jekyll sphinx static
+all: jekyll static message
 
 clean:
 	rm -rf $(STAGEDIR)/* $(CACHEDIR)/*
-
-sphinx:
-	sphinx-build -b html -d $(DOCTREEDIR) $(PHINXOPTS) sphinx $(STAGEDIR)/docs
 
 jekyll:
 	jekyll build -s jekyll -d $(STAGEDIR)
@@ -37,6 +26,11 @@ static:
 	echo 'RedirectMatch /staff(.*)$$ https://ubos.net/docs/users/shepherd-staff.html' >> $(STAGEDIR)/.htaccess
 	mkdir -p $(STAGEDIR)/include
 	sed -e "s!UBOS_AWS_IMAGE_URL!$(UBOS_AWS_IMAGE_URL)!g" include/amazon-ec2-image-latest.js > $(STAGEDIR)/include/amazon-ec2-image-latest.js
+
+message:
+	@echo ==============================================================
+	@echo "DON'T FORGET: ubos-docs neeeds to generated separately, twice!"
+	@echo ==============================================================
 
 open:
 	open -a Firefox http://ubos/
