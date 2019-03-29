@@ -5,6 +5,11 @@ title: Apps on UBOS
 
 Currently available apps (alphabetically):
 
+<img src="/images/amazonses-72x72.png" alt="[Amazon SES]" style="float: left; width: 36px; margin: 5px 32px 0 5px">
+
+   **Amazon SES**: Send e-mail via Amazon's Simple E-mail Service (SES)<br>
+   Install with `sudo ubos-admin createsite`, specify app `amazonses`<br>
+
 <img src="/images/docroot-72x72.png" alt="[Docroot]" style="float: left; width: 36px; margin: 5px 32px 0 5px">
 
    **Docroot**: Static file hosting with SSH-based upload<br>
@@ -34,6 +39,11 @@ Currently available apps (alphabetically):
 
 Available in beta ("yellow" release channel only):
 
+<img src="/images/decko-72x72.png" alt="[Decko]" style="float: left; width: 36px; margin: 5px 32px 0 5px">
+
+   **Decko**: Dynamic websites from creatively organized cards<br>
+   Install with `sudo ubos-admin createsite`, specify app `decko`
+
 <img src="/images/known-72x72.png" alt="[Known]" style="float: left; width: 36px; margin: 5px 32px 0 5px">
 
    **Known**: Indieweb publishing platform for everyone<br>
@@ -43,6 +53,11 @@ Available in beta ("yellow" release channel only):
 
    **Mastodon**: Free, open-source, decentralized microblogging network<br>
    Install with `sudo ubos-admin createsite`, specify app `mastodon`
+
+<img src="/images/matomo-72x72.png" alt="[Matomo]" style="float: left; width: 36px; margin: 5px 32px 0 5px">
+
+   **Matomo**: Open web analytics platform<br>
+   Install with `sudo ubos-admin createsite`, specify app `matomo`
 
 <img src="/images/mattermost-72x72.png" alt="[Mattermost]" style="float: left; width: 36px; margin: 5px 32px 0 5px">
 
@@ -83,9 +98,10 @@ Some apps already have some accessories, which you may or may not want to instal
 
  * **Mediawiki extension**: `mediawiki-ext-confirmaccount` to cut down on wiki spam;
 
- * **Nextcloud "apps"**: `nextcloud-bookmarks` (bookmarks), `nextcloud-calendar` (calendar),
-   `nextcloud-contacts` (contacts), `nextcloud-mail` (mail), `nextcloud-markdown` (markdown support),
-   `nextcloud-news` (news), `nextcloud-notes` (note taking), `nextcloud-spreed` (chat and
+ * **Nextcloud "apps"**: `nextcloud-bookmarks` (bookmarks),
+   `nextcloud-calendar` (calendar), `nextcloud-contacts` (contacts), `nextcloud-mail` (mail),
+   `nextcloud-markdown` (markdown support), `nextcloud-news` (news), `nextcloud-notes` (note taking),
+   `nextcloud-social` (decentralized social media via the Fediverse), `nextcloud-spreed` (chat and
    video conferencing) and `nextcloud-tasks` (task management); there is also
    `nextcloud-cache-redis` to run a Redis cache to speed up Nextcloud;
 
@@ -94,14 +110,19 @@ Some apps already have some accessories, which you may or may not want to instal
 
  * **Wordpress plugins**: `wordpress-plugin-bridgy-publish`, `wordpress-plugin-indieauth`,
    `wordpress-plugin-indieweb`, `wordpress-plugin-indieweb-post-kinds`,
-   `wordpress-plugin-micropub`, `wordpress-plugin-semantic-linkbacks`,
-   `wordpress-plugin-syndication-links`,
+   `wordpress-plugin-indieweb-press-this`, `wordpress-plugin-micropub`,
+   `wordpress-plugin-semantic-linkbacks`,
    `wordpress-plugin-social-networks-auto-posted-facebook-twitter-g`,
+   `wordpress-plugin-syndication-links`,
    `wordpress-plugin-webmention` and `wordpress-plugin-wp-uf2` for
-   [Indie Web](http://indiewebcamp.com/) support; `wordpress-plugin-photo-dropper` to
-   easily find and add pictures to posts; themes `wordpress-theme-independent-publisher`,
-   `wordpress-theme-p2`, `wordpress-theme-pinboard`, `wordpress-theme-sempress` and
-   the default themes starting with `wordpress-theme-twentyfourteen`.
+   [Indie Web](http://indiewebcamp.com/) support;
+   `wordpress-plugin-google-analytics-for-wordpress` to add Google Analytics to your site,
+   `wordpress-plugin-seo` to add Search Engine Optimization functionality to your site;
+   `wordpress-plugin-photo-dropper` to easily find and add pictures to posts, and
+   `wordpress-plugin-wp-mail-smtp` to make configuration of outgoing mail simpler;
+   themes `wordpress-theme-independent-publisher`, `wordpress-theme-p2`,
+   `wordpress-theme-pinboard`, `wordpress-theme-responsive`, `wordpress-theme-sempress` and
+   the default themes starting with `wordpress-theme-twentytwelve`.
 
 The following blockchain-related servers are also available in beta ("yellow" release
 channel) on all platforms except for ``armv6h`` (no user interface, connect with API):
