@@ -6,6 +6,8 @@ author: Johannes Ernst
 categories: front legal
 ---
 
+Update 2019-03-29. Read [post](/blog/2019/03/29/license-update.html).
+
 TL;DR:
 ------
 
