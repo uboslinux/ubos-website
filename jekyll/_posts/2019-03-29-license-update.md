@@ -21,7 +21,7 @@ Here's what we changed as part of the most recent
   we do not intend to imply that the FSF is the source, has approved, or has an
   affiliation with the Personal Public License.
 
-* The updated version is [here](https://github.com/uboslinux/ubos-admin/blob/master/ubos-admin/LICENSE).
+* The updated version is [here](https://github.com/uboslinux/ubos-admin/blob/master/LICENSE).
 
 While the document itself has changed, the substance of the Personal Public License
 remains the same:
