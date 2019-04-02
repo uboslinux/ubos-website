@@ -91,38 +91,93 @@ Available in beta ("yellow" release channel only):
 
 <br>
 
-Some apps already have some accessories, which you may or may not want to install:
+Some apps have accessories, which you an install in order to add functionality or styling
+to the app. To install, list the name(s) of the accessories when asked as you execute
+`sudo ubos-admin createsite`:
 
- * **Known plugins**: `known-plugin-linkedin` and `known-plugin-wordpress` for integration with
-   social networks;
+**Known**
 
- * **Mediawiki extension**: `mediawiki-ext-confirmaccount` to cut down on wiki spam;
+   * `known-plugin-linkedin`: integrate your Known with LinkedIn
+   * `known-plugin-wordpress`: integrate your Known with WordPress
 
- * **Nextcloud "apps"**: `nextcloud-bookmarks` (bookmarks),
-   `nextcloud-calendar` (calendar), `nextcloud-contacts` (contacts), `nextcloud-mail` (mail),
-   `nextcloud-markdown` (markdown support), `nextcloud-news` (news), `nextcloud-notes` (note taking),
-   `nextcloud-social` (decentralized social media via the Fediverse), `nextcloud-spreed` (chat and
-   video conferencing) and `nextcloud-tasks` (task management); there is also
-   `nextcloud-cache-redis` to run a Redis cache to speed up Nextcloud;
+**Mediawiki**
 
- * **phpBB extension**: `phpbb-extension-shareon` for sharing posts on social media, and
-   `phpbb-extension-googleanalytics` for Google Analytics support;
+   * `mediawiki-ext-confirmaccount`: cut down on wiki spam by making registration harder
 
- * **Wordpress plugins**: `wordpress-plugin-bridgy-publish`, `wordpress-plugin-indieauth`,
-   `wordpress-plugin-indieweb`, `wordpress-plugin-indieweb-post-kinds`,
-   `wordpress-plugin-indieweb-press-this`, `wordpress-plugin-micropub`,
-   `wordpress-plugin-semantic-linkbacks`,
-   `wordpress-plugin-social-networks-auto-posted-facebook-twitter-g`,
-   `wordpress-plugin-syndication-links`,
-   `wordpress-plugin-webmention` and `wordpress-plugin-wp-uf2` for
-   [Indie Web](http://indiewebcamp.com/) support;
-   `wordpress-plugin-google-analytics-for-wordpress` to add Google Analytics to your site,
-   `wordpress-plugin-seo` to add Search Engine Optimization functionality to your site;
-   `wordpress-plugin-photo-dropper` to easily find and add pictures to posts, and
-   `wordpress-plugin-wp-mail-smtp` to make configuration of outgoing mail simpler;
-   themes `wordpress-theme-independent-publisher`, `wordpress-theme-p2`,
-   `wordpress-theme-pinboard`, `wordpress-theme-responsive`, `wordpress-theme-sempress` and
-   the default themes starting with `wordpress-theme-twentytwelve`.
+**Nextcloud**
+
+   Additional features:
+
+   * `nextcloud-bookmarks`: bookmark management
+   * `nextcloud-calendar`: calendaring
+   * `nextcloud-contacts`: contact management
+   * `nextcloud-deck`: kanban style organization tool aimed at personal planning and
+     project organization for teams
+   * `nextcloud-files-rightclick`: adds a right click menu
+   * `nextcloud-group-everyone`: adds a virtual "everyone" group
+   * `nextcloud-groupfolders`: admin configured folders shared by everyone in a group
+   * `nextcloud-markdown`: markdown support
+   * `nextcloud-news`: news reader
+   * `nextcloud-notes`: note taking
+   * `nextcloud-spreed`: chat and video conferencing
+   * `nextcloud-tasks`: task management
+
+   Security:
+
+   * `nextcloud-bruteforcesettings`: protect Nextcloud from attempts to guess user
+     passwords
+   * ``nextcloud-passwords``: password manager
+
+   Social networking:
+
+   * `nextcloud-social`: decentralized social media via the Fediverse
+   * `nextcloud-socialsharing-email`: sharing of files via email
+   * `nextcloud-socialsharing-facebook`: sharing of files via Facebook
+   * `nextcloud-socialsharing-twitter`: sharing of files via Twitter
+
+   Performance:
+
+   * `nextcloud-cache-redis` to run a Redis cache to speed up Nextcloud
+
+**phpBB**
+
+   * `phpbb-extension-shareon`: share posts on social media
+   * `phpbb-extension-googleanalytics`: Google Analytics support
+
+**Wordpress**
+
+   Additional features:
+
+   * `wordpress-plugin-bridgy-publish`: syndicate to and from social networks via brid.gy
+   * `wordpress-plugin-indieauth`: support for IndieAuth single-sign-on
+   * `wordpress-plugin-indieweb`: IndieWeb support
+   * `wordpress-plugin-indieweb-post-kinds`: add more IndieWeb post kinds
+   * `wordpress-plugin-indieweb-press-this`: respond to the current page
+   * `wordpress-plugin-micropub`: MicroPub support
+   * `wordpress-plugin-semantic-linkbacks`: semantic linkback support
+   * `wordpress-plugin-syndication-links`: add syndication microformats
+   * `wordpress-plugin-webmention`: add WebMention support
+   * `wordpress-plugin-wp-uf2`: add microformats to your posts
+   * `wordpress-plugin-google-analytics-for-wordpress`: add Google Analytics support
+   * `wordpress-plugin-seo`: add Search Engine Optimization functionality
+   * `wordpress-plugin-photo-dropper`: easily find and add pictures to posts
+   * `wordpress-plugin-wp-mail-smtp`: make configuration of outgoing mail simpler
+
+   Themes:
+
+   * `wordpress-theme-independent-publisher`: the Independent Publisher theme
+   * `wordpress-theme-p2`: the P2 theme
+   * `wordpress-theme-pinboard`: the Pinboard theme
+   * `wordpress-theme-responsive`: the Response theme
+   * `wordpress-theme-sempress`: the Sempress theme
+   * the default themes starting with `wordpress-theme-twentytwelve`.
+
+   Social networking:
+
+   * `wordpress-plugin-social-networks-auto-posted-facebook-twitter-g`: automatically
+     post to social networks.
+
+<br>
 
 The following blockchain-related servers are also available in beta ("yellow" release
 channel) on all platforms except for ``armv6h`` (no user interface, connect with API):
