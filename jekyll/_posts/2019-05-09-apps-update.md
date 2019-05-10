@@ -1,12 +1,12 @@
 ---
 layout: post
-title:  UBOS apps update available on the "yellow" release channel (2019-05-09)
-date:   2019-05-09 17:00:00
+title:  UBOS apps update available (2019-05-09)
+date:   2019-05-09 23:00:00
 author: Johannes Ernst
 categories: front release
 ---
 
-Apps have been updated on the "yellow" release channel.
+Apps have been updated on all release channels.
 
 * Nextcloud 16 is now available. It introduces machine learning to detect suspicious logins
   and offering clever recommendations. Group Folders now sport access control lists so
@@ -23,5 +23,4 @@ Apps have been updated on the "yellow" release channel.
 * Plus a few bug fixes.
 
 More details are in the
-[release notes](/docs-yellow/releases/2019-05-09/release-notes/index.html).
- Updates will be promoted to the "green" channel shortly assuming everything works out well.
+[release notes](/docs/releases/2019-05-09/release-notes/index.html).
