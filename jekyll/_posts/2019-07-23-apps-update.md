@@ -23,4 +23,4 @@ Apps have been updated on all release channels. This includes upgrades to:
 More details are in the release notes:
 
 * [release notes for the green channel](/docs/releases/2019-07-23/release-notes/index.html)
-* [release notes for the yellow channel](/docs-yellow/releases/2019-07-22/release-notes/index.html)
+* [release notes for the yellow channel](/docs-yellow/releases/2019-07-23/release-notes/index.html)
