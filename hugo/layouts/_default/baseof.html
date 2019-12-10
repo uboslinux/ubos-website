@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="{{ .Lang }}">
+  {{ partial "head.html" . }}
+  <body>
+    <header class="fixed-top">
+      <div class="miniresp-main">
+        <div class="project">
+          <a title="{{ .Site.Title }}" href="/"><img src="/images/ubos-logo-header-70x22.png"></a>
+        </div>
+        {{ partial "miniresp-nav.html" . }}
+      </div>
+    </header>
+    <div class="fixed-top-spacer"></div>
+    {{ block "main" . }}{{ end }}
+    {{ partial "footer.html" . }}
+  </body>
+</html>
+

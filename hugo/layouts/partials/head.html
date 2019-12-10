@@ -1,0 +1,26 @@
+ <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+{{- with .Title | default .Site.Title }}
+  <title>{{ . }}</title>
+  <meta property="og:title" content="{{ . }}" />
+  <meta name="twitter:title" content="{{ . | truncate 70 }}" />
+{{- end }}
+{{- with .Description | default .Params.subtitle | default .Summary }}
+  <meta name="description" content="{{ . }}">
+  <meta property="og:description" content="{{ . }}">
+  <meta name="twitter:description" content="{{ . | truncate 200 }}">
+{{- end }}
+  <meta name="author" content="{{ .Site.Author.name }}"/>
+  <meta property="og:url" content="{{ .Permalink | absLangURL }}" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="{{ .Site.Title }}" />
+  <meta name="description" content="Linux distro that makes it 10x easier to run server-side apps like Nextcloud or Mastodon for your family, on PC, Raspberry Pi, cloud and others">
+  <meta name="keywords" content="home server, personal server, self-host, decentralized, IoT, Raspberry Pi, ESPRESSObin, Web app, private, privacy, Internet of Things">
+
+  <link rel="stylesheet" href="/assets/site.css" />
+  <link rel="stylesheet" href="/assets/miniresp.css" />
+  <link rel="stylesheet" media="print" href="/assets/print.css">
+ </head>
