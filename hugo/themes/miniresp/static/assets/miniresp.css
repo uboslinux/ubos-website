@@ -1,51 +1,10 @@
-
-.miniresp-main {
-    margin: 0 auto;
-}
-
-nav.miniresp button.nav {
-    display: none;
-}
+@import url("miniresp-default.css");
 
 @media ( max-width: 560px ) {
-    span.miniresp-long {
-        display: none;
-    }
-
-    nav.miniresp button.nav {
-        display: block;
-        float: right;
-        background-image: url(/assets/hamburger.svg);
-        background-repeat: no-repeat;
-        background-size: 100% 100%;
-        border: 0;
-        width: 2em;
-        height: 2em;
-    }
-    nav.miniresp:hover ul.nav {
-        position: absolute;
-        top: 0;
-        right: 10px;
-        padding: 2px;
-        background: #ffffff;
-        z-index: 10;
-    }
-    nav.miniresp ul.nav {
-        display: none;
-    }
-    nav.miniresp ul.nav li {
-        display: block;
-        margin: 1ex 0;
-    }
-
-    nav.miniresp:hover ul {
-        display: block;
-    }
+    @import url("miniresp-small.css");
 }
 
 @media ( min-width: 980px ) {
-    .miniresp-main {
-        width: 980px;
-    }
+    @import url("miniresp-large.css");
 }
 

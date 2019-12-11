@@ -9,6 +9,7 @@
     --base-font-weight: 400;
     --width:            980px;
     --spacing-unit:     30px;
+    --collapse-width:   560px;
 
     --text-color:       #111;
     --background-color: #fdfdfd;
@@ -47,13 +48,25 @@ a:hover {
    text-decoration: underline;
 }
 
+pre {
+    font-size: 15px;
+    background-color: #eef;
+    padding: 8px 12px;
+    overflow-x: auto;
+}
 code {
     font-size: 15px;
-    border: 1px solid var( --grey-color-light );
-    border-radius: 3px;
     background-color: #eef;
     padding: 1px 5px;
     margin: 0 5px;
+    border: 1px solid var( --grey-color-light );
+    border-radius: 3px;
+}
+pre > code {
+    border: 0;
+    background-color: none;
+    padding: 0;
+    margin: 0;
 }
 
 img {
@@ -68,6 +81,12 @@ figure > img {
 figcaption {
     font-size: var( --small-font-size );
 }
+
+ul, ol {
+    margin: 15px 0 15px var( --spacing-unit );
+    padding: 0;
+}
+
 
 article {
     margin: 30px 0;
@@ -117,13 +136,14 @@ div.categories li {
     text-decoration: line-through;
 }
 
-
-
+button.nav {
+    margin-right: 10px;
+}
 
 
 nav.miniresp ul.nav li {
     display: inline-block;
-    margin: auto 15px;
+    margin: auto 10px;
 }
 
 header,
@@ -148,7 +168,6 @@ header.fixed-top {
 header div.miniresp-main,
 footer div.miniresp-main {
     position: relative;
-    width: var( --width );
     margin: 0 auto;
 }
 
@@ -174,8 +193,105 @@ div.fixed-top-spacer {
     height: 40px;
 }
 
+main.miniresp-main {
+    padding: 0 5px;
+}
+
+img.apps-icon {
+    float: left; width: 36px; margin: 5px 32px 20px 5px;
+}
+
+body.front div.project {
+    display: none;
+}
+body.front ul.nav {
+    padding: 0
+}
+
+
+div.howto > div.howtoitem {
+  float: left;
+  width: 225px;
+  min-height: 235px;
+  margin: 0 4px;
+  padding: 0 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+div.howto h2 {
+  margin-top: 5px;
+  font-size: 120%;
+  text-align: center;
+}
+div.howto pre {
+  overflow-x: hidden;
+}
+
+
+
+div.section {
+  clear: both;
+}
+div.section > div.section-header {
+  float: none;
+  width: 100%;
+  display: block;
+  color: #808080;
+  border-bottom: 2px solid #c0c0c0;
+  position: relative;
+  margin: 40px 0 30px 0;
+  text-align: center;
+}
+div.section > div.section-header > span {
+  position: relative;
+  top: 12px;
+  padding: 0 10px;
+  background: #fff;
+}
+ul.news-posts {
+  margin: 0;
+  padding: 5px 25px;
+  background: #f0f6fa;
+  border-radius: 20px;
+  border: 1px solid #e0f0f4;
+  overflow: hidden;
+}
+ul.news-posts > li {
+  list-style: none;
+}
+span.news-meta {
+  display: inline-block;
+  width: 110px;
+}
+
+p.feeds {
+    float: right;
+    margin: 5px 0 0 0;
+}
+div.banner {
+  background: #fffdcc;
+  border-radius: 20px;
+  border: 1px solid #ffe0c0;
+  overflow: hidden;
+}
+body.front div.apps img {
+    float: left;
+    margin: 10px 10px 0 15px;
+}
+body.front div.apps p {
+    float: right;
+    margin: 0;
+    clear: both;
+}
+
+.sidenote {
+  font-size: small;
+}
+
+
 
 /*
+
 body, h1, h2, h3, h4, h5, h6, p, blockquote, pre, hr, dl, dd, ol, ul, figure {
     margin: 0;
     padding: 0;
@@ -203,10 +319,6 @@ p, blockquote, pre, ul, ol, dl, li, figure {
     margin-bottom: calc( var( --spacing-unit ) * 0.5 );
 }
 
-ul, ol {
-    margin-left: var( --spacing-unit );
-}
-
 h1, h2, h3, h4, h5, h6 {
     font-weight: 300;
 }
@@ -229,17 +341,6 @@ blockquote:before {
     left: -5px;
     top: -20px;
     color: #7a7a7a;
-}
-
-pre {
-    padding: 8px 12px;
-    overflow-x: auto;
-}
-
-pre > code {
-    border: 0;
-    padding-right: 0;
-    padding-left: 0;
 }
 
 table {
@@ -285,10 +386,6 @@ div.post-excerpt {
 
 div.post-excerpt h2 {
     margin-bottom: 0;
-}
-
-.sidenote {
-  font-size: small;
 }
 
 div.sidebar {
@@ -444,6 +541,9 @@ div.admonition div.admonition.warning {
     background: #fff0f0;
     border-color: #ff8080;
 }
+
+*/
+
 a.get-started-button {
     color: #a00000;
     padding: 5px 15px;
@@ -463,7 +563,6 @@ input[type="submit"] {
     padding: 3px;
     font-size: 75%;
 }
-*/
 
 img.align-center {
     /* sphinx generates this */
