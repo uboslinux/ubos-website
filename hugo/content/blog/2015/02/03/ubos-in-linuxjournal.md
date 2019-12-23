@@ -1,5 +1,5 @@
 ---
-title:  "<strong>HOT: UBOS featured in Linux Journal</strong>"
+title:  "UBOS featured in Linux Journal"
 date:   2015-02-03 12:16:00
 categories: [ press ]
 ---

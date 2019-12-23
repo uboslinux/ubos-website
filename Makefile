@@ -6,15 +6,15 @@ UBOS_AWS_IMAGE_URL = https://console.aws.amazon.com/ec2/v2/home?region=us-east-1
 STAGEDIR = stage
 CACHEDIR = cache
 
-.PHONY: all clean jekyll static message open
+.PHONY: all clean hugo static message open
 
-all: jekyll static message
+all: hugo static message
 
 clean:
 	rm -rf $(STAGEDIR)/* $(CACHEDIR)/*
 
-jekyll:
-	jekyll build -s jekyll -d $(STAGEDIR)
+hugo:
+	( cd hugo; hugo -d ../$(STAGEDIR))
 
 static:
 	[ -d "reveal/git" ] || echo "WARNING: revealjs github repo not present at ./reveal"

@@ -1,7 +1,3 @@
----
-title: "Let's keep control over our data."
----
-
 UBOS is a Linux distro that aims to make it 10x easier to run server-side apps
 for yourself, or for your family, on hardware or cloud servers you own.
 

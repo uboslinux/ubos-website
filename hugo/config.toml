@@ -1,4 +1,4 @@
-baseurl       = "https://ubos.net/"
+baseurl       = "/"
 contentdir    = "content"
 layoutdir     = "layouts"
 publishdir    = "stage"
