@@ -8,6 +8,7 @@ canonifyurls  = true
 DefaultContentLanguage = "en"
 theme = [ "miniresp" ]
 metaDataFormat = "yaml"
+rssLimit = 10
 
 [Params]
   favicon = "img/favicon.ico"

@@ -190,7 +190,7 @@ footer p {
 }
 
 div.fixed-top-spacer {
-    height: 40px;
+    height: 20px;
 }
 
 main.miniresp-main {
@@ -314,11 +314,17 @@ h2, h3, h4, h5, h6 {
     margin-top: calc( var( --spacing-unit ) * 0.7 );
     margin-bottom: calc( var( --spacing-unit ) * 0.25);
 }
+
+*/
 p, blockquote, pre, ul, ol, dl, li, figure {
     margin-top: calc( var( --spacing-unit ) * 0.5 );
     margin-bottom: calc( var( --spacing-unit ) * 0.5 );
 }
 
+div.section.news li {
+    margin: 0;
+}
+/*
 h1, h2, h3, h4, h5, h6 {
     font-weight: 300;
 }
@@ -371,10 +377,12 @@ div.content h3.release-channel {
 div.page {
     padding-top: 10px;
 }
+*/
+
 div.feedicon {
     float: right;
 }
-
+/*
 p.post-meta {
     font-size: $small-font-size;
     color: #808080;

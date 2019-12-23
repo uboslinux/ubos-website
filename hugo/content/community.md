@@ -37,7 +37,7 @@ say Hi to get started.
   [here](https://air.mozilla.org/connected-devices-meetup-johannes-ernst-ubos-and-the-indie-iot-20160927/).
 
 * 2015-01-15: <strong>THEIR Things or OUR Things &mdash; Why we need an Indie IoT and how to get
-  there". Presentation given by [Johannes Ernst](https://upon2020.com/) at
+  there"</strong>. Presentation given by [Johannes Ernst](https://upon2020.com/) at
   [IoT Silicon Valley](https://www.meetup.com/IoTSiliconValley/) to a packed room.
   [Slides with notes in PDF](/files/2015-01-20-Indie-IoT-Johannes-Ernst.pdf), or
   [Keynote](/files/2015-01-20-Indie-IoT-Johannes-Ernst.key.zip)
