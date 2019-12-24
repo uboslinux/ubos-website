@@ -2,7 +2,7 @@ baseurl       = "/"
 contentdir    = "content"
 layoutdir     = "layouts"
 publishdir    = "stage"
-title = "UBOS - The Linux Distro for Home Servers and Indie IoT Devices"
+title = "UBOS - The Linux Distro for self-hosting your own cloud services"
 canonifyurls  = true
 
 DefaultContentLanguage = "en"
