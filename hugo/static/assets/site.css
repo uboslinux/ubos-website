@@ -354,6 +354,12 @@ div.sidebar {
     box-shadow:  0 0 2px 2px #ddd;
 }
 
+@media ( max-width: 640px ) {
+    div.sidebar {
+        display: none;
+    }
+}
+
 div.sidebar * {
     font-size: 12px;
     text-decoration: none;
