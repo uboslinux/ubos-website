@@ -1,3 +1,6 @@
 [submodule "assets/reveal"]
 	path = assets/reveal
 	url = https://github.com/hakimel/reveal.js.git
+[submodule "hugo/themes/miniresp"]
+	path = hugo/themes/miniresp
+	url = https://j12t@gitlab.com/j12t/miniresp.git
