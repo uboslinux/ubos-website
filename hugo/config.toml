@@ -10,6 +10,9 @@ theme = [ "miniresp" ]
 metaDataFormat = "yaml"
 rssLimit = 10
 
+[markup.goldmark.renderer]
+    unsafe = true
+
 [Params]
   favicon = "img/favicon.ico"
   dateFormat = "January 2, 2006"
