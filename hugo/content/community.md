@@ -9,7 +9,7 @@ Just get in touch!
 
 * Post in our [forum](https://forum.ubos.net/)
 
-* Follow [@news@fed.ubos.net](https://fed.ubos.net/@news) on Mastodon and toot to/about us.
+* Follow [@ubos@mastodon.social](https://mastodon.social/@ubos) on Mastodon and toot to/about us.
 
 * Follow [@uboslinux](https://twitter.com/uboslinux) on Twitter and tweet to/about us.
 

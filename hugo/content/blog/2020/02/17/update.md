@@ -1,6 +1,6 @@
 ---
-title:  UBOS update available on all release channels (2020-02-14)
-date:   2020-02-14 19:45:00
+title:  UBOS update available on all release channels
+date:   2020-02-17 05:30:00
 categories: [ front, release ]
 ---
 
@@ -13,4 +13,4 @@ This aids in troubleshooting systems that don't have keyboards or monitors.
 There were also some minor bug fixes and documentation improvements.
 
 As usual, the details are in the
-[release notes](/docs/releases/2020-02-14/release-notes/).
+[release notes](/docs/releases/2020-02-17/release-notes/).
