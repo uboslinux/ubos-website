@@ -1,0 +1,34 @@
+span.miniresp-long {
+    display: none;
+}
+
+nav.miniresp button.nav {
+    display: block;
+    float: right;
+    background-image: url(/assets/hamburger.svg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    border: 0;
+    width: 2em;
+    height: 2em;
+}
+nav.miniresp:hover ul.nav {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    padding: 4px;
+    border: 1px solid #c0c0c0;
+    background: #ffffff;
+    z-index: 10;
+}
+nav.miniresp ul.nav {
+    display: none;
+}
+nav.miniresp ul.nav li {
+    display: block;
+    margin: 1ex 0;
+}
+
+nav.miniresp:hover ul {
+    display: block;
+}

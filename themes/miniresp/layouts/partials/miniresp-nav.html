@@ -1,0 +1,21 @@
+ <nav class="miniresp">
+  <button class="nav"></button>
+  <ul class="nav">
+   {{ range .Site.Menus.main.ByWeight }}
+      {{ if .HasChildren }}
+        <li class="navlinks-container">
+          <a class="navlinks-parent" href="javascript:void(0)">{{ .Name }}</a>
+          <div class="navlinks-children">
+            {{ range .Children }}
+              <a href="{{ .URL | relLangURL }}">{{ .Name }}</a>
+            {{ end }}
+          </div>
+        </li>
+      {{ else }}
+        <li>
+          <a title="{{ .Name }}" href="{{ .URL  | relLangURL }}">{{ .Name }}</a>
+        </li>
+      {{ end }}
+   {{ end }}
+  </ul>
+ </nav>

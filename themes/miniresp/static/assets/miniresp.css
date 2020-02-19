@@ -1,0 +1,10 @@
+@import url("miniresp-default.css");
+
+@media ( max-width: 560px ) {
+    @import url("miniresp-small.css");
+}
+
+@media ( min-width: 980px ) {
+    @import url("miniresp-large.css");
+}
+

@@ -1,6 +1,3 @@
-stage/
-cache/
+public/
 later/
 removed/
-.sass-cache/
-.jekyll-metadata

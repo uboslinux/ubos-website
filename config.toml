@@ -1,7 +1,7 @@
 baseurl       = "/"
 contentdir    = "content"
 layoutdir     = "layouts"
-publishdir    = "stage"
+publishdir    = "public"
 title = "UBOS - The Linux Distro for self-hosting your own cloud services"
 canonifyurls  = true
 
