@@ -5,6 +5,10 @@ body.front ul.nav {
     padding: 0
 }
 
+body.front h1.title {
+    font-weight: 300;
+}
+
 body.front div.banner {
     background: #fffdcc;
     border-radius: 20px;
