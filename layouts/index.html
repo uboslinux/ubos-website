@@ -15,7 +15,7 @@
       <article class="front">
 
 <div class="banner">
- <div style="float: left; width: 320px; display: inline; text-align: center">
+ <div style="width: 320px; text-align: center">
   <img src="/images/ubos-160x160.png" alt="[UBOS]" style="margin: 34px 0 18px 0;"><br>
   <a href="/quickstart/">
    Now available<br>
@@ -23,15 +23,24 @@
    ESPRESSObin and cloud
   </a>
  </div>
- <div style="float: left; width: 638px; display: inline; padding: 25px 10px 10px 10px">
-  <h1 style="font-family: Roboto Thin; font-weight: 300; margin: 0 0 21px 0">Let's keep control over our data.</h1>
+ <div style="width: 638px; padding: 25px 10px 10px 10px">
+  <h1 style="font-family: Roboto Thin; font-weight: 300; margin: 0 0 21px 0; text-align: center">Let's keep control over our data.</h1>
           {{ .Content }}
  </div>
 </div>
 
 <div class="section news">
  <div class="section-header"><span><a href="/blog/" style="color: inherit">BLOG POSTS</a></span></div>
- <div style="float: right; width: 250px; margin: 0 10px; padding: 5px 20px; border-radius: 20px; background: #f0f0f0">
+
+ <div class="sectioncontent" style="flex-grow: 2; background: #f0f6fa; border-radius: 20px; border: 1px solid #e0f0f4;">
+  <ul class="news-posts">
+{{- range ( where site.RegularPages "Section" "blog" | first 3 ) }}
+   <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+{{- end}}
+  </ul>
+ </div>
+
+ <div class="sectioncontent" style="flex-grow: 1; border-radius: 20px; background: #f0f0f0">
   <p style="margin: 0; padding: 0">Subscribe to announcements:</p>
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
   <script type="text/javascript" src="https://s3.amazonaws.com/phplist/phplist-subscribe-0.2.min.js"></script>
@@ -39,20 +48,16 @@
 var pleaseEnter = "Your e-mail";
 var thanksForSubscribing = '<div class="subscribed">Thanks for <a href="https://indiecomputing.hosted.phplist.com/lists/?p=unsubscribe&id=4">subscribing</a>.</div>';
   </script>
-  <div id="phplistsubscriberesult"></div>
-  <form action="https://indiecomputing.hosted.phplist.com/lists/?p=subscribe&id=4" method="post" id="phplistsubscribeform">
-   <input type="text" name="email" value="" id="emailaddress" style="width: 100%; border: 1px solid #c0c0c0"/>
-   <button type="submit" id="phplistsubscribe" style="text-align: center">Subscribe</button>
-  </form>
+  <div style="display: flex">
+   <div id="phplistsubscriberesult"></div>
+   <form action="https://indiecomputing.hosted.phplist.com/lists/?p=subscribe&id=4" method="post" id="phplistsubscribeform">
+    <input type="text" name="email" value="" id="emailaddress" style="width: 100%; border: 1px solid #c0c0c0"/>
+    <button type="submit" id="phplistsubscribe" style="text-align: center">Subscribe</button>
+   </form>
+  </div>
  </div>
 
- <ul class="news-posts">
-{{- range ( where site.RegularPages "Section" "blog" | first 3 ) }}
-  <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
-{{- end}}
- </ul>
-
- <p class="feeds sidenote">
+ <div class="feeds sidenote">
   <a href="/blog/">More news</a> &mdash;
   Follow UBOS:
   <a href="/index.xml">RSS</a>
@@ -60,7 +65,7 @@ var thanksForSubscribing = '<div class="subscribed">Thanks for <a href="https://
   • <a href="https://twitter.com/uboslinux">Twitter</a>
   • <a href="https://www.facebook.com/uboslinux">Facebook</a>
   • <a href="https://www.youtube.com/channel/UCFv32pjDjv49l5EWAZQhw8A/playlists">YouTube</a>
- </p>
+ </div>
 </div>
 
 <div class="section apps">
@@ -95,8 +100,8 @@ var thanksForSubscribing = '<div class="subscribed">Thanks for <a href="https://
  <a href="http://webtrees.net/" title="Webtrees: collaborative genealogy application">
   <img src="/images/webtrees-72x72.png" alt="[Webtrees]">
  </a>
- <p class="sidenote">.. and others. More coming. <a href="https://github.com/uboslinux/apps-wanted/issues">Request.</a></p>
 </div>
+<p class="sidenote" style="float: right; margin: 0;">.. and others. More coming. <a href="https://github.com/uboslinux/apps-wanted/issues">Request.</a></p>
 
 <div class="section howto">
  <div class="section-header"><span>HOWTO</span></div>
@@ -141,12 +146,11 @@ Done.</pre>
   --in all.ubos-backup</pre>
   <p>Plenty of options for more fine-grained control.</p>
  </div>
- <div class="clearer"></div>
-
- <p style="text-align: center; margin-top: 20px">
-    <a href="/quickstart/" class="get-started-button">Get started!</a>
- </p>
 </div>
+
+<p style="text-align: center; margin-top: 20px">
+ <a href="/quickstart/" class="get-started-button">Get started!</a>
+</p>
 
    </article>
   </main>

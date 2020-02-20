@@ -4,14 +4,19 @@ title: Press and other coverage
 ---
 
 <style>
+div.viggrid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 div.vig {
-    float: left;
     text-align: center;
     border: 1px solid #a0a0a0;
     box-shadow: 3px 3px 2px #a0a0a0;
     padding: 20px;
-    margin-right: 30px;
-    margin-bottom: 30px;
+    margin: 20px;
+    flex-shrink: 0;
     width: 260px;
     height: 280px;
     position: relative;
@@ -46,6 +51,7 @@ div.vig p.lang {
 
 ## Articles
 
+<div class="viggrid">
 <div class="vig">
  <a href="https://opensource.ellak.gr/2019/01/04/nea-apo-ton-planiti-planet-ellak-gr-ubos-i-dianomi-pou-lini-ta-cheria-diachirisis-diakomisti/">
   <img src="/images/press/ellak.gr/logo-opensource1.png" alt="[ellak.gr]"/>
@@ -110,6 +116,7 @@ div.vig p.lang {
   <p>Feature story (some inaccuracies)</p>
   <p class="lang">(in English)</p>
  </a>
+</div>
 </div>
 
 <div class="clearer"></div>

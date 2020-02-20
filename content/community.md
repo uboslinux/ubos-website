@@ -7,7 +7,7 @@ title: Community
 We'd love to have your feedback, suggestions, and will be happy to help.
 Just get in touch!
 
-* Post in our [forum](https://forum.ubos.net/)
+* Post in our [forum](https://forum.ubos.net/).
 
 * Follow [@ubos@mastodon.social](https://mastodon.social/@ubos) on Mastodon and toot to/about us.
 
