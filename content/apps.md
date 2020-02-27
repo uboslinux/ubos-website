@@ -2,75 +2,81 @@
 title: Apps on UBOS
 ---
 
-Currently available apps (alphabetically):
+Currently available apps (alphabetically). Install with `sudo ubos-admin createsite`:
 
 <img src="/images/amazonses-72x72.png" alt="[Amazon SES]" class="apps-icon">
-**Amazon SES**: Send e-mail via Amazon's Simple E-mail Service (SES).<br>
-Install with `sudo ubos-admin createsite`, specify app `amazonses`<br>
+
+**Amazon SES**: Send e-mail via Amazon's Simple E-mail Service (SES).
+Specify app `amazonses`.
 
 <img src="/images/docroot-72x72.png" alt="[Docroot]" class="apps-icon">
-**Docroot**: Static file hosting with SSH-based upload<br>
-Install with `sudo ubos-admin createsite`, specify app `docroot`<br>
+
+**Docroot**: Static file hosting with SSH-based upload. Specify app `docroot`.
 
 <img src="/images/mediawiki-72x72.png" alt="[Mediawiki]" class="apps-icon">
-**Mediawiki**: The wiki that Wikipedia runs on<br>
-Install with `sudo ubos-admin createsite`, specify app `mediawiki`
+
+**Mediawiki**: The wiki that Wikipedia runs on.
+Specify app `mediawiki`.
 
 <img src="/images/nextcloud-72x72.png" alt="[Nextcloud]" class="apps-icon">
-**Nextcloud**: A safe home for all your data<br>
-Install with `sudo ubos-admin createsite`, specify app `nextcloud`
+
+**Nextcloud**: A safe home for all your data.
+Specify app `nextcloud`.
 
 <img src="/images/redirect-72x72.png" alt="[Redirect]" class="apps-icon">
-**Redirect**: Redirects to another site<br>
-Install with `sudo ubos-admin createsite`, specify app `redirect`
+
+**Redirect**: Redirects to another site.
+Specify app `redirect`.
 
 <img src="/images/wordpress-72x72.png" alt="[Wordpress]" class="apps-icon">
-**Wordpress**: Blog tools, publishing platform, and CMS<br>
-Install with `sudo ubos-admin createsite`, specify app `wordpress`
+
+**Wordpress**: Blog tools, publishing platform, and CMS.
+Specify app `wordpress`.
 
 <br>
 
 Available in beta ("yellow" release channel only):
 
 <img src="/images/decko-72x72.png" alt="[Decko]" class="apps-icon">
-**Decko**: Dynamic websites from creatively organized cards<br>
-Install with `sudo ubos-admin createsite`, specify app `decko`
+
+**Decko**: Dynamic websites from creatively organized cards. Specify app `decko`.
 
 <img src="/images/known-72x72.png" alt="[Known]" class="apps-icon">
-**Known**: Indieweb publishing platform for everyone<br>
-Install with `sudo ubos-admin createsite`, specify app `known`
+
+**Known**: Indieweb publishing platform for everyone. Specify app `known`.
 
 <img src="/images/mastodon-72x72.png" alt="[Mastodon]" class="apps-icon">
-**Mastodon**: Free, open-source, decentralized microblogging network<br>
-Install with `sudo ubos-admin createsite`, specify app `mastodon`
+
+**Mastodon**: Free, open-source, decentralized microblogging network. Specify app `mastodon`.
 
 <img src="/images/matomo-72x72.png" alt="[Matomo]" class="apps-icon">
-**Matomo**: Open web analytics platform<br>
-Install with `sudo ubos-admin createsite`, specify app `matomo`
+
+**Matomo**: Open web analytics platform. Specify app `matomo`.
 
 <img src="/images/mattermost-72x72.png" alt="[Mattermost]" class="apps-icon">
-**Mattermost**: Open source, self-hosted Slack-alternative<br>
-Install with `sudo ubos-admin createsite`, specify app `mattermost`
+
+**Mattermost**: Open source, self-hosted Slack-alternative. Specify app `mattermost`.
 
 <img src="/images/phpbb-72x72.png" alt="[phpBB]" class="apps-icon">
-**phpBB**: Bulletin-board<br>
-Install with `sudo ubos-admin createsite`, specify app `phpbb`
+
+**phpBB**: Bulletin-board. Specify app `phpbb`.
 
 <img src="/images/river-72x72.png" alt="[River5]" class="apps-icon">
-**River5**: A river-of-news RSS aggregator<br>
-Install with `sudo ubos-admin createsite`, specify app `river`
+
+**River5**: A river-of-news RSS aggregator. Specify app `river`.
 
 <img src="/images/selfoss-72x72.png" alt="[Selfoss]" class="apps-icon">
-**Selfoss**: Multipurpose rss reader, live stream, mashup, aggregation web application<br>
-Install with `sudo ubos-admin createsite`, specify app `selfoss`
+
+**Selfoss**: Multipurpose rss reader, live stream, mashup, aggregation web application.
+Specify app `selfoss`.
 
 <img src="/images/shaarli-72x72.png" alt="[Shaarli]" class="apps-icon">
-**Shaarli**: Personal, minimalist, super-fast, bookmarking service<br>
-Install with `sudo ubos-admin createsite`, specify app `shaarli`
+
+**Shaarli**: Personal, minimalist, super-fast, bookmarking service. Specify app `shaarli`.
 
 <img src="/images/webtrees-72x72.png" alt="[Webtrees]" class="apps-icon">
-**Webtrees**: Full-featured web genealogy app<br>
-Install with `sudo ubos-admin createsite`, specify app `webtrees`
+
+**Webtrees**: Full-featured web genealogy app. Specify app `webtrees`.
 
 ## Accessories
 
