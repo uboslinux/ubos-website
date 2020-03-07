@@ -4,79 +4,71 @@ title: Apps on UBOS
 
 Currently available apps (alphabetically). Install with `sudo ubos-admin createsite`:
 
-<img src="/images/amazonses-72x72.png" alt="[Amazon SES]" class="apps-icon">
+{{% app name="Amazon SES" img="/images/amazonses-72x72.png" package="amazonses"%}}
+Send e-mail via Amazon's Simple E-mail Service (SES).
+{{% /app %}}
 
-**Amazon SES**: Send e-mail via Amazon's Simple E-mail Service (SES).
-Specify app `amazonses`.
+{{% app name="Docroot" img="/images/docroot-72x72.png" package="docroot"%}}
+Static file hosting with SSH-based upload.
+{{% /app %}}
 
-<img src="/images/docroot-72x72.png" alt="[Docroot]" class="apps-icon">
+{{% app name="Mediawiki" img="/images/mediawiki-72x72.png" package="mediawiki"%}}
+The wiki that Wikipedia runs on.
+{{% /app %}}
 
-**Docroot**: Static file hosting with SSH-based upload. Specify app `docroot`.
+{{% app name="Nextcloud" img="/images/nextcloud-72x72.png" package="nextcloud"%}}
+A safe home for all your data.
+{{% /app %}}
 
-<img src="/images/mediawiki-72x72.png" alt="[Mediawiki]" class="apps-icon">
+{{% app name="Redirect" img="/images/redirect-72x72.png" package="redirect"%}}
+Redirects to another site.
+{{% /app %}}
 
-**Mediawiki**: The wiki that Wikipedia runs on.
-Specify app `mediawiki`.
-
-<img src="/images/nextcloud-72x72.png" alt="[Nextcloud]" class="apps-icon">
-
-**Nextcloud**: A safe home for all your data.
-Specify app `nextcloud`.
-
-<img src="/images/redirect-72x72.png" alt="[Redirect]" class="apps-icon">
-
-**Redirect**: Redirects to another site.
-Specify app `redirect`.
-
-<img src="/images/wordpress-72x72.png" alt="[Wordpress]" class="apps-icon">
-
-**Wordpress**: Blog tools, publishing platform, and CMS.
-Specify app `wordpress`.
-
-<br>
+{{% app name="Wordpress" img="/images/wordpress-72x72.png" package="wordpress"%}}
+Blog tools, publishing platform, and CMS.
+{{% /app %}}
 
 Available in beta ("yellow" release channel only):
 
-<img src="/images/decko-72x72.png" alt="[Decko]" class="apps-icon">
+{{% app name="Decko" img="/images/decko-72x72.png" package="decko"%}}
+Dynamic websites from creatively organized cards.
+{{% /app %}}
 
-**Decko**: Dynamic websites from creatively organized cards. Specify app `decko`.
+{{% app name="Known" img="/images/known-72x72.png" package="known"%}}
+Indieweb publishing platform for everyone.
+{{% /app %}}
 
-<img src="/images/known-72x72.png" alt="[Known]" class="apps-icon">
+{{% app name="Mastodon" img="/images/mastodon-72x72.png" package="mastodon"%}}
+Free, open-source, decentralized microblogging network.
+{{% /app %}}
 
-**Known**: Indieweb publishing platform for everyone. Specify app `known`.
+{{% app name="Matomo" img="/images/matomo-72x72.png" package="matomo"%}}
+Open web analytics platform (formerly Piwik).
+{{% /app %}}
 
-<img src="/images/mastodon-72x72.png" alt="[Mastodon]" class="apps-icon">
+{{% app name="Mattermost" img="/images/mattermost-72x72.png" package="mattermost"%}}
+Open source, self-hosted Slack-alternative.
+{{% /app %}}
 
-**Mastodon**: Free, open-source, decentralized microblogging network. Specify app `mastodon`.
+{{% app name="phpBB" img="/images/phpbb-72x72.png" package="phpbb"%}}
+Bulletin-board.
+{{% /app %}}
 
-<img src="/images/matomo-72x72.png" alt="[Matomo]" class="apps-icon">
+{{% app name="River5" img="/images/river-72x72.png" package="river"%}}
+A river-of-news RSS aggregator.
+{{% /app %}}
 
-**Matomo**: Open web analytics platform. Specify app `matomo`.
+{{% app name="Selfoss" img="/images/selfoss-72x72.png" package="selfoss"%}}
+Multipurpose RSS reader, live stream, mashup, aggregation web application.
+{{% /app %}}
 
-<img src="/images/mattermost-72x72.png" alt="[Mattermost]" class="apps-icon">
+{{% app name="Shaarli" img="/images/shaarli-72x72.png" package="shaarli"%}}
+Personal, minimalist, super-fast, bookmarking service
+{{% /app %}}
 
-**Mattermost**: Open source, self-hosted Slack-alternative. Specify app `mattermost`.
-
-<img src="/images/phpbb-72x72.png" alt="[phpBB]" class="apps-icon">
-
-**phpBB**: Bulletin-board. Specify app `phpbb`.
-
-<img src="/images/river-72x72.png" alt="[River5]" class="apps-icon">
-
-**River5**: A river-of-news RSS aggregator. Specify app `river`.
-
-<img src="/images/selfoss-72x72.png" alt="[Selfoss]" class="apps-icon">
-
-**Selfoss**: Multipurpose rss reader, live stream, mashup, aggregation web application.
-Specify app `selfoss`.
-
-<img src="/images/shaarli-72x72.png" alt="[Shaarli]" class="apps-icon">
-
-**Shaarli**: Personal, minimalist, super-fast, bookmarking service. Specify app `shaarli`.
-
-<img src="/images/webtrees-72x72.png" alt="[Webtrees]" class="apps-icon">
-
-**Webtrees**: Full-featured web genealogy app. Specify app `webtrees`.
+{{% app name="Webtrees" img="/images/webtrees-72x72.png" package="webtrees"%}}
+Full-featured web genealogy app
+{{% /app %}}
 
 ## Accessories
 
@@ -171,11 +163,11 @@ to the app. To install, list the name(s) of the accessories when asked as you ex
 The following blockchain-related servers are also available in beta ("yellow" release
 channel) on all platforms except for ``armv6h`` (no user interface, connect with API):
 
-* **Bitcoin daemon**: Run your own Bitcoin blockchain<br>
+* **Bitcoin daemon**: Run your own Bitcoin blockchain.<br>
   Install with `sudo pacman -S bitcoin` and start with `systemctl start bitcoind`
 
-* **Ethereum daemon**: Run your own Ethereum blockchain<br>
+* **Ethereum daemon**: Run your own Ethereum blockchain.<br>
   Install with `sudo pacman -S geth` and start with `systemctl start geth`
 
-* **Monero daemon**: Run your own Monero blockchain<br>
+* **Monero daemon**: Run your own Monero blockchain.<br>
   Install with `sudo pacman -S monero` and start with `systemctl start monerod`

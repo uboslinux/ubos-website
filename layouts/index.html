@@ -1,30 +1,20 @@
-<!DOCTYPE html>
-<html lang="{{ .Lang }}">
-  {{ partial "head.html" . }}
-  <body class="front">
-    <header class="fixed-top">
-      <div class="miniresp-main">
-        <div class="project">
-          <a title="{{ .Site.Title }}" href="/"><img src="/images/ubos-logo-header-70x22.png" alt="[UBOS]"></a>
-        </div>
-        {{ partial "miniresp-nav.html" . }}
-      </div>
-    </header>
-    <div class="fixed-top-spacer"></div>
-    <main class="miniresp-main">
-      <article class="front">
+{{ define "extrahead" }}
+  <link rel="stylesheet" href="/assets/front.css" />
+{{ end }}
+{{ define "main" }}
+<main class="container">
+  <article class="front">
 
 <div class="banner">
  <div style="width: 320px; text-align: center">
   <img src="/images/ubos-160x160.png" alt="[UBOS]" style="margin: 34px 0 18px 0;"><br>
   <a href="/quickstart/">
-   Now available<br>
-   for PCs, Raspberry Pi's,<br>
+   For PCs, Raspberry Pi's,<br>
    ESPRESSObin and cloud
   </a>
  </div>
  <div style="width: 638px; padding: 25px 10px 10px 10px">
-  <h1 class="title" style="margin: 0 0 21px 0; text-align: center">Let's keep control over our data.</h1>
+  <h1 class="title" style="margin: 0 0 21px 0; text-align: center">Keeping your data private is better.</h1>
           {{ .Content }}
  </div>
 </div>
@@ -152,10 +142,7 @@ Done.</pre>
  <a href="/quickstart/" class="get-started-button">Get started!</a>
 </p>
 
-   </article>
-  </main>
-    {{ partial "footer.html" . }}
- </body>
-</html>
-
+ </article>
+</main>
+{{ end }}
 

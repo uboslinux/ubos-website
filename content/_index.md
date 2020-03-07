@@ -7,4 +7,4 @@ under your own control? All you need is a spare (physical, virtual, or cloud) co
 that can run Linux. UBOS automates much of the administration, so you can get on with life.
 
 Want to use Nextcloud instead of Dropbox? Shaarli instead of delicious? An RSS
-reader or an Internet-of-Things app? UBOS makes installation and maintenance easy and quick.
+reader or discussion forum? UBOS makes installation and maintenance easy and quick.

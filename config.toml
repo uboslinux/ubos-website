@@ -6,7 +6,7 @@ title = "UBOS - The Linux Distro for self-hosting your own cloud services"
 canonifyurls  = true
 
 DefaultContentLanguage = "en"
-theme = [ "miniresp" ]
+theme = []
 metaDataFormat = "yaml"
 rssLimit = 10
 
@@ -21,38 +21,3 @@ rssLimit = 10
 
 [Author]
   name = "Indie Computing Corp."
-
-[[menu.main]]
-    name = "Getting Started"
-    url = "quickstart/"
-    weight = 20
-
-[[menu.main]]
-    name = "About"
-    url = "about/"
-    weight = 30
-
-[[menu.main]]
-    name = "Apps"
-    url = "apps/"
-    weight = 40
-
-[[menu.main]]
-    name = "Documentation"
-    url = "docs/"
-    weight = 50
-
-[[menu.main]]
-    name = "Press"
-    url = "press/"
-    weight = 60
-
-[[menu.main]]
-    name = "Blog & Videos"
-    url = "blog/"
-    weight = 70
-
-[[menu.main]]
-    name = "Community"
-    url = "community/"
-    weight = 80

@@ -1,0 +1,11 @@
+<div class="app">
+ <div class="icon">
+  <img src="{{ .Get "img" }}" alt="[{{ .Get "name" }}]">
+ </div>
+ <div>
+  <p class="appname">{{ .Get "name" }}</p>
+  <p>{{ .Inner | markdownify }}</p>
+  <p>Use package name <code>{{ .Get "package"}}</code>.</p>
+ </div>
+</div>
+

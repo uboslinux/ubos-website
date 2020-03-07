@@ -1,15 +1,15 @@
-body.front div.project {
+article.front div.project {
     display: none;
 }
-body.front ul.nav {
+article.front ul.nav {
     padding: 0
 }
 
-body.front h1.title {
+article.front h1.title {
     font-weight: 300;
 }
 
-body.front div.banner {
+article.front div.banner {
     background: #fffdcc;
     border-radius: 20px;
     border: 1px solid #ffe0c0;
@@ -20,7 +20,7 @@ body.front div.banner {
     justify-content: center;
 }
 
-body.front div.section {
+article.front div.section {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -28,12 +28,12 @@ body.front div.section {
     clear: both;
 }
 
-body.front div.section div.sectioncontent {
+article.front div.section div.sectioncontent {
     margin: 5px 20px;
     padding: 10px;
 }
 
-body.front div.section > div.section-header {
+article.front div.section > div.section-header {
   float: none;
   width: 100%;
   display: block;
@@ -43,20 +43,20 @@ body.front div.section > div.section-header {
   margin: 40px 0 30px 0;
   text-align: center;
 }
-body.front  div.section > div.section-header > span {
+article.front  div.section > div.section-header > span {
   position: relative;
   top: 12px;
   padding: 0 10px;
   background: #fff;
 }
-body.front ul.news-posts {
+article.front ul.news-posts {
   margin: 0;
   overflow: hidden;
 }
-body.front ul.news-posts > li {
+article.front ul.news-posts > li {
   list-style: none;
 }
-body.front span.news-meta {
+article.front span.news-meta {
   display: inline-block;
   width: 110px;
 }
@@ -68,8 +68,7 @@ p.feeds {
     float: right;
     margin: 5px 0 0 0;
 }
-body.front div.apps img {
-    float: left;
+article.front div.apps img {
     margin: 10px 10px 0 15px;
 }
 

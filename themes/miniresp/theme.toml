@@ -1,8 +1,0 @@
-name = "miniresp"
-license = "MIT"
-description = "Minimal theme for a responsive website"
-min_version = 0.17
-
-[author]
-    name = "Johannes Ernst"
-    homepage = "https://upon2020.com/"
