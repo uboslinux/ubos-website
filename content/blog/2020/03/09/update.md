@@ -1,11 +1,11 @@
 ---
 title:  Nextcloud Hub is here! and more in today's UBOS apps update
-date:   2020-03-07 17:30:00
+date:   2020-03-09 13:00:00
 categories: [ front, release ]
 ---
 
 <a href="https://nextcloud.com/hub/">
-<img src="/images/2020-03-07/nextcloud-hub.png" alt="[Nextcloud Hub]" style="float: right; margin: 0 0 20px 40px">
+<img src="/images/2020-03-09/nextcloud-hub.png" alt="[Nextcloud Hub]" style="float: right; margin: 0 0 20px 40px">
 </a>
 
 A new UBOS apps update is available on all release channels and all platforms.
@@ -15,7 +15,7 @@ Nextcloud on UBOS is now the newly released
 
 * Collaborate on rich documents over the internet right from the browser, just
   as if it were Google Docs: documents, spreadsheets and presentation. Except,
-  there's no third party cloud overlord spying on you.
+  there's no third party cloud overlord spying on you (x86 only).
 
 * Full text search. Automatically indexes your documents, so you can quickly
   find what you are looking for.
@@ -24,4 +24,4 @@ Many other applications were upgraded as well, and the usual smattering of bug f
 and improvements.
 
 The details are in the
-[release notes](/docs/releases/2020-03-07/release-notes/).
+[release notes](/docs/releases/2020-03-09/release-notes/).
