@@ -1,5 +1,5 @@
 ---
-title:  UBOS apps update available
+title:  UBOS apps update available (June 2020)
 date:   2020-06-03 15:00:00
 categories: [ front, release ]
 ---

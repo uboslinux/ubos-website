@@ -12,6 +12,10 @@ Send e-mail via Amazon's Simple E-mail Service (SES).
 Static file hosting with SSH-based upload.
 {{% /app %}}
 
+{{% app name="Matomo" img="/images/matomo-72x72.png" package="matomo"%}}
+Open web analytics platform (formerly Piwik).
+{{% /app %}}
+
 {{% app name="Mediawiki" img="/images/mediawiki-72x72.png" package="mediawiki"%}}
 The wiki that Wikipedia runs on.
 {{% /app %}}
@@ -20,8 +24,16 @@ The wiki that Wikipedia runs on.
 A safe home for all your data.
 {{% /app %}}
 
+{{% app name="phpBB" img="/images/phpbb-72x72.png" package="phpbb"%}}
+Bulletin-board.
+{{% /app %}}
+
 {{% app name="Redirect" img="/images/redirect-72x72.png" package="redirect"%}}
 Redirects to another site.
+{{% /app %}}
+
+{{% app name="Webtrees" img="/images/webtrees-72x72.png" package="webtrees"%}}
+Full-featured web genealogy app
 {{% /app %}}
 
 {{% app name="Wordpress" img="/images/wordpress-72x72.png" package="wordpress"%}}
@@ -42,16 +54,8 @@ Indieweb publishing platform for everyone.
 Free, open-source, decentralized microblogging network.
 {{% /app %}}
 
-{{% app name="Matomo" img="/images/matomo-72x72.png" package="matomo"%}}
-Open web analytics platform (formerly Piwik).
-{{% /app %}}
-
 {{% app name="Mattermost" img="/images/mattermost-72x72.png" package="mattermost"%}}
 Open source, self-hosted Slack-alternative.
-{{% /app %}}
-
-{{% app name="phpBB" img="/images/phpbb-72x72.png" package="phpbb"%}}
-Bulletin-board.
 {{% /app %}}
 
 {{% app name="River5" img="/images/river-72x72.png" package="river"%}}
@@ -64,10 +68,6 @@ Multipurpose RSS reader, live stream, mashup, aggregation web application.
 
 {{% app name="Shaarli" img="/images/shaarli-72x72.png" package="shaarli"%}}
 Personal, minimalist, super-fast, bookmarking service
-{{% /app %}}
-
-{{% app name="Webtrees" img="/images/webtrees-72x72.png" package="webtrees"%}}
-Full-featured web genealogy app
 {{% /app %}}
 
 ## Accessories
@@ -89,19 +89,41 @@ to the app. To install, list the name(s) of the accessories when asked as you ex
 
    Additional features:
 
+   * `nextcloud-audioplayer`: audio player
    * `nextcloud-bookmarks`: bookmark management
+   * `nextcloud-bruteforcesettings`: protection against brute-force password guess attempts
+   * `nextcloud-cache-redis`: Redis-based cache for faster operations
    * `nextcloud-calendar`: calendaring
    * `nextcloud-contacts`: contact management
    * `nextcloud-deck`: kanban style organization tool aimed at personal planning and
      project organization for teams
+   * `nextcloud-documentserver-community`: server-side component for OnlyOffice
+   * `nextcloud-extract`: file decompression and extraction
+   * `nextcloud-files-fulltextsearch`: full-text search for common file types
    * `nextcloud-files-rightclick`: adds a right click menu
+   * `nextcloud-forms`: self-hosted forms for surveys and questionnaires
+   * `nextcloud-fulltextsearch-elasticsearch`: full-text search backend
+   * `nextcloud-fulltextsearch`: basic full-text search app
    * `nextcloud-group-everyone`: adds a virtual "everyone" group
    * `nextcloud-groupfolders`: admin configured folders shared by everyone in a group
+   * `nextcloud-mail`: web mail
    * `nextcloud-markdown`: markdown support
    * `nextcloud-news`: news reader
    * `nextcloud-notes`: note taking
+   * `nextcloud-onlyoffice`: edit formatted documents right in your browser
+     by integrating with OnlyOffice
+   * `nextcloud-passwords`: password manager
+   * `nextcloud-richdocuments`: edit formatted documents right in your browser
+     by integrating with Collabora
+   * `nextcloud-richdocumentscode`: server-side component of the
+     Collabora integration
+   * `nextcloud-social`: Fediverse-based social networking right in Nextcloud (beta-quality)
+   * `nextcloud-socialsharing-email`: share links via e-mail
+   * `nextcloud-socialsharing-facebook`: share links via Facebook
+   * `nextcloud-socialsharing-twitter`: share links via Twitter
    * `nextcloud-spreed`: chat and video conferencing
    * `nextcloud-tasks`: task management
+   * `nextcloud-twofactor-totp`: Two-factor authentication
 
    Security:
 
