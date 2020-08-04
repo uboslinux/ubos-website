@@ -17,7 +17,7 @@ hugo:
 
 static:
 	install -m644 images/logo2/ubos-16x16.ico $(STAGEDIR)/favicon.ico
-	echo 'RedirectMatch /survey https://www.surveymonkey.com/s/FVNSNYN' > $(STAGEDIR)/.htaccess
+	echo 'RedirectMatch /survey https://apps.indiecomputing.com/nextcloud/index.php/apps/forms/WBC8zjEb3omz3mRN' > $(STAGEDIR)/.htaccess
 	echo 'RedirectMatch /staff(.*)$$ https://ubos.net/docs/users/shepherd-staff.html' >> $(STAGEDIR)/.htaccess
 	echo 'RedirectMatch /feed.xml https://ubos.net/index.xml' >> $(STAGEDIR)/.htaccess
 	mkdir -p $(STAGEDIR)/include
