@@ -15,7 +15,9 @@ The links on this page are for the [yellow release channel](/docs/developers/bui
   <p>Download <a href="http://depot.ubos.net/yellow/armv6h/images/ubos_yellow_armv6h-rpi_LATEST.img.xz">this
      image for Raspberry Pi&nbsp;Zero or the original Raspberry Pi 1</a> (approx. 540MB), or
      <a href="http://depot.ubos.net/yellow/armv7h/images/ubos_yellow_armv7h-rpi2_LATEST.img.xz">this
-     image for Raspberry Pi&nbsp;2 or Raspberry Pi&nbsp;3</a> (approx. 540MB),
+     image for Raspberry Pi&nbsp;2 or Raspberry Pi&nbsp;3</a> (approx. 540MB), or
+     <a href="http://depot.ubos.net/yellow/armv7h/images/ubos_yellow_armv7h-rpi4_LATEST.img.xz">this
+     image for Raspberry Pi&nbsp;4</a> (approx. 540MB),
      uncompress, and write to a USB stick in "raw" format.</p>
  </div>
  <div>
