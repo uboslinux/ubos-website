@@ -179,17 +179,3 @@ to the app. To install, list the name(s) of the accessories when asked as you ex
 
    * `wordpress-plugin-social-networks-auto-posted-facebook-twitter-g`: automatically
      post to social networks.
-
-<br>
-
-The following blockchain-related servers are also available in beta ("yellow" release
-channel) on all platforms except for ``armv6h`` (no user interface, connect with API):
-
-* **Bitcoin daemon**: Run your own Bitcoin blockchain.<br>
-  Install with `sudo pacman -S bitcoin` and start with `systemctl start bitcoind`
-
-* **Ethereum daemon**: Run your own Ethereum blockchain.<br>
-  Install with `sudo pacman -S geth` and start with `systemctl start geth`
-
-* **Monero daemon**: Run your own Monero blockchain.<br>
-  Install with `sudo pacman -S monero` and start with `systemctl start monerod`
