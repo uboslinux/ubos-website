@@ -21,18 +21,26 @@ The links on this page are for the [green (production) release channel](/docs/de
      uncompress, and write to a USB stick in "raw" format.</p>
  </div>
  <div>
-  <img src="/images/espressobin-175x22.png" alt="[ESPRESSObin]" style="margin: 39px 0">
-  <p><b>To run UBOS on the ESPRESSObin:</b></p>
-  <p>Download <a href="http://depot.ubos.net/green/aarch64/images/ubos_green_aarch64-espressobin_LATEST.img.xz">this
-     image</a> (approx. 560MB), uncompress, and write to a USB stick in "raw" format.</p>
- </div>
- <div>
   <img src="/images/pc-79x100.png" alt="[PC]">
   <p><b>To run UBOS on an x86 PC:</b></p>
   <p>Download <a href="http://depot.ubos.net/green/x86_64/images/ubos_green_x86_64-pc_LATEST.img.xz">this
-     image for a physical PC</a> (approx. 780MB), uncompress, and write to a USB stick in "raw" format. Or
+     image for a physical PC</a> (approx. 500MB), uncompress, and write to a USB stick in "raw" format. Or
      <a href="http://depot.ubos.net/green/x86_64/images/ubos_green_x86_64-vbox_LATEST.vmdk.xz">this
-     image for VirtualBox or VMWare</a> (approx. 780MB), uncompress, and use as the main virtual hard drive.</p>
+     image for VirtualBox or VMWare</a> (approx. 400MB), uncompress, and use as the main virtual hard drive.</p>
+ </div>
+</div>
+<div class="platforms">
+ <div>
+  <img src="/images/espressobin-175x22.png" alt="[ESPRESSObin]" style="margin: 39px 0">
+  <p><b>To run UBOS on the ESPRESSObin:</b></p>
+  <p>Download <a href="http://depot.ubos.net/green/aarch64/images/ubos_green_aarch64-espressobin_LATEST.img.xz">this
+     image</a> (approx. 350MB), uncompress, and write to a USB stick in "raw" format.</p>
+ </div>
+ <div>
+  <img src="/images/hardkernel-95x100.png" alt="[ODROID]" style="">
+  <p><b>To run UBOS on an ODROID-XU4 or -HC2:</b></p>
+  <p>Download <a href="http://depot.ubos.net/green/aarch64/images/ubos_green_armv7h-odroid-xu3_LATEST.img.xz">this
+     image</a> (approx. 560MB), uncompress, and write to a USB stick in "raw" format.</p>
  </div>
 </div>
 
@@ -82,18 +90,12 @@ and the available accessories, execute:
 
     % pacman -Sl hl
 
-To show installed apps and at which virtual hosts they run:
-
-    % ubos-admin listsites
+## Maintaining your device
 
 To upgrade operating system, middleware, all installed apps, and perform any
 necessary data migrations and/or reboots:
 
     % sudo ubos-admin update
-
-To remove all apps at a virtual host, and the site itself:
-
-    % sudo ubos-admin undeploy --host hostname
 
 To back up all data from your apps:
 

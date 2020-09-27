@@ -1,14 +1,16 @@
 @import url("http://fonts.googleapis.com/css?family=Roboto+Slab:400,700,300,100");
 @import url("http://fonts.googleapis.com/css?family=Roboto:400,700,500,300,100,900");
 
+@import url('https://fonts.googleapis.com/css2?family=Lato');
+
 :root {
-    --base-font-family: Roboto, Helvetica, Arial, sans-serif;
+    --base-font-family: Lato, Roboto, Helvetica, Arial, sans-serif;
     --base-font-size:   16px;
     --small-font-size:  calc( var( --base-font-size ) * 0.75 );
-    --base-line-height: 1.4;
+    --base-line-height: 1.5;
     --base-font-weight: 400;
     --width:            980px;
-    --spacing-unit:     30px;
+    --spacing-unit:     40px;
     --collapse-width:   560px;
 
     --text-color:       #111;
@@ -17,6 +19,8 @@
 
     --grey-color:       #828282;
     --grey-color-light: #c0c0c0;
+
+    --code-font-size:  15px;
 }
 
 body {
@@ -87,14 +91,17 @@ a:hover {
     text-decoration: underline;
 }
 
+tt {
+    font-size: var( --code-font-size );
+}
 pre {
-    font-size: 15px;
+    font-size: var( --code-font-size );
     background-color: #eef;
     padding: 8px 12px;
     overflow-x: auto;
 }
 code {
-    font-size: 15px;
+    font-size: var( --code-font-size );
     background-color: #eef;
     padding: 1px 3px;
     border: 1px solid var( --grey-color-light );
@@ -360,7 +367,7 @@ div.sidebar li.current > a {
 div.section li.toctree-l1 {
     list-style: circle inside;
     margin: 0;
-    padding: 0 0 0 1em;
+    padding: 0 0 1ex 1em;
 }
 div.section li.toctree-l2 {
     list-style: circle inside;

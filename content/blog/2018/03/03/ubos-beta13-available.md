@@ -42,7 +42,7 @@ some of the highlights:
   cheapest way to run UBOS on PC hardware).
 
 * The ``ubos-admin`` packages are now licensed using what we call the
-  "Personal Public License". See <a href="/blog/2018/03/02/ubos-license.html">separate
+  "Personal Public License". See <a href="/blog/2018/03/02/ubos-license/">separate
   blog post</a> explaining how it better fits the UBOS values.
 
 * ... plus the usual hundreds of package upgrades, feature improvements and bug fixes.

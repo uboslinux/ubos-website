@@ -361,4 +361,4 @@ the `PKGBUILD` file so they get added to the package.
 What's left is to add the new app into the official UBOS build. This means we add the
 package to the build configuration [here](https://github.com/uboslinux/ubos-buildconfig),
 and, voila, Mattermost is now part of UBOS. Which is what it has been since
-[UBOS beta 7](/blog/2016/07/07/ubos-beta7-available.html).
+[UBOS beta 7](/blog/2016/07/07/ubos-beta7-available/).

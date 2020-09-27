@@ -10,7 +10,7 @@ confusion around trademarks and copyrights held by the FSF.
 
 We have no intention to create or perpetuate such confusion, so we are happy to oblige.
 Here's what we changed as part of the most recent
-[UBOS update](/blog/2019/03/29/update.html):
+[UBOS update](/blog/2019/03/29/update/):
 
 * The Personal Public License has been republished as version 3a, without the GPL
   preamble and without the "how to use" section that the FSF claims copyright to.
@@ -27,7 +27,7 @@ remains the same:
 * You have all the same rights and responsibilities as the FSF's General Public License
   version 3 (GPLv3) gives to you, but only if you are an individual, not if you are an
   organization. We explained the rationale for that in a previous post
-  [here](/blog/2018/03/02/ubos-license.html).
+  [here](/blog/2018/03/02/ubos-license/).
 
 * If you are an organization, we are happy to license to you, too, but with different
   terms. Please get in touch.
