@@ -2,6 +2,25 @@
 title: Apps on UBOS
 ---
 
+<style>
+div.app {
+    display: flex;
+    margin: 2em 0;
+}
+
+div.app > div.icon {
+    margin: 0 2em 0 1em;
+    width: 72px;
+    flex-shrink: 0;
+}
+div.app p {
+    margin: 0;
+}
+div.app p.appname {
+    font-weight: 700;
+}
+</style>
+
 Currently available apps (alphabetically). Install with `sudo ubos-admin createsite`:
 
 {{% app name="Amazon SES" img="/images/amazonses-72x72.png" package="amazonses"%}}

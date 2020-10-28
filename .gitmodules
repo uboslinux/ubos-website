@@ -4,3 +4,6 @@
 [submodule "hugo/themes/miniresp"]
 	path = hugo/themes/miniresp
 	url = https://j12t@gitlab.com/j12t/miniresp.git
+[submodule "themes/hugo-theme-j12t-base"]
+	path = themes/hugo-theme-j12t-base
+	url = https://j12t@gitlab.com/j12t/hugo-theme-j12t-base.git

@@ -6,7 +6,9 @@ title = "UBOS - The Linux Distro for self-hosting your own cloud services"
 canonifyurls  = true
 
 DefaultContentLanguage = "en"
-theme = []
+theme = [
+   'hugo-theme-j12t-base'
+]
 metaDataFormat = "yaml"
 rssLimit = 10
 
@@ -18,6 +20,8 @@ rssLimit = 10
   dateFormat = "January 2, 2006"
   commit = false
   rss = true
+  matomourl = "https://analytics.indiecomputing.com"
+  matomositeid = 3
 
 [Author]
   name = "Indie Computing Corp."

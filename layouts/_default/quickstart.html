@@ -1,4 +1,5 @@
-{{ define "extrahead" }}
+{{ define "main" }}
+
 <style>
 div.platforms {
     display: flex;
@@ -36,7 +37,7 @@ div.insert {
     float: right;
     margin: 0 0 20px 20px;
     padding: 0 10px;
-    width: 343px;
+    width: 363px;
     border-radius: 10px;
     background: #fba923;
     background: linear-gradient(0, #fba923, #fba92360);
@@ -44,13 +45,22 @@ div.insert {
 div.insert img {
     float: left;
     display: block;
-    margin: 10px;
+    margin: 18px 10px 10px 10px;
 }
 </style>
-{{ end }}
 
-{{ define "main" }}
-<main class="container">
+{{   if .Params.class }}
+<main class="{{ .Params.class }}">
+{{   else }}
+<main>
+{{   end }}
+
+{{   partial "breadcrumbs.html" . }}
+
+{{   if eq .Params.display false }}
+ <p>Post unavailable.</p>
+{{   else }}
+ <article>
   <div class="insert">
     <a href="https://indiecomputing.com/products/"><img src="/images/ubosbox-nextcloud-on-nuc-model-a-on-67x50.jpg"></a>
     <p>
@@ -58,27 +68,17 @@ div.insert img {
      from <a href="https://indiecomputing.com/">indiecomputing.com</a>.
     </p>
   </div>
-  <article role="main" class="blog-post">
-    {{ if .Params.date }}
-      <h5 class="published">{{ dateFormat "2006-01-02" .Params.date }}</h5>
-    {{ end }}
-    <h1 class="title">{{ .Title }}</h1>
-    {{ if .Params.subtitle }}
-      <h2 class="subtitle">{{ .Params.subtitle }}</h2>
-    {{ end }}
-    {{ if .Params.categories }}
-      <div class="categories">
-        Posted in:
-        <ul>
-          {{ range $i := (slice "categories" "tags") }}
-            {{ with ($.Param $i) }}
-              {{ range $k := . }}<li><a href="{{ relURL (print "/" $i "/" $k | urlize) }}">{{$k}}</a></li> {{ end }}
-            {{ end }}
-          {{ end }}
-        </ul>
-      </div>
-    {{ end }}
-    {{ .Content }}
-  </article>
+
+{{ partial "title-et-al-main.html" . }}
+
+  <div class="content">
+{{ .Content }}
+  </div>
+{{ partial "discuss.html" . }}
+ </article>
+{{ end }}
 </main>
 {{ end }}
+
+
+
