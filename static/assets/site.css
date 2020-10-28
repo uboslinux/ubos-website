@@ -183,8 +183,9 @@ header {
 
 footer {
     margin-top: 30px;
-    padding-top: 10px;
+    padding: 10px 0;
     border-top: 1px solid #D5D5D5;
+    border-bottom: 1px solid #D5D5D5;
     font-size: var( --small-font-size );
 }
 
