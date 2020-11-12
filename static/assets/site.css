@@ -47,7 +47,8 @@ h1 {
     margin-bottom: calc( var( --spacing-unit ) * 0.7 );
     text-align: left;
 }
-h1 > a {
+h1 > a,
+h1 > a:visited {
     text-decoration: none;
     color: inherit;
 }
@@ -378,4 +379,12 @@ div.admonition p.admonition-title:after {
 div.admonition div.admonition.warning {
     background: #fff0f0;
     border-color: #ff8080;
+}
+
+span.undef:before {
+    content: "UNDEF: ";
+}
+
+span.undef {
+    color: red;
 }
