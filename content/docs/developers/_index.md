@@ -1,4 +1,4 @@
 ---
-title: How to develop for UBOS
+title: Developer Documentation
+breadcrumbtitle: For developers
 ---
-

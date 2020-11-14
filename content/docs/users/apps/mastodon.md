@@ -1,5 +1,6 @@
 ---
-title: Notes on Mastodon (App ``mastodon``)
+title: Notes on Mastodon
+weight: 30
 ---
 
 ## Publicly accessible Site

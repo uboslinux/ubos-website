@@ -1,5 +1,6 @@
 ---
 title: A more complex deployment example
+weight: 70
 ---
 
 In the real world, apps and sites tend to be more complex than the ones discussed

@@ -109,8 +109,7 @@ For a comparison of UBOS to other distros, see [features](#features) below.
      Users who wish to use other packages not provided through UBOS can still obtain those
      from the Arch Linux repositories. UBOS is a (compatible) derivative of Arch Linux.
 
-* UBOS uses a <b>rolling-release development model</b> (see
-  [Wikipedia page](https://en.wikipedia.org/wiki/Rolling_release)).
+* UBOS uses a {{% gl Rolling_Release "rolling-release" %}} development model.
   UBOS never requires major upgrades; instead, updates are made available incrementally.
   This ensures that devices can continue to be updated and keep running for the long-term.
 

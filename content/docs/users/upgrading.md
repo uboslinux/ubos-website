@@ -1,5 +1,6 @@
 ---
 title: Upgrading and keeping your Device current
+weight: 80
 ---
 
 UBOS makes this really simple:

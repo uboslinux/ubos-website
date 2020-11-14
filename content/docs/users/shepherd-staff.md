@@ -1,5 +1,6 @@
 ---
 title: The UBOS Staff
+weight: 90
 ---
 
 ## Overview

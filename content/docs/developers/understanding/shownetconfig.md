@@ -1,5 +1,5 @@
 ---
-title: "Command: ``ubos-admin shownetconfig``"
+title: "Command: ubos-admin shownetconfig"
 ---
 
 ## Running

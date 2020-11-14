@@ -1,5 +1,6 @@
 ---
 title: Run UBOS in an ARMv7 Linux container (e.g. Raspberry Pi 2, 3, 4)
+weight: 430
 ---
 
 These instructions are the same for all ARMv7-based devices.

@@ -1,5 +1,5 @@
 ---
-title: "Command: ``ubos-admin deploy``"
+title: "Command: ubos-admin deploy"
 ---
 
 ## Running

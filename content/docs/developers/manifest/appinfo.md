@@ -1,5 +1,6 @@
 ---
 title: Appinfo section
+weight: 50
 ---
 
 {{% status proposed %}}

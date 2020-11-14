@@ -1,5 +1,5 @@
 ---
-title: "Command: ``ubos-admin listsites``"
+title: "Command: ubos-admin listsites"
 ---
 
 ## Running

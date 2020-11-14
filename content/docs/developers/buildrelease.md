@@ -1,5 +1,6 @@
 ---
 title: UBOS build and release process
+weight: 120
 ---
 
 ## Channels and promotions

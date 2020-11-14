@@ -1,5 +1,5 @@
 ---
-title: "Command: ``ubos-admin restore``"
+title: "Command: ubos-admin restore"
 ---
 
 ## Running

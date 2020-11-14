@@ -1,5 +1,5 @@
 ---
-title: "Command: ``ubos-admin status``"
+title: "Command: ubos-admin status"
 ---
 
 ## Running

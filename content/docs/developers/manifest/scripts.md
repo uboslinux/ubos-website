@@ -1,5 +1,6 @@
 ---
 title: Scripts in UBOS manifests
+weight: 100
 ---
 
 Most application instrumentation in UBOS can be accomplished purely with

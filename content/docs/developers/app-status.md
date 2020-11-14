@@ -1,5 +1,6 @@
 ---
 title: Format of the App Status JSON
+weight: 90
 ---
 
 {{% status proposed %}}

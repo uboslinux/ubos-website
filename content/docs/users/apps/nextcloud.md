@@ -1,5 +1,6 @@
 ---
-title: Notes on Nextcloud (App ``nextcloud``)
+title: Notes on Nextcloud
+weight: 40
 ---
 
 ## On Nextcloud "apps" and UBOS Accessories
@@ -90,9 +91,9 @@ here is a possible workaround.
 First: determine whether you are indeed in this situation, by determining which version
 of Nextcloud you are currently running. Execute:
 
-.. code-block:: none
-
-   % pacman -Qi nextcloud
+```
+% pacman -Qi nextcloud
+```
 
 then:
 
@@ -125,9 +126,11 @@ your UBOS {{% gl Device %}}.
 
 ## Nextcloud Social
 
-If you use the Nextcloud Social app, you may see the message::
+If you use the Nextcloud Social app, you may see the message:
 
-> .well-known/webfinger isn't properly set up!
+```
+.well-known/webfinger isn't properly set up!
+```
 
 This is an incorrect error message, and you can ignore it. It requires a fix
 upstream in Nextcloud Social (see [this issue](https://github.com/nextcloud/social/issues/816)).

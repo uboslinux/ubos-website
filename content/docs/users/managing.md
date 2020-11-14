@@ -1,5 +1,6 @@
 ---
 title: Managing Sites and Apps
+weight: 60
 ---
 
 Here is a summary of common tasks when managing the {{% gls Site %}} and

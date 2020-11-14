@@ -1,5 +1,6 @@
 ---
 title: Variables available at deploy or undeploy
+weight: 70
 ---
 
 When an {{% gl App %}} or {{% gl Accessory %}} is deployed or undeployed, the involved

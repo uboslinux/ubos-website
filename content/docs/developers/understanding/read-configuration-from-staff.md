@@ -1,5 +1,5 @@
 ---
-title: "Command: ``ubos-admin read-configuration-from-staff``"
+title: "Command: ubos-admin read-configuration-from-staff"
 ---
 
 ## Running

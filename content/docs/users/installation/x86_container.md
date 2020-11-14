@@ -1,5 +1,6 @@
 ---
 title: Run UBOS in a Linux container on a PC (64bit)
+weight: 410
 ---
 
 If you already run Linux on a 64bit PC, you can run UBOS in a Linux container with

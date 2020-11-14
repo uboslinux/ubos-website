@@ -1,5 +1,6 @@
 ---
-title: "Reliably send e-mail via Amazon Web Services' Simple E-mail Service (App ``amazonses``)"
+title: "Reliably send e-mail via Amazon Web Services' Simple E-mail Service: amazonses"
+weight: 10
 ---
 
 ## Introduction

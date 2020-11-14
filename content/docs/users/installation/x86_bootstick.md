@@ -1,5 +1,6 @@
 ---
 title: Run UBOS from a boot stick on a PC (64bit)
+weight: 20
 ---
 
 You can install UBOS on a USB flash drive, and boot a standard PC directly from it.

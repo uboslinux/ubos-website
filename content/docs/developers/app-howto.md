@@ -1,5 +1,6 @@
 ---
 title: How to make an App available on UBOS
+weight: 10
 ---
 
 If you have an {{% gl App %}} that you'd like to make available to UBOS users, it

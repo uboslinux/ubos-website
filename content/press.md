@@ -18,7 +18,7 @@ div.vig {
     margin: 20px;
     flex-shrink: 0;
     width: 260px;
-    height: 280px;
+    height: 350px;
     position: relative;
     background: url(/images/press/background.jpg);
 }
@@ -26,18 +26,21 @@ div.vig a {
    color: inherit;
 }
 div.vig img {
+    max-width: 100%;
     margin: 0 auto;
+    position: relative;
+    z-index: 10;
 }
 div.vig h2 {
-    font-size: 24px;
+    font-size: 20px;
     font-weight: normal;
     line-height: 115%;
-    width: 260px;
+    width: 220px;
     position: absolute;
     top: 120px;
 }
 div.vig p {
-    width: 260px;
+    width: 220px;
     position: absolute;
     bottom: 40px;
 }
@@ -95,7 +98,7 @@ div.vig p.lang {
 <div class="vig">
  <a href="http://www.linuxjournal.com/content/youre-boss-ubos">
   <img src="/images/press/linuxjournal.com/logo-lj.jpg" alt="[linuxjournal.com]"/>
-  <h2 style="top: 140px">You're the Boss with UBOS</h2>
+  <h2>You're the Boss with UBOS</h2>
   <p>Interview by Doc Searls</p>
   <p class="lang">(in English)</p>
  </a>
@@ -103,7 +106,7 @@ div.vig p.lang {
 <div class="vig">
  <a href="http://postscapes.com/personal-server-software-ubos-lets-users-run-their-own-clouds-control-their-own-data">
   <img src="/images/press/postscapes.com/logo.png" alt="[postscapes.com]"/>
-  <h2 style="top: 80px">Personal server software UBOS lets users run their own clouds, control their own data</h2>
+  <h2>Personal server software UBOS lets users run their own clouds, control their own data</h2>
   <p>Overview</p>
   <p class="lang">(in English)</p>
  </a>
@@ -113,7 +116,7 @@ div.vig p.lang {
  <a href="https://distrowatch.com/weekly.php?issue=20170731#ubos">
   <img src="/images/press/distrowatch.com/logo.png" alt="[distrowatch.com]"/>
   <h2>Set up web services quickly with UBOS [beta] 11</h2>
-  <p>Feature story (some inaccuracies)</p>
+  <p>Feature story<br>(some inaccuracies)</p>
   <p class="lang">(in English)</p>
  </a>
 </div>

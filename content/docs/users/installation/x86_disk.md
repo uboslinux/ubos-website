@@ -1,5 +1,6 @@
 ---
 title: Run UBOS on a PC (64bit)
+weight: 10
 ---
 
 To install UBOS on a PC's hard drive, first create a UBOS boot stick as described

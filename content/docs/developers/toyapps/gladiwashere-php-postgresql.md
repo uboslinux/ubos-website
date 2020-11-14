@@ -1,5 +1,6 @@
 ---
 title: Glad-I-Was-Here (PHP, Postgresql)
+weight: 40
 ---
 
 This version of the Glad-I-Was-Here guestbook {{% gl App %}} also uses PHP,

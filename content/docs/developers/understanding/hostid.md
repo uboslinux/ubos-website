@@ -1,5 +1,5 @@
 ---
-title: "Command: ``ubos-admin hostid``"
+title: "Command: ubos-admin hostid"
 ---
 
 ## Understanding

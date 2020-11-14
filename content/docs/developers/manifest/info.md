@@ -1,5 +1,6 @@
 ---
 title: Info section
+weight: 20
 ---
 
 The info section in a {{% pageref "../ubos-manifest.md" %}} is optional but recommended.

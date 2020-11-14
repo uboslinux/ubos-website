@@ -1,5 +1,6 @@
 ---
 title: Creating random values
+weight: 90
 ---
 
 Some {{% gls App %}} require random, or secret values that need to be different for

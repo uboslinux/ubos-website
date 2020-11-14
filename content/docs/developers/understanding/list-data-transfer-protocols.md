@@ -1,5 +1,5 @@
 ---
-title: "Command: ``ubos-admin list-data-transfer-protocols``"
+title: "Command: ubos-admin list-data-transfer-protocols"
 ---
 
 ## Running

@@ -1,5 +1,6 @@
 ---
-title: "Static website hosting with ``rsync``-based upload (App ``docroot``)"
+title: "Static website hosting with rsync-based upload: docroot"
+weight: 20
 ---
 
 ``docroot`` is a simple but quite useful web {{% gl App %}} for static file hosting.

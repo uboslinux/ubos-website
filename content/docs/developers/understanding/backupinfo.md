@@ -1,5 +1,5 @@
 ---
-title: "Command: ``ubos-admin backupinfo``"
+title: "Command: ubos-admin backupinfo"
 ---
 
 ## Running

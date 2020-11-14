@@ -1,5 +1,6 @@
 ---
 title: Well-known ports for Apps and Accessories
+weight: 60
 ---
 
 Some apps or accessories need to open up ports, such as:

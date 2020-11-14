@@ -1,5 +1,6 @@
 ---
 title: UBOS Manifest
+weight: 40
 ---
 
 See also glossary entry {{% gl UBOS_Manifest %}}

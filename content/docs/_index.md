@@ -1,6 +1,7 @@
 ---
 title: UBOS Documentation
 layout: docs-front
+breadcrumbtitle: Documentation
 ---
 <style>
 h1.title.main {
@@ -50,7 +51,7 @@ div.choice h2 {
 
 <p class="clearer" style="padding-top: 20px; text-align: center">
  There is also the <a href="/glossary/">Glossary</a> and the
- <a href="/docs/releases/">Release Notes</a>.
+ <a href="/releases/">Release Notes</a>.
 </p>
 
 <p class="clearer" style="padding-top: 20px; text-align: center">

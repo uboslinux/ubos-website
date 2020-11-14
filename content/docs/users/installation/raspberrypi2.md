@@ -1,5 +1,6 @@
 ---
 title: Run UBOS on Raspberry Pi 2 or 3
+weight: 120
 ---
 
 You can run UBOS on your Raspberry Pi 2 or 3 by downloading an image, writing it to

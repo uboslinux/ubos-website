@@ -1,5 +1,6 @@
 ---
 title: Setting up networking and DNS
+weight: 20
 ---
 
 ## Introduction

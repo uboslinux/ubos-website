@@ -79,26 +79,34 @@ For more details and other installation options, refer to the
 [Installation section](/docs/users/installation.html) in the
 UBOS user documentation. It also describes how to run UBOS in a Linux container.
 
-## Then: Create a website that runs one or more web apps
+## Then: Create a website that runs one or more Apps
 
 Once logged in, create a website that runs one or more apps:
 
-    % sudo ubos-admin createsite
+```
+% sudo ubos-admin createsite
+```
 
 and answer the questions. To obtain the list of currently available web apps,
 and the available accessories, execute:
 
-    % pacman -Sl hl
+```
+% pacman -Sl hl
+```
 
 ## Maintaining your device
 
 To upgrade operating system, middleware, all installed apps, and perform any
 necessary data migrations and/or reboots:
 
-    % sudo ubos-admin update
+```
+% sudo ubos-admin update
+```
 
 To back up all data from your apps:
 
-    % sudo ubos-admin backup --backuptofile all.ubos-backup
+```
+% sudo ubos-admin backup --backuptofile all.ubos-backup
+```
 
-For details, refer to the [UBOS user documentation](/docs/users/).
+For details, refer to the {{% pageref "/docs/users/" %}}.

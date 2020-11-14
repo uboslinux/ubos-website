@@ -1,5 +1,6 @@
 ---
 title: Site JSON
+weight: 50
 ---
 
 ## Overview

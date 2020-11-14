@@ -1,5 +1,6 @@
 ---
-title: Notes on Wordpress (App ``wordpress``)
+title: Notes on Wordpress
+weight: 70
 ---
 
 ## Note on terminology: plugins, themes and UBOS Accessories

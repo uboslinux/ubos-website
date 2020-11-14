@@ -1,5 +1,6 @@
 ---
 title: UBOS state
+weight: 170
 ---
 
 ## State diagram

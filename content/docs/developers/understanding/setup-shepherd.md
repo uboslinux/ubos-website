@@ -1,5 +1,5 @@
 ---
-title: "Command: ``ubos-admin setup-shepherd``"
+title: "Command: ubos-admin setup-shepherd"
 ---
 
 ## Running

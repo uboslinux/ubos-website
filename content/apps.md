@@ -1,5 +1,6 @@
 ---
 title: Apps on UBOS
+breadcrumbtitle: Apps
 ---
 
 <style>

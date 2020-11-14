@@ -1,3 +1,4 @@
 ---
-title: How to use UBOS
+title: User Documentation
+breadcrumbtitle: For users
 ---

@@ -1,19 +1,9 @@
 ---
-layout: single
+title: Top
+layout: front
 ---
 
 <style>
-xxarticle.front div.project {
-    display: none;
-}
-xxarticle.front ul.nav {
-    padding: 0
-}
-
-xxarticle.front h1.title {
-    font-weight: 300;
-}
-
 div.banner {
     background: #fffdcc;
     border-radius: 20px;
@@ -221,7 +211,7 @@ var thanksForSubscribing = '<div class="subscribed">Thanks for <a href="https://
   </ul>
  </div>
  <div class="howtoitem">
-  <h2>Install an app</h2>
+  <h2>Install an App</h2>
   <pre># ubos-admin createsite
 Hostname: <i>ubos-pc.local</i>
 App: <i>nextcloud</i>...</pre>

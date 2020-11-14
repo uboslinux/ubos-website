@@ -1,5 +1,6 @@
 ---
 title: Run UBOS on ESPRESSObin
+weight: 310
 ---
 
 You can run UBOS on your [ESPRESSObin](https://espressobin.net/) by downloading an image,

@@ -1,5 +1,6 @@
 ---
 title: Structure of the UBOS Manifest
+weight: 10
 ---
 
 A Manifest JSON file has a type declaration, three required components, and

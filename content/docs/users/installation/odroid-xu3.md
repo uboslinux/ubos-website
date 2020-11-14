@@ -1,5 +1,6 @@
 ---
 title: Run UBOS on ODROID-XU3, ODROID-XU4, ODROID-HC1 or ODROID-HC2
+weight: 210
 ---
 
 You can run UBOS on the ODROID devices of the XU3/XU4 family, which currently include:

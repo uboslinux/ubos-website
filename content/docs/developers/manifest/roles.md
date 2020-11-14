@@ -1,5 +1,6 @@
 ---
 title: Roles section
+weight: 30
 ---
 
 The roles section in an UBOS Manifest defines how the {{% gl App %}} or {{% gl Accessory %}}

@@ -1,5 +1,6 @@
 ---
-title: Notes on utility app Redirect (App ``redirect``)
+title: Notes on Redirect
+weight: 50
 ---
 
 {{% gl App %}} Redirect sends the user's browser to some other URL that is

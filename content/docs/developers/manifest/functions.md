@@ -1,5 +1,6 @@
 ---
 title: Functions that may be applied to variables
+weight: 80
 ---
 
 Often, a variable cannot be used as-is, but needs to be processed slightly.

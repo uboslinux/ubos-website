@@ -1,5 +1,5 @@
 ---
-title: "Command: ``ubos-admin init-staff``"
+title: "Command: ubos-admin init-staff"
 ---
 
 ## Running

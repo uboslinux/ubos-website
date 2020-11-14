@@ -1,5 +1,6 @@
 ---
 title: Accessoryinfo section
+weight: 60
 ---
 
 {{% gls Accessory %}} must provide this section in a {{% pageref "../ubos-manifest.md" %}}. Here is an example:

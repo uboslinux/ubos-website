@@ -1,5 +1,6 @@
 ---
 title: Run UBOS in an ARMv6 Linux container (e.g. Raspberry Pi Zero, 1)
+weight: 420
 ---
 
 These instructions are the same for all ARMv6-based devices.

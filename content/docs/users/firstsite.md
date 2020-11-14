@@ -1,5 +1,6 @@
 ---
-title: Setting up your first web Site and App
+title: Setting up your first Site and App
+weight: 30
 ---
 
 Follow these steps:

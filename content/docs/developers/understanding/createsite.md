@@ -1,5 +1,5 @@
 ---
-title: "Command: ``ubos-admin createsite``"
+title: "Command: ubos-admin createsite"
 ---
 
 ## Running

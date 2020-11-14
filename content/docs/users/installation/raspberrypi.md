@@ -1,5 +1,6 @@
 ---
 title: Run UBOS on Raspberry Pi Zero or 1
+weight: 110
 ---
 
 You can run UBOS on your Raspberry Pi Zero or 1 by downloading an image, writing it to

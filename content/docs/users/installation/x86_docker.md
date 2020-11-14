@@ -1,5 +1,6 @@
 ---
 title: Run UBOS with Docker
+weight: 40
 ---
 
 UBOS is available on the Docker hub. To run UBOS using Docker:

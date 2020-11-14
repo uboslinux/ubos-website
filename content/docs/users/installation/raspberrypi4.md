@@ -1,5 +1,6 @@
 ---
 title: Run UBOS on Raspberry Pi 4
+weight: 130
 ---
 
 You can run UBOS on your Raspberry Pi 4 by downloading an image, writing it to

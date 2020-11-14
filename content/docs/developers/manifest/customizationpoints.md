@@ -1,5 +1,6 @@
 ---
 title: Customization points section
+weight: 40
 ---
 
 {{% gls App %}} and {{% gls Accessory %}} may define "customization points",

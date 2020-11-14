@@ -1,5 +1,6 @@
 ---
 title: How to set up a website as a Tor hidden service
+weight: 50
 ---
 
 {{% warning %}}
