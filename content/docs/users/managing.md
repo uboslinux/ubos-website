@@ -111,7 +111,7 @@ execute:
 ```
 
 {{% note %}}
-You are advised to read {{% pageref "/docs/releases/" %}} first.
+You are advised to read {{% pageref "/releases/" %}} first.
 {{% /note %}}
 
 ## Performing backups

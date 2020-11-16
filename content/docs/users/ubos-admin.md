@@ -303,9 +303,9 @@ This command has many other ways of invocation; please refer to:
 ## ``ubos-admin setnetconfig``
 
 Sets a {{% gl Network_Configuration %}} for your {{% gl Device %}}. Some of these
-{{% gls Networking_Configuration %}} require the installation of additional
+{{% gls Network_Configuration %}} require the installation of additional
 ``ubos-networking-XXX`` packages. To determine the currently installed and available
-{{% gls Networking_Configuration %}}, invoke:
+{{% gls Network_Configuration %}}, invoke:
 
 ```
 % ubos-admin listnetconfigs``.
@@ -345,7 +345,7 @@ This command is particularly useful if you run UBOS in a Linux container.
 % sudo ubos-admin setup-shepherd '<public-ssh-key>'
 ```
 
-will create the {{% gl UBOS_Shepherd %}} account, and allow ssh login with the
+will create the {{% gl Shepherd %}} account, and allow ssh login with the
 provided public ssh key. The ssh key, although long, needs to be provided on
 the command-line, and in quotes.
 
@@ -396,16 +396,16 @@ invoke:
 or
 
 ```
-   % ubos-admin showsite --host <hostname>
+% ubos-admin showsite --host <hostname>
 ```
 
 For example:
 
 ```
-   % ubos-admin showsite --siteid s20...
-   example.com
-       /guestbook : gladiwashere-php-mysql
-       /blog : wordpress
+% ubos-admin showsite --siteid s20...
+example.com
+    /guestbook : gladiwashere-php-mysql
+    /blog : wordpress
 ```
 
 This {{% gl Site %}} responds to ``example.com`` and runs two {{% gls App %}}: the
@@ -422,12 +422,12 @@ and/or ``--privatecustomizationpoints``.
 
 ## ``ubos-admin start-pagekite``
 
-To allow access from the public internet to one or more of the {{% gls Sites %}}
+To allow access from the public internet to one or more of the {{% gls Site %}}
 on your {{% gl Device %}} using the {{% gl Pagekite %}} service, install package
 ``pagekite`` with ``sudo pacman -S pagekite`` and then execute:
 
 ```
-   % sudo ubos-admin start-pagekite <NNN>
+% sudo ubos-admin start-pagekite <NNN>
 ```
 
 where ``<NNN>`` is the name of your primary kite (e.g. ``johndoe.pagekite.me``). UBOS

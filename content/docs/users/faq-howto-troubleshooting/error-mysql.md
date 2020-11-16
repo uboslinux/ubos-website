@@ -10,7 +10,7 @@ from completing.
 You can try to start the database manually with:
 
 ```
-   % sudo systemctl start mysqld.service
+% sudo systemctl start mysqld.service
 ```
 
 and then attempt to re-install your {{% gl App %}}. If this does not work, use a faster disk:

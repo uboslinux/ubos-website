@@ -1,5 +1,5 @@
 ---
-title: Updating UBOS fails with lots of error messages containing ``Unrecognized archive format``
+title: 'Updating UBOS fails with lots of error messages containing "Unrecognized archive format"'
 ---
 
 You probably haven't updated your {{% gl Device %}} for a long time. In the meantime, we have

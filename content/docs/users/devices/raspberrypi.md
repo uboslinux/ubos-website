@@ -46,7 +46,7 @@ To do that:
 
 1. Boot your Raspberry Pi from an SD card that has UBOS installed as described
    in {{% pageref "/docs/users/installation/raspberrypi.md" %}} or
-   {{% pageref "/docs/installation/raspberrypi2.md" %}}.
+   {{% pageref "/docs/users/installation/raspberrypi2.md" %}}.
 
 1. Connect your external USB disk to your Raspberry Pi and turn it on.
 
@@ -56,15 +56,15 @@ To do that:
 
 1. Install UBOS on the USB disk with a command such as ``ubos-install /dev/sda``.
 
-   {{% warning %}}
+   {{< warning >}}
    Make sure you get the device name right, otherwise you might accidentally
    destroy the data on some other hard drive!
-   {{% /warning %}}
+   {{< /warning >}}
 
-   {{% warning %}}
+   {{< warning >}}
    This will destroy all existing data on your
    USB disk, so make sure you want to do this.
-   {{% /warning %}}
+   {{< /warning >}}
 
 1. After the command completes, edit file ``/boot/cmdline.txt``. Look for where it currently
    says something like ``/dev/mmcblk0p2`` (identifying the root partition on the SD Card) and

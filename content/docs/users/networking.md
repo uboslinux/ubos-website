@@ -1,6 +1,6 @@
 ---
 title: Setting up networking and DNS
-weight: 20
+weight: 30
 ---
 
 ## Introduction
@@ -354,4 +354,4 @@ Finally, run ``ddclient`` as a daemon:
 ```
 
 This is described in more detail on the
-[Arch Linux Wiki](https://wiki.archlinux.org/index.php/Dynamic_DNS
+[Arch Linux Wiki](https://wiki.archlinux.org/index.php/Dynamic_DNS).

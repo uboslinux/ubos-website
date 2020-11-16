@@ -25,7 +25,7 @@ To install UBOS on a Raspberry Pi Zero or 1:
    Look for a file named ``ubos_green_armv6h-rpi_LATEST.img.xz``.
 
 1. Optionally, you may now verify that your image downloaded correctly by following
-   {{% pageref verifying.md %}}.
+   {{% pageref "/docs/users/faq-howto-troubleshooting/howto-verify-image.md" %}}.
 
 1. Uncompress the downloaded file. This depends on your operating system, but might be as
    easy as double-clicking it, or executing
@@ -39,11 +39,11 @@ To install UBOS on a Raspberry Pi Zero or 1:
 1. Write this image file "raw" to an SD card appropriate for your Raspberry Pi. This
    operation depends on your operating system:
 
-   * {{% pageref "/docs/users/writing-image/windows.md" %}}
+   * {{% pageref "/docs/users/faq-howto-troubleshooting/writing-image/windows.md" %}}
 
-   * {{% pageref "/docs/users/writing-image/macos.md" %}}
+   * {{% pageref "/docs/users/faq-howto-troubleshooting/writing-image/macos.md" %}}
 
-   * {{% pageref "/docs/users/writing-image/linux.md" %}}
+   * {{% pageref "/docs/users/faq-howto-troubleshooting/writing-image/linux.md" %}}
 
 1. On first boot, it is recommended you have a monitor and keyboard connected to your
    Raspberry Pi. If this is impractical, create a {{% gl UBOS_Staff %}} by following

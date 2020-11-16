@@ -46,8 +46,6 @@ UBOS is available on the Docker hub. To run UBOS using Docker:
    ```
    on your host (not in your Docker container).
 
-   Wait until the output of
-
 1. Check that your Docker container has acquired an IP address:
 
    ```

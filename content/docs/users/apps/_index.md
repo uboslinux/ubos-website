@@ -3,4 +3,4 @@ title: App-specific notes
 weight: 100
 ---
 
-Collects notes that are specific to particular apps.
+Notes that are specific to particular {{% gls App %}}.

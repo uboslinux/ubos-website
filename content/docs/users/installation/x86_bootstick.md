@@ -19,7 +19,7 @@ Follow these steps:
    Look for a file named ``ubos_green_x64_64-pc_LATEST.img.xz``.
 
 1. Optionally, you may now verify that your image downloaded correctly by following
-   {{% pageref verifying.md %}}.
+   {{% pageref "/docs/users/faq-howto-troubleshooting/howto-verify-image.md" %}}.
 
 1. Uncompress the downloaded file. This depends on your operating system, but might be as
    easy as double-clicking it, or executing
@@ -33,11 +33,11 @@ Follow these steps:
 1. Write this image file "raw" to a USB flash drive. This
    operation depends on your operating system:
 
-   * {{% pageref "/docs/users/writing-image/windows.md" %}}
+   * {{% pageref "/docs/users/faq-howto-troubleshooting/writing-image/windows.md" %}}
 
-   * {{% pageref "/docs/users/writing-image/macos.md" %}}
+   * {{% pageref "/docs/users/faq-howto-troubleshooting/writing-image/macos.md" %}}
 
-   * {{% pageref "/docs/users/writing-image/linux.md" %}}
+   * {{% pageref "/docs/users/faq-howto-troubleshooting/writing-image/linux.md" %}}
 
 1. Remove the USB flash drive, insert it into a PC that is currently off, and boot
    that PC from the USB flash drive. Depending on that computer's BIOS, you may have to

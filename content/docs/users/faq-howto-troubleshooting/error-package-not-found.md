@@ -1,5 +1,5 @@
 ---
-title: A "Package not found error" when installing a new App or Accessory
+title: '"Package not found error" when installing a new App or Accessory'
 ---
 
 This can happen if you haven't updated your UBOS {{% gl Device %}} for some time.

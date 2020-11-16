@@ -30,7 +30,8 @@ Today, UBOS is both a subset and a superset of Arch Linux:
 
 * UBOS releases are "full-stack" tested before they are made available. Arch Linux
   only performs unit testing, and generally requires a system administrator to
-  manually review and resolve possible issues. See also {{% pageref buildrelease.md %}}.
+  manually review and resolve possible issues. See also
+  {{% pageref "/docs/developers/buildrelease.md" %}}.
 
 In spite of this, many packages available on UBOS are identical to those on
 [Arch Linux](http://archlinux.org/), and its sibling for the ARM processor architecture,

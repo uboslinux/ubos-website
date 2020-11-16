@@ -96,6 +96,7 @@ at the same hostname.
 This only works if your {{% gl Device %}} can be accessed from the public internet.
 If you have your {{% gl Device %}} behind a firewall, you need to
 {{% pageref howto-pagekite.md "run Pagekite" %}} or open up a port in your router.
+{{% /note %}}
 
 1. Save your {{% gl Site_JSON %}} to a file as described above.
 
@@ -106,6 +107,7 @@ If you have your {{% gl Device %}} behind a firewall, you need to
    "tls" : {
        "letsencrypt" : true
    },
+   ```
 
    Make sure there is a comma each between what you added and what comes before and after.
 

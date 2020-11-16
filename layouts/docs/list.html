@@ -8,6 +8,11 @@
 
 {{   partial "breadcrumbs.html" . }}
 
+ <aside class="toc">
+  <h1>Documentation Overview</h1>
+{{   partial "toc.html" ( dict "root" ( .Site.GetPage "/docs/" ) "current" . ) }}
+ </aside>
+
  <section class="docs-list">
 {{   partial "title-et-al-main.html" . }}
 
@@ -22,12 +27,12 @@
    <ol class="range-posts">
 {{   range $p.Pages.ByWeight }}
     <li>
-     <a href="{{ .Permalink }}">{{ .Title }} ( {{.Weight}} )</a>
+     <a href="{{ .Permalink }}">{{ .Title }}</a>
 {{     if .Pages }}
      <ol>
 {{       range .Pages.ByWeight }}
       <li>
-       <a href="{{ .Permalink }}">{{ .Title }} ( {{.Weight}} )</a>
+       <a href="{{ .Permalink }}">{{ .Title }}</a>
       </li>
 {{       end }}
      </ol>

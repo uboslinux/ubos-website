@@ -5,7 +5,7 @@ title: UBOS is in a "degraded" state
 To figure out what's going on, execute:
 
 ```
-sudo ubos-admin status --problems
+% sudo ubos-admin status --problems
 ```
 
 This should give you a description of which service(s) have failed. Let's
@@ -15,7 +15,7 @@ place ``foo`` with the name of the service that failed on your {{% gl Device %}}
 1. Try to restart the service:
 
    ```
-   sudo systemctl restart foo.service
+   % sudo systemctl restart foo.service
    ```
 
 2. After a little while, check whether that fixed it by running
@@ -25,14 +25,14 @@ place ``foo`` with the name of the service that failed on your {{% gl Device %}}
    log:
 
    ```
-   sudo journalctl -u foo.service
+   % sudo journalctl -u foo.service
    ```
 
    If that brings up way too much information, you can limit the output
    to, say, the last 10 minutes, by invoking it as follows:
 
    ```
-   sudo journalctl -u foo.service --since -10m
+   % sudo journalctl -u foo.service --since -10m
    ```
 
 That should give you enough information to figure out what the problem is.

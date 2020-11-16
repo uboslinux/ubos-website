@@ -22,7 +22,7 @@ be switched on in the BIOS first. See the
    Look for a file named ``ubos_green_x86_64-vbox_LATEST.vmdk.xz``.
 
 1. Optionally, you may now verify that your image downloaded correctly by following
-   {{% pageref verifying.md %}}.
+   {{% pageref "/docs/users/faq-howto-troubleshooting/howto-verify-image.md" %}}.
 
 1. Uncompress the downloaded file. This depends on your operating system, but might be as
    easy as double-clicking it, or executing

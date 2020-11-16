@@ -1,6 +1,6 @@
 ---
 title: Setting up your first Site and App
-weight: 30
+weight: 20
 ---
 
 Follow these steps:
@@ -81,5 +81,5 @@ Follow these steps:
    show up here.
 
 If you are curious what UBOS just did under the hood, please refer to
-{{% pageref "/ubos/developers/understanding/createsite.md" %}}.
+{{% pageref "/docs/developers/understanding/createsite.md" %}}.
 

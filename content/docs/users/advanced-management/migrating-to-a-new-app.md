@@ -42,7 +42,7 @@ Let's take a real-world example, and assume you want to upgrade from ``nextcloud
    ``nextcloud19``:
 
    ```
-   % ubos-admin restore --in before-migration.ubos-backup --migratefrom nextcloud9 --migrateto nextcloud10
+   % ubos-admin restore --in before-migration.ubos-backup --migratefrom nextcloud18 --migrateto nextcloud19
    ```
 
 This will restore your {{% gl Site %}} into the same location (hostname, context path),

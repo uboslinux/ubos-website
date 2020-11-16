@@ -18,19 +18,20 @@ This single command will perform all necessary steps. This includes:
 
 1. Creating a file system snapshot.
 
-1. Temporarily backing up the data of all {{% gls Apps %}} current deployed on
-   your {{% gl Device %}}.
+1. Temporarily backing up the data of all {{% gls App %}} current {{% gl Deployment deployed %}}
+   on your {{% gl Device %}}.
 
-1. Uninstalling all {{% gls App %}} currently deployed on your {{% gl Device %}}.
+1. {{% gl Deployment Undeploying %}} all {{% gls App %}} currently {{% gl Deployment deployed %}}
+   on your {{% gl Device %}}.
 
 1. Downloading and installing upgraded {{% gls Package %}}.
 
 1. If needed, rebooting the {{% gl Device %}} (e.g. for kernel upgrades).
 
-1. Redeploying the same {{% gls App %}} as before in the same configuration, but
+1. {{% gl Deployment Redeploying %}} the same {{% gls App %}} as before in the same configuration, but
    in their new version(s).
 
-1. Restoring all data to the redeployed {{% gls App %}}.
+1. Restoring all data to the {{% gl Deployment redeployed %}} {{% gls App %}}.
 
 1. Performing whatever data migration is necessary to use the data with the new versions
    of the {{% gls App %}}.
@@ -45,6 +46,6 @@ speed.
 {{% warning %}}
 
 Sometimes, upgrading may require additional steps. Please
-review the {{% pageref "/docs/releases" %}} prior to upgrading.
+review {{% pageref "/releases" %}} prior to upgrading.
 
 {{% /warning %}}

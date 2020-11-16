@@ -4,7 +4,7 @@ title: How to get help
 
 Here are some suggestions:
 
-* Visit the {{% pageref faq-howto-troubleshooting %}} section on this site.
+* Visit the {{% pageref _index.md %}} section on this site.
 
 * Come find us {{% pageref community.md here %}} and ask. We don't bite. At least not
   if we had breakfast.

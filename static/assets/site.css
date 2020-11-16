@@ -22,7 +22,7 @@
     --grey-color:       #828282;
     --grey-color-light: #c0c0c0;
 
-    --code-font-size:  14px;
+    --code-font-size:   87.5%;
 }
 
 /* General elements */
@@ -145,6 +145,7 @@ table {
 }
 td, th {
     padding: 3px 5px;
+    border: 1px solid #a0a0a0;
 }
 
 dt {
@@ -287,9 +288,7 @@ section.docs-list > ol > li > ol > li {
     font-weight: normal;
 }
 
-/*
-
-div.sidebar {
+aside.toc {
     float: right;
     width: 220px;
     margin: 0 0 20px 20px;
@@ -297,18 +296,72 @@ div.sidebar {
     border-radius: 6px;
     background: #fff;
     box-shadow:  0 0 2px 2px #ddd;
+    position: relative;
+    z-index: 1;
 }
 
-div.sidebar * {
+aside.toc h1 {
+    margin: 1ex auto;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+aside.toc * {
     font-size: 12px;
     text-decoration: none;
     line-height: 120%;
 }
-
-div.sidebar a:hover,
-div.sidebar div.header a:hover {
+aside.toc a:hover {
     background: #e0e0e0;
 }
+
+aside.toc ol {
+    margin: 0;
+    padding: 0;
+}
+aside.toc li {
+    margin: 8px 0;
+    padding: 0;
+    list-style: none;
+}
+aside.toc a {
+    color: #404040;
+}
+
+aside.toc > ol > li > a {
+    font-weight: bold;
+}
+
+aside.toc li li {
+    margin-left: 2ex;
+}
+
+#toc ol.toc,
+#toc li.toc {
+    display: none;
+}
+#toc ol.toc.toc-current-path,
+#toc li.toc.toc-current-path,
+#toc #toc-current {
+    display: block;
+}
+
+#toc ol.toc.toc-current-path > li,
+#toc-current ol.toc,
+#toc-current li.toc,
+#toc > li.toc {
+    display: block;
+}
+#toc-current > a {
+    font-weight: bold;
+}
+#toc-current > ol.toc ol.toc {
+    display: none;
+}
+
+/*
+
+
 div.sidebar h3 {
     margin: 6px 0;
     font-weight: 500;
@@ -320,28 +373,10 @@ div.sidebar h4 {
     margin: 0 0 20px 0;
     text-align: center;
 }
-div.sidebar ul {
-    margin: 0;
-    padding: 0;
-}
-div.sidebar li {
-    margin: 8px 0;
-    padding: 0;
-    list-style: none;
-}
 
 div.sidebar li.toctree-l2,
 div.sidebar  li.toctree-l3 {
     margin-left: 1em;
-}
-
-div.sidebar h3 > a,
-div.sidebar li > a {
-    color: #404040;
-}
-
-div.sidebar li.current > a {
-    font-weight: bold;
 }
 
 div.section li.toctree-l1 {
@@ -365,9 +400,6 @@ div.toctree-wrapper li {
     list-style: none;
     margin: 0;
     padding: 0;
-}
-div.toctree-wrapper li li {
-    margin: 0 0 0 2em;
 }
 
 dl dl,
@@ -397,6 +429,7 @@ h6:hover > a.headerlink,
 dt:hover > a.headerlink {
     visibility: visible;
 }
+*/
 
 div.admonition {
     margin: 10px 0px;
@@ -413,11 +446,11 @@ div.admonition p.admonition-title {
 div.admonition p.admonition-title:after {
     content: ":"
 }
+
 div.admonition div.admonition.warning {
     background: #fff0f0;
     border-color: #ff8080;
 }
-*/
 
 
 span.undef:before {
@@ -427,3 +460,4 @@ span.undef:before {
 span.undef {
     color: red;
 }
+

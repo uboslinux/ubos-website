@@ -17,15 +17,15 @@ To write the image:
 
   For example, the device name may be ``/dev/sdx``.
 
-  {{% warning %}}
+  {{< warning >}}
   Make sure you get the device name right, otherwise you might accidentally
   destroy the data on some other hard drive!
-  {{% /warning %}}
+  {{< /warning >}}
 
-  {{% warning %}}
+  {{< warning >}}
   Also make sure your USB stick or SD card does not contain any valuable data; it
   will be mercilessly overwritten.
-  {{% /warning %}}
+  {{< /warning >}}
 
 * Determine the file name of the image you downloaded. Let's assume it is
   ``~/Downloads/ubos_green_x86_64-pc_LATEST.img``. If you downloaded a compressed

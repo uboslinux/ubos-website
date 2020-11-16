@@ -26,7 +26,7 @@ considerable time in the future: all information required to restore an {{% gl A
 the state is was in at the time the backup was created is contained in the UBOS backup file.
 
 The details of the UBOS backup format are
-{{% pageref "/docs/developers/ubos-backup.md" "documented for developers" %}}.
+{{% pageref "/docs/developers/ubos-backup-format.md" "documented for developers" %}}.
 
 ## Creating a local backup
 
@@ -228,7 +228,7 @@ To determine the contents of a ``.ubos-backup`` file, execute:
 ```
 
 This will show information about the backup, such as when it was created,
-as well as which {{% gls Site %}}, {{% gls Apps %}} and {{% gls Accessory %}}
+as well as which {{% gls Site %}}, {{% gls App %}} and {{% gls Accessory %}}
 were backed up.
 
 ## Restoring from backup
@@ -240,7 +240,7 @@ http or https URL from which the backup file will first be downloaded (using the
 your backup file is local but all commands should work equally with remote
 files.
 
-To restore all {{% gls Site %}} with all {{% gls App %}} and {{% gls Accessories %}}
+To restore all {{% gls Site %}} with all {{% gls App %}} and {{% gls Accessory %}}
 contained in a ``.ubos-backup`` file, execute:
 
 ```
@@ -279,7 +279,7 @@ of the backup:
 % sudo ubos-admin restore --hostname <hostname> --in <backupfile>
 ```
 
-To restore only one {{% gl App %}}, instead of all {{% gls Apps %}} at a {{% gl Site %}},
+To restore only one {{% gl App %}}, instead of all {{% gls App %}} at a {{% gl Site %}},
 specify the {{% gl AppConfigId %}} and the hostname of the {{% gl Site %}} to which the {{% gl App %}}
 shall be added:
 

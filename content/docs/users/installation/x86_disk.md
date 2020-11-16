@@ -30,15 +30,15 @@ log on as ``root``. Then:
    % sudo ubos-install /dev/sda
    ```
 
-   {{% warning %}}
-   Make sure you get the device name right, otherwise you might accidentally
-   destroy the data on some other hard drive!
-   {{% /warning %}}
+   {{< warning >}}
+   Make sure you get the device name right, otherwise you might accidentally destroy
+   the data on some other hard drive!
+   {{< /warning >}}
 
-   {{% warning %}}
+   {{< warning >}}
    Also make sure your hard drive does not contain any valuable data; it will be
    mercilessly overwritten.
-   {{% /warning %}}
+   {{< /warning >}}
 
 1. When complete, execute:
 
@@ -50,7 +50,7 @@ log on as ``root``. Then:
    you installed it. If not, check your BIOS settings.
 
 1. If your screen goes blank during the boot and doesn't come back on, please refer to
-   {{% pageref "/docs/users/troubleshooting.md" %}}.
+   {{% pageref "/docs/users/faq-howto-troubleshooting/error-boot-pc-blank-screen.md" %}}.
 
 1. When the boot process is finished, log in as user ``root``.
    For password, see {{% pageref "/docs/users/faq-howto-troubleshooting/howto-root.md" %}}.

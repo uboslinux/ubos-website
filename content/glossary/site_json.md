@@ -3,6 +3,7 @@ title: Site JSON
 summary: A JSON file that contains all meta-data about a Site.
 seealsoterm: [
     'Site',
+    'Site_JSON_Template',
     'Hostname'
 ]
 ---

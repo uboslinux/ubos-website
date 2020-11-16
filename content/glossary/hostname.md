@@ -4,6 +4,7 @@ plural: Hostnames
 summary: The DNS name of a Site.
 seealsoterm: [
     'Context_Path',
+    'HostId',
     'Site'
 ]
 ---

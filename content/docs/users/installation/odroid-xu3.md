@@ -11,7 +11,7 @@ You can run UBOS on the ODROID devices of the XU3/XU4 family, which currently in
 
 by downloading an image, writing it to an SD card, and booting your ODROID device with that card.
 (Alternatively you can keep running your existing Linux distro on your ODROID device, and
-run UBOS in a Linux container. This is described in {{% pageref arm7h_container.md %}}.)
+run UBOS in a Linux container. This is described in {{% pageref armV7h_container.md %}}.)
 
 Note that ODROID offers a variety of devices with a variety of rather different processors.
 The instructions on this page are unlikely to work on any other ODROID devices than the ones
@@ -23,7 +23,7 @@ listed here.
    Look for a file named ``ubos_green_armv7h-odroid-xu3_LATEST.img.xz``.
 
 1. Optionally, you may now verify that your image downloaded correctly by following
-   {{% pageref verifying.md %}}.
+   {{% pageref "/docs/users/faq-howto-troubleshooting/howto-verify-image.md" %}}.
 
 1. Uncompress the downloaded file. This depends on your operating system, but might be as
    easy as double-clicking it, or executing
@@ -37,11 +37,11 @@ listed here.
 1. Write this image file "raw" to an SD card appropriate for your ODROID device. This
    operation depends on your operating system:
 
-   * {{% pageref "/docs/users/writing-image/windows.md" %}}
+   * {{% pageref "/docs/users/faq-howto-troubleshooting/writing-image/windows.md" %}}
 
-   * {{% pageref "/docs/users/writing-image/macos.md" %}}
+   * {{% pageref "/docs/users/faq-howto-troubleshooting/writing-image/macos.md" %}}
 
-   * {{% pageref "/docs/users/writing-image/linux.md" %}}
+   * {{% pageref "/docs/users/faq-howto-troubleshooting/writing-image/linux.md" %}}
 
 1. Create a {{% gl UBOS_Staff %}} by following the instructions
    {{% pageref "/docs/users/shepherd-staff.md" here %}} if you haven't already. This is
@@ -58,7 +58,7 @@ listed here.
 
 1. There isn't any indication when the boot process has finished, so you may want to
    simply wait for, say, 10 minutes. Wait longer if your {{% gl UBOS_Staff %}} also
-   contains {{% gls Site_Template %}}.
+   contains {{% gl Site_JSON %}} files.
 
 1. Log into your ODROID device over the network as described in
    {{% pageref "/docs/users/shepherd-staff.md" %}}.

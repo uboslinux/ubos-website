@@ -25,7 +25,7 @@ Among other things, the {{% gl UBOS_Staff %}} can be used:
 
 The {{% gl UBOS_Staff %}} is simply a standard USB flash drive whose name and directory
 layout follows certain conventions. A similar mechanism is available for virtualized
-{{% gls Devices %}}.
+{{% gls Device %}}.
 
 See also this
 [blog post](http://upon2020.com/blog/2015/03/ubos-shepherd-rules-their-iot-device-flock-with-a-staff/)
@@ -186,7 +186,7 @@ The {{% gl UBOS_Staff %}}uses the following directory layout. For details, see b
 
 ``<HOSTID>`` refers to the device's unique {{% gl HostId %}}, which can be printed with ``ubos-admin hostid``.
 
-Note: all files and directories are optional and may not be present on a given {{% gl UBOS Staff %}}:
+Note: all files and directories are optional and may not be present on a given {{% gl UBOS_Staff %}}:
 an empty drive called ``UBOS-STAFF`` is entirely valid.
 
 ## Virtual UBOS Staff devices
@@ -325,7 +325,7 @@ those {{% gls Site %}} during boot. There are two places where those files may b
 * If placed in top-level directory ``site-templates/``, any {{% gl Device %}} booting with the
   {{% gl UBOS_Staff %}} will deploy the corresponding {{% gls Site %}}. This functionality
   is useful if you'd like to deploy the same kind of {{% gl Site %}} running the same
-  {{% gls App %}} and {{% gls Accessory %}} to several {{% gls Devices %}}.
+  {{% gls App %}} and {{% gls Accessory %}} to several {{% gls Device %}}.
 
   It is highly recommended that the files be {{% gl Site_JSON_template %}} files (rather
   that {{% gl Site_JSON %}} files) that do not contain {{% gls SiteId %}} or
@@ -338,9 +338,11 @@ those {{% gls Site %}} during boot. There are two places where those files may b
 
 {{% note %}}
 
-{{% gls Site %}} or {{% gls Site_Template %}} will not be deployed if the {{% gl Device %}}
+{{% gls Site %}} or {{% gls Site_JSON_Template %}} will not be deployed if the {{% gl Device %}}
 already as a {{% gl Site %}} with either the same hostname or the same {{% gl SiteId %}} or
 {{% gl AppConfigId %}}.
+
+{{% /note %}}
 
 The {{% gl Site_JSON %}} files of the {{% gls Site %}} deployed through this mechanism will,
 once the {{% gl Site %}} has been deployed, stored in ``flock/<HOSTID>/sites/<SITEID>.json``.

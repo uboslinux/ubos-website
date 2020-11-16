@@ -18,15 +18,15 @@ To write the image:
 * Insert your USB stick or SD card. Note the drive letter that Windows assigns to
   your stick or card.
 
-  {{% warning %}}
-  Make sure you get the drive letter right, otherwise you might accidentally
+  {{< warning >}}
+  Make sure you get the device name right, otherwise you might accidentally
   destroy the data on some other hard drive!
-  {{% /warning %}}
+  {{< /warning >}}
 
-  {{% warning %}}
+  {{< warning >}}
   Also make sure your USB stick or SD card does not contain any valuable data; it
   will be mercilessly overwritten.
-  {{% /warning %}}
+  {{< /warning >}}
 
 * In Disk Imager, select the image file you downloaded, and the drive letter you
   noted earlier. Click "Write". This may take 10min or longer, depending on the speed of

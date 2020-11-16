@@ -96,5 +96,5 @@ possible of the information shown below:
   the report:
 
   ```
-  % sudo ubos-admin status``
+  % sudo ubos-admin status
   ```

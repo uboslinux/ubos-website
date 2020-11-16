@@ -14,7 +14,7 @@ container. This is described in {{% pageref aarch64_container.md %}}.)
    Look for a file named ``ubos_green_aarch64-espressobin_LATEST.img.xz``.
 
 1. Optionally, you may now verify that your image downloaded correctly by following
-   {{% pageref verifying.md %}}.
+   {{% pageref "/docs/users/faq-howto-troubleshooting/howto-verify-image.md" %}}.
 
 1. Uncompress the downloaded file. This depends on your operating system, but might be as
    easy as double-clicking it, or executing
@@ -28,11 +28,11 @@ container. This is described in {{% pageref aarch64_container.md %}}.)
 1. Write this image file "raw" to an SD card appropriate for your ESPRESSObin. This
    operation depends on your operating system:
 
-   * {{% pageref "/docs/users/writing-image/windows.md" %}}
+   * {{% pageref "/docs/users/faq-howto-troubleshooting/writing-image/windows.md" %}}
 
-   * {{% pageref "/docs/users/writing-image/macos.md" %}}
+   * {{% pageref "/docs/users/faq-howto-troubleshooting/writing-image/macos.md" %}}
 
-   * {{% pageref "/docs/users/writing-image/linux.md" %}}
+   * {{% pageref "/docs/users/faq-howto-troubleshooting/writing-image/linux.md" %}}
 
 1. On first boot, you need to have a serial terminal connected to your ESPRESSObin. This is
    because you likely have to change your boot loader options.

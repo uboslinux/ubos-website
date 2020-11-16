@@ -18,7 +18,7 @@ To do so:
    Look for a file named ``ubos_green_armv7h-container_LATEST.tar.xz``.
 
 1. Optionally, you may now verify that your image downloaded correctly by following
-   {{% pageref verifying.md %}}.
+   {{% pageref "/docs/users/faq-howto-troubleshooting/howto-verify-image.md" %}}.
 
 1. Uncompress and unpack the downloaded file into a suitable directory by executing:
 
@@ -89,7 +89,7 @@ To do so:
 
    Make sure you are connected to the internet before attempting to proceed. If you
    have difficulties reaching the internet from your container, consult
-   {{% pageref "/docs/users/troubleshooting.md" %}}.
+   {{% pageref "/docs/users/faq-howto-troubleshooting/error-container-cannot-connect.md" %}}.
 
 1. Update UBOS to the latest and greatest:
 

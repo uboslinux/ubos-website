@@ -35,15 +35,15 @@ To write the image:
   device that has shown up is the device that you just inserted.
   For example, the device name may be ``/dev/disk8``.
 
-  {{% warning %}}
+  {{< warning >}}
   Make sure you get the device name right, otherwise you might accidentally
   destroy the data on some other hard drive!
-  {{% /warning %}}
+  {{< /warning >}}
 
-  {{% warning %}}
+  {{< warning >}}
   Also make sure your USB stick or SD card does not contain any valuable data; it
   will be mercilessly overwritten.
-  {{% /warning %}}
+  {{< /warning >}}
 
 * Depending on what's on your USB stick or SD card, OSX might have automatically
   mounted it. To unmount:

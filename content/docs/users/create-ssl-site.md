@@ -14,10 +14,10 @@ notoriously difficult. UBOS makes it easy. On UBOS, you now have three options:
    certificate. This is free, and UBOS sets it up in a way that your {{% gl Device %}}
    will automatically renew your certificate before it expires.
 
-   {{% note %}}
+   {{< note >}}
    This requires your {{% gl Site %}} to have an official domain
    name and to run on a {{% gl Device %}} that has a publicly available IP address.
-   {{% /note %}}
+   {{< /note >}}
 
 1. Have an official certificate authority sign your keys. That usually takes some time
    and money, is more complicated, and requires that you own an official domain name

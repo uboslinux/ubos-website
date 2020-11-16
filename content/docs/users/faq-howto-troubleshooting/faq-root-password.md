@@ -1,5 +1,5 @@
 ---
-title: What is the default ``root`` password?
+title: 'What is the default "root" password?'
 ---
 
 In UBOS versions prior to September 2020, there was no ``root`` password when attempting to

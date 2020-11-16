@@ -1,0 +1,30 @@
+{{ define "main" }}
+
+{{   if .Params.class }}
+<main class="{{ .Params.class }}">
+{{   else }}
+<main>
+{{   end }}
+
+{{   partial "breadcrumbs.html" . }}
+
+ <aside class="toc">
+  <h1>Documentation Overview</h1>
+{{   partial "toc.html" ( dict "root" ( .Site.GetPage "/docs/" ) "current" . ) }}
+ </aside>
+
+{{   if eq .Params.display false }}
+ <p>Post unavailable.</p>
+{{   else }}
+ <article>
+
+{{ partial "title-et-al-main.html" . }}
+
+  <div class="content">
+{{ .Content }}
+  </div>
+{{ partial "discuss.html" . }}
+ </article>
+{{ end }}
+</main>
+{{ end }}

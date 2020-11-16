@@ -18,7 +18,7 @@ But if you'd like to run the ssh daemon on a non-standard port anyway, do this:
   which extra port to open in the firewall.)
 
 * Execute ``sudo ubos-admin setnetconfig client``. Substitute the name of your
-  {{% gl Networking_Configuration %}} for ``client`` if you are not using ``client``.
+  {{% gl Network_Configuration %}} for ``client`` if you are not using ``client``.
   (This will reconfigure the firewall.)
 
 * Execute ``sudo systemctl restart sshd.service``. (This will restart the ssh daemon.)
