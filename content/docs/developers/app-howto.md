@@ -1,5 +1,5 @@
 ---
-title: How to make an App available on UBOS
+title: "How to make an App available on UBOS: Overview"
 weight: 10
 ---
 

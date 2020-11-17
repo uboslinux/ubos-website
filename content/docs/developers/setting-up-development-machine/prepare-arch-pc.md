@@ -13,7 +13,7 @@ a suitable x86_64 PC:
 1. Write the downloaded image to a medium (like a USB boot stick) from which you can boot
    your PC. Other than the filename being different, it works just the same as writing a
    UBOS image to a boot stick, which is documented
-   at {{% pageref "/docs/users/writing-image/" %}} or on the
+   at {{% pageref "/docs/users/faq-howto-troubleshooting/writing-image/" %}} or on the
    [Arch Linux wiki](https://wiki.archlinux.org/index.php/USB_flash_installation_media).
 
 1. Insert your boot medium, and boot your PC from that medium. Depending on that computer's BIOS,

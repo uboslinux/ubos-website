@@ -431,7 +431,8 @@ dt:hover > a.headerlink {
 }
 */
 
-div.admonition {
+div.admonition,
+div.status {
     margin: 10px 0px;
     padding: 10px;
     border: 1px solid #808080;
@@ -451,7 +452,11 @@ div.admonition div.admonition.warning {
     background: #fff0f0;
     border-color: #ff8080;
 }
-
+div.status p.status-title {
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+}
 
 span.undef:before {
     content: "UNDEF: ";

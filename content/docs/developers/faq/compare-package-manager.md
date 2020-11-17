@@ -1,5 +1,5 @@
 ---
-title: Doesn’t apt / dpkg / yum / pacman etc. do what ``ubos-admin`` does already?
+title: Doesn’t apt / dpkg / yum / pacman etc. do this already already?
 ---
 
 No. They all manage software {{% gls Package %}}. They do not manage full configurations of

@@ -1,6 +1,6 @@
 ---
 title: Logging
-weight: 110
+weight: 60
 ---
 
 Things may go wrong. It's computers, after all. If a log exists, developers and/or

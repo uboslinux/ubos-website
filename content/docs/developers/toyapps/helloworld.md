@@ -30,7 +30,7 @@ package to their website:
 1. The developer creates the files for the package. If you have cloned the git
    repository above, you find the files for ``helloworld`` in directory
    ``helloworld``; or you can browse them
-   [on github](<https://github.com/uboslinux/ubos-toyapps/tree/master/helloworld).
+   [on github](https://github.com/uboslinux/ubos-toyapps/tree/master/helloworld).
    They are:
 
    * ``index.php``: minimalistic PHP file printing "Hello World";
@@ -58,7 +58,7 @@ package to their website:
    [Arch Linux Wiki](https://wiki.archlinux.org/index.php/Pacman).)
 
 1. Once the package has been created, the developer makes the package available to the user.
-   In the general case, this involves uploading the package to the {{% gl UBOS_Depot  %}},
+   In the general case, this involves uploading the package to the {{% gl Depot  %}},
    UBOS quality assurance etc etc, but for our purposes here, ignore all that and simply
    assume that the package file created by the developer has somehow arrived on the user's
    {{% gl Device %}}, such as by file transfer.

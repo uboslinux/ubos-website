@@ -27,16 +27,7 @@ The PHP versions of Glad-I-Was-Here can also be configured with an {{% gl Access
 web page. This demonstrates the basic functioning of {{% gls Accessory %}}.
 
 Note: These toy {{% gl App %}} are published in the ``toyapps`` repository, which is not enabled
-by default. For how to enable, {{% pageref "/docs/users/enabling-nonstandard-repos.md" %}}.
+by default. For how to enable,
+see {{% pageref "/docs/users/faq-howto-troubleshooting/howto-nonstandard-repo.md" %}}.
 
 You may want to read through the documentation for these {{% gls App %}} in this sequence:
-
-* {{% pageref "/docs/toyapps/helloworld.md" %}}
-* {{% pageref "/docs/toyapps/gladiwashere-php-mysql.md" %}}
-* {{% pageref "/docs/toyapps/gladiwashere-php-mysql-footer.md" %}}
-* {{% pageref "/docs/toyapps/gladiwashere-php-postgresql.md" %}}
-* {{% pageref "/docs/toyapps/gladiwashere-java-mysql.md" %}}
-* {{% pageref "/docs/toyapps/gladiwashere-python-mysql.md" %}}
-
-
-

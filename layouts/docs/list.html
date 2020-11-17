@@ -22,7 +22,7 @@
   </div>
 {{   end }}
 
-{{   $p := ( .Paginate ( where ( where .Pages "Params.display" "!=" "hide" ) "Params.display" "!=" "false" ) 20 ) }}
+{{   $p := ( .Paginate ( where ( where .Pages "Params.display" "!=" "hide" ) "Params.display" "!=" "false" ) 100 ) }}
 
    <ol class="range-posts">
 {{   range $p.Pages.ByWeight }}

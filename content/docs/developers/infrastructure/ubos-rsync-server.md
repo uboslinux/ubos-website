@@ -3,7 +3,7 @@ title: The UBOS rsync server
 ---
 
 ``ubos-rsync-server`` is a {{% gl Package %}} that makes it easy for developers to support secure
-file upload/download from UBOS-deployed {{% gls Apps %}} via ``rsync`` over ``ssh``. Using
+file upload/download from UBOS-deployed {{% gls App %}} via ``rsync`` over ``ssh``. Using
 this package is often very convenient for developers of {{% gls App %}} whose data should be
 uploadable or downloadable from the command-line, not just via a web browser.
 
@@ -20,7 +20,7 @@ You notice that ``docroot`` consists of only a handful of files:
   {{% gl App %}}. Other than setting up permissions, PHP and some useful PHP environment variables,
   all this does is map the root of the installation URL (symbolically:
   ``${appconfig.context}/`` to a specific subdirectory called ``rsyncdir`` of the
-  {{% gl AppConfigurations %}}'s data directory: ``/ubos/lib/docroot/${appconfig.appconfigid}/rsyncsubdir/``.)
+  {{% gl AppConfiguration %}}'s data directory: ``/ubos/lib/docroot/${appconfig.appconfigid}/rsyncsubdir/``.)
   In other words, the files in this directory will be presented to the user by the web server.
 
 * ``install`` only makes sure that the UBOS {{% gl Device %}} has a local user called ``docroot``.
@@ -70,7 +70,7 @@ but the essence of the ``authorized_keys`` edits is the following:
 
 The result: The user can securely upload via ``rsync`` over ``ssh`` to their own
 ``docroot`` {{% gls Site %}}, but no others, even if others have ``docroot``
-{{% gls Site %}} on the same {{% gl UBOS_Device %}}.
+{{% gls Site %}} on the same {{% gl Device %}}.
 
 ``ubos-rsync-server`` can be used by any other {{% gl App %}} the same way: setup a
 user that goes with the {{% gl App %}}, and have the {{% gl App %}}'s {{% gl UBOS_Manifest %}} invoke

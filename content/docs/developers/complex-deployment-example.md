@@ -1,10 +1,10 @@
 ---
 title: A more complex deployment example
-weight: 70
+weight: 40
 ---
 
 In the real world, apps and sites tend to be more complex than the ones discussed
-in {{% gl toyapps.md %}}. Let's look at one such example, and dissect what happens in
+in {{% pageref "toyapps/" %}}. Let's look at one such example, and dissect what happens in
 detail when such a more complex {{% gl Site %}} is deployed.
 
 In this example, we deploy a TLS-encrypted {{% gl Site %}} as it might be used by a
@@ -99,7 +99,7 @@ Here is what UBOS does in (reasonable) detail:
 
 1. Download and install needed packages:
 
-   1. Download and install the {{% gl App %}} and {{% gl Accessory %}} {{% gls Packages %}}
+   1. Download and install the {{% gl App %}} and {{% gl Accessory %}} {{% gls Package %}}
       referenced in the {{% gl Site_JSON %}} file, and their package dependencies. In our
       example, they are: ``wordpress``, ``wordpress-plugin-photo-dropper``, ``nextcloud``,
       ``nextcloud-calendar``, ``nextcloud-cache-redis``, and dependencies such as
@@ -107,16 +107,16 @@ Here is what UBOS does in (reasonable) detail:
 
    1. Now that the {{% gls Package %}} for the {{% gls App %}} and {{% gls Accessory %}}
       have been downloaded and installed, UBOS can examine their respective
-      {{% gls UBOS_Manifest %}}. First, UBOS downloads and installs the
+      {{% gl UBOS_Manifest %}}. First, UBOS downloads and installs the
       {{% gls Package %}} (and, recursively, their dependencies)
       listed as dependencies in the various (applicable) {{% gl Role %}} sections in the
-      {{% gls UBOS_Manifest %}} of all the {{% gls App %}} and {{% gls Accessory %}}.
+      {{% gl UBOS_Manifest %}} of all the {{% gls App %}} and {{% gls Accessory %}}.
       Here: from Wordpress: ``php``, ``php-apache``; nothing from the Photo Dropper
       {{% gl Accessory %}}; from Nextcloud: ``php-apache``, ``php-apcu``, ``php-gd``,
       ``php-systemd``; from the Redis cache {{% gl Accessory %}}: ``php-redis``.
 
 1. Check the semantics of the intended configuration. This can only be done now that
-   the {{% gls UBOS_Manifest %}} are available:
+   the {{% gl UBOS_Manifest %}} files are available:
 
    1. The {{% gls AppConfiguration %}} at the same {{% gl Site %}} may not
       be deployed to conflicting {{% gls Context_Path %}}. Here we have
@@ -194,11 +194,11 @@ Here is what UBOS does in (reasonable) detail:
             1. Process all {{% gls AppConfigItem %}} for the ``mysql``
                {{% gl Role %}} of {{% gl App %}} Wordpress:
 
-               1. Provision a new MySQL database.
+               * Provision a new MySQL database.
 
-               1. Provision a new MySQL database user and give it all privileges to the
-                  newly provisioned MySQL database, as that is what is specified in the
-                  {{% gl UBOS_Manifest %}}.
+               * Provision a new MySQL database user and give it all privileges to the
+                 newly provisioned MySQL database, as that is what is specified in the
+                 {{% gl UBOS_Manifest %}}.
 
             1. Create a symbolic link in the Apache modules directory so Apache will
                load the ``ssl`` Apache module upon restart.
@@ -232,8 +232,8 @@ Here is what UBOS does in (reasonable) detail:
             1. Process the single {{% gl AppConfigItem %}} for the ``apache2``
                {{% gl Role %}} of {{% gl Accessory %}} Photo Dropper:
 
-               1. Recursively copy its files into ``wp-plugins`` subdirectory below the
-                  Wordpress installation
+               * Recursively copy its files into ``wp-plugins`` subdirectory below the
+                 Wordpress installation
 
       1. For the Nextcloud {{% gl AppConfiguration %}}:
 
@@ -245,10 +245,10 @@ Here is what UBOS does in (reasonable) detail:
             1. Process all :term:`AppConfigItems <AppConfigItem>` for the ``mysql``
                {{% gl Role %}}: of {{% gl App %}} Nextcloud:
 
-               1. Provision a new MySQL database.
+               * Provision a new MySQL database.
 
-               1. Provision a new MySQL database user and give it all privileges to the
-                  newly provisioned MySQL database.
+               * Provision a new MySQL database user and give it all privileges to the
+                 newly provisioned MySQL database.
 
             1. Create a symbolic link each in the Apache modules directory so Apache will
                load all Apache modules upon restart that are specified in Nextcloud's
