@@ -17,7 +17,7 @@ Then, update your device:
 Before upgrading on Amazon EC2, you need to update your instance's
 kernel command line, otherwise the instance will fail to connect to the network
 upon reboot. Details see below.
-{{/% warning %}}
+{{% /warning %}}
 
 ## What's new
 
@@ -54,7 +54,7 @@ There were several hundred package upgrades in total.
 ### Changes for developers:
 
 * Apps based on Node now need to package their own node runtime. More info is in
-  the [documentation](/docs/developers/middleware-notes/nodejs.html).
+  the {{% pageref "/docs/developers/middleware-notes/nodejs.md" documentation %}}.
 
 ## Removed functionality
 
@@ -67,7 +67,7 @@ There were several hundred package upgrades in total.
   ``ubos-18`` and ``ubos-apps-18``.
 
 * The Personal Public License has had some clarifying edits. See
-  [post](/blog/2019/03/29/license-update/).
+  {{% pageref "/blog/2019/03/29/license-update.md" post %}}.
 
 ## Known issues
 
@@ -80,7 +80,7 @@ There were several hundred package upgrades in total.
 * On Amazon EC2, the kernel command-line needs to be updated **prior** to an upgrade.
   Here are the steps:
 
-  #. As root, edit file ``/etc/default/grub``. Look for the line (towards the beginning
+  1. As root, edit file ``/etc/default/grub``. Look for the line (towards the beginning
      of the file) that starts with ``GRUB_CMDLINE_LINUX_DEFAULT``. Change the line
      to read:
 
@@ -90,9 +90,9 @@ There were several hundred package upgrades in total.
 
      Save the file.
 
-  #. As root, execute: ``grub-install --recheck /dev/xvda``
+  1. As root, execute: ``grub-install --recheck /dev/xvda``
 
-  #. As root, execute: ``grub-mkconfig -o /boot/grub/grub.cfg``
+  1. As root, execute: ``grub-mkconfig -o /boot/grub/grub.cfg``
 
-  #. Now perform the update with: ``sudo ubos-admin update``
+  1. Now perform the update with: ``sudo ubos-admin update``
 

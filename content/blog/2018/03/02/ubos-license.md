@@ -6,14 +6,12 @@ categories: [ front, legal ]
 
 Update 2019-03-29. Read [post](/blog/2019/03/29/license-update.html).
 
-TL;DR:
-------
+## TL;DR:
 
 We are changing the license for some code written specifically for UBOS. If
 you are an individual, nothing changes for you.
 
-Background:
-----------
+## Background:
 
 UBOS, like all Linux distributions, consists of code that was written by many developers
 in many projects, and that is licensed by those developers under a wide variety of different
@@ -47,8 +45,7 @@ software, starting with attendees at OSBridge back in Portland, OR, last year. B
 their input and feedback, here's what we came up with. Starting with the next UBOS release,
 we are changing the license of some of the UBOS packages accordingly:
 
-* We take the <a href="https://www.gnu.org/licenses/gpl-3.0.en.html">General Public License
-  Version 3 (GPL)</a>
+* We take the [General Public License Version 3 (GPL)](https://www.gnu.org/licenses/gpl-3.0.en.html)
 
 * ... and we modify a single sentence. We search for the string that says:
 

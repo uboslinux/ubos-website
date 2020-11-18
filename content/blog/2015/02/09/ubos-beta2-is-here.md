@@ -8,17 +8,17 @@ We're proud to announce that UBOS is now available in its second beta release.
 
 You can run UBOS:
 
-<img src="/images/pc-79x100.png"   alt="[PC]"           style="float: right; margin: 5px 20px">
-<img src="/images/vbox-82x100.png" alt="[Virtual Box]"  style="float: right; margin: 5px 20px">
-<img src="/images/rpi-83x100.png"  alt="[Raspberry Pi]" style="float: right; margin: 5px 20px">
+{{% slide-in-img-right src="/images/pc-79x100.png"   alt="[PC]" %}}
+{{% slide-in-img-right src="/images/vbox-82x100.png" alt="[Virtual Box]" %}}
+{{% slide-in-img-right src="/images/rpi-83x100.png"  alt="[Raspberry Pi]" %}}
 
  * on standard PCs, as their primary operating system
  * on standard PCs and Macs, in VirtualBox
  * on your Raspberry Pi Model B and Model B+.
 
-<a href="/quickstart/">Get started!</a>
+{{% pageref "/quickstart.md" %}}
 
-<h2>Highlights</h2>
+### Highlights
 
  * Many bug fixes and reliability improvements from beta 1, as to be expected.
 
@@ -39,7 +39,7 @@ You can run UBOS:
  * Many improvements that make packaging and testing apps for UBOS easier and more
    reliable.
 
-<h2>Apps</h2>
+### Apps
 
 <img src="/images/owncloud-72x72.png" alt="[Owncloud]" style="float: left; width: 36px; margin: 5px 32px 0 5px">
 
@@ -76,4 +76,4 @@ You can run UBOS:
    **Shaarli**: Your Own URL Shortener<br>
    Kept at same version.
 
-For more details, refer to the <a href="/docs/releases/beta2/release-notes/">release notes</a>.
+For more details, refer to the ~~release notes~~.

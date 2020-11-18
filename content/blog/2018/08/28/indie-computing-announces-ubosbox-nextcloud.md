@@ -4,26 +4,16 @@ date:   2018-08-28 16:00:00
 categories: [ front, news ]
 ---
 
-At the <a href="https://nextcloud.com/conf/">Nextcloud conference</a> in Berlin,
-Germany, <a href="https://indiecomputing.com/">Indie Computing Corp.</a>, the
+At the [Nextcloud conference](https://nextcloud.com/conf/) in Berlin,
+Germany, [Indie Computing Corp.](https://indiecomputing.com/), the
 company sponsoring UBOS Linux, announced new products and services that bring the
 benefits of UBOS to non-technical users.
 
-<div style="float: right; margin: 0 0 10px 20px">
- <p>
-  <a href="https://indiecomputing.com/products/ubosbox-nextcloud-on-nuc/">
-   <img src="/images/2018-08-23/ubosbox-nextcloud-on-nuc-model-a-on-200x150.jpg" width="200" height="150">
-  </a>
- </p>
- <p>
-  <a href="https://indiecomputing.com/products/ubosbox-nextcloud-on-raspberrypi/">
-   <img src="/images/2018-08-23/ubosbox-nextcloud-on-raspberrypi-on-200x150.jpg" width="200" height="150">
-  </a>
- </p>
-</div>
+{{% slide-in-img-right href="https://indiecomputing.com/products/ubosbox-nextcloud-on-nuc/"         src="/images/2018-08-23/ubosbox-nextcloud-on-nuc-model-a-on-200x150.jpg" %}}
+{{% slide-in-img-right href="https://indiecomputing.com/products/ubosbox-nextcloud-on-raspberrypi/" src="/images/2018-08-23/ubosbox-nextcloud-on-raspberrypi-on-200x150.jpg" style="clear: both" %}}
 
-* <b>UBOSBox Nextcloud</b> is a hardware appliance which pre-installs UBOS, and auto-installs
-  <a href="https://nextcloud.com/">Nextcloud</a>, the open-source file management and
+* **UBOSBox Nextcloud** is a hardware appliance which pre-installs UBOS, and auto-installs
+  [Nextcloud](https://nextcloud.com/), the open-source file management and
   collaboration app. UBOSBox Nextcloud allows non-technical users to "bring their data home"
   from the file sharing services such as Dropbox, or on-line calendars like Google Calendar,
   to hardware the user has full control over in their home, without needing to deal with
@@ -31,16 +21,15 @@ benefits of UBOS to non-technical users.
   monitor or keyboard.
 
   UBOSBox Nextcloud comes in three configurations:
-  <a href="https://indiecomputing.com/products/ubosbox-nextcloud-on-nuc/">UBOSbox Nextcloud
-  on NUC (model A)</a> is based on the Intel NUC mini-PC with a low-power Celeron processor.
-  <a href="https://indiecomputing.com/products/ubosbox-nextcloud-on-nuc/">UBOSbox Nextcloud
-  on NUC (model B)</a> packs about twice the punch with twice the memory and
-  disk, and an i5 processor.
-  <a href="https://indiecomputing.com/products/ubosbox-nextcloud-on-raspberrypi/">UBOSbox
-  Nextcloud on Raspberry Pi</a> is a lower-price option that comes as a kit that requires
+  [UBOSbox Nextcloud on NUC (model A)](https://indiecomputing.com/products/ubosbox-nextcloud-on-nuc/)
+  is based on the Intel NUC mini-PC with a low-power Celeron processor.
+  [UBOSbox Nextcloud on NUC (model B)](https://indiecomputing.com/products/ubosbox-nextcloud-on-nuc/)
+  packs about twice the punch with twice the memory and disk, and an i5 processor.
+  [UBOSbox Nextcloud on Raspberry Pi](https://indiecomputing.com/products/ubosbox-nextcloud-on-raspberrypi/)
+  is a lower-price option that comes as a kit that requires
   hardware assembly by the user. Software is pre-installed on all configurations.
 
-* <a href="https://indiecomputing.com/products/ubos-live/"><b>UBOS Live</b></a> is a new
+* [**UBOS Live**](https://indiecomputing.com/products/ubos-live/) is a new
   management service for devices running UBOS. This enables users to outsource ongoing
   management and systems administration of the home servers running UBOS to Indie Computing.
   Indie Computing will upgrade and patch the installed operating systems and installed apps
@@ -48,9 +37,8 @@ benefits of UBOS to non-technical users.
   needed, perform any necessary other maintenance tasks.
 
 UBOSBox Nextcloud is available for immediate order at
-<a href="https://indiecomputing.com/">indiecomputing.com</a>, with delivery starting
-in September.
+[indiecomputing.com](https://indiecomputing.com/), with delivery starting in September.
 
 Watch the announcement:
 
-<iframe width="980" height="550" src="https://www.youtube.com/embed/7HOKwZ-IWqk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+{{< youtube 7HOKwZ-IWqk >}}

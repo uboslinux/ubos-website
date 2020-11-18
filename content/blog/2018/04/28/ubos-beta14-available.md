@@ -5,9 +5,8 @@ categories: [ front, release, beta ]
 ---
 
 Just in time for the
-<a href="https://linuxfestnorthwest.org/conferences/lfnw18/program/proposals/77">Let's
-Self-host Installathon</a> at Linuxfest NorthWest in Bellingham, WA,
-UBOS beta 14 is out!
+[Let's Self-host Installathon](https://linuxfestnorthwest.org/conferences/lfnw18/program/proposals/77)
+at Linuxfest NorthWest in Bellingham, WA, UBOS beta 14 is out!
 
 As usual, we have a mix of new features that make users' lives easier, new features
 that make developers' lives easier, bug fixes and package upgrades. Here are the
@@ -30,28 +29,30 @@ highlights:
 
 * ... plus the usual hundreds of package upgrades, feature improvements and bug fixes.
 
-
-To upgrade:
+### To upgrade:
 
 * If you always wished to have an extra disk on which to store your data, don't upgrade yet,
-  but set that up first. <a href="/docs/users/running-out-of-disk-space.html">Here is how to</a>.
+  but set that up first.
+  {{% pageref "/docs/users/faq-howto-troubleshooting/howto-running-out-of-disk-space.md" "Here is how to" %}}.
   You can also set this disk up after the upgrade, but it's less work if you do it first.
 
 * To be safe, create a backup of all your data first, then update and reboot:
 
-  <pre>% sudo ubos-admin backup --out ~/XXX.ubos-backup
-% sudo ubos-admin update --noreboot
-% sudo systemctl reboot</pre>
+  ```
+  % sudo ubos-admin backup --out ~/XXX.ubos-backup
+  % sudo ubos-admin update --noreboot
+  % sudo systemctl reboot</pre>
+  ```
 
-For more info, read the detailed release notes <a href="/docs/releases/beta14/release-notes/">here</a>.
+For more info, read the detailed release notes ~~here~~.
 
-As always, we love your <a href="/community/">feedback</a>.
+As always, we love your {{% pageref "/community.md" feedback %}}.
 
-== Known problems ==
+### Known problems
 
 * A few Nextcloud accessories initially were not rebuilt with the new paths. We
   have fixed this.
 
-* On the Raspberry Pi, the `gpio` executable is missing its required `suid root` bit.
+* On the Raspberry Pi, the ``gpio`` executable is missing its required ``suid root`` bit.
   We have submitted a pull request to the Arch Linux ARM project. In the meantime,
-  to fix, become root and execute `chmod 4755 /usr/bin/gpio`.
+  to fix, become root and execute ``chmod 4755 /usr/bin/gpio``.

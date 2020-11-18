@@ -8,10 +8,10 @@ Lots of new functionality in this UBOS update, which is now available on all rel
 channels and on all platforms.
 
 As usual, the details are in the
-[release notes](/docs/releases/2019-09-01/release-notes/), so here are the highlights:
+{{% pageref "/releases/2019-09-01/release-notes.md" "release notes" %}}, so here are
+the highlights:
 
-More and improved administration tools
---------------------------------------
+### More and improved administration tools
 
 * Every wondered whether your UBOS device is working as it should, or whether you are
   overlooking something? ``ubos-admin status`` has lots of new functionality to help you
@@ -34,8 +34,7 @@ More and improved administration tools
   templates for complex Sites with multiple Apps. We'll have more to say about that in
   the future.
 
-Speed improvements
------------------
+### Speed improvements
 
 * Backups have become faster, as UBOS now applies a heuristic on which files to compress
   and which not.
@@ -44,8 +43,7 @@ Speed improvements
   each other, which makes it easier to, say, look at the configuration on a site already
   running on your device, while creating another.
 
-LetsEncrypt integration rewrite
--------------------------------
+### LetsEncrypt integration rewrite
 
 Our LetsEncrypt integration wasn't as flexible (and had more issues) than we wanted,
 so we basically did a rewrite. Here are some tricks UBOS as learned:
@@ -61,8 +59,7 @@ so we basically did a rewrite. Here are some tricks UBOS as learned:
   tools provided by [SSL Labs](https://www.ssllabs.com/>), we obtained an "A" rating.
   Your LetsEncrypt-protected sites running on UBOS should, too, after this upgrade.
 
-Lots of little usability improvements
--------------------------------------
+### Lots of little usability improvements
 
 * ``ubos-install`` will refuse to install to a mounted disk.
 
@@ -76,8 +73,7 @@ Lots of little usability improvements
 
 * Various documentation improvements and bug fixes.
 
-New and improved functionality for developers:
-----------------------------------------------
+### New and improved functionality for developers:
 
 * Apps can now require TLS by saying so in the UBOS Manifest. This makes it impossible
   to deploy the App to a Site not protected by (official, or self-signed) TLS.
@@ -86,10 +82,10 @@ New and improved functionality for developers:
   to the same Site request the same entries in the Site's ``.well-known`` directory;
   depending on the entry, one takes preference over another, or the entries are merged.
 
-Need help?
-----------
+### Need help?
 
 Post to the [UBOS forum](https://forum.ubos.net/).
 
 More details are in the
-[release notes](/docs-yellow/releases/2019-09-01/release-notes/).
+{{% pageref "/releases/2019-09-01/release-notes.md" "release notes" %}}.
+

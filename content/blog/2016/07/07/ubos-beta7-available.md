@@ -9,15 +9,13 @@ support for more types of hardware to run UBOS on, more apps, important software
 upgrades, and many small improvements that make your life as owner of a UBOS
 device in production just so much easier.
 
-<div style="float: right; margin: 0 0 10px 20px; text-align: right">
- <p><a href="https://aws.amazon.com/"><img src="/images/2016-04-01/ec2.png" style="margin: 15px"></a><br/>
-    <a href="http://raspberrypi.org/"><img src="/images/rpi-83x100.png" style="margin: 15px"></a></p>
-</div>
+{{% slide-in-img-right href="https://aws.amazon.com/" src="/images/2016-04-01/ec2.png" %}}
+{{% slide-in-img-right href="http://raspberrypi.org/" src="/images/rpi-83x100.png" %}}
 
 Where do we start?
 
 * You can now run UBOS natively on Amazon Web Services' cloud computing platform,
-  EC2. To to so, see <a href="/docs/users/installation/ec2.html">details ere</a>.
+  EC2. To to so, see {{% pageref "/docs/users/installation/x86_ec2.md" "details here" %}}.
 
 * The Raspberry Pi Foundation announced the much faster, quad-core Raspberry Pi 3.
   UBOS supports it, of course, just like on its older siblings Raspberry Pi Zero,
@@ -27,7 +25,9 @@ Where do we start?
   all that valuable data on it? Backups stored outside of the house, that's what.
   But traditionally, that's complicated. With UBOS, it's not. Here's what you do:
 
-  <pre>% sudo ubos-admin backup-to-amazon-s3</pre>
+  ```
+  % sudo ubos-admin backup-to-amazon-s3
+  ```
 
   This single command will cleanly back up all the apps on your device, straight to
   Amazon's S3 file storage platform. With one more argument, UBOS will first encrypt
@@ -49,12 +49,15 @@ Where do we start?
   email from that site via the highly reliable Amazon Simple Email Service.
 
 These are just some of the highlights. The more detailed release notes are
-<a href="/docs/releases/beta7/release-notes/">here</a>.
+~~here~~.
 
 Note: some of these features require you to have an account with Amazon
 Web Services (AWS), which Amazon might charge you for.
 
-And as you probably know: to upgrade <b>everything</b> on your device, all you need to say is
-``ubos-admin update``.
+And as you probably know: to upgrade **everything** on your device, all you need to say is
 
-We'd love your <a href="/community/">feedback</a>.
+```
+% sudo ubos-admin update
+```
+
+We'd love your {{% pageref "/community.md" feedback %}}.

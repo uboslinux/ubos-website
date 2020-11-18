@@ -13,4 +13,4 @@ Nextcloud has gained a few more apps, including
 Forms, so you can self-host your surveys and questionnaires.
 
 The details are in the
-[release notes](/docs/releases/2020-08-04/release-notes/).
+{{% pageref "/releases/2020-08-04/release-notes.md" "release notes" %}}.

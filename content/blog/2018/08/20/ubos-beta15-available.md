@@ -6,9 +6,9 @@ categories: [ front, release, beta ]
 
 Two important conferences are coming up:
 
-* the <a href="https://nextcloud.com/conf/">Nextcloud conference</a> in Berlin,
+* the [Nextcloud conference](https://nextcloud.com/conf/) in Berlin,
   Germany, from August 23 to 30, and
-* the <a href="https://mydata2018.org/">MyData.org conference</a> in Helsinki,
+* the [MyData.org conference](https://mydata2018.org/) in Helsinki,
   Finland, August 29-31.
 
 We'll be at both, and just in time, we are proud to release UBOS beta 15!
@@ -20,6 +20,6 @@ Here are some highlights:
 * UBOS now drives the LEDs on Intel NUCs and the Desktop Pi enclosure for the Raspberry Pi
 * Access your device from the public internet through Pagekite integration
 
-For more info, read the detailed release notes <a href="/docs/releases/beta15/release-notes/">here</a>.
+For more info, read the detailed release notes ~~here~~.
 
-As always, we love your <a href="/community/">feedback</a>.
+As always, we love your {{% pageref "/community.md" feedback %}}.

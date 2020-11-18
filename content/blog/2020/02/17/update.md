@@ -14,4 +14,4 @@ There is also an initial integration with the Storj decentralized storage networ
 on the "yellow" release channel, and the usual bug fixes and documentation improvements.
 
 As usual, the details are in the
-[release notes](/docs/releases/2020-02-17/release-notes/).
+{{% pageref "/releases/2020-02-17/release-notes.md" "release notes" %}}.

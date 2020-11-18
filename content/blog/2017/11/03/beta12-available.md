@@ -10,6 +10,6 @@ This is one of those cases, but eventually, we made it to the finish line.
 Welcome, UBOS beta 12!
 
 This release does not contain app updates; those will follow shortly. Detailed release
-notes are <a href="/docs/releases/beta12/release-notes/">here</a>.
+notes are ~~here~~.
 
-As always, we love your <a href="/community/">feedback</a>.
+As always, we love your {{% pageref "/community.md" feedback %}}.

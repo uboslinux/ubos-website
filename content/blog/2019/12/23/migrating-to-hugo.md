@@ -2,7 +2,7 @@
 title:  Migrating this site to Hugo and Sphinx
 date:   2019-12-23 23:30:00
 categories: [ front ]
-summary: "This site has been migrated to Hugo and Sphinx, from Jekyll in Sphinx. Please bear with us."
+summary: "This site has been migrated to Hugo and Sphinx, from Jekyll and Sphinx. Please bear with us."
 ---
 
 This site has always been using two static site generators:

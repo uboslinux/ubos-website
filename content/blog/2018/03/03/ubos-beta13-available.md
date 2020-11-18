@@ -5,13 +5,14 @@ categories: [ front, release, beta ]
 ---
 
 IMPORTANT: The upgrade is more complicated this time (and this time only -- we hope!).
-Please follow the instructions in the
-<a href="/docs/releases/beta13/release-notes/">release notes</a>. The short version:
+Please follow the instructions in the release notes. The short version:
 
-<pre>% sudo pacman -Sy
+```
+% sudo pacman -Sy
 % yes y | sudo pacman -S ubos-admin
 % sudo ubos-admin update
-% sudo ubos-admin setnetconfig &lt;your-config-name&gt;</pre>
+% sudo ubos-admin setnetconfig <your-config-name>
+```
 
 UBOS beta 13 is out, and what a release it is! There are lots of new things. Here are
 some of the highlights:
@@ -23,16 +24,16 @@ some of the highlights:
 
 * More apps!
 
-  * Installing a full-fledged <a href="https://joinmastodon.org/">Mastodon</a> server
+  * Installing a full-fledged [Mastodon](https://joinmastodon.org/) server
     and running your own version of Twitter, with up to 500 characters, and federating
     with other decentralized microblogging services, just takes one command. Note:
     Mastodon requires TLS, so you need to specify ``--tls`` when creating your site.
 
-  * <a href="https://www.phpbb.com/">phpBB</a> lets you run your own discussion boards
+  * [phpBB](https://www.phpbb.com/) lets you run your own discussion boards
     on a site you control. No more need for Google Groups or the like.
 
-  * <a href="http://scripting.com/river.html">River5</a> is the latest river-of-news RSS
-    reader from RSS godfather <a href="http://scripting.com/">Dave Winer</a>.
+  * [River5](http://scripting.com/river.html) is the latest river-of-news RSS
+    reader from RSS godfather [Dave Winer](http://scripting.com/)</a>.
 
 * UBOS can now easily run Bitcoin, Ethereum and Monero daemons. This is great for
   development of blockchain-related applications, and for those users who'd like to
@@ -42,12 +43,12 @@ some of the highlights:
   cheapest way to run UBOS on PC hardware).
 
 * The ``ubos-admin`` packages are now licensed using what we call the
-  "Personal Public License". See <a href="/blog/2018/03/02/ubos-license/">separate
-  blog post</a> explaining how it better fits the UBOS values.
+  "Personal Public License". See {{% pageref "/blog/2018/03/02/ubos-license.md" "separate blog post" %}}
+  explaining how it better fits the UBOS values.
 
 * ... plus the usual hundreds of package upgrades, feature improvements and bug fixes.
 
 
-For more info, read the detailed release notes <a href="/docs/releases/beta13/release-notes/">here</a>.
+For more info, read the detailed release notes ~~here~~.
 
-As always, we love your <a href="/community/">feedback</a>.
+As always, we love your {{% pageref "/community.md" feedback %}}.

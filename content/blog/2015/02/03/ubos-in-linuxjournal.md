@@ -5,16 +5,17 @@ categories: [ press ]
 ---
 
 In their February issue, Linux Journal has a
-<a href="http://www.linuxjournal.com/content/youre-boss-ubos">long interview</a> on
+[long interview](http://www.linuxjournal.com/content/youre-boss-ubos) on
 UBOS with Johannes Ernst.
 
-<div style="float: left; margin: 0 2em 2em 0"><a href="http://www.linuxjournal.com/content/youre-boss-ubos"><img src="/images/2015-02-03/linuxjournal.jpg"></a></div>
-<p><b>You're the Boss with UBOS</b></p>
+{{% slide-in-img-right href="http://www.linuxjournal.com/content/youre-boss-ubos" src="/images/2015-02-03/linuxjournal.jpg" %}}
 
-The interview was conducted by <a href="http://searls.com/">Doc Searls</a> who, other
+**You're the Boss with UBOS**
+
+The interview was conducted by [Doc Searls](http://searls.com/) who, other
 than being a Senior Editor there, is one of the original authors of the
-<a href="http://cluetrain.com/">Cluetrain Manifesto</a>, recently
-<a href="http://cluetrain.com/newclues/">updated</a>.
+[Cluetrain Manifesto](http://cluetrain.com/), recently
+[updated](http://cluetrain.com/newclues/).
 
 Here are some choice quotes:
 

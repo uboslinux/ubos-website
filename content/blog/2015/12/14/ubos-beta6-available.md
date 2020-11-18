@@ -18,22 +18,30 @@ Here are the highlights:
 * It's hard to believe, but $5 buys you a gigahertz processor, half a gig of RAM, HDMI video
   and lots of programmable I/O pins; in other words, a Raspberry Pi Zero. We are proud to
   announce that UBOS now runs on the Raspberry Pi Zero, in addition to the original one
-  and version 2. (Go to <a href="/docs/users/installation/raspberrypi.html">installation
-  instructions.</a>)
+  and version 2. (Go to
+  {{% pageref "/docs/users/installation/raspberrypi.md" "installation instructions" %}}.)
 
 * What else is hot in the computing universe? Docker, of course. And as of now, UBOS
-  also runs on Docker. (<a href="/docs/users/installation/x86_docker.html">Here is how.</a>)
+  also runs on Docker. ({{% pageref "/docs/users/installation/x86_docker.md" "Here is how" %}}.)
 
 * Want to run web applications at home, but also access them over the internet? The new
   UBOS network configuration ``public-gateway`` lets you set up your UBOS device as a router
   for your home network, and access your apps on your public IP address. Just say
-  ``ubos-admin setnetconfig public-gateway``.
-  (<a href="/docs/users/networking.html">More info.</a>)
+
+  ```
+  % sudo ubos-admin setnetconfig public-gateway
+  ```
+
+  ({{% pageref "/docs/users/networking.md" "More info" %}}.)
 
 * And of course the usual: some packages have been upgraded, bugs have been fixed etc.
 
-And as you probably know: to upgrade <b>everything</b> on your device, all you need to say is
-``sudo ubos-admin update``.
+And as you probably know: to upgrade **everything** on your device, all you need to say is:
 
-The more detailed release notes are <a href="/docs/releases/beta6/release-notes/">here</a>.
-We'd love your <a href="/community/">feedback</a>.
+```
+% sudo ubos-admin update
+```
+
+The more detailed release notes are ~~here~~.
+
+We'd love your {{% pageref "/community.md" feedback %}}.

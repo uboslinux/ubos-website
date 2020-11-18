@@ -10,4 +10,4 @@ The focus of this release was tracking upstream package upgrades. There were als
 minor bug fixes and documentation improvements.
 
 As usual, the details are in the
-[release notes](/docs/releases/2019-10-10/release-notes/).
+{{% pageref "/releases/2019-10-10/release-notes.md" "release notes" %}}.

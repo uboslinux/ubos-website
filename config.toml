@@ -11,6 +11,7 @@ theme = [
 ]
 metaDataFormat = "yaml"
 rssLimit = 10
+disableKinds = ["taxonomy", "term"]
 
 [markup.goldmark.renderer]
     unsafe = true
@@ -25,3 +26,4 @@ rssLimit = 10
 
 [Author]
   name = "Indie Computing Corp."
+

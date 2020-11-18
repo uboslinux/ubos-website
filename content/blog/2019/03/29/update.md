@@ -10,11 +10,11 @@ Sometimes, we have to do both at the same time!
 As indicated in the last update, This is also the first update in which we use a new numbering
 scheme based on the date of the announcement.
 
-For now, updates have been published to the `yellow` channel only. We will promote it
-to `green` in a few days, assuming things go well. If you like to be notified when UBOS
+For now, updates have been published to the ``yellow`` channel only. We will promote it
+to ``green`` in a few days, assuming things go well. If you like to be notified when UBOS
 updates have been published, or for any other notifications, here is the first news for you:
 
-## Release notification mailing lists
+### Release notification mailing lists
 
 * We have created notification-only mailing lists (separate for the `yellow` and the
   `green` channel) that you can subscribe to, to be notified when there are updates
@@ -22,8 +22,9 @@ updates have been published, or for any other notifications, here is the first n
 * Go [here](https://indiecomputing.hosted.phplist.com/lists/?p=subscribe&id=4) to
   subscribe.
 
-<a href="https://matomo.org/"><img src="/images/matomo-144x144.png"    alt="[Matomo]"    style="float: right; margin: 5px 20px"></a>
-## New apps
+{{% slide-in-img-right href="https://matomo.org/" src="/images/matomo-144x144.png" alt="[Matomo]" %}}
+
+### New apps
 
 * Matomo, a privacy-preserving alternative to cloud-based web analytics tools such
   as Google Analytics (formerly named Piwik) is now available for single-command
@@ -31,12 +32,12 @@ updates have been published, or for any other notifications, here is the first n
 
   To install, run ``ubos-admin createsite`` and specify app ``matomo``.
 
-## Notable new packages for users:
+### Notable new packages for users:
 
 * IPFS: go-ipfs
 * More Wordpress plugins, such as Pterotype and SEO
 
-## Key package upgrades in this release
+### Key package upgrades in this release
 
 * Nextcloud
 * Mastodon
@@ -46,7 +47,7 @@ updates have been published, or for any other notifications, here is the first n
 * Bitcoin daemon
 * Ethereum daemon
 
-## Notable fixes and improvements:
+### Notable fixes and improvements:
 
 * Various backup/restore issues were fixed. These had impacted primarily sites running
   Shaarli and Selfoss.
@@ -55,19 +56,20 @@ updates have been published, or for any other notifications, here is the first n
 * DNSSEC is turned off by default, as it appears to be incompatible with many deployed
   DNS servers that don't support it.
 
-## Changes for developers:
+### Changes for developers:
 
 * Apps based on Node now need to package their own node runtime.
 
-## Other:
+### Other:
 
 * The Personal Public License has had some clarifying edits. See
-  [separate post](/blog/2019/03/29/license-update.html).
+  {{% pageref "/blog/2019/03/29/license-update.md" "separate post" %}}.
 
-## Upgrades:
+### Upgrades:
 
 * IMPORTANT: Please consult the
-  [release notes](/docs-yellow/releases/2019-03-29/release-notes/index.html) for platform-specific notes.
+  {{% pageref "/releases/2019-03-29/release-notes.md" "release notes" %}} for
+  platform-specific notes.
 
 More details are in the
-[release notes](/docs-yellow/releases/2019-03-29/release-notes/index.html).
+{{% pageref "/releases/2019-03-29/release-notes.md" "release notes" %}}.

@@ -6,12 +6,12 @@ categories: [ front, release, beta ]
 
 There is lots of new stuff in this update. But before we get there:
 
-This is the last of the <a href="https://en.wikipedia.org/wiki/Mostly_Harmless">increasingly
-inaccurately named</a> "beta XXX updates". UBOS has been fairly stable for some time, and
+This is the last of the [increasingly inaccurately named](https://en.wikipedia.org/wiki/Mostly_Harmless)
+"beta XXX updates". UBOS has been fairly stable for some time, and
 our "beta" labels are a throw-back to the past when that wasn't necessarily true. So going
 forward, we will stop using the term "beta". Instead, we will focus on the distinction
 between the different release channels, and at what version they are at. If you check UBOS
-<a href="https://github.com/uboslinux/">on GitHub</a>, you'll see that the
+[on GitHub](https://github.com/uboslinux/), you'll see that the
 milestone labels have already been renamed.
 
 Here are some of the highlights on what is new in beta (ahem!) 17, currently available
@@ -39,8 +39,9 @@ on the ``yellow`` release channel only:
   * at <a href="/docs/">ubos.net/docs</a>, as before, you find the documentation
     for the ``green`` ("production") release channel.
 
-  * at <a href="/docs-yellow/">ubos.net/docs-yellow</a>, which is new, you find
-    the documentation for the ``yellow`` ("beta") release channel.
+  * ~~at ubos.net/docs-yellow, which is new, you find
+    the documentation for the ``yellow`` ("beta") release channel.~~
+    (**Updated:** merged back together)
 
   As UBOS gets promoted through the release channels, new features will first
   show up on ``yellow``, and its documentation section, and later make it into
@@ -50,6 +51,6 @@ on the ``yellow`` release channel only:
 
 * As usual, lots of other smaller improvements and fixes of bugs and annoyances.
 
-The more detailed release notes are <a href="/docs-yellow/releases/beta17/release-notes/">here</a>.
+The more detailed release notes are ~~here~~.
 
-As always, we love your <a href="/community/">feedback</a>.
+As always, we love your {{% pageref "/community.md" feedback %}}.

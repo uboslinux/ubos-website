@@ -11,7 +11,7 @@ both an UBOS operating system level, and for applications.
 If you run UBOS, we recommend you subscribe to one of our new release notification lists
 so you are notified when UBOS updates are available:
 
-## Release notification mailing lists
+### Release notification mailing lists
 
 * We have created notification-only mailing lists (separate for the `yellow` and the
   `green` channel) that you can subscribe to, to be notified when there are updates
@@ -20,4 +20,4 @@ so you are notified when UBOS updates are available:
   subscribe.
 
 The details of the release are in the
-[release notes](/docs/releases/2019-04-03/release-notes/index.html).
+{{% pageref "/releases/2019-04-03/release-notes.md" "release notes" %}}.

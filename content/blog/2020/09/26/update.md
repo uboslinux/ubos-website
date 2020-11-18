@@ -14,4 +14,4 @@ Here are some of the highlights:
 * Hundreds of package updates.
 
 As usual, the details are in the
-[release notes](/docs/releases/2020-09-26/release-notes/).
+{{% pageref "/releases/2020-09-26/release-notes.md" "release notes" %}}.

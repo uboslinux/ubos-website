@@ -23,9 +23,12 @@ more incremental. Here are the highlights:
 * Various bug fixes and improvements.
 
 These are just some of the highlights. The more detailed release notes are
-<a href="/docs/releases/beta8/release-notes/">here</a>.
+~~here~~.
 
-And as you probably know: to upgrade <b>everything</b> on your device, all you need to say is
-``sudo ubos-admin update``.
+And as you probably know: to upgrade **everything** on your device, all you need to say is
 
-We'd love your <a href="/community/">feedback</a>.
+```
+% sudo ubos-admin update
+```
+
+We'd love your {{% pageref "/community.md" feedback %}}.

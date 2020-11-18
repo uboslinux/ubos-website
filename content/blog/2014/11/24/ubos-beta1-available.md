@@ -8,17 +8,16 @@ We're proud to announce that UBOS is now available in a first beta release.
 
 You can run UBOS:
 
-<img src="/images/pc-79x100.png"   alt="[PC]"           style="float: right; margin: 5px 20px">
-<img src="/images/vbox-82x100.png" alt="[Virtual Box]"  style="float: right; margin: 5px 20px">
-<img src="/images/rpi-83x100.png"  alt="[Raspberry Pi]" style="float: right; margin: 5px 20px">
+{{% slide-in-img-right src="/images/pc-79x100.png"   alt="[PC]" %}}
+{{% slide-in-img-right src="/images/vbox-82x100.png" alt="[Virtual Box]" %}}
+{{% slide-in-img-right src="/images/rpi-83x100.png"  alt="[Raspberry Pi]" %}}
 
  * on standard PCs, as their primary operating system
  * on standard PCs and Macs, in VirtualBox
  * on your Raspberry Pi Model B and Model B+.
 
-<a href="/quickstart/">Get started!</a>
+{{% pageref "/quickstart.md" %}}
 
-<br>
 
 The following apps are available and have been tested on all platforms:
 
@@ -55,19 +54,16 @@ The following apps are available and have been tested on all platforms:
    and also **Jenkins**, the continuous integration app we use to build UBOS itself on UBOS.<br>
    Install with `sudo ubos-admin createsite`, specify app `jenkins`.
 
-<br>
 
 Some apps already have some accessories, which you may or may not want to install:
 
- * **Wordpress plugins**: `wordpress-plugin-semantic-linkbacks`, `wordpress-plugin-social` and
-  `wordpress-plugin-webmention` for [Indie Web](http://indiewebcamp.com/) support;
+ * **Wordpress plugins**: ``wordpress-plugin-semantic-linkbacks``, ``wordpress-plugin-social`` and
+  ``wordpress-plugin-webmention`` for [Indie Web](http://indiewebcamp.com/) support;
 
- * **Mediawiki extension**: `mediawiki-ext-confirmaccount` to cut down on wiki spam;
+ * **Mediawiki extension**: ``mediawiki-ext-confirmaccount`` to cut down on wiki spam;
 
- * **Jenkins plugins**: `jenkins-plugin-git`, `jenkins-plugin-git-client`, and `jenkins-plugin-scm-api`
+ * **Jenkins plugins**: ``jenkins-plugin-git``, ``jenkins-plugin-git-client``, and ``jenkins-plugin-scm-api``
    for Git integration.
-
-<br>
 
 The following features should work on all platforms:
 
@@ -75,14 +71,14 @@ The following features should work on all platforms:
    webserver configuration, etc.
 
  * **Multiple virtual hosts on the same host**. For example, you can run sites
-   `http://home.example.com/` and `http://personal.example.net/` on the same host.
+   ``http://home.example.com/`` and ``http://personal.example.net/`` on the same host.
 
  * **Multiple apps on the same virtual host**. For example, you can run
-   Wordpress at `http://example.com/blog` and Mediawiki at `http://example.com/wiki`
+   Wordpress at ``http://example.com/blog`` and Mediawiki at ``http://example.com/wiki``
 
  * **Multiple instances of the same app on the same host**. For example, you can run three
-   instances of Wordpress on the same host, such as at `http://example.com`,
-   `http://example.net/blog` and `http://example.com/news`
+   instances of Wordpress on the same host, such as at ``http://example.com``,
+   ``http://example.net/blog`` and ``http://example.net/news``
 
  * **Single-command undeployment**
 
@@ -92,13 +88,11 @@ The following features should work on all platforms:
 
  * **Single-command backup and restore**.
 
-and a few other things, see the [documentation](https://ubos.net/docs/) section of this
+and a few other things, see the {{% pageref "/docs/" documentation %}} section of this
 site.
 
-<br>
-
-This is a beta, so expect bugs (<a href="/docs/releases/beta1/release-notes/">release notes</a>).
+This is a beta, so expect bugs (~~release notes~~).
 We run several production sites on it already, but we don't recommend (yet) that you do.
 
-To try out UBOS, go to [Getting started](https://ubos.net/quickstart/). We'd love to
-[hear from you](https://ubos.net/community/) how it works for you.
+To try out UBOS, go to {{% pageref "/quickstart.md" %}}. We'd love to
+{{% pageref "/community.md" "hear from you" %}} how it works for you.

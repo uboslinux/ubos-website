@@ -21,7 +21,6 @@ Apps have been updated on all release channels. This includes upgrades to:
 
 and apps to many accessories that go with these apps.
 
-More details are in the release notes:
+More details are in the
+{{% pageref "/releases/2019-11-12/release-notes.md" "release notes" %}}.
 
-* [release notes for the green channel](/docs/releases/2019-11-12/release-notes/).
-* [release notes for the yellow channel](/docs-yellow/releases/2019-11-12/release-notes/).

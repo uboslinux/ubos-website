@@ -59,10 +59,6 @@ span.news-meta {
   width: 110px;
 }
 
-xxp.feeds {
-    float: right;
-    margin: 5px 0 0 0;
-}
 div.apps img {
     margin: 10px 10px 0 15px;
 }

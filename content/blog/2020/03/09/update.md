@@ -4,9 +4,7 @@ date:   2020-03-09 13:00:00
 categories: [ front, release ]
 ---
 
-<a href="https://nextcloud.com/hub/">
-<img src="/images/2020-03-09/nextcloud-hub.png" alt="[Nextcloud Hub]" style="float: right; margin: 0 0 20px 40px">
-</a>
+{{% slide-in-img-right href="https://nextcloud.com/hub/" src="/images/2020-03-09/nextcloud-hub.png" alt="[Nextcloud Hub]" %}}
 
 A new UBOS apps update is available on all release channels and all platforms.
 
@@ -24,4 +22,4 @@ Many other applications were upgraded as well, and the usual smattering of bug f
 and improvements.
 
 The details are in the
-[release notes](/docs/releases/2020-03-09/release-notes/).
+{{% pageref "/releases/2020-03-09/release-notes.md" "release notes" %}}.

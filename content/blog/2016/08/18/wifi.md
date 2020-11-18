@@ -4,8 +4,8 @@ date:   2016-08-18 15:00:00
 categories: [ front, howto ]
 ---
 
-<strong>Update:</strong> UBOS now has built-in WiFi support via the
-<a href="/docs/users/shepherd-staff.html">UBOS Staff</a> and the manual
+**Update:** UBOS now has built-in WiFi support via the
+{{% pageref "/docs/users/shepherd-staff.md" "UBOS Staff" %}} and the manual
 setup described in this post should not be necessary any more.
 
 <hr/>
@@ -22,21 +22,29 @@ where it controls the pumps of my pool, running UBOS of course
 I needed to replace the SD Card of that Raspberry Pi, and decided to do a clean reinstall.
 
 * Boot UBOS on your Raspberry Pi, and log in (either via console or via SSH over Ethernet)
+
 * Insert the Wi-Pi dongle into the USB port
+
 * Determine its interface name, by executing:
 
-  <pre>% ip link</pre>
+  ```
+  % ip link
+  ```
 
-* In directory `/etc/wpa_supplicant`, become root by executing:
+* In directory ``/etc/wpa_supplicant``, become ``root`` by executing:
 
-  <pre>% sudo bash</pre>
+  ```
+  % sudo bash
+  ```
 
-  and create a file called `wpa_supplicant-wlan0.conf`
+  and create a file called ``wpa_supplicant-wlan0.conf``.
+
   This assumes that the name of the WiFi interface you found with `ip link` above was
-  `wlan0`. If it is something else, adjust the name of the file correspondingly.
+  ``wlan0``. If it is something else, adjust the name of the file correspondingly.
   This file needs to have the following content:
 
-  <pre>ctrl_interface=/run/wpa_supplicant
+  ```
+  ctrl_interface=/run/wpa_supplicant
   eapol_version=1
   ap_scan=1
   fast_reauth=1
@@ -44,35 +52,46 @@ I needed to replace the SD Card of that Raspberry Pi, and decided to do a clean 
   network={
     ssid="XXXXXX"
     psk="YYYYYY"
-  }</pre>
+  }
+  ```
 
-  Replace `XXXXXX` with the name of your WiFi network you want to connect to, and
-  `YYYYYY` with your WiFi password.
+  Replace ``XXXXXX`` with the name of your WiFi network you want to connect to, and
+  ``YYYYYY`` with your WiFi password.
 
-* Set the correct regulatory domain. In directory `/etc/conf.d`, edit file `wireless-regdom`
+* Set the correct regulatory domain. In directory ``/etc/conf.d``, edit file ``wireless-regdom``
   and remove the comment from the line that represents your country. For example, if you
   reside in the US, change line:
 
-  <pre>#WIRELESS_REGDOM="US"</pre>
+  ```
+  #WIRELESS_REGDOM="US"
+  ```
 
   to read as follows:
 
-  <pre>WIRELESS_REGDOM="US"</pre>
+  ```
+  WIRELESS_REGDOM="US"
+  ```
 
 * Start the Wifi daemon:
 
-  <pre>% sudo systemctl start wpa_supplicant@wlan0
-  % sudo systemctl enable wpa_supplicant@wlan0</pre>
+  ```
+  % sudo systemctl start wpa_supplicant@wlan0
+  % sudo systemctl enable wpa_supplicant@wlan0
+  ```
 
   Again, use the correct interface name.
 
 You are done! You can check that you have an IP address with:
 
-<pre>% ip addr</pre>
+```
+% ip addr
+```
 
 and you should be able to access any website you like, such as:
 
-<pre>% curl -v http://ubos.net/</pre>
+```
+% curl -v http://ubos.net/
+```
 
 If it doesn't work? Check that you got the right mix of underscores and hyphen in the
 file you created. And, of course, `wpa_supplicant` is known to only work with some WiFi

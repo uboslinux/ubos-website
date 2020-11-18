@@ -13,10 +13,6 @@ in San Francisco last night. I talked about "UBOS and the Indie IoT". It feature
 * a high-level market map, and
 * how I control my pool from my couch.
 
-Here's the recording:
-
-<iframe src="https://air.mozilla.org/connected-devices-meetup-johannes-ernst-ubos-and-the-indie-iot-20160927/video/" width="640" height="380" frameborder="0" allowfullscreen></iframe>
-
 Interesting? Join us on the brand-new Indie IoT mailing list at
 [groups.io/g/indieiot](https://groups.io/g/indieiot).
 

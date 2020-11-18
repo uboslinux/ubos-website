@@ -13,20 +13,20 @@ The links on this page are for the [green (production) release channel](/docs/de
   <img src="/images/rpi-83x100.png" alt="[Raspberry Pi]">
   <p><b>To run UBOS on the Raspberry Pi:</b></p>
   <p>Download <a href="http://depot.ubos.net/green/armv6h/images/ubos_green_armv6h-rpi_LATEST.img.xz">this
-     image for Raspberry Pi&nbsp;Zero or the original Raspberry Pi 1</a> (approx. 540MB), or
+     image for Raspberry Pi&nbsp;Zero or the original Raspberry Pi 1</a>, or
      <a href="http://depot.ubos.net/green/armv7h/images/ubos_green_armv7h-rpi2_LATEST.img.xz">this
-     image for Raspberry Pi&nbsp;2 or Raspberry Pi&nbsp;3</a> (approx. 540MB), or
+     image for Raspberry Pi&nbsp;2 or Raspberry Pi&nbsp;3</a>, or
      <a href="http://depot.ubos.net/green/armv7h/images/ubos_green_armv7h-rpi4_LATEST.img.xz">this
-     image for Raspberry Pi&nbsp;4</a> (approx. 540MB),
+     image for Raspberry Pi&nbsp;4</a>,
      uncompress, and write to a USB stick in "raw" format.</p>
  </div>
  <div>
   <img src="/images/pc-79x100.png" alt="[PC]">
   <p><b>To run UBOS on an x86 PC:</b></p>
   <p>Download <a href="http://depot.ubos.net/green/x86_64/images/ubos_green_x86_64-pc_LATEST.img.xz">this
-     image for a physical PC</a> (approx. 500MB), uncompress, and write to a USB stick in "raw" format. Or
+     image for a physical PC</a>, uncompress, and write to a USB stick in "raw" format. Or
      <a href="http://depot.ubos.net/green/x86_64/images/ubos_green_x86_64-vbox_LATEST.vmdk.xz">this
-     image for VirtualBox or VMWare</a> (approx. 400MB), uncompress, and use as the main virtual hard drive.</p>
+     image for VirtualBox or VMWare</a>, uncompress, and use as the main virtual hard drive.</p>
  </div>
 </div>
 <div class="platforms">
@@ -34,13 +34,13 @@ The links on this page are for the [green (production) release channel](/docs/de
   <img src="/images/espressobin-175x22.png" alt="[ESPRESSObin]" style="margin: 39px 0">
   <p><b>To run UBOS on the ESPRESSObin:</b></p>
   <p>Download <a href="http://depot.ubos.net/green/aarch64/images/ubos_green_aarch64-espressobin_LATEST.img.xz">this
-     image</a> (approx. 350MB), uncompress, and write to a USB stick in "raw" format.</p>
+     image</a>, uncompress, and write to a USB stick in "raw" format.</p>
  </div>
  <div>
   <img src="/images/hardkernel-95x100.png" alt="[ODROID]" style="">
   <p><b>To run UBOS on an ODROID-XU4 or -HC2:</b></p>
   <p>Download <a href="http://depot.ubos.net/green/aarch64/images/ubos_green_armv7h-odroid-xu3_LATEST.img.xz">this
-     image</a> (approx. 560MB), uncompress, and write to a USB stick in "raw" format.</p>
+     image</a>, uncompress, and write to a USB stick in "raw" format.</p>
  </div>
 </div>
 
@@ -79,7 +79,7 @@ For more details and other installation options, refer to the
 [Installation section](/docs/users/installation.html) in the
 UBOS user documentation. It also describes how to run UBOS in a Linux container.
 
-## Then: Create a website that runs one or more Apps
+## Then: create a website that runs one or more Apps
 
 Once logged in, create a website that runs one or more apps:
 

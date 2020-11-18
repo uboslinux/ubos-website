@@ -22,9 +22,9 @@ bug fixes. Here are some of the highlights:
 * All images for all platforms has been updated.
 
 These are just some of the highlights. The more detailed release notes are
-<a href="/docs/releases/beta9/release-notes/">here</a>.
+~~here~~.
 
 And as you probably know: to upgrade your device, all you need to say is
 ``sudo ubos-admin update``.
 
-We'd love your <a href="/community/">feedback</a>.
+We'd love your {{% pageref "/community.md" feedback %}}.

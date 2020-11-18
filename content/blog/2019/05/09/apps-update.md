@@ -21,4 +21,4 @@ Apps have been updated on all release channels.
 * Plus a few bug fixes.
 
 More details are in the
-[release notes](/docs/releases/2019-05-09/release-notes/index.html).
+{{% pageref "/releases/2019-05-09/release-notes.md" "release notes" %}}.

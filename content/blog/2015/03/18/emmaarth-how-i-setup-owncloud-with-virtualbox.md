@@ -5,9 +5,9 @@ categories: [ userstory, owncloud, virtualbox ]
 ---
 
 UBOS user Emmanual Arthur wrote us with this experience report. You can often find him
-on <a href="http://webchat.freenode.net/?channels=%23ubos">#ubos</a>.
+on [#ubos](http://webchat.freenode.net/?channels=%23ubos).
 
-"I wanted to use <a href="http://owncloud.org/">ownCloud</a> Server, but to set it up on
+"I wanted to use [ownCloud](http://owncloud.org/) Server, but to set it up on
 Windows 8.1 wasn't trivial. So the UBOS solution is more appealing to me. I also wanted
 to be able to use my ownCloud server if I am out of range of my local network. I didn't
 want to use Dropbox, OneDrive, GoogleDrive and such. I also want to sync my calendar,
@@ -24,11 +24,9 @@ My configuration:
 * Oracle VirtualBox version VirtualBox-4.3.24-98716-Win
 * My host for VirtualBox is Windows 8.1
 
-After setting up UBOS with the guide
-<a href="/docs/users/installation/virtualbox.html">here</a>,
+After setting up UBOS with the guide {{% pageref "/docs/users/installation/x86_virtualbox.md" here %}},
 I installed ownCloud with the video tutorial
-<a href="/blog/2015/02/11/owncloud8-on-ubos/">Installing ownCloud 8
-on UBOS with TLS</a>.
+{{% pageref "/blog/2015/02/11/owncloud8-on-ubos.md" "Installing ownCloud 8 on UBOS with TLS" %}}.
 
 When asked for hostname, I chose ``*``. We will need that for connecting from the
 public internet.

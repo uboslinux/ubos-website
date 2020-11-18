@@ -12,4 +12,4 @@ The highlights:
 * Mastodon has been upgraded on the `yellow` channel
 
 As usual, the details are in the
-[release notes](/docs/releases/2020-10-20/release-notes/).
+{{% pageref "/releases/2020-10-20/release-notes.md" "release notes" %}}.

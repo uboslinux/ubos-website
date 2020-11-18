@@ -1,5 +1,6 @@
 ---
 title: Arch
+summary: A processor architecture, like Intel 64bit
 seealsoterm: [
     'Device_Class'
 ]

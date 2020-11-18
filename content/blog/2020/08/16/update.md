@@ -19,4 +19,4 @@ Here are some of the highlights:
   work with UBOS even simpler. Like ``ubos-admin listsites --with <app>``.
 
 As usual, the details are in the
-[release notes](/docs/releases/2020-08-16/release-notes/).
+{{% pageref "/releases/2020-08-16/release-notes.md" "release notes" %}}.
