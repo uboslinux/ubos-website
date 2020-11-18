@@ -6,9 +6,9 @@ UBOS_AWS_IMAGE_URL = https://console.aws.amazon.com/ec2/v2/home?region=us-east-1
 STAGEDIR = public
 STATICDIR = static
 
-.PHONY: all clean hugo static message open
+.PHONY: all clean hugo static open
 
-all: hugo static message
+all: hugo static
 
 clean:
 	rm -rf $(STAGEDIR)/* $(STAGEDIR)/.htacc*
@@ -23,11 +23,6 @@ static:
 	echo 'RedirectMatch /feed.xml https://ubos.net/index.xml' >> $(STATICDIR)/.htaccess
 	mkdir -p $(STATICDIR)/include
 	sed -e "s!UBOS_AWS_IMAGE_URL!$(UBOS_AWS_IMAGE_URL)!g" templates/amazon-ec2-image-latest.js.tmpl > $(STATICDIR)/include/amazon-ec2-image-latest.js
-
-message:
-	@echo ==============================================================
-	@echo "DON'T FORGET: ubos-docs neeeds to generated separately, twice!"
-	@echo ==============================================================
 
 open:
 	open -a Firefox http://ubos/
