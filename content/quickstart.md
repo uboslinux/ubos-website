@@ -5,8 +5,8 @@ title: Quick Start
 
 ## On a device or server
 
-A more detailed step-by-step guide can be found in the [user documentation](/docs/users/).
-The links on this page are for the [green (production) release channel](/docs/developers/buildrelease.html).
+A more detailed step-by-step guide can be found in the {{% pageref "/docs/users/" %}}.
+The links on this page are for the {{% pageref "/docs/developers/buildrelease.md" "green (production) release channel" %}}.
 
 <div class="platforms">
  <div>
@@ -45,7 +45,7 @@ The links on this page are for the [green (production) release channel](/docs/de
 </div>
 
 Once booted, log in from the console as root, or via ssh using the
-[UBOS staff](/docs/users/shepherd-staff.html).
+{{% pageref "/docs/users/shepherd-staff.md" "UBOS Staff" %}}.
 
 <h2>In the Cloud</h2>
 <div class="platforms">
@@ -73,11 +73,11 @@ file):
  </div>
 </div>
 
-Once booted, log in as <code>root</code> from the console.
+Once booted, log in as ``root`` from the console.
 
-For more details and other installation options, refer to the
-[Installation section](/docs/users/installation.html) in the
-UBOS user documentation. It also describes how to run UBOS in a Linux container.
+For more details and other installation options, refer to
+{{% pageref "/docs/users/installation/" %}} in the UBOS {{% pageref "/docs/users/" %}}.
+It also describes how to run UBOS in a Linux container.
 
 ## Then: create a website that runs one or more Apps
 

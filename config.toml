@@ -10,7 +10,7 @@ theme = [
    'hugo-theme-j12t-base'
 ]
 metaDataFormat = "yaml"
-rssLimit = 10
+rssLimit = 15
 disableKinds = ["taxonomy", "term"]
 
 [markup.goldmark.renderer]

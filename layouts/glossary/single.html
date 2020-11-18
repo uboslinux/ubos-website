@@ -28,20 +28,7 @@
 {{   end }}
   <p class="source main">{{ .Page.Permalink }}</p>
 
-{{ if .Params.categories }}
-  <div class="categories main">
-   <ul>
-{{   range $i := (slice "categories" "tags") }}
-{{     with ($.Param $i) }}
-{{       range $k := . }}
-    <li><a href="{{ relURL (print "/" $i "/" $k | urlize) }}">{{$k}}</a></li>
-{{       end }}
-{{     end }}
-{{   end }}
-   </ul>
-  </div>
-{{ end }}
-
+{{ partial "categories.html" . }}
 
   <div class="content">
 {{ .Content }}

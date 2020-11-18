@@ -229,10 +229,6 @@ article p.date {
     font-size: var( --small-font-size );
 }
 
-div.categories {
-    display: none;
-}
-
 ul.range-ul-article,
 ul.range-ul-article > li {
     margin:  0;

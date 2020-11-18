@@ -4,7 +4,7 @@ date:   2018-03-02 15:00:00
 categories: [ front, legal ]
 ---
 
-Update 2019-03-29. Read [post](/blog/2019/03/29/license-update.html).
+Update 2019-03-29. Read {{% pageref "/blog/2019/03/29/license-update.md" post %}}.
 
 ## TL;DR:
 

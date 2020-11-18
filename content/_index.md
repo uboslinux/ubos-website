@@ -187,23 +187,23 @@ var thanksForSubscribing = '<div class="subscribed">Thanks for <a href="https://
   <h2>Run UBOS</h2>
   <ul>
    <li>on an x86 PC (64bit)
-       (<a href="/docs/users/installation/x86_bootstick.html">bootstick</a>,
-       <a href="/docs/users/installation/x86_disk.html">hard drive</a>,
-       <a href="/docs/users/installation/x86_container.html">container</a>,
-       <a href="/docs/users/installation/virtualbox.html">VirtualBox</a>,
-       <a href="/docs/users/installation/x86_docker.html">Docker</a>)
-       or cloud (<a href="/docs/users/installation/ec2.html">EC2</a>).</li>
-   <li>on a Raspberry Pi&nbsp;0, 1 (<a href="/docs/users/installation/raspberrypi.html">SDCard</a>,
-       <a href="/docs/users/installation/armv6h_container.html">container</a>) or
-       Pi&nbsp;2, 3 (<a href="/docs/users/installation/raspberrypi2.html">SDCard</a>,
-       <a href="/docs/users/installation/armv7h_container.html">container</a>) or
-       Pi&nbsp;4 (<a href="/docs/users/installation/raspberrypi4.html">SDCard or USB disk</a>,
-       <a href="/docs/users/installation/armv7h_container.html">container</a>)</li>
-   <li>on an Odroid-XU4, HC2 (<a href="/docs/users/installation/odroid-xu3.html">SDCard</a>,
-       <a href="/docs/users/installation/armv7h_container.html">container</a>)</li>
-   <li>on a Marvell ESPRESSObin (<a href="/docs/users/installation/espressobin.html">SDCard</a>,
-       <a href="/docs/users/installation/espressobin.html#optional-boot-from-a-sata-disk-instead-of-an-sd-card">hard drive</a>,
-       <a href="/docs/users/installation/aarch64_container.html">container</a>).</li>
+       (<a href="/docs/users/installation/x86_bootstick/">bootstick</a>,
+       <a href="/docs/users/installation/x86_disk/">hard drive</a>,
+       <a href="/docs/users/installation/x86_container/">container</a>,
+       <a href="/docs/users/installation/x86_virtualbox/">VirtualBox</a>,
+       <a href="/docs/users/installation/x86_docker/">Docker</a>)
+       or cloud (<a href="/docs/users/installation/x86_ec2/">EC2</a>).</li>
+   <li>on a Raspberry Pi&nbsp;0, 1 (<a href="/docs/users/installation/raspberrypi/">SDCard</a>,
+       <a href="/docs/users/installation/armv6h_container/">container</a>) or
+       Pi&nbsp;2, 3 (<a href="/docs/users/installation/raspberrypi2/">SDCard</a>,
+       <a href="/docs/users/installation/armv7h_container/">container</a>) or
+       Pi&nbsp;4 (<a href="/docs/users/installation/raspberrypi4/">SDCard or USB disk</a>,
+       <a href="/docs/users/installation/armv7h_container/">container</a>)</li>
+   <li>on an Odroid-XU4, HC2 (<a href="/docs/users/installation/odroid-xu3/">SDCard</a>,
+       <a href="/docs/users/installation/armv7h_container/">container</a>)</li>
+   <li>on a Marvell ESPRESSObin (<a href="/docs/users/installation/espressobin/">SDCard</a>,
+       <a href="/docs/users/installation/espressobin/">hard drive</a>,
+       <a href="/docs/users/installation/aarch64_container/">container</a>).</li>
   </ul>
  </div>
  <div class="howtoitem">
