@@ -3,7 +3,7 @@ title: Device
 plural: Devices
 summary: Any physical or virtualized computer running UBOS.
 seealsoterm: [
-    'deviceclass'
+    'device_class'
 ]
 ---
 
