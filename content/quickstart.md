@@ -39,7 +39,7 @@ The links on this page are for the {{% pageref "/docs/developers/buildrelease.md
  <div>
   <img src="/images/hardkernel-95x100.png" alt="[ODROID]" style="">
   <p><b>To run UBOS on an ODROID-XU4 or -HC2:</b></p>
-  <p>Download <a href="http://depot.ubos.net/green/aarch64/images/ubos_green_armv7h-odroid-xu3_LATEST.img.xz">this
+  <p>Download <a href="http://depot.ubos.net/green/armv7h/images/ubos_green_armv7h-odroid-xu3_LATEST.img.xz">this
      image</a>, uncompress, and write to a USB stick in "raw" format.</p>
  </div>
 </div>
