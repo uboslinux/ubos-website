@@ -1,3 +1,0 @@
-RedirectMatch /survey https://apps.indiecomputing.com/nextcloud/index.php/apps/forms/WBC8zjEb3omz3mRN
-RedirectMatch /staff(.*)$ https://ubos.net/docs/users/shepherd-staff.html
-RedirectMatch /feed.xml https://ubos.net/index.xml
