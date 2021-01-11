@@ -1,3 +1,6 @@
-{{- range ( where .Site.RegularPages "Section" "blog" | first 3 ) }}
+{{- range ( where .Site.RegularPages "Section" "releases" | first 1 ) }}
+   <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+{{- end}}
+{{- range ( where .Site.RegularPages "Section" "blog" | first 2 ) }}
    <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
 {{- end}}
