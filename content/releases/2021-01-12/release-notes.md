@@ -1,6 +1,6 @@
 ---
-title: "Release Notes: Apps update 2021-01-11"
-date: 2021-01-11
+title: "Release Notes: Apps update 2021-01-12"
+date: 2021-01-12
 ---
 
 ## To upgrade
