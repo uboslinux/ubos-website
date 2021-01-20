@@ -16,7 +16,7 @@ seconds, which is great for reproducible installs and tests.
 To run a UBOS container on a Arch development machine, follow these steps:
 
 1. Download UBOS for a Linux container on your machine architecture (such as x86_64)
-   as described in {{% pageref "/docs/users/installation.md" %}}.
+   as described in {{% pageref "/docs/users/installation/" %}}.
 
 1. Unpack this file into a btrfs subvolume. Neither btrfs nor subvolumes are required,
    but they make things faster while taking up less disk space. Assuming you picked
