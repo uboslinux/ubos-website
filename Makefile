@@ -1,5 +1,3 @@
-# Makefile for all of ubos.net, except ubos.net/docs*
-
 UBOS_AWS_IMAGE_URL = https://console.aws.amazon.com/ec2/v2/home?region=us-east-1\#LaunchInstanceWizard:ami=ami-0363a4bb10fa9a766
 
 # ubos.net variables
@@ -24,5 +22,6 @@ static:
 	mkdir -p $(STATICDIR)/include
 	sed -e "s!UBOS_AWS_IMAGE_URL!$(UBOS_AWS_IMAGE_URL)!g" templates/amazon-ec2-image-latest.js.tmpl > $(STATICDIR)/include/amazon-ec2-image-latest.js
 
-open:
-	open -a Firefox http://ubos/
+upload: hugo
+	rsync -rtlvH --delete-after --delay-updates --safe-links -e ssh public/* public/.htaccess docroot@ubos.net:a9b927684f1584bd3edf8e655d0c3fa55142250ca/
+
