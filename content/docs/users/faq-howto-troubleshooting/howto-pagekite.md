@@ -47,11 +47,13 @@ setup, you will be able to reach your {{% gl Device %}} at
 
 This only works if you have a {{% gl Site %}} on your {{% gl Device %}} that
 actually corresponds to your kite name, otherwise UBOS will not forward any traffic.
-So if your Pagekite kite name is ``johndoe.pagekite.me``, make you sure you performed
-a ``ubos-admin createsite`` (or equivalent) for a {{% gl Site %}} with that hostname on
-the {{% gl Device %}} that you run Pagekite on.
+So if your Pagekite kite name is ``johndoe.pagekite.me``, make you sure
+that your {{% gl Site %}} either has hostname ``johndoe.pagekite.me`` or
+the wildcard hostname ``*``.
 
-Alternatively, you can use a {{% gl Site %}} with the wildcard (``*``) hostname.
+You can determine the hostname of your {{% gl Site %}} with ``ubos-admin listsites``.
+
+Also note the section on SSL/TLS/HTTPS certificates below.
 
 ## Step 3: Configure Pagekite on your UBOS Device
 
@@ -125,3 +127,22 @@ and UBOS will attempt to set up a kite for all {{% gls Site %}} you currently
 have on your {{% gl Device %}}, and all future {{% gls Site %}} you will deploy to
 your {{% gl Device %}} in the future. Of course, this only works
 if you have configured the right "kites" on the pagekite.net site.
+
+## Pagekite and SSL/TLS/HTTPS certificates
+
+Encrypting your web traffic, particularly over the open internet, is of
+course a good idea. The UBOS/Pagekite integration will automatically take
+care of it if your {{% gl Site %}} has been set up with a certificate,
+such as one from Letsencrypt.
+
+If your {{% gl Site %}} exists already but does not have a certificate yet,
+we recommend:
+
+1. Get Pagekite working without SSL/TLS/HTTPS first. That makes it easier to
+   troubleshoot if anything should go wrong.
+
+   Make sure you can access your {{% gl Site %}} without SSL/TLS/HTTPS over
+   the public internet before going to the next step.
+
+2. Then, redeploy your {{% gl Site %}} after adding the SSL/TLS certificate
+   information. This is described {{% pageref "/docs/users/faq-howto-troubleshooting/howto-modifysite.md" here %}}.

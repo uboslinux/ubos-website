@@ -66,6 +66,34 @@ data of {{% gls App %}} and {{% gls Accessory %}} you deleted, or whose
 always a good idea.
 {{% /warning %}}
 
+## How to change the hostname of a Site
+
+For example, you might have run your {{% gl Site %}} at ``example.com`` but you
+let that domain expire and now you'd like to run it at ``example.net`` instead.
+Or, you may have initially created your {{% gl Site %}} at the wildcard domain
+``*`` and now you need to give it an official hostname so you can get a
+SSL/TLS certificate for it.
+
+To do this:
+
+1. Save your {{% gl Site_JSON %}} to a file as described above.
+
+1. Find the ``hostname`` element and change its value. For example, modify:
+
+   ```
+   "hostname" : "*",
+   ```
+
+   to:
+
+   ```
+   "hostame" : "example.pagekite.me",
+   ```
+
+1. Save the file.
+
+1. Redeploy your modified {{% gl Site_JSON %}} file as described above.
+
 ## How to change the context path of an App
 
 For example, you might run Wordpress at root of your {{% gl Site %}} ``example.com``,
