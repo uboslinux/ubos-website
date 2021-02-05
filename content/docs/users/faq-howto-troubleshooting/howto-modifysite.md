@@ -25,14 +25,14 @@ To obtain the full {{% gl Site_JSON %}} for a {{% gl Site %}} with hostname
 ``example.com``, including all secret credentials (which is needed if you want to redeploy):
 
 ```
-% sudo ubos-admin showsite --host example.com --json
+% sudo ubos-admin showsite --hostname example.com --json
 ```
 
 If your {{% gl Site %}} has hostname ``*`` -- the wildcard -- you need to put that star
 into single quotes, otherwise your shell will get in your way:
 
 ```
-% sudo ubos-admin showsite --host '*' --json
+% sudo ubos-admin showsite --hostname '*' --json
 ```
 
 That will print the {{% gl Site_JSON %}} for that {{% gl Site %}} to the terminal. Because
@@ -41,7 +41,7 @@ a file. What you call that (temporary) file is immaterial; in our example we cal
 as the hostname with the extension ``.json``, such as:
 
 ```
-% sudo ubos-admin showsite --host example.com --json > example.com.json
+% sudo ubos-admin showsite --hostname example.com --json > example.com.json
 ```
 
 Now you can edit that file -- here ``example.com.json`` -- with a text editor of your choice,
@@ -138,6 +138,9 @@ If you have your {{% gl Device %}} behind a firewall, you need to
    ```
 
    Make sure there is a comma each between what you added and what comes before and after.
+
+1. Check the e-mail address in the ``admin`` section of your {{% gl Site_JSON %}} and
+   make sure it is a valid e-mail address.
 
 1. Save the file.
 
