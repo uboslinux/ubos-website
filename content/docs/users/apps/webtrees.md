@@ -3,7 +3,7 @@ title: Notes on Webtrees
 weight: 60
 ---
 
-## Must used named host, wildcard is unsupported
+## Must use named host, wildcard is unsupported
 
 Webtrees' configuration requires a hostname. It cannot run on "wildcard" (``*``)
 hosts.
