@@ -49,7 +49,7 @@ This only works if you have a {{% gl Site %}} on your {{% gl Device %}} that
 actually corresponds to your kite name, otherwise UBOS will not forward any traffic.
 So if your Pagekite kite name is ``johndoe.pagekite.me``, make you sure
 that your {{% gl Site %}} either has hostname ``johndoe.pagekite.me`` or
-the wildcard hostname ``*``.
+the {{% gl wildcard_hostname %}} ``*``.
 
 You can determine the hostname of your {{% gl Site %}} with ``ubos-admin listsites``.
 

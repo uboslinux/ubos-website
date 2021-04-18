@@ -328,20 +328,20 @@ alphabetically.
   the current host as returned by the OS.
 
   This variable will have value ``*`` for {{% gls Site %}} whose hostname was given
-  as the wildcard.
+  as the {{% gl wildcard_hostname %}}.
 
   Example: ``ubosbox.example.org``
 
 ``${site.hostnameorlocalhost}``
-: Same as ``${site.hostname}`` except that in case of a wildcard site, the value will
+: Same as ``${site.hostname}`` except that in case of a {{% gl wildcard_hostname "wildcard site" %}}, the value will
   be ``localhost``.
 
 ``${site.hostnameorwildcard}``
-: Same as ``${site.hostname}`` except that in case of a wildcard site, the value will
+: Same as ``${site.hostname}`` except that in case of a {{% gl wildcard_hostname "wildcard site" %}}, the value will
   be ``__wildcard``.
 
 ``${site.hostnameorsystemhostname}``
-: Same as ``${site.hostname}`` except that in case of a wildcard site, the value will
+: Same as ``${site.hostname}`` except that in case of a {{% gl wildcard_hostname "wildcard site" %}}, the value will
   be the system hostname as returned by ``hostname``.
 
 ``${site.protocol}``

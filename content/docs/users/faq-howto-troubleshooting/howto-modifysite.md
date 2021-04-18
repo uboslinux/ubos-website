@@ -28,8 +28,8 @@ To obtain the full {{% gl Site_JSON %}} for a {{% gl Site %}} with hostname
 % sudo ubos-admin showsite --hostname example.com --json
 ```
 
-If your {{% gl Site %}} has hostname ``*`` -- the wildcard -- you need to put that star
-into single quotes, otherwise your shell will get in your way:
+If your {{% gl Site %}} has hostname ``*`` -- the {{% gl wildcard_hostname %}} -- you need to
+put that star into single quotes, otherwise your shell will get in your way:
 
 ```
 % sudo ubos-admin showsite --hostname '*' --json
@@ -70,7 +70,7 @@ always a good idea.
 
 For example, you might have run your {{% gl Site %}} at ``example.com`` but you
 let that domain expire and now you'd like to run it at ``example.net`` instead.
-Or, you may have initially created your {{% gl Site %}} at the wildcard domain
+Or, you may have initially created your {{% gl Site %}} with {{% gl wildcard_hostname %}}
 ``*`` and now you need to give it an official hostname so you can get a
 SSL/TLS certificate for it.
 
