@@ -12,8 +12,7 @@ UBOS is available on the Docker hub. To run UBOS using Docker:
    ```
    % docker run \
        -i -t \
-       --cap-add NET_ADMIN --cap-add NET_BIND_SERVICE --cap-add NET_BROADCAST \
-       --cap-add NET_RAW --cap-add SYS_ADMIN \
+       --cap-add NET_ADMIN --cap-add NET_BROADCAST --cap-add SYS_ADMIN \
        -v /sys/fs/cgroup:/sys/fs/cgroup:ro \
        -e container=docker \
        ubos/ubos-green \
@@ -22,6 +21,9 @@ UBOS is available on the Docker hub. To run UBOS using Docker:
 
    While that looks somewhat intimidating, all this command really says is: "Boot the image called
    ``ubos/ubos-green``, keep the terminal around, and give it the privileges it needs."
+
+   As UBOS is a full operating system, not just an application running in a container, it
+   needs privileges such as `NET_ADMIN` so it can manage its firewall, for example.
 
 1. When the boot process is finished, log in as user ``root``.
    For password, see {{% pageref "/docs/users/faq-howto-troubleshooting/howto-root.md" %}}. Alternatively, execute
