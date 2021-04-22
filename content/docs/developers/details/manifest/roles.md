@@ -671,6 +671,18 @@ use this JSON fragment:
 
 If not given, the default for this field is assumed to be ``false``.
 
+### Wildcard hostname not supported
+
+Some {{% gls Apps %}} require to know the hostname through which they are accessed,
+and cannot be run at the {{% gl wildcard_hostname %}}. To declare this requirements, use
+this JSON fragment:
+
+```
+"allowswildcardhostname" : false
+```
+
+If not given, the default for this field is assumed to be ``true``.
+
 ### Apache modules
 
 ``apache2modules`` is a list of names of Apache2 modules that need to be activated before
