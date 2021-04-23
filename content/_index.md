@@ -89,7 +89,8 @@ div.howto pre {
   <a href="/quickstart/">
    For PCs, Raspberry Pi's,<br>
    odroid-xu3/4, odroid-hc1/2,<br>
-   ESPRESSObin and cloud
+   ESPRESSObin, VirtualBox,<br>
+   Docker and cloud
   </a>
  </div>
  <div style="width: 638px; padding: 25px 10px 10px 10px">
