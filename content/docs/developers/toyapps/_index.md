@@ -26,8 +26,10 @@ The PHP versions of Glad-I-Was-Here can also be configured with an {{% gl Access
 ``gladiwashere-php-footer``. This {{% gl Accessory %}} adds additional content (a footer) to the main
 web page. This demonstrates the basic functioning of {{% gls Accessory %}}.
 
-Note: These toy {{% gl App %}} are published in the ``toyapps`` repository, which is not enabled
+{{% note %}}
+These toy {{% gl App %}} are published in the ``toyapps`` repository, which is not enabled
 by default. For how to enable,
 see {{% pageref "/docs/users/faq-howto-troubleshooting/howto-nonstandard-repo.md" %}}.
+{{% /note %}}
 
 You may want to read through the documentation for these {{% gls App %}} in this sequence:

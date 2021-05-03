@@ -179,8 +179,10 @@ would like to use a SATA disk instead, do this:
 1. The ESPRESSObin will now boot from the SATA disk. If you have executed the ``saveenv``
    command, you can remove the SD Card; it will not be needed for future boots.
 
-Note: if your ESPRESSObin fails to detect the SATA disk in the middle of the boot process,
+{{% note %}}
+If your ESPRESSObin fails to detect the SATA disk in the middle of the boot process,
 you may need to upgrade its pre-installed boot loader (see next section).
+{{% /note %}}
 
 ## u-Boot upgrade
 

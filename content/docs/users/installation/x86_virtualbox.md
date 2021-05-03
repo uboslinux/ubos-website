@@ -8,10 +8,12 @@ download times, this should take no more than 10 minutes to set up.
 
 While we don't have separate instructions for VMware, the process should be quite similar.
 
-Note: UBOS is a 64bit operating system, for which VirtualBox requires hardware virtualization
+{{% note %}}
+UBOS is a 64bit operating system, for which VirtualBox requires hardware virtualization
 support. This is generally available on all reasonably modern processors, but may have to
 be switched on in the BIOS first. See the
 [VirtualBox documentation](https://www.virtualbox.org/manual/ch10.html#hwvirt).
+{{% /note %}}
 
 1. [Download VirtualBox](https://www.virtualbox.org/wiki/Downloads) from virtualbox.org
    and install it if you haven't already.

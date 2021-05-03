@@ -78,7 +78,10 @@ Here are the steps:
    (see discussion above). "SMTP Username" is the same thing as ``aws_access_key_id`` and
    "SMTP Password" is the same as ``aws_secret_key``.
 
-Note: It is possible that Amazon first places your account into a "sandbox", which
+{{% note %}}
+It is possible that Amazon first places your account into a "sandbox", which
 strongly limits which e-mail addresses you can send messages to. Usually, requesting to
 be let out of the sandbox is a straightforward process. Check the SES control panel whether
 you need to do that.
+{{% /note %}}
+

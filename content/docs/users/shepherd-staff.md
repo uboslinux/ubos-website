@@ -186,8 +186,10 @@ The {{% gl UBOS_Staff %}}uses the following directory layout. For details, see b
 
 ``<HOSTID>`` refers to the device's unique {{% gl HostId %}}, which can be printed with ``ubos-admin hostid``.
 
-Note: all files and directories are optional and may not be present on a given {{% gl UBOS_Staff %}}:
+{{% note %}}
+All files and directories are optional and may not be present on a given {{% gl UBOS_Staff %}}:
 an empty drive called ``UBOS-STAFF`` is entirely valid.
+{{% /note %}}
 
 ## Virtual UBOS Staff devices
 

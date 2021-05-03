@@ -187,8 +187,10 @@ Displays a unique identifier for the {{% gl Device %}}. It is is the fingerprint
 {{% gl Device %}}'s GPG public key. This {{% gl HostId %}} is used to identify the
 {{% gl Device %}} in the ``flock`` directory on the {{% gl UBOS_Staff %}}.
 
-Note: this is a different key than the one used by the {{% gl Shepherd %}} to
+{{% note %}}
+This is a different key than the one used by the {{% gl Shepherd %}} to
 log into the {{% gl Device %}} over the network.
+{{% /note %}}
 
 ## ``ubos-admin init-staff``
 

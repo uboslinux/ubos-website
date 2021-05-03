@@ -12,8 +12,10 @@ consistently.
 But sometimes, it would be nice to keep the same database name, or the same port number,
 for a given installation of an {{% gl App %}}. That is what resource pinning is for.
 
-Note: you are very unlikely to ever needs this. In fact, if you need it, chances are you
+{{% note %}}
+You are very unlikely to ever needs this. In fact, if you need it, chances are you
 using UBOS wrong. But here's a description how to do it anyway.
+{{% /note %}}
 
 ## Pinning a database
 

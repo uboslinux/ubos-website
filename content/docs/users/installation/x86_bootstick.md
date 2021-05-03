@@ -8,8 +8,10 @@ This will leave your PC's hard drive unchanged and lets you try out UBOS easily.
 
 A 16GB USB flash drive is recommended.
 
-Note: UBOS is a 64bit operating system. All recent PCs support 64bit; older hardware
+{{% note %}}
+UBOS is a 64bit operating system. All recent PCs support 64bit; older hardware
 may not.
+{{% /note %}}
 
 Follow these steps:
 

@@ -54,7 +54,9 @@ As Storj is provided on UBOS, installing it is simple:
 % sudo pacman -S storj
 ```
 
-Note: this is currently only available on the "yellow" release channel.
+{{% note %}}
+This is currently only available on the "yellow" release channel.
+{{% /note %}}
 
 ## About command names
 
