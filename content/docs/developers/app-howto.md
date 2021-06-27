@@ -9,14 +9,14 @@ is recommended you do this:
 1. Say "Hi" in the [forum](/community/). We don't bite, and might even be
    helpful :-)
 
-1. Set up a {{% pageref setting-up-development-machine.md %}}.
+1. Set up a {{% pageref setting-up-development-machine %}}.
 
 1. Package your {{% gl App %}} using ``makepkg``, with a ``PKGBUILD`` file and a
-   {{% gl UBOS_Manifest %}}. You can find examples in {{% pageref toyapps.md %}},
+   {{% gl UBOS_Manifest %}}. You can find examples in {{% pageref toyapps %}},
    and documentation in other sections of the UBOS Documentation.
 
 1. Test that your {{% gl App %}} plays nicely on UBOS by testing it with
-   {{% pageref app-test.md %}}.
+   {{% pageref testing %}}.
 
 1. Augment the list of UBOS build files
    [here](https://github.com/uboslinux/ubos-buildconfig/tree/develop/hl/us>)
