@@ -58,6 +58,8 @@ For developers who prefer `systemd-nspawn` over Docker on Linux, a second
 
 * PHP is now at version 8.
 
+* All "master" branches in Git have been renamed to "main".
+
 ## Package upgrades in this version
 
 * Almost 700 packages in have been updated, including apps phpBB and Wordpress.

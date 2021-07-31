@@ -17,7 +17,7 @@ to which you downloaded the UBOS image.
 1. Import the UBOS buildmaster's GnuPG public key into your keychain:
 
    ```
-   % curl -L https://github.com/uboslinux/ubos-admin/raw/master/ubos-keyring/ubos.gpg | gpg --import
+   % curl -L https://github.com/uboslinux/ubos-admin/raw/main/ubos-keyring/ubos.gpg | gpg --import
    ```
 
 1. Verify the download by invoking ``gpg --verify`` with the downloaded signature file as

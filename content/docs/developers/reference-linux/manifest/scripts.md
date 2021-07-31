@@ -83,7 +83,7 @@ The same executable or script may be used to handle several of these operations,
 there are different verbs.
 
 For an example, refer to ``initialize.pl`` and ``upgrade.pl`` in the Wordpress package for UBOS
-([source](https://github.com/uboslinux/ubos-wordpress/blob/master/wordpress/bin>)).
+([source](https://github.com/uboslinux/ubos-wordpress/blob/main/wordpress/bin>)).
 This ``initialize.pl`` script is used to generate the Wordpress ``config.php`` file from a script, instead
 of from a file template, and to initialize Wordpress. ``upgrade.pl`` invokes the Wordpress data
 migration functionality after a Wordpress upgrade.

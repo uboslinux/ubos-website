@@ -81,7 +81,7 @@ Armed with this information, we grab an Arch Linux development machine that has 
 {{% pageref "/docs/developers/setting-up-development-machine/" "UBOS tools installed" %}}
 (in our case, its runs on a Mac using VirtualBox), and start creating a UBOS package in a
 directory called ``mattermost``. You can see the end result
-[on Github](https://github.com/uboslinux/ubos-mattermost/tree/master/mattermost)).
+[on Github](https://github.com/uboslinux/ubos-mattermost/tree/main/mattermost)).
 
 We need a ``PKGBUILD`` file that knows how to put the ``mattermost`` package together. We
 copy and paste an existing one (from the
@@ -175,7 +175,7 @@ configuration files in ``/etc/<package>``.)
 How does this instance-specific configuration file get there before the daemon gets started
 when the user deploys the app? Time to create the ``ubos-manifest.json``. We do this again by
 copying and pasting from another existing app. In this case, we use the ``gladiwashere-java``
-toy app ([here in Github](https://github.com/uboslinux/ubos-toyapps/tree/master/gladiwashere-java))
+toy app ([here in Github](https://github.com/uboslinux/ubos-toyapps/tree/main/gladiwashere-java))
 because it has the dependencies for an instance-specific reverse proxy setup in it,
 and we need that, too.
 

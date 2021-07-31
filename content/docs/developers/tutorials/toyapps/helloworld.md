@@ -30,7 +30,7 @@ package to their website:
 1. The developer creates the files for the package. If you have cloned the git
    repository above, you find the files for ``helloworld`` in directory
    ``helloworld``; or you can browse them
-   [on github](https://github.com/uboslinux/ubos-toyapps/tree/master/helloworld).
+   [on github](https://github.com/uboslinux/ubos-toyapps/tree/main/helloworld).
    They are:
 
    * ``index.php``: minimalistic PHP file printing "Hello World";
