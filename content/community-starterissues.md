@@ -8,7 +8,7 @@ We'd love your help. All the UBOS code and the known bugs are on
 Here are some ideas:
 
 * Improve the documentation.
-  [List of open issues](https://github.com/uboslinux/ubos-docs/issues?q=is%3Aopen+is%3Aissue).
+  [List of open issues](https://github.com/uboslinux/ubos-website/issues?q=is%3Aopen+is%3Aissue).
 
 * Make Mediawiki configuration more flexible.
   [List of open issues](https://github.com/uboslinux/ubos-mediawiki/issues?q=is%3Aopen+is%3Aissue).

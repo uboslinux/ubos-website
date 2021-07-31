@@ -1,5 +1,6 @@
 ---
 title: Why do you advise against using a Raspberry Pi or other ARM device as a UBOS development machine?
+weight: 40
 ---
 
 The Raspberry Pi is fine to run UBOS on. But we recommend you use a PC or virtual machine

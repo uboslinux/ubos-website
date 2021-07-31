@@ -20,5 +20,5 @@ UBOS currently supports the {{% gls Device_Class %}}:
 * ``rpi2``: A Raspberry Pi 2 or 3
 * ``rpi4``: A Raspberry Pi 4
 * ``espressobin``: An ESPRESSObin
-* ``odroid-xu3``: An ODROID-XU3, XU4, HC1 or UC2
+* ``odroid-xu3``: An ODROID-XU3, XU4, HC1 or HC2
 * ``container``: A virtual machine running as Linux container

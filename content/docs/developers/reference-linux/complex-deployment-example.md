@@ -1,11 +1,12 @@
 ---
-title: A more complex deployment example
+title: A complex deployment example
 weight: 40
 ---
 
-In the real world, apps and sites tend to be more complex than the ones discussed
-in {{% pageref "toyapps/" %}}. Let's look at one such example, and dissect what happens in
-detail when such a more complex {{% gl Site %}} is deployed.
+In the real world, apps and sites tend to be more complex than
+the {{% pageref "/docs/developers/tutorials/toyapps/" "toy apps" %}}. Let's look at one
+such example, and dissect what happens in detail when such a more complex
+{{% gl Site %}} is deployed.
 
 In this example, we deploy a TLS-encrypted {{% gl Site %}} as it might be used by a
 small business: it runs a public website, using Wordpress, with an additional plugin.

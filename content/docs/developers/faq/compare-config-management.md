@@ -1,5 +1,6 @@
 ---
-title: Doesn’t puppet / chef / ansible etc. do this already?
+title: Doesn’t puppet / chef / ansible etc. does what ubos-admin does already?
+weight: 20
 ---
 
 These are large-scale datacenter / IT automation tools, and not written for you and me

@@ -344,19 +344,18 @@ gateway/router:
 This command is particularly useful if you run UBOS in a Linux container.
 
 ```
-% sudo ubos-admin setup-shepherd '<public-ssh-key>'
+% sudo ubos-admin setup-shepherd
 ```
 
-will create the {{% gl Shepherd %}} account, and allow ssh login with the
-provided public ssh key. The ssh key, although long, needs to be provided on
-the command-line, and in quotes.
+will first ask you to enter an public ssh key, and then create the {{% gl Shepherd %}}
+account, and allow ssh login with the provided public ssh key.
 
 ```
-% sudo ubos-admin setup-shepherd --add-key '<public-ssh-key>'
+% sudo ubos-admin setup-shepherd --add-key
 ```
 
-will add a public ssh key and not overwrite any public ssh key already on the shepherd's
-account.
+will add another public ssh key and not overwrite any public ssh key already on the
+shepherd's account.
 
 ## ``ubos-admin showappconfig``
 

@@ -1,5 +1,5 @@
 ---
-title: Build and run your first UBOS Standalone App using Docker containers for development
+title: Build and run your first UBOS Standalone App using Docker
 weight: 10
 ---
 
@@ -7,6 +7,9 @@ In this tutorial, you will be building, deploying and running a simple
 PHP web application as a standalone {{% gl app %}} on UBOS Linux. You don't need to install
 any development tools, because you will be using Docker containers running UBOS Linux
 to build and run the {{% gl app %}}.
+
+We will be using the "{{% pageref "/docs/developers/tutorials/toyapps/" "Glad-I-Was-Here" %}}"
+toy guestbook {{% gl App %}}, because it is very easy to understand.
 
 This tutorial should take about 20-30 minutes.
 
@@ -28,7 +31,7 @@ We will be using a two-container development environment:
   {{% gls app %}} and {{% gls accessory %}}.
 
 * Container ``ubos-target`` runs a UBOS production environment with only
-  {{% pageref "/docs/developers/details/container-differences.md" "minor differences" %}}
+  {{% pageref "/docs/developers/faq/container-differences.md" "minor differences" %}}
   to what users run in production. You deploy your UBOS {{% gls package %}} there to
   run and test them.
 
@@ -55,22 +58,8 @@ it:
 Download the Docker Compose file and save it to the project directory:
 
 ```
-% curl -O https://raw.githubusercontent.com/uboslinux/ubosdev-setups/main/ubosdev-docker/docker-compose.yml
+% curl -O https://raw.githubusercontent.com/uboslinux/setups-ubosdev/main/ubosdev-docker/docker-compose.yml
 ```
-
-## Check out the source code for your project
-
-For this tutorial, we will be using the "Glad-I-Was-Here" trivial guestbook
-{{% gls App %}}, because they are very easy to understand.
-
-In your project directory, check out the code:
-
-```
-% git clone https://github.com/uboslinux/ubos-toyapps.git
-```
-
-It's important that the code ends up below your toplevel directory ``~/ubosdev``
-because otherwise the default Docker container setup can't get at it.
 
 ## Start the containers
 
@@ -86,10 +75,10 @@ all ``docker`` and ``docker-compose`` commands with ``sudo``. Here we
 show them all with ``sudo``; you may be able to omit it.
 {{% /note %}}
 {{% note %}}
-If you want to develop on a {{% gl release_channel %}} other than `green`,
-such as on `yellow`, pass in the release channel as an environment variable, like this:
+If you want to develop on a {{% gl release_channel %}} other than `yellow`,
+such as on `red`, pass in the release channel as an environment variable, like this:
 ```
-% sudo CHANNEL=yellow docker-compose up
+% sudo CHANNEL=red docker-compose up
 ```
 {{% /note %}}
 
@@ -112,8 +101,10 @@ You only need to do this section the very first time you run these containers.
 In another shell, in the project directory, run:
 
 ```
+% cd ~/ubosdev
+% sudo chown $(id -u):$(id -g) *
 % sudo docker exec -u ubosdev ubos-develop ssh-keygen -q -f /home/ubosdev/.ssh/id_rsa -P ''
-% sudo docker exec -u ubosdev ubos-develop cat /home/ubosdev/.ssh/id_rsa.pub | sudo docker exec -i ubos-target ubos-admin setup-shepherd -v
+% sudo docker exec -u ubosdev ubos-develop cat /home/ubosdev/.ssh/id_rsa.pub | sudo docker exec -i ubos-target ubos-admin setup-shepherd
 ```
 
 This will create a fresh ssh keypair for `ubosdev` in `ubos-develop`, and setup
@@ -135,7 +126,26 @@ In that shell, execute:
 ```
 
 After the initial ssh authenticity warnings (say "yes" to continue connecting),
-this should print: "shepherd".
+and some other ssh messages, this should print:
+
+```
+shepherd
+```
+
+## Check out the source code for your project
+
+Your project directory on the host has gained a few subdirectories, which are
+mounted as the home directories into your containers. That makes sharing files
+between host (where you can edit them with the editor of your choice) and
+the containers (where you build and run them) quite easy.
+
+Check out the code into the project's subdirectory that is mounted as
+`ubosdev`'s home directory in the `ubos-develop` (build) container:
+
+```
+% cd ~/ubosdev/ubos-develop-home-ubosdev
+% git clone https://github.com/uboslinux/ubos-toyapps.git
+```
 
 ## Build the App
 
@@ -145,17 +155,14 @@ Log into `ubos-develop` as `ubosdev`, if you have not already:
 % sudo docker exec -i -t -u ubosdev ubos-develop bash
 ```
 
-Your project directory is available as subdirectory `project` there. Go there,
-and below into the checked-out git directory. to where the `PKGBUILD` of the
-{{% gl app %}} is that we are going to build:
+In that shell, `ls` and you should see directory `ubos-toyapps`, which
+is the git repository that you just checked out on the host.
+
+In the container as `ubosdev`, go to the directory containing the
+`PKGBUILD` for our example and build the package:
 
 ```
-% cd ~/project/ubos-toyapps/gladiwashere-php-mysql
-```
-
-Build with:
-
-```
+% cd ~/ubos-toyapps/gladiwashere-php-mysql
 % makepkg -C -f
 ```
 
@@ -165,19 +172,18 @@ In the shell on the ``ubos-develop`` container, in the directory where you built
 your {{% gl app %}}:
 
 ```
-% ubos-push --host ubos-target gladiwashere-php-mysql-*.pkg*
+% ubos-push -v --host ubos-target gladiwashere-php-mysql-*.pkg*
 ```
 
 (You may want to replace the `*`s and use the actual filename. You are looking for
 the file with the long name that contains the `.pkg`.)
 
 This will transfer the newly built {{% gl package %}} to the `ubos-target` container, and
-cleanly upgrade any {{% gls site %}} that use the {{% gl package %}} there. The first time,
-this will take a little bit.
+cleanly upgrade any {{% gls site %}} that use the {{% gl package %}} there.
 
 Right now your `ubos-target` container is pristine and does not run any
 {{% gl site %}}. You can check by pointing your browser to
-`http://ubos-target:8080/`.
+`http://localhost:8080/`.
 
 So from the `ubosdev` shell, we create a {{% gl site %}} on the target container that
 runs your {{% gl app %}}:
@@ -202,6 +208,24 @@ dependencies need to be downloaded and installed, such as Mariadb.
 Go to ``http://localhost:8080/``. You will find your guestbook toyapp
 there. Feel free to enter some data.
 
+## Note on rebooting
+
+If you reboot your containers, except for the home directories of `ubosdev`
+(on `ubos-develop`) and `shepherd` (on `ubos-target`) they will go back to a pristine state,
+so any deployed {{% gls app %}} or {{% gls site %}} disappears. That's intended,
+because it allows you to easily test re-installation / re-deployment on a pristine
+target without leftover files.
+
+The ssh trust relationship remains, except for the ssh host keys which will be
+regenerated, leading to a potentially bothersome warning message from ssh
+when executing `ubos-push`. To disable host key checking, put the following content
+into `ubos-develop-home-ubosdev/.ssh/config`:
+
+```
+Host ubos-target
+    StrictHostKeyChecking no
+```
+
 ## Next steps
 
 You might want to make a tiny change to the {{% gl app %}}, like changing the
@@ -209,7 +233,7 @@ text of the HTML, rebuild with ``makepkg`` and redeploy with ``ubos-push``.
 You don't need to create another {{% gl site %}} -- it remains in place when
 software updates are being done, and its data stays in place, too.
 
-Then we recommend you work through {{% pageref "../toyapps" %}}.
+Then we recommend you work through {{% pageref toyapps %}}.
 
 To shut down your containers, enter `^C` in the shell where your ran
 `docker-compose`.

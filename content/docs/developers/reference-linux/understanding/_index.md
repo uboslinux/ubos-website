@@ -1,6 +1,6 @@
 ---
 title: Understanding ubos-admin
-weight: 80
+weight: 990
 ---
 
 ``ubos-admin`` is the central administration command for UBOS. To understand what

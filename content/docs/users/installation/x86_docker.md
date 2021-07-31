@@ -10,28 +10,19 @@ UBOS is available on the Docker hub. To run UBOS using Docker:
 1. Boot UBOS with a command such as this:
 
    ```
-   % docker run -i -t \
-       --cap-add NET_ADMIN --cap-add NET_BROADCAST --cap-add SYS_ADMIN \
-       -v /sys/fs/cgroup:/sys/fs/cgroup:ro \
-       -p 8080:80 \
-       ubos/ubos-green \
-       /usr/lib/systemd/systemd
+   % docker run -i -t --privileged -p 8080:80 ubos/ubos-green
    ```
+
+   <div class="admonition note"><p class="admonition-title">Note</p>
+   <p>Depending on your Docker installation, you may need to run this
+   command with ``sudo``.</p></div>
 
    While that looks somewhat intimidating, all this command really says is: "Boot the image called
    ``ubos/ubos-green``, keep the terminal around, give it the privileges it needs, and
    let me access it with a web browser through my local 8080 port."
 
    As UBOS is a full operating system, not just an application running in a container, it
-   needs privileges such as `NET_ADMIN` so it can manage its firewall, for example.
-
-   Note: If you run it in a non-Linux environment, you may get various warnings, such as that
-   UBOS cannot initialize its firewall, or that the filesystem does not understand extended
-   file system attributes. Most of those should be fairly harmless.
-
-   Note: Some very recent versions of systemd seem to conflict with Docker. That appears to
-   be a problem for Docker in general that they need to solve. Should this be the case here,
-   you will know because UBOS will fail with a fatal error.
+   needs the `--privileged`` flag.
 
 1. When the boot process is finished, log in as user ``root``.
    For password, see {{% pageref "/docs/users/faq-howto-troubleshooting/howto-root.md" %}}. Alternatively, execute
@@ -77,76 +68,3 @@ UBOS is available on the Docker hub. To run UBOS using Docker:
    ```
    % systemctl poweroff
    ```
-
-## About that run command
-
-If you are interested in the details of the complicated run command, let's unpack it:
-
-<table>
- <tr>
-  <td>
-   <code>docker run</code>
-  </td>
-  <td>
-   Run a Docker image.
-  </td>
- </tr>
- <tr>
-  <td>
-   <code>-i -t</code>
-  </td>
-  <td>
-   Keep a terminal open on the command-line, so you can log into UBOS.
-  </td>
- </tr>
- <tr>
-  <td>
-   <code>--cap-add NET_ADMIN ...</code>
-  </td>
-  <td>
-   Grant certain needed capabilities to the container running UBOS. These
-   are required so UBOS can manage networking using <code>systemd-networkd</code>
-   and its firewall using <code>iptables</code>.
-  </td>
- </tr>
- <tr>
-  <td>
-   <code>--v /sys/fs/cgroup:/sys/fs/cgroup:ro</code>
-  </td>
-  <td>
-   Make the "cgroup" device hierarchy available to the container in read-only
-   mode. This is needed so Docker can successfully boot an entire operating system
-   like UBOS.
-  </td>
- </tr>
- <tr>
-  <td>
-   <code>-e container=docker</code>
-  </td>
-  <td>
-   Tell UBOS that it is running under Docker.
-  </td>
- </tr>
- <tr>
-  <td>
-   <code>ubos/ubos-green</code>
-  </td>
-  <td>
-   The UBOS version to download and to run. Here we run the most recent release of UBOS
-   on the "green" {{% gl Release_Channel %}}. To see what UBOS versions are available via Docker,
-   go to the UBOS section on the [Docker hub](https://hub.docker.com/u/ubos/).
-  </td>
- </tr>
- <tr>
-  <td>
-   <code>/usr/lib/systemd/systemd</code>
-  </td>
-  <td>
-   Run systemd, which will start the UBOS operating system, instead of running some other
-   kind of command.
-  </td>
- </tr>
-</table>
-
-P.S. If you understand Docker better than we do, and there is a way of making the above
-command-line shorter, please do [let us know](/community/). Thank you!

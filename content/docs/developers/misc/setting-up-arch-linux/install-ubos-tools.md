@@ -41,9 +41,3 @@ Now is a good time to install any other development tools you might want, such a
 ```
 
 You are now ready to develop for UBOS.
-
-If you are new to UBOS, you may want to work through {{% pageref "/docs/developers/toyapps/" %}}.
-
-To run those {{% gls App %}} or test run your own {{% gl App %}}, you may want to
-set up a UBOS container (preferred) or a dedicated UBOS test machine. Setup instructions
-are at {{% pageref "/docs/users/installation/" %}}.

@@ -2,12 +2,12 @@
 title: Differences between the ubos-target container and a typical UBOS production system
 ---
 
-The `ubos-target` container in the Docker development setup is
-very similar to a typical UBOS production system, on either virtualized
+The `ubos-target` container in the
+{{% pageref "/docs/developers/tutorials/first-app-with-docker" "Docker development setup" %}}
+is very similar to a typical UBOS production system, on either virtualized
 or physical hardware.
 
 The main differences are:
-
 
 ## btrfs file system
 
@@ -37,5 +37,6 @@ firewall rules and the like. Those are different on UBOS production systems.
 other than port 80 (HTTP) and 443 (HTTPS), you must test your software
 on a non-Docker system before releasing it.
 
-Specifically, requesting UBOS to {{% pageref "/docs/users/faq-howto-troubleshooting/howto-ssh-nonstandard.md" "open up extra ports" %}}
+Specifically, requesting UBOS to
+{{% pageref "/docs/developers/reference-linux/open-extra-ports.md" "open up extra ports" %}}
 cannot be tested in a Docker container, and must be tested outside of Docker.

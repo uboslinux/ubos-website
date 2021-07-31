@@ -1,6 +1,6 @@
 ---
-title: Learning from the toy apps
-weight: 30
+title: "How to package UBOS Standalone Apps built with a variety of platforms"
+weight: 20
 ---
 
 UBOS provides two "toy" {{% gls App %}} that help explain how to package and distribute
@@ -30,6 +30,10 @@ web page. This demonstrates the basic functioning of {{% gls Accessory %}}.
 These toy {{% gl App %}} are published in the ``toyapps`` repository, which is not enabled
 by default. For how to enable,
 see {{% pageref "/docs/users/faq-howto-troubleshooting/howto-nonstandard-repo.md" %}}.
+
+Of course, instead of using the pre-built {{% gls app %}}, you can check out their code
+at https://github.com/uboslinux/ubos-toyapps/ and build them youself with the development
+setup described in {{% pageref "../first-app-with-docker.md" %}}.
 {{% /note %}}
 
 You may want to read through the documentation for these {{% gls App %}} in this sequence:

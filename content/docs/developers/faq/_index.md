@@ -1,4 +1,4 @@
 ---
 title: Developer FAQ
-weight: 200
+weight: 70
 ---

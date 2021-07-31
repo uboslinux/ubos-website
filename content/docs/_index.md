@@ -56,6 +56,6 @@ div.choice h2 {
 
 <p class="clearer" style="padding-top: 20px; text-align: center">
  Found errors, omissions, improvements? Submit pull requests
- <a href="https://github.com/uboslinux/ubos-docs">in Github</a> or
+ <a href="https://github.com/uboslinux/ubos-website/">in Github</a> or
  <a href="/community/">get in touch</a>.
 </p>

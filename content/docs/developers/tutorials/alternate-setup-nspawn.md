@@ -19,8 +19,8 @@ for you. These advantages include:
 * The turnaround time switching back to a pristine system to test on is lower,
   by the magic of btrfs subvolumes and copy-on-write.
 
-* Also, we consider `systemd-nspawn` to be more flexible than Docker. Your opinion
-  may vary :-)
+* Also, we consider `systemd-nspawn` to be more flexible than Docker for our
+  purposes here. Your opinion may vary :-)
 
 The main downsides are that you cannot run this on a workstation that does not run Linux,
 and the setup is a bit more involved.
@@ -70,18 +70,17 @@ There are two steps:
    After you make a change to a `.network` file:
 
    ```
+   % sudo systemctl daemon-reload
    % sudo systemctl restart systemd-networkd systemd-resolved
    ```
 
 ## Selecting a release channel on which to develop
 
-When starting out with a new project, you want to develop on the "green" {{% gl release_channel %}},
-as this gives you maximum stability. As you get closer to release, you may want to test
-on the "yellow" and/or the "red" channel, to be compatible with UBOS releases when they
-get to the "green" (production) channel.
+By default, you may want to develop on the "yellow" {{% gl release_channel %}}, but
+of course you can choose "red" or "green" instead.
 
 In this document, we call the selected {{% gl release_channel %}} `${CHANNEL}` and
-assume you selected "green".
+assume you selected "yellow".
 
 ## Create a working directory
 
@@ -90,15 +89,15 @@ Create a working directory, go to that directory, and download the setup script:
 ```
 % mkdir ~/ubosdev-${CHANNEL}
 % cd ~/ubosdev-${CHANNEL}
-% curl -O https://raw.githubusercontent.com/uboslinux/ubosdev-setups/main/ubosdev-nspawn/setup.sh
+% curl -O https://raw.githubusercontent.com/uboslinux/setups-ubosdev/main/ubosdev-nspawn/setup.sh
 ```
 
-If you choose the "green" {{% gl release_channel %}}, for example, this would be:
+If you choose the "yellow" {{% gl release_channel %}}, for example, this would be:
 
 ```
-% mkdir ~/ubosdev-green
-% cd ~/ubosdev-green
-% curl -O https://github.com/uboslinux/ubosdev/nspawn/setup.sh
+% mkdir ~/ubosdev-yellow
+% cd ~/ubosdev-yellow
+% curl -O https://raw.githubusercontent.com/uboslinux/setups-ubosdev/main/ubosdev-nspawn/setup.sh
 ```
 
 The remainder of this document assumes you perform all commands on the host
@@ -108,11 +107,11 @@ in this directory.
 
 Download a "container" image:
 
-* for the "green" channel: http://depot.ubos.net/green/x86_64/images/
+* for the "yellow" channel: http://depot.ubos.net/yellow/x86_64/images/
 
-Look for the "LATEST" image that has "container" in its name.
+Look for the file ``ubos_yellow_x86_64-container_LATEST.tar.xz``.
 
-If you chose a `${CHANNEL}` other than "green", replace the "green" in the download URL
+If you chose a `${CHANNEL}` other than "yellow", replace the "yellow" in the download URL
 with the name of the `${CHANNEL}` you chose.
 
 We will call the name of the downloaded image file `${IMAGE}`. Download it into your
@@ -123,8 +122,15 @@ working directory.
 Run the setup script with the name of the downloaded image file as an argument:
 
 ```
+% bash setup.sh ${IMAGE}
+```
+
+or if you use a channel other than "yellow", run it as:
+
+```
 % CHANNEL=${CHANNEL} bash setup.sh ${IMAGE}
 ```
+
 
 This will:
 
@@ -142,7 +148,7 @@ This will:
   subvolume, set up so that {{% gls package %}} built on `ubos-${CHANNEL}-develop` can be easily
   deployed to it and tested.
 
-This may take a little while to complete.
+Running this script may take a few minutes to complete.
 
 ## Run your "development" container `ubos-${CHANNEL}-develop`
 
@@ -150,7 +156,7 @@ In a first shell, run all in one line, or with the backslashes at the end):
 
 ```
 % sudo systemd-nspawn -b -n -M ubos-develop-${CHANNEL} -D ubos-develop-${CHANNEL} \
-   --bind $(pwd):/home/ubosdev/project --bind $HOME/.m2:/home/ubosdev/.m2 \
+   --bind $(pwd):/home/ubosdev/project --bind $HOME/.m2:/ubosdev/.m2 --bind /dev/fuse \
    --network-zone ubos-${CHANNEL}
 ```
 
@@ -165,10 +171,11 @@ In a second shell, log in as your `ubosdev` development user:
 
 ## Run the `ubos-${CHANNEL}-target` container with an ephemeral file system
 
-In a third shell, run:
+In a third shell, go to your working directory and start the container with the `-x` flag:
 
 ```
-% sudo systemd-nspawn -b -n -x -M ubos-target-${CHANNEL} -D ubos-target-${CHANNEL} \
+% cd ~/ubosdev-${CHANNEL}
+% sudo systemd-nspawn -x -b -n -M ubos-target-${CHANNEL} -D ubos-target-${CHANNEL} \
    --bind /dev/fuse \
    --network-zone ubos-${CHANNEL}
 ```
@@ -275,18 +282,11 @@ there.
 
 ## Next steps
 
-You might want to make a tiny change to the {{% gl app %}}, like changing the
-text of the HTML, rebuild with ``makepkg`` and redeploy with ``ubos-push``.
-You don't need to create another {{% gl site %}} -- it remains in place when
-software updates are being done, and its data stays in place, too, until
-you restart the container.
-
-Then we recommend you work through {{% pageref "../toyapps" %}}.
+Then we recommend you work through {{% pageref "toyapps" %}}.
 
 When you are done with your UBOS containers, enter `^]^]^]` in each. That will
 close shells, and stop each container. You can restart them with the same
 `systemd-nspawn` command you used to start them initially. Don't be surprised
 that the `ubos-target-${CHANNEL}` will be reset to a pristine state, so
 you will have to recreate/redeploy any {{% gl site %}} you had created there.
-
 

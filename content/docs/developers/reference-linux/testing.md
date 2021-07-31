@@ -1,6 +1,6 @@
 ---
-title: 'Testing UBOS Apps with "webapptest"'
-weight: 50
+title: 'Testing standalone Apps with "webapptest"'
+weight: 100
 ---
 
 ## About ``webapptest``
