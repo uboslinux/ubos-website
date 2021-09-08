@@ -141,16 +141,16 @@ This will:
   for other subvolumes, so it's easy to go back to if you decide to reset one of your containers
   to a pristine state.
 
-* Subvolume `ubos-${CHANNEL}-develop` is a copy-on-write copy of the `ubos-${CHANNEL}` subvolume,
+* Subvolume `ubos-develop-${CHANNEL}` is a copy-on-write copy of the `ubos-${CHANNEL}` subvolume,
   with development tools installed. You will use this to build your software.
 
-* Subvolume `ubos-${CHANNEL}-target` is another copy-on-write copy of the `ubos-${CHANNEL}`
-  subvolume, set up so that {{% gls package %}} built on `ubos-${CHANNEL}-develop` can be easily
+* Subvolume `ubos-target-${CHANNEL}` is another copy-on-write copy of the `ubos-${CHANNEL}`
+  subvolume, set up so that {{% gls package %}} built on `ubos-develop-${CHANNEL}` can be easily
   deployed to it and tested.
 
 Running this script may take a few minutes to complete.
 
-## Run your "development" container `ubos-${CHANNEL}-develop`
+## Run your "development" container `ubos-develop-${CHANNEL}`
 
 In a first shell, run all in one line, or with the backslashes at the end):
 
@@ -160,7 +160,7 @@ In a first shell, run all in one line, or with the backslashes at the end):
    --network-zone ubos-${CHANNEL}
 ```
 
-This is the console of your `ubos-${CHANNEL}-develop` container, and you can put that one
+This is the console of your `ubos-develop-${CHANNEL}` container, and you can put that one
 out of sight.
 
 In a second shell, log in as your `ubosdev` development user:
@@ -169,7 +169,7 @@ In a second shell, log in as your `ubosdev` development user:
 % sudo machinectl shell ubosdev@ubos-develop-${CHANNEL}
 ```
 
-## Run the `ubos-${CHANNEL}-target` container with an ephemeral file system
+## Run the `ubos-target-${CHANNEL}` container with an ephemeral file system
 
 In a third shell, go to your working directory and start the container with the `-x` flag:
 
@@ -182,7 +182,7 @@ In a third shell, go to your working directory and start the container with the 
 
 By using the `-x` flag, we make the container use an ephemeral file system. This means that as
 soon as you stop the container, all data in the container will be lost. This is great for the
-`ubos-${CHANNEL}-target` container, because as soon as you restart it, you are back to
+`ubos-target-${CHANNEL}` container, because as soon as you restart it, you are back to
 a pristine system for testing.
 
 Log in as root with the
