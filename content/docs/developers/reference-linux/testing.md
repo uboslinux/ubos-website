@@ -23,18 +23,18 @@ To install ``webapptest`` on a UBOS {{% gl Device %}}, run:
 % sudo pacman -S webapptest
 ```
 
-## Example: Testing Glad-I-Was-Here locally
+## Example: Testing Glad-I-Was-Here (PHP, MySQL) locally
 
-To test the Glad-I-Was-Here toy application with all the default settings on a
+To test the Glad-I-Was-Here (PHP, MySQL) toy application with all the default settings on a
 {{% gl Device %}}, execute:
 
 ```
-> webapptest run GladIWasHereTest1.pm
+> webapptest run GladIWasHerePhpMysql1Test.pm
 ```
 
-(see [GladIWasHereTest1.pm in Git]( https://github.com/uboslinux/ubos-toyapps/blob/master/gladiwashere/tests/GladIWasHere1Test.pm).)
+(see [GladIWasHerePhpMysql1Test.pm in Git]( https://github.com/uboslinux/ubos-toyapps/blob/main/gladiwashere-php-mysql/tests/GladIWasHerePhpMysql1Test.pm ).)
 
-This will go through a series of steps deploying ``gladiwashere`` on your local {{% gl Device %}},
+This will go through a series of steps deploying ``gladiwashere-php-mysql`` on your local {{% gl Device %}},
 interacting with the {{% gl App %}} by filling out a guestbook entry, backing up the {{% gl App %}} data,
 undeploying the {{% gl App %}}, re-deploying and restoring from backup. In other words, the types of
 things that the {{% gl App %}} needs to do correctly to behave on UBOS.
@@ -92,7 +92,8 @@ from), which are specified by appending them to the name of the scaffold like th
 ## Test description
 
 To define a test for webapptest, follow the example in
-[GladIWasHereTest1.pm](https://github.com/uboslinux/ubos-toyapps/blob/master/gladiwashere/tests/GladIWasHere1Test.pm).
+[GladIWasHerePhpMysql1Test.pm]( https://github.com/uboslinux/ubos-toyapps/blob/main/gladiwashere-php-mysql/tests/GladIWasHerePhpMysql1Test.pm ).
+
 
 The essence of the test description is a series of states and transitions between them. The
 states are states (with different data) that the application can be in. In ``GladIWasHereTest1``,
@@ -116,4 +117,4 @@ the location at which the {{% gl App %}} was installed), and make sure that the 
 contains a certain pattern. If not, it will print the provided error message.
 
 The full API is
-[here](https://github.com/uboslinux/ubos-tools/blob/master/webapptest/vendor_perl/UBOS/WebAppTest/TestContext.pm).
+[here](https://github.com/uboslinux/ubos-tools/blob/main/webapptest/vendor_perl/UBOS/WebAppTest/TestContext.pm).
