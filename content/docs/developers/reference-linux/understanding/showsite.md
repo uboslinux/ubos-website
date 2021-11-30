@@ -24,6 +24,6 @@ as well.
 
 ## See also:
 
-* {{% pageref "/docs/users/ubos-admin.md" %}}
+* {{% pageref "/docs/administrators/ubos-admin.md" %}}
 * {{% pageref listsites.md %}}
 * {{% pageref showappconfig.md %}}

@@ -37,7 +37,7 @@ when you create your {{% gl Site %}}:
 % sudo ubos-admin createsite --tls --selfsigned
 ```
 
-Continue to answer the questions just as you did in {{% pageref "/docs/users/firstsite.md" %}}.
+Continue to answer the questions just as you did in {{% pageref "/docs/administrators/firstsite.md" %}}.
 Done!
 
 ## LetsEncrypt certificate
@@ -49,7 +49,7 @@ the ``--tls`` and ``--letsencrypt`` options when you create your {{% gl Site %}}
 % sudo ubos-admin createsite --tls --letsencrypt
 ```
 
-Continue to answer the questions just as you did in {{% pageref "/docs/users/firstsite.md" %}}.
+Continue to answer the questions just as you did in {{% pageref "/docs/administrators/firstsite.md" %}}.
 Done!
 
 {{% note %}}
@@ -104,6 +104,6 @@ secured {{% gl Site %}} on your {{% gl Device %}}, execute:
 
 and enter the names of the above files when asked.
 
-Continue to answer the questions just as you did in {{% pageref "/docs/users/firstsite.md" %}}.
+Continue to answer the questions just as you did in {{% pageref "/docs/administrators/firstsite.md" %}}.
 Done!
 

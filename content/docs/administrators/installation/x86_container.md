@@ -1,30 +1,28 @@
 ---
-title: Run UBOS in an ARMv7 Linux container (e.g. Raspberry Pi 2, 3, 4)
-weight: 430
+title: Run UBOS in a Linux container on a PC (64bit)
+weight: 410
 ---
 
-These instructions are the same for all ARMv7-based devices.
-
-If you already run Linux on an ARMv7-based device such as the Raspberry Pi 2 or later,
-you can run UBOS in a Linux container with ``systemd-nspawn``. This allows you to try
-out UBOS without having to do a bare metal installation. The only requirement is that
-your Linux machine runs ``systemd`` in a reasonably recent version.
+If you already run Linux on a 64bit PC, you can run UBOS in a Linux container with
+``systemd-nspawn``. This allows you to try out UBOS without having to do a bare
+metal installation. The only requirement is that your Linux machine runs ``systemd``
+in a reasonably recent version.
 
 To do so:
 
 1. Download a UBOS container image from the {{% gl Depot %}}.
-   Images for ARMv7 containers are at
-   [depot.ubos.net/green/armv7h/images](http://depot.ubos.net/green/armv7h/images).
-   Look for a file named ``ubos_green_armv7h-container_LATEST.tar.xz``.
+   Images for x86_64 containers are at
+   [depot.ubos.net/green/x86_64/images](http://depot.ubos.net/green/x86_64/images).
+   Look for a file named ``ubos_green_x86_64-container_LATEST.tar.xz``.
 
 1. Optionally, you may now verify that your image downloaded correctly by following
-   {{% pageref "/docs/users/faq-howto-troubleshooting/howto-verify-image.md" %}}.
+   {{% pageref "/docs/administrators/faq-howto-troubleshooting/howto-verify-image.md" %}}.
 
 1. Uncompress and unpack the downloaded file into a suitable directory by executing:
 
    ```
    % mkdir ubos
-   % sudo tar -x -J -C ubos -f ubos_green_armv7h-container_LATEST.tar.xz
+   % sudo tar -x -J -C ubos -f ubos_green_x86_64-container_LATEST.tar.xz
    ```
 
    on the Linux command line.
@@ -32,10 +30,6 @@ To do so:
    If you are running btrfs as your filesystem, you may want to create a subvolume and
    unpack into that subvolume instead, as ``systemd-nspawn`` is btrfs-aware and that can
    speed up things and save some disk space. However, use of btrfs is optional.
-
-1. Consider adding some virtual memory to your device, if you have an attached
-   hard drive. This will alleviate memory pressures on the device that has little
-   RAM.
 
 1. Run both IPv4 and IPv6 based ``iptables`` on your host, otherwise UBOS cannot set up its
    own firewall and the UBOS container will boot into a ``degraded`` state. If you aren't
@@ -60,7 +54,7 @@ To do so:
    ```
 
 1. When the boot process is finished, log in as user ``root``
-   (for password, see {{% pageref "/docs/users/faq-howto-troubleshooting/" %}}).
+   (for password, see {{% pageref "/docs/administrators/faq-howto-troubleshooting/howto-root.md" %}}).
 
 1. Now: wait. UBOS needs to generate a few cryptographic keys before it is ready to use
    and initialize a few other things on the first boot. That might take 5 or 10 minutes
@@ -89,7 +83,7 @@ To do so:
 
    Make sure you are connected to the internet before attempting to proceed. If you
    have difficulties reaching the internet from your container, consult
-   {{% pageref "/docs/users/faq-howto-troubleshooting/error-container-cannot-connect.md" %}}.
+   {{% pageref "/docs/administrators/faq-howto-troubleshooting/error-container-cannot-connect.md" %}}.
 
 1. Update UBOS to the latest and greatest:
 
@@ -97,7 +91,7 @@ To do so:
    % sudo ubos-admin update
    ```
 
-1. You are now ready for {{% pageref "/docs/users/firstsite.md" %}}.
+1. You are now ready for {{% pageref "/docs/administrators/firstsite.md" %}}.
    Note that with the private networking setup described on this page, you will only be able
    to access {{% gls App %}} installed in your UBOS container from the host computer. If you like
    to access them from anywhere else, you either need to give your container a non-private

@@ -14,6 +14,6 @@ corresponding JSON file is ``/etc/ubos/netconfig-client.json``.
 
 ## See also:
 
-* {{% pageref "/docs/users/ubos-admin.md" %}}
+* {{% pageref "/docs/administrators/ubos-admin.md" %}}
 * {{% pageref listnetconfigs.md %}}
 * {{% pageref setnetconfig.md %}}

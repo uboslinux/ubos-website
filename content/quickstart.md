@@ -5,7 +5,7 @@ title: Quick Start
 
 ## On a device or server
 
-A more detailed step-by-step guide can be found in the {{% pageref "/docs/users/" %}}.
+A more detailed step-by-step guide can be found in the {{% pageref "/docs/administrators/" %}}.
 The links on this page are for the {{% pageref "/docs/developers/buildrelease.md" "green (production) release channel" %}}.
 
 <div class="platforms">
@@ -45,7 +45,7 @@ The links on this page are for the {{% pageref "/docs/developers/buildrelease.md
 </div>
 
 Once booted, log in from the console as root, or via ssh using the
-{{% pageref "/docs/users/shepherd-staff.md" "UBOS Staff" %}}.
+{{% pageref "/docs/administrators/shepherd-staff.md" "UBOS Staff" %}}.
 
 <h2>In the Cloud</h2>
 <div class="platforms">
@@ -76,7 +76,7 @@ file):
 Once booted, log in as ``root`` from the console.
 
 For more details and other installation options, refer to
-{{% pageref "/docs/users/installation/" %}} in the UBOS {{% pageref "/docs/users/" %}}.
+{{% pageref "/docs/administrators/installation/" %}} in the UBOS {{% pageref "/docs/administrators/" %}}.
 It also describes how to run UBOS in a Linux container.
 
 ## Then: create a website that runs one or more Apps
@@ -109,4 +109,4 @@ To back up all data from your apps:
 % sudo ubos-admin backup --backuptofile all.ubos-backup
 ```
 
-For details, refer to the {{% pageref "/docs/users/" %}}.
+For details, refer to the {{% pageref "/docs/administrators/" %}}.

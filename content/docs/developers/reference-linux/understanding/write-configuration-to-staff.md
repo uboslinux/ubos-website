@@ -33,5 +33,5 @@ Additional information may be written to the UBOS staff in the future.
 
 ## See also:
 
-* {{% pageref "/docs/users/ubos-admin.md" %}}
+* {{% pageref "/docs/administrators/ubos-admin.md" %}}
 * {{% pageref read-configuration-from-staff.md %}}

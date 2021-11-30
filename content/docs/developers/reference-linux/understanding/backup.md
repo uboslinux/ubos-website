@@ -47,7 +47,7 @@ used, UBOS generally performs the following actions:
 
 ## See also:
 
-* {{% pageref "/docs/users/ubos-admin.md" %}}
+* {{% pageref "/docs/administrators/ubos-admin.md" %}}
 * {{% pageref backupinfo.md %}}
 * {{% pageref list-data-transfer-protocols.md %}}
 * {{% pageref restore.md %}}

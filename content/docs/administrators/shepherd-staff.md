@@ -218,7 +218,7 @@ UBOS will never auto-generate a new key pair when running UBOS in a container.
 An automatically provisioned {{% gl Shepherd %}} account can be used as the primary
 administration account on a UBOS device. By default, it has the rights to invoke
 ``sudo ubos-admin``, ``sudo systemctl`` and the like. It can also become ``root``
-(see {{% pageref "/docs/users/faq-howto-troubleshooting/howto-root.md" %}}).
+(see {{% pageref "/docs/administrators/faq-howto-troubleshooting/howto-root.md" %}}).
 
 If a {{% gl Device %}} is booted a second time with the {{% gl UBOS_Staff %}}
 present, the ssh key will be updated. (We work under the assumption that if an

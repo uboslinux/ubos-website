@@ -24,7 +24,7 @@ be switched on in the BIOS first. See the
    Look for a file named ``ubos_green_x86_64-vbox_LATEST.vmdk.xz``.
 
 1. Optionally, you may now verify that your image downloaded correctly by following
-   {{% pageref "/docs/users/faq-howto-troubleshooting/howto-verify-image.md" %}}.
+   {{% pageref "/docs/administrators/faq-howto-troubleshooting/howto-verify-image.md" %}}.
 
 1. Uncompress the downloaded file. This depends on your operating system, but might be as
    easy as double-clicking it, or executing
@@ -68,7 +68,7 @@ be switched on in the BIOS first. See the
 1. In the main window, click "Start". The virtual machine should now be booting.
 
 1. When the boot process is finished, log in as user ``root``.
-   For password, see {{% pageref "/docs/users/faq-howto-troubleshooting/howto-root.md" %}}.
+   For password, see {{% pageref "/docs/administrators/faq-howto-troubleshooting/howto-root.md" %}}.
 
 1. Now: wait. UBOS needs to generate a few cryptographic keys before it is ready to use
    and initialize a few other things on the first boot. That might take a few minutes.
@@ -103,4 +103,4 @@ be switched on in the BIOS first. See the
    % sudo ubos-admin update
    ```
 
-1. You are now ready for {{% pageref "/docs/users/firstsite.md" %}}.
+1. You are now ready for {{% pageref "/docs/administrators/firstsite.md" %}}.

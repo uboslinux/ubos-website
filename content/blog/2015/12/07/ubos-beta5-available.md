@@ -13,7 +13,7 @@ Now we proudly present: UBOS beta 5. Here are the highlights:
   run in Linux containers. Not just on x86_64 PCs, but also on Raspberry Pi's!
   So if you already run Linux and don't want to remove your distro, you can
   simply run UBOS in addition! To make this easy, we are providing pre-configured images.
-  Here are the {{% pageref "/docs/users/installation/" instructions %}} for how
+  Here are the {{% pageref "/docs/administrators/installation/" instructions %}} for how
   to run UBOS is a container.
 
 * Nobody likes setting up networks, particularly complex ones. To make this much simpler,
@@ -22,7 +22,7 @@ Now we proudly present: UBOS beta 5. Here are the highlights:
   address translation, local DNS server, local DHCP server and selective port openings)
   and a standalone network. It also automatically configures a firewall with what we
   believe are reasonable, and reasonably secure defaults. For more details, go
-  {{% pageref "/docs/users/networking.md" here %}}.
+  {{% pageref "/docs/administrators/networking.md" here %}}.
 
 * UBOS developer tools have been much improved. They can now be cleanly added to an
   Arch Linux installation that acts as a development machine. And given that UBOS can run

@@ -12,8 +12,8 @@ For how to upgrade the boot loader on your Raspberry Pi 4, see below.
 To install UBOS to boot directly from a USB disk or stick without an SD card, you have two choices:
 
 * either follow the normal installation instructions
-  ({{% pageref "/docs/users/installation/raspberrypi2.md" %}} or
-  :{{% pageref "/docs/users/installation/raspberrypi4.md" %}}) and simply
+  ({{% pageref "/docs/administrators/installation/raspberrypi2.md" %}} or
+  :{{% pageref "/docs/administrators/installation/raspberrypi4.md" %}}) and simply
   use the USB disk or stick in every place where the instructions refer to the SD card; or
 
 * boot your Raspberry Pi from a UBOS SD card, then attach the USB disk or stick, and
@@ -45,8 +45,8 @@ a USB disk or stick to older devices.
 To do that:
 
 1. Boot your Raspberry Pi from an SD card that has UBOS installed as described
-   in {{% pageref "/docs/users/installation/raspberrypi.md" %}} or
-   {{% pageref "/docs/users/installation/raspberrypi2.md" %}}.
+   in {{% pageref "/docs/administrators/installation/raspberrypi.md" %}} or
+   {{% pageref "/docs/administrators/installation/raspberrypi2.md" %}}.
 
 1. Connect your external USB disk to your Raspberry Pi and turn it on.
 

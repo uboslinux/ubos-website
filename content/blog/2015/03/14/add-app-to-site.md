@@ -5,7 +5,7 @@ categories: [ howto, owncloud, selfoss ]
 ---
 
 Let's say you have set up a site with one app (e.g. ``owncloud``), as it is described in
-{{% pageref "/docs/users/firstsite.md" %}}. What if you'd like
+{{% pageref "/docs/administrators/firstsite.md" %}}. What if you'd like
 to run a second app at the same site, say ``selfoss``?
 
 ### Short version:

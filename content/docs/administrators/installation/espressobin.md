@@ -14,7 +14,7 @@ container. This is described in {{% pageref aarch64_container.md %}}.)
    Look for a file named ``ubos_green_aarch64-espressobin_LATEST.img.xz``.
 
 1. Optionally, you may now verify that your image downloaded correctly by following
-   {{% pageref "/docs/users/faq-howto-troubleshooting/howto-verify-image.md" %}}.
+   {{% pageref "/docs/administrators/faq-howto-troubleshooting/howto-verify-image.md" %}}.
 
 1. Uncompress the downloaded file. This depends on your operating system, but might be as
    easy as double-clicking it, or executing
@@ -28,11 +28,11 @@ container. This is described in {{% pageref aarch64_container.md %}}.)
 1. Write this image file "raw" to an SD card appropriate for your ESPRESSObin. This
    operation depends on your operating system:
 
-   * {{% pageref "/docs/users/faq-howto-troubleshooting/writing-image/windows.md" %}}
+   * {{% pageref "/docs/administrators/faq-howto-troubleshooting/writing-image/windows.md" %}}
 
-   * {{% pageref "/docs/users/faq-howto-troubleshooting/writing-image/macos.md" %}}
+   * {{% pageref "/docs/administrators/faq-howto-troubleshooting/writing-image/macos.md" %}}
 
-   * {{% pageref "/docs/users/faq-howto-troubleshooting/writing-image/linux.md" %}}
+   * {{% pageref "/docs/administrators/faq-howto-troubleshooting/writing-image/linux.md" %}}
 
 1. On first boot, you need to have a serial terminal connected to your ESPRESSObin. This is
    because you likely have to change your boot loader options.
@@ -80,9 +80,9 @@ container. This is described in {{% pageref aarch64_container.md %}}.)
 1. Should booting fail, see below for the uBoot factory configuration.
 
 1. When the boot process is finished, log in as user ``root`` from the attached keyboard
-   and monitor. For password, see {{% pageref "/docs/users/faq-howto-troubleshooting/howto-root.md" %}}.
+   and monitor. For password, see {{% pageref "/docs/administrators/faq-howto-troubleshooting/howto-root.md" %}}.
    If you used a {{% gl UBOS_Staff %}}, you can log in over the network instead as described in
-   {{% pageref "/docs/users/shepherd-staff.md" %}}.
+   {{% pageref "/docs/administrators/shepherd-staff.md" %}}.
 
 1. Now: wait. UBOS needs to generate a few cryptographic keys before it is ready to use
    and initialize a few other things on the first boot. That might take 5 or 10 minutes.
@@ -106,7 +106,7 @@ container. This is described in {{% pageref aarch64_container.md %}}.)
    % sudo ubos-admin update
    ```
 
-1. You are now ready for {{% pageref "/docs/users/firstsite.md" %}}.
+1. You are now ready for {{% pageref "/docs/administrators/firstsite.md" %}}.
 
 ## Optional: boot from a SATA disk, instead of an SD card
 

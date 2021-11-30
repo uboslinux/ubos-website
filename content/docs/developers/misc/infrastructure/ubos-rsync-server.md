@@ -9,7 +9,7 @@ uploadable or downloadable from the command-line, not just via a web browser.
 
 To do discuss it, we will use the ``docroot`` {{% gl App %}} available on UBOS that makes use
 of ``ubos-rsync-server``. ``docroot`` is a simple web {{% gl App %}} for static web site hosting.
-You may want to review its {{% pageref "/docs/users/apps/docroot.md" "end user documentation" %}} first.
+You may want to review its {{% pageref "/docs/administrators/apps/docroot.md" "end user documentation" %}} first.
 
 To examine ``docroot``, please refer to its source code
 [on Github](https://github.com/uboslinux/ubos-utilapps).

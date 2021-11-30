@@ -28,7 +28,7 @@ Three major use cases for Tardigrade are supported on UBOS today:
 
 * using Tardigrade as an "offsite" location for backups of the valuable data on your
   UBOS device. This is functionality quite similar to when you
-  {{% pageref "/docs/users/backup-restore.md" backup %}} your {{% gl Device %}} to Amazon S3, but
+  {{% pageref "/docs/administrators/backup-restore.md" backup %}} your {{% gl Device %}} to Amazon S3, but
   instead of using Amazon's servers, you use space on the disks of other Tardigrade users.
 
 * using Tardigrade as Nextcloud "external storage" if you run Nextcloud on UBOS.
@@ -327,7 +327,7 @@ behind a firewall, open up a port on the firewall that routes to the same port o
 [Tardigrade documentation on port forwarding](https://documentation.storj.io/dependencies/port-forwarding>).
 
 However, we recommend using ``ddclient`` as your Dynamic DNS tool. This is described in
-{{% pageref "/docs/users/networking.md" %}}.
+{{% pageref "/docs/administrators/networking.md" %}}.
 
 ### Selecting a data directory for hosted files
 

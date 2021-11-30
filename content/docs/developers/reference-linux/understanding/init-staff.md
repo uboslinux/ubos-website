@@ -19,4 +19,4 @@ it should assume to be lost after this command is complete.
 
 ## See also:
 
-* {{% pageref "/docs/users/ubos-admin.md" %}}
+* {{% pageref "/docs/administrators/ubos-admin.md" %}}

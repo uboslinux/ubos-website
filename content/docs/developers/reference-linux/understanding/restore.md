@@ -121,6 +121,6 @@ recent one. This enables users to restore their data even from older backups.
 
 ## See also:
 
-* {{% pageref "/docs/users/ubos-admin.md" %}}
+* {{% pageref "/docs/administrators/ubos-admin.md" %}}
 * {{% pageref backup.md %}}
 * {{% pageref restore.md %}}

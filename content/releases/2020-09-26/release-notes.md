@@ -23,20 +23,20 @@ Then, update your device:
 * ``ubos-install`` now will refuse to start if it does not appear an internet connection
   is available, and downloading of UBOS packages would fail.
 * The device class ``odroid-xu3`` enables UBOS to run on ODROID devices XU3, XU4, as
-  well as HC1 and HC2. {{% pageref "/docs/users/installation/odroid-xu3.md" "More details" %}}.
+  well as HC1 and HC2. {{% pageref "/docs/administrators/installation/odroid-xu3.md" "More details" %}}.
 * On a Raspberry Pi 4, UBOS can now boot directly from an external USB disk. This means
   SD cards are not needed any more for UBOS on the Pi 4, which translates into faster
   speeds and higher reliability. (Depending on the version of the boot loader that your
   Pi 4 has, you may need to temporarily use an SD card to upgrade the bootloader, but that
-  is a one-time operation.) {{% pageref "/docs/users/installation/raspberrypi4.md" "More details" %}}
+  is a one-time operation.) {{% pageref "/docs/administrators/installation/raspberrypi4.md" "More details" %}}
 * Logging on as the ``root`` user now requires a password.
-  {{% pageref "/docs/users/faq.md" "More details" %}}.
+  {{% pageref "/docs/administrators/faq.md" "More details" %}}.
 
 ### Notable new packages:
 
 * Package ``rpi-eeprom`` lets you update your Raspberry Pi 4's bootloader, so you can
   boot entirely without SD card from a USB stick or disk.
-  {{% pageref "/docs/users/devices/raspberrypi.md" "More details" %}}.
+  {{% pageref "/docs/administrators/devices/raspberrypi.md" "More details" %}}.
 * Package ``pi-bluetooth`` are Bluetooth drivers for the Raspberry Pi 3.
 * Package ``ntfs-3g`` for mounting NTFS disks
 

@@ -11,7 +11,7 @@ Generally, you do three things:
 
 * You make sure your {{% gl Device %}} can be reached from the public internet. This
   is trivial in some cases (like if your {{% gl Device %}} is a
-  {{% pageref "/docs/users/installation/x86_ec2.md" "cloud server" %}}) and a bit more
+  {{% pageref "/docs/administrators/installation/x86_ec2.md" "cloud server" %}}) and a bit more
   tricky if it is {{% pageref howto-pagekite.md "behind a firewall" %}}.
 
 * You instruct your domain name registrar or name server to resolve your domain to your

@@ -59,7 +59,7 @@ get in the way of smooth operation of the new version of the {{% gl App %}}.
 
 ## See also:
 
-* {{% pageref "/docs/users/ubos-admin.md" %}}
+* {{% pageref "/docs/administrators/ubos-admin.md" %}}
 * {{% pageref backup.md %}}
 * {{% pageref deploy.md %}}
 * {{% pageref restore.md %}}

@@ -27,7 +27,7 @@ examples:
   site publishers, this lets you easily run a website from behind your firewall, or
   pack up your server, plug it in somewhere else and you are back up and running.
 
-{{% pageref "/docs/users/create-tor-hidden-site.md" "More details" %}}.
+{{% pageref "/docs/administrators/create-tor-hidden-site.md" "More details" %}}.
 
 Some other things that are new:
 

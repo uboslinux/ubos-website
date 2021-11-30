@@ -186,7 +186,7 @@ soon as you stop the container, all data in the container will be lost. This is 
 a pristine system for testing.
 
 Log in as root with the
-{{% pageref "/docs/users/faq-howto-troubleshooting/" "default password" %}}.
+{{% pageref "/docs/administrators/faq-howto-troubleshooting/" "default password" %}}.
 
 This shell is best used to display the system log, so you can watch for any problems during
 deployment or operation of your code:

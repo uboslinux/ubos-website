@@ -19,7 +19,7 @@ There are two major new features:
 
 2. The UBOS Staff makes secure configuration of UBOS devices without keyboard and monitor a snap.
    See [blog post](http://upon2020.com/blog/2015/03/ubos-shepherd-rules-their-iot-device-flock-with-a-staff/)
-   and {{% pageref "/docs/users/shepherd-staff.md" documentation %}}.
+   and {{% pageref "/docs/administrators/shepherd-staff.md" documentation %}}.
 
 For more details, refer to the ~~release notes~~.
 

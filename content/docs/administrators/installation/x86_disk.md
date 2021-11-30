@@ -50,10 +50,10 @@ log on as ``root``. Then:
    you installed it. If not, check your BIOS settings.
 
 1. If your screen goes blank during the boot and doesn't come back on, please refer to
-   {{% pageref "/docs/users/faq-howto-troubleshooting/error-boot-pc-blank-screen.md" %}}.
+   {{% pageref "/docs/administrators/faq-howto-troubleshooting/error-boot-pc-blank-screen.md" %}}.
 
 1. When the boot process is finished, log in as user ``root``.
-   For password, see {{% pageref "/docs/users/faq-howto-troubleshooting/howto-root.md" %}}.
+   For password, see {{% pageref "/docs/administrators/faq-howto-troubleshooting/howto-root.md" %}}.
 
 1. Now: wait. UBOS needs to generate a few cryptographic keys before it is ready to use
    and initialize a few other things on the first boot. That might take a few minutes.
@@ -88,7 +88,7 @@ log on as ``root``. Then:
    % sudo ubos-admin update
    ```
 
-1. You are now ready for {{% pageref "/docs/users/firstsite.md" %}}.
+1. You are now ready for {{% pageref "/docs/administrators/firstsite.md" %}}.
 
 ## Alternate configurations
 
