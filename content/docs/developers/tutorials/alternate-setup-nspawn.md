@@ -156,7 +156,7 @@ In a first shell, run all in one line, or with the backslashes at the end):
 
 ```
 % sudo systemd-nspawn -b -n -M ubos-develop-${CHANNEL} -D ubos-develop-${CHANNEL} \
-   --bind $(pwd):/home/ubosdev/project --bind $HOME/.m2:/ubosdev/.m2 --bind /dev/fuse \
+   --bind $(pwd):/home/ubosdev/project --bind $HOME/.m2:/home/ubosdev/.m2 --bind /dev/fuse \
    --network-zone ubos-${CHANNEL}
 ```
 
