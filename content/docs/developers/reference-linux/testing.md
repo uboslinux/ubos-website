@@ -11,7 +11,7 @@ to a new version. We do not ever want to ask a user to "fix the {{% gl App %}} i
 manually if we can help it.
 
 To aid in testing this, we use a test tool called ``webapptest``
-(source is [here](https://github.com/uboslinux/ubos-tools/tree/master/webapptest)),
+(source is [here](https://github.com/uboslinux/ubos-tools/tree/main/webapptest)),
 which has been written specifically for this purpose. ``webapptest`` is not a regular application
 testing tool; it is not intended to find out whether, say, your {{% gl App %}} runs nicely in
 Internet Explorer. Instead, it focuses on testing installation, uninstallation, backup and restore;
