@@ -28,8 +28,8 @@ regardless of whether they appear to applicable to the current {{% gl Device %}}
 
 ## See also:
 
-* {{% pageref "/docs/users/ubos-admin.md" %}}
+* {{% pageref "/docs/administrators/ubos-admin.md" %}}
 * {{% pageref setnetconfig.md %}}
 * {{% pageref shownetconfig.md %}}
 * The set of currently implemented {{% gls Network_Configuration %}} is
-  documented in {{% pageref "/docs/users/networking.md" %}}.
+  documented in {{% pageref "/docs/administrators/networking.md" %}}.

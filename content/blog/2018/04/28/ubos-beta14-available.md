@@ -33,7 +33,7 @@ highlights:
 
 * If you always wished to have an extra disk on which to store your data, don't upgrade yet,
   but set that up first.
-  {{% pageref "/docs/users/faq-howto-troubleshooting/howto-running-out-of-disk-space.md" "Here is how to" %}}.
+  {{% pageref "/docs/administrators/faq-howto-troubleshooting/howto-running-out-of-disk-space.md" "Here is how to" %}}.
   You can also set this disk up after the upgrade, but it's less work if you do it first.
 
 * To be safe, create a backup of all your data first, then update and reboot:

@@ -85,7 +85,7 @@ package to their website:
    ```
 
    This commend asks some questions; answer the questions as you like, and use the
-   {{% gl App %}} name ``helloworld`` (see also {{% pageref "/docs/users/firstsite.md" %}}).
+   {{% gl App %}} name ``helloworld`` (see also {{% pageref "/docs/administrators/firstsite.md" %}}).
 
    This will put all the right files in the right web server directories, activate
    needed Apache modules, restart servers, and the like. When this command completes,

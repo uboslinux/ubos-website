@@ -25,7 +25,7 @@ UBOS is available on the Docker hub. To run UBOS using Docker:
    needs the `--privileged`` flag.
 
 1. When the boot process is finished, log in as user ``root``.
-   For password, see {{% pageref "/docs/users/faq-howto-troubleshooting/howto-root.md" %}}. Alternatively, execute
+   For password, see {{% pageref "/docs/administrators/faq-howto-troubleshooting/howto-root.md" %}}. Alternatively, execute
    ``docker exec -i -t <name> /bin/bash`` or such in a separate terminal to obtain a
    root shell in the container.
 
@@ -61,7 +61,7 @@ UBOS is available on the Docker hub. To run UBOS using Docker:
    % sudo ubos-admin update
    ```
 
-1. You are now ready for {{% pageref "/docs/users/firstsite.md" %}}.
+1. You are now ready for {{% pageref "/docs/administrators/firstsite.md" %}}.
 
 1. To shut down your Docker container, execute
 

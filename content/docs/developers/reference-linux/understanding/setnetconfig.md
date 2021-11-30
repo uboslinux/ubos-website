@@ -52,8 +52,8 @@ following actions:
 
 ## See also:
 
-* {{% pageref "/docs/users/ubos-admin.md" %}}
+* {{% pageref "/docs/administrators/ubos-admin.md" %}}
 * {{% pageref listnetconfigs.mf %}}
 * The set of currently available {{% gls Network_Configuration %}} is documented
-  {{% pageref "/docs/users/networking.md" %}}.
+  {{% pageref "/docs/administrators/networking.md" %}}.
 

@@ -5,18 +5,18 @@ title: ESPRESSObin
 ## Use of a SATA disk
 
 To use a SATA disk with the ESPRESSObin, please refer to
-{{% pageref "/docs/users/installation/espressobin.md" %}}.
+{{% pageref "/docs/administrators/installation/espressobin.md" %}}.
 
 Note that more recent (2019) kernels require an upgraded boot loader, otherwise your
 disk may not be detected. For how to upgrade your boot loader, please refer to
-{{% pageref "/docs/users/installation/espressobin.md" %}}.
+{{% pageref "/docs/administrators/installation/espressobin.md" %}}.
 
 ## Networking
 
 Unlike most ARM boards, the ESPRESSObin features three Ethernet ports. This opens
 possibilities!
 
-For more background on networking on UBOS, see {{% pageref "/docs/users/networking.md" %}}
+For more background on networking on UBOS, see {{% pageref "/docs/administrators/networking.md" %}}
 
 * By default, UBOS on the ESPRESSObin runs the ``espressobin`` {{% gl Network_Configuration %}}.
   This configuration only exists on the ESPRESSObin. It is very similar to the ``gateway``

@@ -13,5 +13,5 @@ This identifier is used to identify the configuration for a particular
 
 ## See also:
 
-* {{% pageref "/docs/users/ubos-admin.md" %}}
+* {{% pageref "/docs/administrators/ubos-admin.md" %}}
 

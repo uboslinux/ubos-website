@@ -22,7 +22,7 @@ Then, update your device:
   upgrader may not be able to upgrade your installation in one go. As a workaround, we have
   introduced package ``nextcloud15``, which contains Nextcloud version 15. You can use this
   package as an intermediate step to upgrade from an earlier Nextcloud to the current version.
-  This is described in more detail in {{% pageref "/docs/users/apps/nextcloud.md" %}}.
+  This is described in more detail in {{% pageref "/docs/administrators/apps/nextcloud.md" %}}.
 
 * If you redeploy your Site running Nextcloud with a different administrator password
   than originally, the Nextcloud installation will be updated with the new admin password.

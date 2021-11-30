@@ -37,5 +37,5 @@ files directly.
 
 ## See also:
 
-* {{% pageref "/docs/users/ubos-admin.md" %}}
+* {{% pageref "/docs/administrators/ubos-admin.md" %}}
 * {{% pageref deploy.md %}}

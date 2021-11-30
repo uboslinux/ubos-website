@@ -21,7 +21,7 @@ Follow these steps:
    Look for a file named ``ubos_green_x64_64-pc_LATEST.img.xz``.
 
 1. Optionally, you may now verify that your image downloaded correctly by following
-   {{% pageref "/docs/users/faq-howto-troubleshooting/howto-verify-image.md" %}}.
+   {{% pageref "/docs/administrators/faq-howto-troubleshooting/howto-verify-image.md" %}}.
 
 1. Uncompress the downloaded file. This depends on your operating system, but might be as
    easy as double-clicking it, or executing
@@ -35,11 +35,11 @@ Follow these steps:
 1. Write this image file "raw" to a USB flash drive. This
    operation depends on your operating system:
 
-   * {{% pageref "/docs/users/faq-howto-troubleshooting/writing-image/windows.md" %}}
+   * {{% pageref "/docs/administrators/faq-howto-troubleshooting/writing-image/windows.md" %}}
 
-   * {{% pageref "/docs/users/faq-howto-troubleshooting/writing-image/macos.md" %}}
+   * {{% pageref "/docs/administrators/faq-howto-troubleshooting/writing-image/macos.md" %}}
 
-   * {{% pageref "/docs/users/faq-howto-troubleshooting/writing-image/linux.md" %}}
+   * {{% pageref "/docs/administrators/faq-howto-troubleshooting/writing-image/linux.md" %}}
 
 1. Remove the USB flash drive, insert it into a PC that is currently off, and boot
    that PC from the USB flash drive. Depending on that computer's BIOS, you may have to
@@ -50,10 +50,10 @@ Follow these steps:
 
 1. Connect Ethernet to your PC and your Ethernet network. If you do not have Ethernet
    on your PC, you can set up WiFi later as described in
-   {{% pageref "/docs/users/networking.md" %}}.
+   {{% pageref "/docs/administrators/networking.md" %}}.
 
 1. When the boot process is finished, log in as user ``root`` from the attached keyboard
-   and monitor. For password, see {{% pageref "/docs/users/faq-howto-troubleshooting/howto-root.md" %}}.
+   and monitor. For password, see {{% pageref "/docs/administrators/faq-howto-troubleshooting/howto-root.md" %}}.
 
 1. Now: wait. UBOS needs to generate a few cryptographic keys before it is ready to use
    and initialize a few other things on the first boot. That might take a few minutes.
@@ -88,4 +88,4 @@ Follow these steps:
    % sudo ubos-admin update
    ```
 
-1. You are now ready for {{% pageref "/docs/users/firstsite.md" %}}.
+1. You are now ready for {{% pageref "/docs/administrators/firstsite.md" %}}.

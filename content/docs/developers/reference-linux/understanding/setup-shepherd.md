@@ -25,4 +25,4 @@ This command:
 
 ## See also:
 
-* {{% pageref "/docs/users/ubos-admin.md" %}}
+* {{% pageref "/docs/administrators/ubos-admin.md" %}}

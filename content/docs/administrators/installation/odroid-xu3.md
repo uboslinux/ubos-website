@@ -23,7 +23,7 @@ listed here.
    Look for a file named ``ubos_green_armv7h-odroid-xu3_LATEST.img.xz``.
 
 1. Optionally, you may now verify that your image downloaded correctly by following
-   {{% pageref "/docs/users/faq-howto-troubleshooting/howto-verify-image.md" %}}.
+   {{% pageref "/docs/administrators/faq-howto-troubleshooting/howto-verify-image.md" %}}.
 
 1. Uncompress the downloaded file. This depends on your operating system, but might be as
    easy as double-clicking it, or executing
@@ -37,14 +37,14 @@ listed here.
 1. Write this image file "raw" to an SD card appropriate for your ODROID device. This
    operation depends on your operating system:
 
-   * {{% pageref "/docs/users/faq-howto-troubleshooting/writing-image/windows.md" %}}
+   * {{% pageref "/docs/administrators/faq-howto-troubleshooting/writing-image/windows.md" %}}
 
-   * {{% pageref "/docs/users/faq-howto-troubleshooting/writing-image/macos.md" %}}
+   * {{% pageref "/docs/administrators/faq-howto-troubleshooting/writing-image/macos.md" %}}
 
-   * {{% pageref "/docs/users/faq-howto-troubleshooting/writing-image/linux.md" %}}
+   * {{% pageref "/docs/administrators/faq-howto-troubleshooting/writing-image/linux.md" %}}
 
 1. Create a {{% gl UBOS_Staff %}} by following the instructions
-   {{% pageref "/docs/users/shepherd-staff.md" here %}} if you haven't already. This is
+   {{% pageref "/docs/administrators/shepherd-staff.md" here %}} if you haven't already. This is
    required for {{% gls Device %}} that don't have video, because UBOS does not permit
    login over the network with a publicly known password. Instead, the {{% gl UBOS_Staff %}}
    mechanism allows you to use an SSH key pair that only you have access to.
@@ -61,7 +61,7 @@ listed here.
    contains {{% gl Site_JSON %}} files.
 
 1. Log into your ODROID device over the network as described in
-   {{% pageref "/docs/users/shepherd-staff.md" %}}.
+   {{% pageref "/docs/administrators/shepherd-staff.md" %}}.
 
 1. Wait until UBOS is ready. To determine whether UBOS ready, execute:
 
@@ -75,4 +75,4 @@ listed here.
    % sudo ubos-admin update
    ```
 
-1. You are now ready for {{% pageref "/docs/users/firstsite.md" %}}.
+1. You are now ready for {{% pageref "/docs/administrators/firstsite.md" %}}.

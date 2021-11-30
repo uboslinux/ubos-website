@@ -22,7 +22,7 @@ is supported as well.
 
 ## See also:
 
-* {{% pageref "/docs/users/ubos-admin.md" %}}
+* {{% pageref "/docs/administrators/ubos-admin.md" %}}
 * {{% pageref showappconfig.md %}}
 * {{% pageref showsite.md %}}
 

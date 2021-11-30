@@ -14,6 +14,6 @@ as {{% gl Site_JSON %}} files.
 
 ## See also:
 
-* {{% pageref "/docs/users/ubos-admin.md" %}}
+* {{% pageref "/docs/administrators/ubos-admin.md" %}}
 * {{% pageref backup.md %}}
 * {{% pageref restore.md %}}

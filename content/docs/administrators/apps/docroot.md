@@ -25,7 +25,7 @@ Here is how to use ``docroot``:
    that will be used to securely upload your content to your to-be-created {{% gl Site %}}.
    This can be the same key pair that you use with your {{% gl UBOS_Staff %}}, or a different
    key pair. For more info about SSH and how to create an SSH key pair, see
-   {{% pageref "/docs/users/faq-howto-troubleshooting/howto-ssh.md" %}}.
+   {{% pageref "/docs/administrators/faq-howto-troubleshooting/howto-ssh.md" %}}.
 
 2. You create a {{% gl Site %}} at which to run ``docroot``, using ``ubos-admin createsite``
    on your UBOS {{% gl Device %}}. Specify ``docroot`` for the {{% gl App %}}, and any

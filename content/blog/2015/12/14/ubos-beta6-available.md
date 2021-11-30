@@ -19,10 +19,10 @@ Here are the highlights:
   and lots of programmable I/O pins; in other words, a Raspberry Pi Zero. We are proud to
   announce that UBOS now runs on the Raspberry Pi Zero, in addition to the original one
   and version 2. (Go to
-  {{% pageref "/docs/users/installation/raspberrypi.md" "installation instructions" %}}.)
+  {{% pageref "/docs/administrators/installation/raspberrypi.md" "installation instructions" %}}.)
 
 * What else is hot in the computing universe? Docker, of course. And as of now, UBOS
-  also runs on Docker. ({{% pageref "/docs/users/installation/x86_docker.md" "Here is how" %}}.)
+  also runs on Docker. ({{% pageref "/docs/administrators/installation/x86_docker.md" "Here is how" %}}.)
 
 * Want to run web applications at home, but also access them over the internet? The new
   UBOS network configuration ``public-gateway`` lets you set up your UBOS device as a router
@@ -32,7 +32,7 @@ Here are the highlights:
   % sudo ubos-admin setnetconfig public-gateway
   ```
 
-  ({{% pageref "/docs/users/networking.md" "More info" %}}.)
+  ({{% pageref "/docs/administrators/networking.md" "More info" %}}.)
 
 * And of course the usual: some packages have been upgraded, bugs have been fixed etc.
 

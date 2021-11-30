@@ -30,7 +30,7 @@ Then, update your device:
   but instead of sending your data to somebody else's cloud, Storj breaks it down into
   small, encrypted pieces and stores them on computers owned by users like you. You can
   also offer part of your own disk to other users, all at prices that are lowed than
-  S3. For details, see {{% pageref "/docs/users/howto-storj.md" %}}. (Feedback
+  S3. For details, see {{% pageref "/docs/administrators/howto-storj.md" %}}. (Feedback
   appreciated!)
 
 ### Notable new packages:
@@ -50,7 +50,7 @@ The usual: fixed bugs and made improvements. You can find the closed issues
 ## Known problems
 
 If you receive a message about “unknown trust” when installing a package or updating
-your system, see {{% pageref "/docs/users/faq-howto-troubleshooting/error-unknown-trust.md" %}}.
+your system, see {{% pageref "/docs/administrators/faq-howto-troubleshooting/error-unknown-trust.md" %}}.
 
 ## Need help?
 ----------

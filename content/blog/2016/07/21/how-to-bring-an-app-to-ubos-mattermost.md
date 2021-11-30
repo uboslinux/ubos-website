@@ -31,7 +31,7 @@ it as simple as:
 and enter ``mattermost`` as the name of the app. (Now of course Mattermost has been
 packaged, so you can try that out right now on a UBOS device, cloud server or container
 before continuing to read.
-{{% pageref "/docs/users/installation/" "Instructions for how to set up UBOS are here" %}}.
+{{% pageref "/docs/administrators/installation/" "Instructions for how to set up UBOS are here" %}}.
 
 But the point of this post is to document the steps we, as UBOS developers, went through to make
 it so. You can see the finished work [on Github](https://github.com/uboslinux/ubos-mattermost).
@@ -254,7 +254,7 @@ Now we need to run UBOS and see what happens if we actually attempt to deploy Ma
 on UBOS. For development purposes, it's easiest to run UBOS in a Linux container with
 an ephemeral virtual file system, so that every time we restart the container, it looks
 like we got a brand-new copy of UBOS. Instructions are
-{{% pageref "/docs/users/installation/x86_container.md" here %}}. For now, we assume
+{{% pageref "/docs/administrators/installation/x86_container.md" here %}}. For now, we assume
 the tar file has been unpackaged in `~/ubos`.
 
 So far, the only place where the ``mattermost`` package exists is on our development machine.

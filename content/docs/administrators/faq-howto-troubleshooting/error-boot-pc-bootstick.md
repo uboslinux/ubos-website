@@ -3,7 +3,7 @@ title: Cannot boot UBOS from boot stick on a PC
 ---
 
 If you created a boot stick for x86_64 per then instructions in
-{{% pageref "/docs/users/installation/x86_bootstick.md" %}} but the PC still boots from the
+{{% pageref "/docs/administrators/installation/x86_bootstick.md" %}} but the PC still boots from the
 previously installed operating system, not UBOS, chances are that a setting in
 your BIOS needs to be changed. To do that:
 

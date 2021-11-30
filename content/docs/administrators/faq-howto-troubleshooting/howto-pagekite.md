@@ -145,4 +145,4 @@ we recommend:
    the public internet before going to the next step.
 
 2. Then, redeploy your {{% gl Site %}} after adding the SSL/TLS certificate
-   information. This is described {{% pageref "/docs/users/faq-howto-troubleshooting/howto-modifysite.md" here %}}.
+   information. This is described {{% pageref "/docs/administrators/faq-howto-troubleshooting/howto-modifysite.md" here %}}.

@@ -18,7 +18,7 @@ To do so:
    Look for a file named ``ubos_green_armv6h-container_LATEST.tar.xz``.
 
 1. Optionally, you may now verify that your image downloaded correctly by following
-   {{% pageref "/docs/users/faq-howto-troubleshooting/howto-verify-image.md" %}}.
+   {{% pageref "/docs/administrators/faq-howto-troubleshooting/howto-verify-image.md" %}}.
 
 1. Uncompress and unpack the downloaded file into a suitable directory by executing:
 
@@ -60,7 +60,7 @@ To do so:
    ```
 
 1. When the boot process is finished, log in as user ``root``
-   (for password, see {{% pageref "/docs/users/faq-howto-troubleshooting/howto-root.md" %}}).
+   (for password, see {{% pageref "/docs/administrators/faq-howto-troubleshooting/howto-root.md" %}}).
 
 1. Now: wait. UBOS needs to generate a few cryptographic keys before it is ready to use
    and initialize a few other things on the first boot. That might take 5 or 10 minutes
@@ -89,7 +89,7 @@ To do so:
 
    Make sure you are connected to the internet before attempting to proceed. If you
    have difficulties reaching the internet from your container, consult
-   {{% pageref "/docs/users/faq-howto-troubleshooting/error-container-cannot-connect.md" %}}.
+   {{% pageref "/docs/administrators/faq-howto-troubleshooting/error-container-cannot-connect.md" %}}.
 
 1. Update UBOS to the latest and greatest:
 
@@ -97,7 +97,7 @@ To do so:
    % sudo ubos-admin update
    ```
 
-1. You are now ready for {{% pageref "/docs/users/firstsite.md" %}}.
+1. You are now ready for {{% pageref "/docs/administrators/firstsite.md" %}}.
    Note that with the private networking setup described on this page, you will only be able
    to access {{% gls App %}} installed in your UBOS container from the host computer. If you like
    to access them from anywhere else, you either need to give your container a non-private

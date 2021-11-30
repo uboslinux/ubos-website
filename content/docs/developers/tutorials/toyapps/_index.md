@@ -29,7 +29,7 @@ web page. This demonstrates the basic functioning of {{% gls Accessory %}}.
 {{% note %}}
 These toy {{% gl App %}} are published in the ``toyapps`` repository, which is not enabled
 by default. For how to enable,
-see {{% pageref "/docs/users/faq-howto-troubleshooting/howto-nonstandard-repo.md" %}}.
+see {{% pageref "/docs/administrators/faq-howto-troubleshooting/howto-nonstandard-repo.md" %}}.
 
 Of course, instead of using the pre-built {{% gls app %}}, you can check out their code
 at https://github.com/uboslinux/ubos-toyapps/ and build them youself with the development
