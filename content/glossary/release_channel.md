@@ -12,3 +12,6 @@ while ``green`` is the production channel.
 
 End users almost always will subscribe to ``green``, while developers will
 do most of their work on ``red`` and ``yellow``.
+
+This is described in more detail in the
+{{% pageref "/docs/developers/buildrelease" "developer documentation" %}}.

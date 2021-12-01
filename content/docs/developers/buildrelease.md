@@ -1,5 +1,5 @@
 ---
-title: Build and release process
+title: Release channels and UBOS release process
 weight: 20
 ---
 
