@@ -30,7 +30,7 @@ div.choice h2 {
 
 <div class="choices">
  <div class="choice">
-  <h2><a href="/docs/administrators/">How to administrate UBOS</a></h2>
+  <h2><a href="/docs/administrators/">How to administer UBOS</a></h2>
   <p>If you would like to easily run web<br>
      and internet-of-things apps<br>
      on hardware you own<br>
