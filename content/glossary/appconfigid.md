@@ -3,7 +3,7 @@ title: AppConfigId
 plural: AppConfigIds
 summary: Uniquely identifies a particular deployment of an App.
 seealsoterm: [
-    'AppConfig',
+    'AppConfiguration',
     'App',
     'Accessory'
 ]
