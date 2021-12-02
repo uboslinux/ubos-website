@@ -33,7 +33,7 @@ see {{% pageref "/docs/administrators/faq-howto-troubleshooting/howto-nonstandar
 
 Of course, instead of using the pre-built {{% gls app %}}, you can check out their code
 at https://github.com/uboslinux/ubos-toyapps/ and build them youself with the development
-setup described in {{% pageref "../first-app-with-docker.md" %}}.
+setup described in {{% pageref "../first-app.md" %}}.
 {{% /note %}}
 
 You may want to read through the documentation for these {{% gls App %}} in this sequence:

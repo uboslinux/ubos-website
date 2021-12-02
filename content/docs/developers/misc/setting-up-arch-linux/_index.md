@@ -13,10 +13,4 @@ You can use:
 * a spare ARM-based device, like a Raspberry Pi.
   (But see: {{% pageref "/docs/developers/faq/why-develop-on-x86.md" %}})
 
-{{% note %}}
-We now recommend you use the
-{{% pageref "/docs/developers/tutorials/first-app-with-docker" Docker-based %}}
-setup for development.
-{{% /note %}}
-
 Here are the steps:

@@ -2,16 +2,15 @@
 title: Differences between the ubos-target container and a typical UBOS production system
 ---
 
-The `ubos-target` container in the
-{{% pageref "/docs/developers/tutorials/first-app-with-docker" "Docker development setup" %}}
+The `ubos-target` container
 is very similar to a typical UBOS production system, on either virtualized
 or physical hardware.
 
 The main differences are:
 
-## btrfs file system
+## `btrfs` file system
 
-UBOS production systems take advantage of the btrfs filesystem, such as
+UBOS production systems take advantage of the `btrfs` filesystem, such as
 to create file system snapshots during system administration operations with
 `ubos-admin`. Docker provides its own filesystem, and so these features are
 not available.
