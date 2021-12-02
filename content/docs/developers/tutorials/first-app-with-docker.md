@@ -58,7 +58,7 @@ it:
 Download the Docker Compose file and save it to the project directory:
 
 ```
-% curl -O https://raw.githubusercontent.com/uboslinux/setups-ubosdev/main/ubosdev-docker/docker-compose.yml
+% curl -O https://raw.githubusercontent.com/uboslinux/setups-ubosdev/main/ubosdev-docker/both/docker-compose.yml
 ```
 
 ## Start the containers

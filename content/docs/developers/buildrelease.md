@@ -1,6 +1,6 @@
 ---
 title: Release channels and UBOS release process
-weight: 20
+weight: 40
 ---
 
 ## Channels and promotions
