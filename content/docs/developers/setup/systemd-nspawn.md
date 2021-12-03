@@ -155,14 +155,18 @@ This is a mouthful. You can create yourself a shortcut of you like:
 % echo sudo systemd-nspawn -b -n -M ubos-develop-yellow -D ubos-develop-yellow \
    --bind $(pwd)/projects:/home/ubosdev/projects --bind $HOME/.m2:/home/ubosdev/.m2 --bind /dev/fuse \
    --network-zone ubos-yellow \
-   > start-container
-% chmod 755 start-container
+   > start-container-yellow
+% chmod 755 start-container-yellow
 ```
 and run it as:
 ```
-% ./start-container
+% ./start-container-yellow
 ```
 {{% /note %}}
+
+If your filesystem is `btrfs`, you can also add flag ``-x`` to this invocation.
+When you do, `systemd-nspawn` will make all changes in a temporary filesystem instead,
+and when you quit your container, your unpacked "directory" will still be unchanged.
 
 ## Open a shell in the container
 
