@@ -673,7 +673,7 @@ If not given, the default for this field is assumed to be ``false``.
 
 ### Wildcard hostname not supported
 
-Some {{% gls Apps %}} require to know the hostname through which they are accessed,
+Some {{% gls App %}} require to know the hostname through which they are accessed,
 and cannot be run at the {{% gl wildcard_hostname %}}. To declare this requirements, use
 this JSON fragment:
 
