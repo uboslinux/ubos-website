@@ -151,6 +151,11 @@ here is a possible workaround:
 Sorry for the complications, but this is the best we can do. Best is to regularly update
 your UBOS {{% gl Device %}}.
 
+{{% note %}}
+You can ignore any error message about `AbstractSystemdItem::_switchOff ... smtp-server22@...`
+that might be printed under some circumstances.
+{{% /note %}}
+
 ## Nextcloud Social
 
 If you use the Nextcloud Social app, you may see the message:
