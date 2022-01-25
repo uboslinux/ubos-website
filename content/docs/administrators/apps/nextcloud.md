@@ -79,49 +79,76 @@ UBOS will automatically run all required daemons and associated commands.
 
 If you don't update your UBOS {{% gl Device %}} regularly, it may happen that you missed an
 entire major Nextcloud release by the time you do finally upgrade. For example, if you deployed
-your site originally with Nextcloud 18, and waited a while to upgrade, the current
-version may now be Nextcloud 20. This is a problem because Nextcloud does not support
+your {{% gl Site %}} originally with Nextcloud 21, and waited a while to upgrade, the current
+version may now be Nextcloud 23. This is a problem because Nextcloud does not support
 skipped upgrades.
 
-This is issue is a known Nextcloud issue, and really needs to be solve by the Nextcloud
-developers. We can only provide workarounds. The best one, of course, is the regularly update
+You may first experience this issue when you finally performed a {{% gl Device %}} update,
+and you got an error message saying that UBOS cannot upgrade your Nextcloud for this reason.
+In this case, when accessing Nextcloud with your web browser, Nextcloud will say that it is in
+maintenance mode.
+
+This issue is a known Nextcloud issue, and really needs to be solve by the Nextcloud
+developers. We can only provide workarounds. The best one, of course, is to regularly update
 your UBOS {{% gl Device %}}, so you do not end up in this situation. But if you do anyway,
-here is a possible workaround.
+here is a possible workaround:
 
-First: determine whether you are indeed in this situation, by determining which version
-of Nextcloud you are currently running. Execute:
+* First create a backup of your Nextcloud installation with ``ubos-admin backup`` with suitable
+  arguments. Which arguments to use depends on your situation, such as how many {{% gls Site %}}
+  you have on your {{% gl Device %}}. If you have only one {{% gl Site %}} on your {{% gl Device %}},
+  you might want to run:
 
-```
-% pacman -Qi nextcloud
-```
+  ``
+  % sudo ubos-admin backup --all --backuptofile mybackup.ubos-backup
+  ``
 
-then:
+* Undeploy the {{% gl Site %}} running Nextcloud with ``ubos-admin undeploy``.
+  Depending how you have set up your {{% gl Site %}} or {{% gls Site %}},
+  it might be easiest to undeploy the entire {{% gl Site %}}, or all {{% gls Site %}}
+  on your {{% gl Device %}}, with a command such as:
 
-* Before you attempt to upgrade your device, create a backup of your Nextcloud installation
-  with ``ubos-admin backup``.
+  ``
+  % sudo ubos-admin undeploy --all
+  ``
 
-* Undeploy Nextcloud with ``ubos-admin undeploy``. Depending how you have set up your site(s),
-  it might be easiest to undeploy the entire {{% gl Site %}}, or all {{% gls Site %}},
-  on your {{% gl Device %}}.
-  (Make triply sure first that you have a backup for everything you will undeploy!)
+{{% warning %}}
+**Make triply sure first that you have a backup for everything you will undeploy!**
+{{% /warning %}}
 
-* Upgrade your device with ``ubos-admin update``.
+* Upgrade your {{% gl Device %}} with ``sudo ubos-admin update``.
 
 * Now restore your backup, while telling UBOS to replace package ``nextcloud`` with
-  package ``nextcloud19`` (the skipped version; if you skipped more than one, do it once for
-  each skipped version in sequence) during the restore. You do that with
-  additional arguments: ``ubos-admin restore --migratefrom nextcloud --migrateto nextcloud19``.
-  This will migrate your Nextcloud data to version 19, from which the regular upgrade
-  works.
+  the package that contains the Nextcloud version that you skipped. UBOS provides older
+  Nextcloud packages that are still supported by Nextcloud, with version numbers appended,
+  such as ``nextcloud22`` for Nextcloud version 22.
 
-* But we also need to replace ``nextcloud19`` with the now-current ``nextcloud``, so
-  we go through backup and restore one more time: ``ubos-admin backup`` and then
-  ``ubos-admin restore --migratefrom nextcloud19 --migrateto nextcloud``.
+  The additional arguments to the ``ubos-admin restore`` command are
+  ``--migratefrom nextcloud --migrateto nextcloud22`` if you skipped Nextcloud 22.
+  So the full invocation may be:
 
-* Now you should be back and running. You can clean up by removing the intermediate
-  version with ``pacman -R nextcloud19``.
+  ``
+  % sudo ubos-admin restore --migratefrom nextcloud --migrateto nextcloud22 --in mybackup.ubos-backup
+  ``
 
-Sorry for the complications, but this is the best we can do if you do not regularly update
+* Once you have done that, you need to migrate from the skipped Nextcloud version
+  to the current version. So we go through backup and restore one more time:
+  ``ubos-admin backup`` as above, undeploy the restored {{% gl Site %}} now running
+  the skipped Nextcloud version, and finally migrate to the current one by using
+  flags ``--migratefrom nextcloud22 --migrateto nextcloud`` with the ``ubos-admin restore``
+  command.
+
+
+* Now you should be back and running. You can clean up by removing the skipped Nextcloud
+  version's package with ``pacman -R nextcloud22``.
+
+* If you skipped more than one version, you may have to go through this process more than once,
+  starting with the oldest skipped version and migrating to the next one one at a time, e.g.
+
+  * ``--migratefrom nextcloud --migrateto nextcloud21 ...``
+  * ``--migratefrom nextcloud21 --migrateto nextcloud22 ...``
+  * ``--migratefrom nextcloud22 --migrateto nextcloud ...``
+
+Sorry for the complications, but this is the best we can do. Best is to regularly update
 your UBOS {{% gl Device %}}.
 
 ## Nextcloud Social
