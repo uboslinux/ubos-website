@@ -26,7 +26,7 @@ considerable time in the future: all information required to restore an {{% gl A
 the state is was in at the time the backup was created is contained in the UBOS backup file.
 
 The details of the UBOS backup format are
-{{% pageref "/docs/developers/details/backup-format.md" "documented for developers" %}}.
+{{% pageref "/docs/developers/reference-linux/backup-format.md" "documented for developers" %}}.
 
 ## Creating a local backup
 
