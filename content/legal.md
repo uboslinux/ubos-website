@@ -12,8 +12,8 @@ This site is &copy; by [Indie Computing Corp.](https://indiecomputing.com/).
  is licensed under
  a <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
 
-UBOS, the UBOS logo, Indie Box, the Indie Box Logo, Indie Computing, and the Indie Computing
-logo are trademarks or registered trademarks of
+UBOS, the UBOS logo, UBOS Linux, UBOS Mesh, UBOSbox, Let's Bring Our Data Home, Indie Box, the Indie Box Logo,
+Indie Computing, and the Indie Computing logo are trademarks or registered trademarks of
 [Indie Computing Corp.](https://indiecomputing.com/)
 
 All other marks are the marks of their respective owners.

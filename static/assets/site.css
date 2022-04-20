@@ -199,6 +199,10 @@ article p.date {
     font-size: var( --small-font-size );
 }
 
+main p.img {
+    text-align: center;
+}
+
 ul.range-ul-article,
 ul.range-ul-article > li {
     margin:  0;
