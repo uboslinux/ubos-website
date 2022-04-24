@@ -1,6 +1,6 @@
 ---
-title:  "A new family member: The UBOS Personal Data Mesh"
-date:   2022-04-25 00:00:00
+title:  "A new UBOS family member: The UBOS Personal Data Mesh"
+date:   2022-04-24 00:00:00
 categories: [ front ]
 ---
 
@@ -14,7 +14,7 @@ The UBOS project has always been extremely ambitious. So far, we have had:
 
 but that's only where it is starting to get interesting!
 
-We are proud to stop whispering and introduce the latest member of the UBOS family:
+So far it's only a technology preview, but check out the latest member of the UBOS family:
 
 * **UBOS Personal Data Mesh**, a middleware software component that knows
   how to import data exported from major internet platforms (like Facebook)
