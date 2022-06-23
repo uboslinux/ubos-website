@@ -20,8 +20,8 @@ The UBOS Personal Data Mesh is middleware that:
 The UBOS Personal Data Mesh is still in active development.
 
 **To learn more**,
-join the [UBOS Mesh Telegram Group](https://t.me/+qOvJn8uyV4YzMGVh) and ask to
-get access to the code and tutorials. (You need a Telegram account.)
+join the [Dazzle DAO Telegram Group](https://t.me/+qOvJn8uyV4YzMGVh) and ask to
+get access to the UBOS Mesh code and tutorials. (You need a Telegram account.)
 
 What could you build if you had access to all the same data that Facebook
 has about a user? And Google. And Amazon. And and and. All in one place,
