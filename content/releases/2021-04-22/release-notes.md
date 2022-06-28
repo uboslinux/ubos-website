@@ -1,5 +1,5 @@
 ---
-title: "Release Notes: Update 2021-04-22"
+title: "Release notes: UBOS Linux and apps update 2021-04-22"
 date: 2021-04-22
 ---
 

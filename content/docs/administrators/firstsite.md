@@ -48,8 +48,12 @@ Follow these steps:
    ```
 
    This command will ask a number of questions. Once you have answered them, it will
-   appear to think for a while and then set up your new {{% gl App %}}. Here is an example
-   transcript:
+   appear to think for a while and then set up your new {{% gl App %}}.
+
+   For the name of the app, and names of accessories, use the package names
+   shown {{% pageref "/apps" here %}}.
+
+   Here is an example transcript:
 
    ```
    % sudo ubos-admin createsite
@@ -81,5 +85,5 @@ Follow these steps:
    show up here.
 
 If you are curious what UBOS just did under the hood, please refer to
-{{% pageref "/docs/developers/understanding/createsite.md" %}}.
+{{% pageref "/docs/developers/reference-linux/understanding/createsite.md" %}}.
 

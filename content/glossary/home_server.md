@@ -2,6 +2,7 @@
 title: Home Server
 plural: Home Servers
 summary: A computer that is primarily accessed over the network, and fully owned by the person who purchased it.
+domain: UBOS Linux
 ---
 
 A computer that is primarily accessed over the network, and fully owned by the

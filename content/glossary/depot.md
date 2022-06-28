@@ -5,6 +5,7 @@ summary: The website through which UBOS Packages are distributed.
 seealsoterm: [
     'Package'
 ]
+domain: UBOS Linux
 ---
 
 The website at [depot.ubos.net](http://depot.ubos.net/) through which UBOS

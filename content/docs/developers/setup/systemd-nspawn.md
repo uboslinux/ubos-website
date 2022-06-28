@@ -171,8 +171,8 @@ and when you quit your container, your unpacked "directory" will still be unchan
 ## Open a shell in the container
 
 The shell in which you ran the `systemd-nspawn` command now shows a login prompt.
-You can login there as `root` (with
-[this password](https://ubos.net/docs/administrators/faq-howto-troubleshooting/faq-root-password/),
+You can login there as `root`
+(with {{% pageref "/docs/administrators/faq-howto-troubleshooting/faq-root-password" "this password" %}},
 but if you do, we recommend you only use this shell to follow the system
 log (e.g. with `journalctl -f`).
 

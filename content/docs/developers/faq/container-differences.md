@@ -1,10 +1,10 @@
 ---
-title: Differences between the ubos-target container and a typical UBOS production system
+title: Are there any differences between the ubos-target container and a typical UBOS production system?
+weight: 50
 ---
 
-The `ubos-target` container
-is very similar to a typical UBOS production system, on either virtualized
-or physical hardware.
+The `ubos-target` container is very similar to a typical UBOS production system,
+on either virtualized or physical hardware.
 
 The main differences are:
 

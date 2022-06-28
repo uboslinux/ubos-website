@@ -3,10 +3,6 @@ title: How to set up a website as a Tor hidden service
 weight: 50
 ---
 
-{{% warning %}}
-There are reports that Tor support is currently broken on UBOS.
-{{% /warning %}}
-
 ## Introduction
 
 [Tor](https://www.torproject.org/) is generally known as a way to

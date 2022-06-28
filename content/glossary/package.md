@@ -6,6 +6,7 @@ seealsoterm: [
     'App',
     'Accessory'
 ]
+domain: UBOS Linux
 ---
 
 A set of code components, and other files that logically belong together and should

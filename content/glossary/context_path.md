@@ -7,6 +7,7 @@ seealsoterm: [
     'Hostname',
     'Site'
 ]
+domain: UBOS Linux
 ---
 
 The "path" part of a URL to which an {{% gl App %}} is being deployed, without

@@ -1,5 +1,5 @@
 ---
-title: "Release Notes: Update 2019-04-03 (green channel)"
+title: "Release notes: UBOS Linux update 2019-04-03 (green channel)"
 date: 2019-04-03
 ---
 
@@ -113,7 +113,8 @@ upon reboot. Details see below.
 * ``ubos-admin status`` output is now more readable.
 
 * There were a set of intermittent issues related to {{% gl Letsencrypt %}}
-  certificates, either with or without running {{% pageref "/docs/administrators/howto-pagekite.md" Pagekite %}}.
+  certificates, either with or without running
+  {{% pageref "/docs/administrators/faq-howto-troubleshooting/howto-pagekite.md" Pagekite %}}.
   The provisioning of {{% gl LetsEncrypt %}} certificates has been rewritten. Among
   other changes, UBOS now keeps valid {{% gl LetsEncrypt %}} certificates around, even if
   a site at the corresponding hostname has been undeployed. This avoids running

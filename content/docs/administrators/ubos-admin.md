@@ -148,7 +148,8 @@ To obtain a {{% gl Site_JSON %}} file, either:
 * create (but do not deploy) a {{% gl Site_JSON %}} file with
   ``ubos-admin createsite --dry-run``; or
 
-* manually create a {{% gl Site_JSON %}} file; see {{% pageref "/docs/developers/site-json.md" %}}.
+* manually create a {{% gl Site_JSON %}} file; see the
+  {{% pageref "/docs/developers/reference-linux/site-json.md" file format description %}}.
 
 You can take an existing {{% gl Site_JSON %}} file, and edit it by, for example:
 

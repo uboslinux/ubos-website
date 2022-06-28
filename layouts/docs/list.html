@@ -30,7 +30,7 @@
      <a href="{{ .Permalink }}">{{ .Title }}</a>
 {{     if .Pages }}
      <ol>
-{{       range .Pages.ByWeight }}
+{{       range where ( where .Pages.ByWeight "Params.display" "!=" "hide" ) "Params.display" "!=" "false" }}
       <li>
        <a href="{{ .Permalink }}">{{ .Title }}</a>
       </li>

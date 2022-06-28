@@ -1,5 +1,5 @@
 ---
-title: "Release Notes: Update 2019-03-29 (yellow channel)"
+title: "Release Notes: update 2019-03-29 (yellow channel)"
 date: 2019-03-29
 ---
 

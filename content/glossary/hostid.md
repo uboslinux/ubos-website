@@ -5,6 +5,7 @@ summary: A unique identifier for a Device.
 seealsoterm: [
     'Hostname'
 ]
+domain: UBOS Linux
 ---
 
 UBOS assigns a unique identifier to each {{% gl Device %}}, which is

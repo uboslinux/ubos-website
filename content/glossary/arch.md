@@ -4,6 +4,7 @@ summary: A processor architecture, like Intel 64bit
 seealsoterm: [
     'Device_Class'
 ]
+domain: UBOS Linux
 ---
 
 The "Arch" of a {{% gl Device %}} is defined by its processor architecture.

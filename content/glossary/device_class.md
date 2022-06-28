@@ -5,6 +5,7 @@ summary: A class of Devices, such as Raspberry Pi 2
 seealsoterm: [
     'Device'
 ]
+domain: UBOS Linux
 ---
 
 A {{% gl Device_Class %}} is similar to an {{% gl Arch %}} but more specific:

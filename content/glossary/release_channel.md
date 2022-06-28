@@ -2,6 +2,7 @@
 title: Release Channel
 plural: Release Channels
 summary: A maturity level for a UBOS release.
+domain: UBOS Linux
 ---
 
 A maturity level for a UBOS release.

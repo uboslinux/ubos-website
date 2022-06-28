@@ -4,7 +4,7 @@ weight: 40
 ---
 
 In the real world, apps and sites tend to be more complex than
-the {{% pageref "/docs/developers/tutorials/toyapps/" "toy apps" %}}. Let's look at one
+the {{% pageref "/docs/developers/tutorials-linux/toyapps/" "toy apps" %}}. Let's look at one
 such example, and dissect what happens in detail when such a more complex
 {{% gl Site %}} is deployed.
 

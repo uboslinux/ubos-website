@@ -5,6 +5,7 @@ summary: The build script for a Package.
 seealsoterm: [
     'Package'
 ]
+domain: UBOS Linux
 ---
 
 The build script for creating a UBOS or Arch Linux {{% gl Package %}}.

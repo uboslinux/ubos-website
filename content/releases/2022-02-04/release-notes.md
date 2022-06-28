@@ -1,5 +1,5 @@
 ---
-title: "Release Notes: UBOS Linux Update 2022-02-04"
+title: "Release notes: UBOS Linux update 2022-02-04"
 date: 2022-02-04
 ---
 

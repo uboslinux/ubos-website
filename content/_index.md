@@ -96,16 +96,17 @@ div.howto pre {
  <div style="width: 638px; padding: 25px 10px 10px 10px">
   <h1 class="title" style="margin: 0 0 21px 0; text-align: center">Keep your data close.</h1>
 
-UBOS is a Linux distro that aims to make it 10x easier to
-[self-host](https://en.wikipedia.org/wiki/Self-hosting_(web_services)) popular open-source
-web applications, for yourself, or for your family, on hardware or cloud servers you own.
+The UBOS project develops software that makes it easier for you to control your
+personal data and your privacy on-line. It has several components:
 
-Why give your valuable data to Google or some other data overlord, if you can keep it
-under your own control? All you need is a spare (physical, virtual, or cloud) computer
-that can run Linux. UBOS automates much of the administration, so you can get on with life.
+**UBOS Linux** is a Linux distro that aims to make it 10x easier to
+[self-host](https://en.wikipedia.org/wiki/Self-hosting_(web_services)) applications
+such as Nextcloud, so you can run your own web services for youself, your friends
+and your family without depending on somebody else's cloud services.
 
-Want to use Nextcloud instead of Dropbox? Shaarli instead of delicious? An RSS
-reader or discussion forum? UBOS makes installation and maintenance easy and quick.
+**UBOS Mesh** is middleware with a web frontend that lets you import your data from
+Facebook, Google and other on-line services and use it as you wish (in development;
+preview only so far).
  </div>
 </div>
 
@@ -161,9 +162,6 @@ var thanksForSubscribing = '<div class="subscribed">Thanks for <a href="https://
  <a href="/apps/" title="Known: publishing platform for everyone">
   <img src="/images/known-72x72.png" alt="[Known]">
  </a>
- <a href="/apps/" title="phpBB: bulletin board!">
-  <img src="/images/phpbb-72x72.png" alt="[phpBB]">
- </a>
  <a href="/apps/" title="Wordpress: blog tools, publishing platform, and CMS">
   <img src="/images/wordpress-72x72.png" alt="[Wordpress]">
  </a>
@@ -176,11 +174,14 @@ var thanksForSubscribing = '<div class="subscribed">Thanks for <a href="https://
  <a href="/apps/" title="Shaarli: your own URL shortener">
   <img src="/images/shaarli-72x72.png" alt="[Shaarli]">
  </a>
+ <a href="/apps/" title="UBOS Personal Data Mesh">
+  <img src="/images/ubos-mesh-72x72.png" alt="[UBOS Mesh]">
+ </a>
  <a href="/apps/" title="Webtrees: collaborative genealogy application">
   <img src="/images/webtrees-72x72.png" alt="[Webtrees]">
  </a>
 </div>
-<p class="sidenote" style="float: right; margin: 0;">... and others. More coming. <a href="https://github.com/uboslinux/apps-wanted/issues">Request.</a></p>
+<p class="sidenote" style="float: right; margin: 0;">... and <a href="/apps/">others</a>.</p>
 
 <div class="section howto">
  <div class="section-header"><span>HOWTO</span></div>

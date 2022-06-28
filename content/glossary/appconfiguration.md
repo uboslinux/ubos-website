@@ -7,6 +7,7 @@ seealsoterm: [
     'Site',
     'Context_Path'
 ]
+domain: UBOS Linux
 ---
 
 The installation of an {{% gl App %}}, potentially with one or more {{% gls Accessory %}}

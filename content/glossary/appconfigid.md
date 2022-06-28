@@ -7,6 +7,7 @@ seealsoterm: [
     'App',
     'Accessory'
 ]
+domain: UBOS Linux
 ---
 
 UBOS identifies each {{% gl Deployment %}} of any {{% gl App %}} at any {{% gl Site %}}

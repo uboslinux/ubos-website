@@ -4,6 +4,7 @@ summary: A 3rd-party service that forwards traffic from the internet to your Dev
 seealsoterm: [
     'Home_Server'
 ]
+domain: UBOS Linux
 ---
 
 A 3rd-party service that forwards traffic from the internet to your Device behind a firewall.

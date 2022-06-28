@@ -1,5 +1,5 @@
 ---
-title: "Release Notes: UBOS update 2020-09-26"
+title: "Release notes: UBOS Linux update 2020-09-26"
 date: 2020-09-26
 ---
 
@@ -30,7 +30,7 @@ Then, update your device:
   Pi 4 has, you may need to temporarily use an SD card to upgrade the bootloader, but that
   is a one-time operation.) {{% pageref "/docs/administrators/installation/raspberrypi4.md" "More details" %}}
 * Logging on as the ``root`` user now requires a password.
-  {{% pageref "/docs/administrators/faq.md" "More details" %}}.
+  {{% pageref "/docs/administrators/faq-howto-troubleshooting/faq-root-password.md" "More details" %}}.
 
 ### Notable new packages:
 

@@ -52,6 +52,14 @@ Bulletin-board.
 Redirects to another site.
 {{% /app %}}
 
+{{% app name="Selfoss" img="/images/selfoss-72x72.png" package="selfoss"%}}
+Multipurpose RSS reader, live stream, mashup, aggregation web application.
+{{% /app %}}
+
+{{% app name="Shaarli" img="/images/shaarli-72x72.png" package="shaarli"%}}
+Personal, minimalist, super-fast, bookmarking service
+{{% /app %}}
+
 {{% app name="Webtrees" img="/images/webtrees-72x72.png" package="webtrees"%}}
 Full-featured web genealogy app
 {{% /app %}}
@@ -78,16 +86,12 @@ Free, open-source, decentralized microblogging network.
 Open source, self-hosted Slack-alternative.
 {{% /app %}}
 
+{{% app name="UBOS Mesh" img="/images/ubos-mesh-72x72.png" package="ubos-mesh-underbars-mysql"%}}
+Put your Facebook, Google and other data under your own control
+{{% /app %}}
+
 {{% app name="River5" img="/images/river-72x72.png" package="river"%}}
 A river-of-news RSS aggregator.
-{{% /app %}}
-
-{{% app name="Selfoss" img="/images/selfoss-72x72.png" package="selfoss"%}}
-Multipurpose RSS reader, live stream, mashup, aggregation web application.
-{{% /app %}}
-
-{{% app name="Shaarli" img="/images/shaarli-72x72.png" package="shaarli"%}}
-Personal, minimalist, super-fast, bookmarking service
 {{% /app %}}
 
 ## Accessories

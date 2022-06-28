@@ -2,6 +2,7 @@
 title: Indie Application
 plural: Indie Applications
 summary: A web application that can be hosted in a place of the user's choosing.
+domain: UBOS Linux
 ---
 
 A web application that can be installed on hardware, or on a hosting provider

@@ -1,5 +1,5 @@
 ---
-title: "Release Notes: Update 2019-09-01"
+title: "Release notes: UBOS Linux update 2019-09-01"
 date: 2019-09-01
 ---
 

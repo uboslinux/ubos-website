@@ -2,6 +2,7 @@
 title: Role
 plural: Roles
 summary: Groups components of an App or Accessory into deployment tiers.
+domain: UBOS Linux
 ---
 
 To successfully {{% gl Deployment deploy %}} a functioning {{% gl App %}},

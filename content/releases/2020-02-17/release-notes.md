@@ -1,5 +1,5 @@
 ---
-title: "Release Notes: UBOS update 2020-02-17"
+title: "Release notes: UBOS Linux update 2020-02-17"
 date: 2020-02-17
 ---
 
@@ -29,8 +29,8 @@ Then, update your device:
   release channel. Storj provides functionality similar to Amazon Web Services' S3,
   but instead of sending your data to somebody else's cloud, Storj breaks it down into
   small, encrypted pieces and stores them on computers owned by users like you. You can
-  also offer part of your own disk to other users, all at prices that are lowed than
-  S3. For details, see {{% pageref "/docs/administrators/howto-storj.md" %}}. (Feedback
+  also offer part of your own disk to other users, all at prices that are lower than
+  S3. For details, see {{% pageref "/docs/administrators/faq-howto-troubleshooting/howto-storj.md" %}}. (Feedback
   appreciated!)
 
 ### Notable new packages:
@@ -53,6 +53,5 @@ If you receive a message about “unknown trust” when installing a package or 
 your system, see {{% pageref "/docs/administrators/faq-howto-troubleshooting/error-unknown-trust.md" %}}.
 
 ## Need help?
-----------
 
 Post to the [UBOS forum](https://forum.ubos.net/).

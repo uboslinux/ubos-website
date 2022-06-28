@@ -122,6 +122,12 @@ em {
     font-style: normal;
 }
 
+blockquote {
+    margin-left: 2em;
+    padding-left: 2em;
+    border-left: 4px solid #808080;
+}
+
 /* Layout */
 
 header,
@@ -239,6 +245,13 @@ a.get-started-button {
     border: 1px solid #800000;
     border-radius: 5px;
     box-shadow: 0 0 4px #a0a0a0;
+}
+
+dt span.domain {
+    font-weight: normal;
+}
+p.domain {
+    font-style: italic;
 }
 
 section.docs-list > ol > li {

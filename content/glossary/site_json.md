@@ -6,6 +6,7 @@ seealsoterm: [
     'Site_JSON_Template',
     'Hostname'
 ]
+domain: UBOS Linux
 ---
 
 A JSON file that contains all meta-data about a {{% gl Site %}}, including its

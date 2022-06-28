@@ -1,5 +1,5 @@
 ---
-title: "Release Notes: Apps update 2021-01-12"
+title: "Release notes: apps update 2021-01-12"
 date: 2021-01-12
 ---
 

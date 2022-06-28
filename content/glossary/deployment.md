@@ -5,6 +5,7 @@ summary: The action that makes Apps and Accessories run at a Site.
 seealsoterm: [
     'Installation'
 ]
+domain: UBOS Linux
 ---
 
 The action that makes one or more {{% gls App %}} (plus potentially one or

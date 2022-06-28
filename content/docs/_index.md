@@ -30,20 +30,14 @@ div.choice h2 {
 
 <div class="choices">
  <div class="choice">
-  <h2><a href="/docs/administrators/">How to administer UBOS</a></h2>
-  <p>If you would like to easily run web<br>
-     and internet-of-things apps<br>
-     on hardware you own<br>
-     (such as a Raspberry Pi),<br>
+  <h2><a href="/docs/administrators/">How to administer<br>UBOS devices</a></h2>
+  <p>If you are a user,<br>
      <a href="/docs/administrators/">start here</a>.
   </p>
  </div>
  <div class="choice">
-  <h2><a href="/docs/developers/">How to develop for UBOS</a></h2>
-  <p>If you are a developer<br>
-     and would like to distribute your web<br>
-     or internet-of-things apps to people<br>
-     who want to run it on their own hardware,<br>
+  <h2><a href="/docs/developers/">How to develop for<br>UBOS Linux or UBOS Mesh</a></h2>
+  <p>If you are a developer,<br>
      <a href="/docs/developers/">start here</a>.
   </p>
  </div>

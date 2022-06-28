@@ -7,6 +7,7 @@ seealsoterm: [
     'App',
     'Accessory'
 ]
+domain: UBOS Linux
 ---
 
 A file, directory, systemd service, database or other item that needs to be provisioned

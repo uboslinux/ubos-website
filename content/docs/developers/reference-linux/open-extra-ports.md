@@ -59,7 +59,7 @@ first deployed or updates.
 
 ## To allocate a single port used by all AppConfigurations of an App
 
-Please get [in touch](https://ubos.net/community/) to have your port placed on
+Please get [in touch](/community/) to have your port placed on
 this list. The following port numbers are well-known so far:
 
 <table>

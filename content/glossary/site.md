@@ -6,6 +6,7 @@ seealsoterm: [
     'SiteId',
     'Site_JSON'
 ]
+domain: UBOS Linux
 ---
 
 Short for website. Also known as "Virtual Host".

@@ -1,5 +1,5 @@
 ---
-title: "Release Notes: Apps update 2020-06-03"
+title: "Release notes: apps update 2020-06-03"
 date: 2020-06-03
 ---
 
@@ -28,7 +28,7 @@ Then, update your device:
 ## Documentation
 
 Common use cases for modifying deployed Sites are now described
-{{% pageref "/docs/administrators/howto-modifysite.md" here %}}.
+{{% pageref "/docs/administrators/faq-howto-troubleshooting/howto-modifysite.md" here %}}.
 
 ## Known issues
 

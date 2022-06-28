@@ -5,6 +5,7 @@ summary: Any physical or virtualized computer running UBOS.
 seealsoterm: [
     'device_class'
 ]
+domain: UBOS Linux
 ---
 
 For our purposes here, any physical or virtualized computer running UBOS. This could be

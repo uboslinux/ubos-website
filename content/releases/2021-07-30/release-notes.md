@@ -1,5 +1,5 @@
 ---
-title: "Release Notes: UBOS Linux Update 2021-07-30"
+title: "Release notes: UBOS Linux update 2021-07-30"
 date: 2021-07-30
 ---
 
@@ -16,7 +16,7 @@ Then, update your device:
 ## New: revamped developer experience
 
 To make packaging apps for UBOS simpler, we now provide a pair of Docker
-containers, and a [tutorial](/docs/developers/tutorials/) for how to use them:
+containers, and a [tutorial](/docs/developers/tutorials-linux/) for how to use them:
 
 * One container is used for building packages, and has the most common
   build tools pre-installed, so developers can build immediately with almost
@@ -30,7 +30,7 @@ platform for UBOS (as long as it runs Docker), their favorite editor and
 other tools on that platform, and speeds up setup very considerably.
 
 For developers who prefer `systemd-nspawn` over Docker on Linux, a second
-[tutorial](/docs/developers/tutorials/) describes a very similar setup.
+[tutorial](/docs/developers/tutorials-linux/) describes a very similar setup.
 
 ## Other new features and key changes
 

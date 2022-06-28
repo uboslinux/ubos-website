@@ -1,6 +1,7 @@
 ---
 title: Indie IoT
 summary: The part of the Internet of Things that is independently owned and operated.
+domain: UBOS Linux
 ---
 
 The part of the [Internet of Things](https://en.wikipedia.org/wiki/Internet_of_Things)

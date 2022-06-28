@@ -2,6 +2,7 @@
 title: Network Configuration
 plural: Network Configurations
 summary: A set of active network interfaces, their configuration and associated services.
+domain: UBOS Linux
 ---
 
 In UBOS, a {{% gl Network_Configuration %}} is a set of active network interfaces,

@@ -5,6 +5,7 @@ summary: A software module that adds functionality to an App.
 seealsoterm: [
     'App'
 ]
+domain: UBOS Linux
 ---
 
 On UBOS, an {{% gl Accessory %}} is a software module that adds to or modifies the

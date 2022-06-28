@@ -5,6 +5,7 @@ summary: A collection of Packages distributed from the same place.
 seealsoterm: [
     'Depot'
 ]
+domain: UBOS Linux
 ---
 
 A collection of {{% gls Package %}} distributed together through a
