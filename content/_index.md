@@ -129,7 +129,7 @@ var thanksForSubscribing = '<div class="subscribed">Thanks for <a href="https://
   </script>
   <div style="display: flex">
    <div id="phplistsubscriberesult"></div>
-   <form action="https://indiecomputing.hosted.phplist.com/lists/?p=subscribe&id=4" method="post" id="phplistsubscribeform">
+   <form action="https://indiecomputing.hosted.phplist.com/lists/?p=subscribe&id=4" method="post" id="phplistsubscribeform" style="width: 100%">
     <input type="text" name="email" value="" id="emailaddress" style="width: 100%; border: 1px solid #c0c0c0"/>
     <button type="submit" id="phplistsubscribe" style="text-align: center">Subscribe</button>
    </form>
