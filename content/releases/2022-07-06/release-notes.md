@@ -28,7 +28,7 @@ need to be updated, and the key server we depend on can be very slow. If
 you don't like this, first update your keys:
 
 * {{% pageref "/docs/administrators/faq-howto-troubleshooting/howto-root.md" "log on as root" %}},
-  and run ``pacman-key --update``, and then
+  and run ``pacman-key --refresh-keys``, and then
 * run ``ubos-admin update --nokeyrefresh``
 
 This will take about the same amount of time, but your {{% gls site %}}
