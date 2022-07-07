@@ -29,7 +29,7 @@ you don't like this, first update your keys:
 
 * {{% pageref "/docs/administrators/faq-howto-troubleshooting/howto-root.md" "log on as root" %}},
   and run ``pacman-key --update``, and then
-* run ``ubos-dmin update --nokeyrefresh``
+* run ``ubos-admin update --nokeyrefresh``
 
 This will take about the same amount of time, but your {{% gls site %}}
 will continue to be working while ``pacman-key`` is running. The actual
