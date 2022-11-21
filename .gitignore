@@ -4,3 +4,5 @@ removed/
 static/.htaccess
 static/favicon.ico
 static/include/amazon-ec2-image-latest.js
+.DS_Store
+.hugo_build.lock
