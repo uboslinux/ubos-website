@@ -1,15 +1,27 @@
 ---
-title: Developing using Arch on VirtualBox with a systemd-nspawn container
+title: Developing using Arch Linux on VirtualBox x86_64 with a systemd-nspawn container
 weight: 30
 ---
 
 ## Setup
 
-1. Download the compressed VM file. This may take some time as it is large.
+{{% note %}}
+This setup is for VirtualBox users on x86_64 hardware, such as Intel Macs,
+Intel Windows PCs, and Intel Linux boxes. It does not work on Apple Silicon.
+{{%/ note %}}
 
-1. Uncompress the file with `xz`.
+1. Download the this virtual appliance file:
+   http://depot.ubos.net/ubosdev/ubosdev-x86_64-20221122.ova (1.5GB)
 
-1. In VirtualBox, select "Add" and open the newly uncompressed `UBOS development.vbox` file.
+1. In VirtualBox, select "File" / "Import Appliance..."
+
+1. Source: "Local File System" and then select the downloaded file. Select "Next".
+
+1. Select "MAC Address Policy:" "Generate new MAC addresses for all network adapters"
+   and "Import hard drives as VDI". Select "Finish".
+
+1. Importing the appliance will take a little bit of time. It will show up in the
+   list of VMs as `ubosdev 1` or such.
 
 1. Start the VM.
 
@@ -24,8 +36,8 @@ weight: 30
    * Select "Displays" and pick a resolution that makes sense for your computer setup.
    * Close the settings app.
 
-1. in "Search", type "Console" and run it (you get the "Search" by selecting
-   "Activities" in the menu bar)
+1. In "Search", type "Console" and run it (you get the "Search" by selecting
+   "Activities" in the menu bar).
 
 1. Set up the UBOS development environment by running:
 
@@ -44,7 +56,7 @@ weight: 30
 
 ## Ongoing development work
 
-1. Run your Development VM
+1. Run your Development VM.
 
 1. Determine which UBOS Linux container to run:
 
@@ -58,11 +70,35 @@ weight: 30
    % ubosdev-container run --name <name>
    ```
 
-   where `<name>` is one of the names from the list, e.g. `ubos-mesh-develop-red`.
+   where `<name>` is one of the names from the list, e.g. `ubos-mesh-red`.
 
    This gives you console access to the container. You can shut it down with `^]`.
 
-1. Connect with the Netbeans debugger:
+1. Access any deployed web app there from your development VM with the name
+   of the container, e.g. `http://ubos-mesh-red/`. Firefox is pre-installed on
+   the VM.
+
+1. To edit your code, IDEs `geany` and `netbeans` are pre-installed on your
+   development VM.
+
+1. To open up a shell inside your development container, open a new terminal and
+   execute:
+
+   ```
+   % sudo machinectl shell ubosdev@ubos-mesh-red
+   ```
+
+   if `ubos-mesh-red` is the name of your container.
+
+1. To build your UBOS Mesh code, run the UBOS Mesh tools inside your development container:
+
+   ```
+   % mesh-clean
+   % mesh-build
+   % mesh-test
+   ```
+
+1. To debug your UBOS Mesh code, connect with the Netbeans debugger:
 
    This requires that the Java VM was started with the default debugging flag. This flag
    is set by default in the default {{% gl Site_JSON %}} that's deployed when you
@@ -74,4 +110,7 @@ weight: 30
    * Select Connector: "Socket Attach (Attaches by socket to other VMs)"
    * Host: name of your container, e.g. `ubos-mesh-develop-red`
    * Port: 7777
+
+1. To shut down your container, in the terminal where you run it, hit `^]` three
+   times in quick succession.
 

@@ -12,7 +12,7 @@ weight: 2000
 
    * Click “New”.
 
-   * Enter name: “UBOS development”.
+   * Enter name: “ubosdev”.
 
    * ISO Image: select the ISO image you downloaded
 
@@ -103,7 +103,7 @@ weight: 2000
      # arch-chroot /mnt
      ```
 
-   * Add the UBOS keyring so we can install our own packages
+   * Add the UBOS keyring so we can install our own packages:
 
      ```
      # curl -O http://depot.ubos.net/green/$(uname -m)/os/ubos-keyring-0.8-1-any.pkg.tar.xz
@@ -113,6 +113,7 @@ weight: 2000
     * Add the UBOS tools repo:
 
       ```
+      # echo '' >> /etc/pacman.conf
       # echo '[ubos-tools-arch]' >> /etc/pacman.conf
       # echo 'Server = http://depot.ubos.net/green/$arch/ubos-tools-arch' >> /etc/pacman.conf'
       ```
@@ -128,6 +129,9 @@ weight: 2000
       ```
 
       When asked which alternatives to install, choose the defaults.
+
+      If there is a warning about a directory below `/usr/lib/perl5`, ignore that.
+      It needs fixing but doesn't currently hurt.
 
     * Create a ramdisk:
 
@@ -148,6 +152,19 @@ weight: 2000
       # locale-gen
       ```
 
+    * Set up networking:
+
+      ```
+      # echo '[Match]' > /etc/systemd/network/wired.network
+      # echo 'Name=en*' >> /etc/systemd/network/wired.network
+      # echo '' >> /etc/systemd/network/wired.network
+      # echo '[Network]' >> /etc/systemd/network/wired.network
+      # echo 'DHCP=ipv4' >> /etc/systemd/network/wired.network
+      # echo 'IPForward=1' >> /etc/systemd/network/wired.network
+
+      # systemctl enable systemd-networkd systemd-resolved
+      ```
+
     * Create a user:
 
       ```
@@ -155,7 +172,7 @@ weight: 2000
       # passwd -d ubosdev
       # echo ubosdev ALL = NOPASSWD: ALL > /etc/sudoers.d/ubosdev
       # chmod 600 /etc/sudoers.d/ubosdev
-      ``
+      ```
 
     * No root password:
 
@@ -164,6 +181,13 @@ weight: 2000
       ```
 
     * Exit from the `arch-chroot` shell with `^D`.
+
+  * Remainder of networking setup:
+
+    ```
+    # rm /mnt/etc/resolv.conf
+    # ln -s /run/systemd/resolve/resolv.conf /mnt/etc/resolv.conf
+    ```
 
   * Configure UEFI:
 
@@ -177,21 +201,6 @@ weight: 2000
     # echo options root=PARTUUID=$(lsblk -o PARTUUID /dev/sda3 | tail -1 ) rw >> /mnt/boot/loader/entries/arch.conf
     ```
 
-  * Set up networking:
-
-    ```
-    # rm /mnt/etc/resolv.conf
-    # ln -s /run/systemd/resolve/resolv.conf /mnt/etc/resolv.conf
-    # arch-chroot /mnt systemctl enable systemd-networkd systemd-resolved
-
-    # echo '[Match]' > /mnt/etc/systemd/network/wired.network
-    # echo 'Name=en*' >> /mnt/etc/systemd/network/wired.network
-    # echo '' >> /mnt/etc/systemd/network/wired.network
-    # echo '[Network]' >> /mnt/etc/systemd/network/wired.network
-    # echo DHCP=ipv4 >> /mnt/etc/systemd/network/wired.network
-    # echo IPForward=1 >> /mnt/etc/systemd/network/wired.network
-    ```
-
 1. Power off the virtual machine:
 
    ```
@@ -202,7 +211,8 @@ weight: 2000
    selecting "remove".
 
 {{% note %}}
-IMPORTANT: Now set Settings / System /  "Enable EFI (special OSses only)"
+IMPORTANT: Now set Settings / System /  "Enable EFI (special OSes only)", otherwise
+the newly installed VM won't boot.
 {{% /note %}}
 
 ### Remaining configuration
@@ -229,7 +239,31 @@ IMPORTANT: Now set Settings / System /  "Enable EFI (special OSses only)"
    % sudo systemctl poweroff
    ```
 
-1. The virtual machine is ready, presumably in `~/VirtualBox VMs/UBOS Development/UBOS Development.vdi`
+### Create a virtual appliance for distribution
 
-1. Compress the file with `xz` and upload it.
+1. In VirtualBox, right-click on the powered-off virtual machine `ubosdev`, and select
+   "Export to OCI...".
+
+1. In "Format settings", select "Open Virtualization Format 2.0"
+
+1. Change the file name:
+
+   * add the current date into the file name and the processor architecture, e.g.
+     `ubosdev-x86_64-20221121.ova`.
+
+   * Make sure to write into a directory that VirtualBox has access to, such as
+     `~/VirtualBox VMs` -- VirtualBox may not have access to the `~/Documents` folder
+     on the Mac and produce an obscure error message.
+
+1. In "MAC Address Policy", select "Strip all network adapter MAC addresses".
+
+1. In "Additionally", select "Write Manifest file" but not "Include ISO image files"
+   and click "Next".
+
+1. In the "Appliance settings", accept the defaults and click "Finish".
+
+1. Writing the file will take a bit.
+
+1. Upload the created `ubosdev-xxxx.ova` file.
+
 For how to use this VM, go to {{% pageref "/docs/developers/setup/virtualbox.md" %}}.
