@@ -3,12 +3,24 @@ title: Developing using Arch Linux on VirtualBox x86_64 with a systemd-nspawn co
 weight: 30
 ---
 
-## Setup
+## Summary of the setup
 
 {{% note %}}
 This setup is for VirtualBox users on x86_64 hardware, such as Intel Macs,
 Intel Windows PCs, and Intel Linux boxes. It does not work on Apple Silicon.
 {{%/ note %}}
+
+In brief:
+
+* Download a virtual machine and run it in VirtualBox. It has all the tools you
+  are going to need pre-installed -- build tools, git, IDE etc.
+* In the virtual machine, run a single script, and you will have a UBOS Mesh
+  site running that's even pre-configured for debugging.
+
+Easy, right?
+
+
+## Steps in detail
 
 1. Download the this virtual appliance file:
    http://depot.ubos.net/ubosdev/ubosdev-x86_64-20221122.ova (1.5GB)
