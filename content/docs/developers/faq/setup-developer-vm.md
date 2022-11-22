@@ -123,7 +123,7 @@ weight: 2000
       # pacman -Sy
       # pacman -S sudo vim btrfs-progs virtualbox-guest-utils \
         gdm gnome-console gnome-control-center gnome-session gnome-settings-daemon \
-        gnome-shell nautilus \
+        gnome-shell gnome-keyring nautilus \
         ubos-tools-arch
       ```
 
