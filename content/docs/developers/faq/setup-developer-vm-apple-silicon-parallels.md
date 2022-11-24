@@ -1,47 +1,45 @@
 ---
-title: How to create a UBOS development VM for VirtualBox
-weight: 2000
+title: How to create a UBOS development VM for Parallels on Apple Silicon
+weight: 2010
 ---
 
-### Run the Arch Linux ISO as the virtual machine to create the appliance with
+### Run the Arch Linux ARM ISO as the virtual machine to create the appliance with
 
-1. Download an ISO from a mirror listed on https://archlinux.org/download/
-   (e.g. archlinux-2022.11.01-x86_64.iso)
+1. Download the ISO with the string "local" in it from https://pkgbuild.com/~tpowa/archboot/iso/aarch64/latest/
+   (I had issues with the other ISOs in Nov 2022)
 
-1. In VirtualBox, create a new virtual machine:
+1. In Parallels, create a new virtual machine:
 
-   * Click “New”.
+   * Click “+”.
 
-   * Enter name: “ubosdev”.
+   * Select "Install Windows or another OS from a DVD or image file", and "Continue".
 
-   * ISO Image: select the ISO image you downloaded
+   * Select "Choose Manually"*
 
-   * Type: select “Linux”
+   * Click "select a file" and select the downloaded ISO.
 
-   * Version: select “Arch Linux (64 bit)”.
+   * Ignore "Unable to detect operating system" and "Continue"
 
-   * Ignore section "Unattended install"
+   * Select "Other Linux"
 
-   * Section "hardware": base memory 4GB
+   * Enter name: “ubosdev”, check "Customize settings before installation",
+     accept the other defaults, and "Create".
 
-   * 2 CPUs
+   * In the "Hardware" tab, enter 8192 MB for "Memory". (4096 produces a very strange
+     error message later in the boot.)
 
-   * Leave "Enable EFI (special OSes only)" unchecked
+   * Close the popup and click "Continue".
 
-   * Section "Hard Disk": "Create a Virtual Hard Disk Now"
-
-   * with 60 GB
-
-   * Disk type: VDI (VirtualBox Disk Image)
-
-   * "Finish"
-
-1. Start the virtual machine, accept the defaults in the boot loader (or just wait)
-   and wait until the boot sequence ends and the root shell appears.
+1. The VM automatically starts. Accept the defaults in the boot loader (or just wait).
+   and wait until first the boot sequence ends, and then the "Starting assembling of
+   archboot environment ..." with its 9 steps ends, and it asks you to hit ENTER.
 
 1. Install Arch on the empty disk:
 
-   * Zero out bytes for extra robustness:
+   * Do not use the "Archboot Arch Linux Installation" program that comes up. Instead,
+     hit "OK" and then select the "Exit Install" option.
+
+   * Zero out the first bytes on the disk for extra robustness:
 
      ```
      # dd if=/dev/zero of=/dev/sda bs=1M count=8 conv=notrunc
@@ -53,11 +51,12 @@ weight: 2000
      # sgdisk --clear /dev/sda
      ```
 
-   * Create the partitions (UEFI, /boot and /) and change them to the right types:
+   * Create the partitions (UEFI, /boot and /) and change them to the right types.
+     The boot directory needs more space than on the PC:
 
      ```
      # sgdisk --new=1::+1M /dev/sda
-     # sgdisk --new=2::+100M /dev/sda
+     # sgdisk --new=2::+512M /dev/sda
      # sgdisk --new=3:: /dev/sda
      # sgdisk --typecode=1:EF02 /dev/sda
      # sgdisk --typecode=2:EF00 /dev/sda
@@ -77,6 +76,9 @@ weight: 2000
      # mkfs.btrfs /dev/sda3
      ```
 
+     There may be warnings about "Cannot initialize conversion from codepage..." but they
+     appear to be harmless and can be ignored.
+
    * Mount the partitions so we can install:
 
      ```
@@ -85,7 +87,7 @@ weight: 2000
      # mount /dev/sda2 /mnt/boot
      ```
 
-   * Perform the actual install:
+   * Perform the actual install of the base packages:
 
      ```
      # pacstrap /mnt base
@@ -108,6 +110,7 @@ weight: 2000
      ```
      # curl -O http://depot.ubos.net/green/$(uname -m)/os/ubos-keyring-0.8-1-any.pkg.tar.xz
      # pacman -U ubos-keyring-0.8-1-any.pkg.tar.xz
+     # rm ubos-keyring-0.8-1-any.pkg.tar.xz
      ```
 
     * Add the UBOS tools repo:
@@ -122,7 +125,7 @@ weight: 2000
 
       ```
       # pacman -Sy
-      # pacman -S sudo vim btrfs-progs virtualbox-guest-utils \
+      # pacman -S linux-aarch64 mkinitcpio amd-ucode sudo vim btrfs-progs \
         gdm gnome-console gnome-control-center gnome-session gnome-settings-daemon \
         gnome-shell gnome-keyring nautilus \
         ubos-tools-arch
@@ -136,7 +139,7 @@ weight: 2000
     * Create a ramdisk:
 
       ```
-      # mkinitcpio -p linux
+      # mkinitcpio -p linux-aarch64
       ```
 
     * Configure the boot loader:
@@ -196,9 +199,10 @@ weight: 2000
     # echo default arch >> /mnt/boot/loader/loader.conf
 
     # echo title Arch > /mnt/boot/loader/entries/arch.conf
-    # echo linux /vmlinuz-linux >> /mnt/boot/loader/entries/arch.conf
+    # echo linux /Image >> /mnt/boot/loader/entries/arch.conf
+    # echo initrd /amd-ucode.img >> /mnt/boot/loader/entries/arch.conf
     # echo initrd /initramfs-linux.img >> /mnt/boot/loader/entries/arch.conf
-    # echo options root=PARTUUID=$(lsblk -o PARTUUID /dev/sda3 | tail -1 ) rw >> /mnt/boot/loader/entries/arch.conf
+    # echo options root=PARTUUID=$(lsblk -o PARTUUID /dev/sda3 | tail -1 ) rootfstype=btrfs rw cgroup_disable=memory add_efi_memmap >> /mnt/boot/loader/entries/arch.conf
     ```
 
 1. Power off the virtual machine:
@@ -207,13 +211,12 @@ weight: 2000
    # systemctl poweroff
    ```
 
-1. Remove the ISO file from the VM by clicking on the "[Optical Drive]" in "Storage" and
-   selecting "remove".
+1. Remove the ISO file from the VM:
 
-{{% note %}}
-IMPORTANT: Now set Settings / System /  "Enable EFI (special OSes only)", otherwise
-the newly installed VM won't boot.
-{{% /note %}}
+   * In the Parallels Control Center, click on the gears icon next to the "ubosdev" VM
+   * Select CD/DVC
+   * In the "Source" drop-down, select Disconnect.
+   * Close the Configuration window
 
 ### Remaining configuration
 
@@ -241,29 +244,17 @@ the newly installed VM won't boot.
 
 ### Create a virtual appliance for distribution
 
-1. In VirtualBox, right-click on the powered-off virtual machine `ubosdev`, and select
-   "Export to OCI...".
+1. In the Parallels Control Center, right-click on the "ubosdev" VM and select
+   "Prepare for transfer".
 
-1. In "Format settings", select "Open Virtualization Format 2.0"
+1. Click "Continue" and wait for the "Packing" process to finish. The VM now
+   has subtitle "Package" and the gears icon has disappeared.
 
-1. Change the file name:
+1. Right-click on the VM again, and select "Show in Finder".
 
-   * add the current date into the file name and the processor architecture, e.g.
-     `ubosdev-x86_64-20221121.ova`.
+1. Copy the file. Rename the copy and add the current date into the file name and
+   the processor architecture, e.g. `ubosdev-aarch64-20221123.pvmp`.
 
-   * Make sure to write into a directory that VirtualBox has access to, such as
-     `~/VirtualBox VMs` -- VirtualBox may not have access to the `~/Documents` folder
-     on the Mac and produce an obscure error message.
+1. Upload the created `ubosdev-xxxx.pvmp` file.
 
-1. In "MAC Address Policy", select "Strip all network adapter MAC addresses".
-
-1. In "Additionally", select "Write Manifest file" but not "Include ISO image files"
-   and click "Next".
-
-1. In the "Appliance settings", accept the defaults and click "Finish".
-
-1. Writing the file will take a bit.
-
-1. Upload the created `ubosdev-xxxx.ova` file.
-
-For how to use this VM, go to {{% pageref "/docs/developers/setup/virtualbox.md" %}}.
+For how to use this VM, go to {{% pageref "/docs/developers/setup/parallels.md" %}}.

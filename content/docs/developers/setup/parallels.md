@@ -1,18 +1,18 @@
 ---
-title: Developing using Arch Linux on VirtualBox x86_64 with a systemd-nspawn container
-weight: 30
+title: Developing using Arch Linux on Parallels on Apple Silicon with a systemd-nspawn container
+weight: 40
 ---
 
 ## Summary of the setup
 
 {{% note %}}
-This setup is for VirtualBox users on x86_64 hardware, such as Intel Macs,
-Intel Windows PCs, and Intel Linux boxes. It does not work on Apple Silicon.
+This setup is for Parallels users on Apple Silicon, such as the newer Macs. It
+does not work on x86_64 Macs or PCs.
 {{%/ note %}}
 
 In brief:
 
-* Download a virtual machine and run it in VirtualBox. It has all the tools you
+* Download a virtual machine and run it in Parallels. It has all the tools you
   are going to need pre-installed -- build tools, git, IDE etc.
 * In the virtual machine, run a single script, and you will have a UBOS Mesh
   site running that's even pre-configured for debugging.
@@ -23,17 +23,13 @@ Easy, right?
 ## Steps in detail
 
 1. Download the this virtual appliance file:
-   http://depot.ubos.net/ubosdev/ubosdev-x86_64-20221122.ova (1.5GB)
+   http://depot.ubos.net/ubosdev/ubosdev-aarch64-20221123.pvmp (1.5GB)
 
-1. In VirtualBox, select "File" / "Import Appliance..."
+1. Open the file with Parallels. A `ubosdev` VM will show up in the Parallels Control
+   Center.
 
-1. Source: "Local File System" and then select the downloaded file. Select "Next".
-
-1. Select "MAC Address Policy:" "Generate new MAC addresses for all network adapters"
-   and "Import hard drives as VDI". Select "Finish".
-
-1. Importing the appliance will take a little bit of time. It will show up in the
-   list of VMs as `ubosdev 1` or such.
+1. Double-click the VM icon. This will unpack the file into the format that Parallels
+   needs to run it.
 
 1. Start the VM.
 
@@ -90,8 +86,10 @@ Easy, right?
    of the container, e.g. `http://ubos-mesh-red/`. Firefox is pre-installed on
    the VM.
 
-1. To edit your code, IDEs `geany` and `netbeans` are pre-installed on your
-   development VM.
+1. To edit your code, IDEs `geany` is pre-installed on your development VM. NetBeans
+   isn't currently in the Arch Linux ARM repos; to install, "Download from mirror"
+   [here](https://archlinux.org/packages/community/any/netbeans/) and then
+   ``sudo pacman -U netbeans*.pkg*``.
 
 1. To open up a shell inside your development container, open a new terminal and
    execute:
