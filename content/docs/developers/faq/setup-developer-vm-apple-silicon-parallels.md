@@ -172,6 +172,7 @@ weight: 2010
 
       ```
       # useradd -m ubosdev
+      # chmod 755 ~ubosdev
       # passwd -d ubosdev
       # echo ubosdev ALL = NOPASSWD: ALL > /etc/sudoers.d/ubosdev
       # chmod 600 /etc/sudoers.d/ubosdev

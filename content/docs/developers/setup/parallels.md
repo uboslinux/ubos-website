@@ -47,6 +47,12 @@ Easy, right?
 1. In "Search", type "Console" and run it (you get the "Search" by selecting
    "Activities" in the menu bar).
 
+1. Fix the permissions on the home directory (current bug in the setup):
+
+   ```
+   % sudo chmod 755 ~ubosdev
+   ```
+
 1. Set up the UBOS development environment by running:
 
    ```
