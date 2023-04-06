@@ -30,11 +30,9 @@ it:
 % cd ~/ubosdev-docker
 ```
 
-Download the Docker Compose file and save it to the project directory:
-
-```
-% curl -O https://raw.githubusercontent.com/uboslinux/setups-ubosdev/main/ubosdev-docker/docker-compose.yml
-```
+Download the Docker Compose file ``docker-compose.yml`` from
+https://github.com/uboslinux/setups-ubosdev/tree/main/ubosdev-docker/develop and save it to the
+project directory ``~/ubosdev-docker``.
 
 Then create a sub-directory for your project files:
 
