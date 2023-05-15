@@ -140,8 +140,8 @@ var thanksForSubscribing = '<div class="subscribed">Thanks for <a href="https://
   <a href="/blog/">More news</a> &mdash;
   Follow UBOS:
   <a href="/index.xml">RSS</a>
-  • <a href="https://mastodon.social/@ubos">Mastodon</a>
-  • <a href="https://twitter.com/uboslinux">Twitter</a>
+  • <a href="https://mastodon.social/@ubos">Fediverse (Mastodon)</a>
+  • <a href="https://twitter.com/uboslinux" style="text-decoration: line-through">Twitter</a>
   • <a href="https://www.facebook.com/uboslinux">Facebook</a>
   • <a href="https://www.youtube.com/channel/UCFv32pjDjv49l5EWAZQhw8A/playlists">YouTube</a>
   • <a href="/survey"><b>Survey</b></a>
@@ -195,9 +195,7 @@ var thanksForSubscribing = '<div class="subscribed">Thanks for <a href="https://
        <a href="/docs/administrators/installation/x86_virtualbox/">VirtualBox</a>,
        <a href="/docs/administrators/installation/x86_docker/">Docker</a>)
        or cloud (<a href="/docs/administrators/installation/x86_ec2/">EC2</a>).</li>
-   <li>on a Raspberry Pi&nbsp;0, 1 (<a href="/docs/administrators/installation/raspberrypi/">SDCard</a>,
-       <a href="/docs/administrators/installation/armv6h_container/">container</a>) or
-       Pi&nbsp;2, 3 (<a href="/docs/administrators/installation/raspberrypi2/">SDCard</a>,
+   <li>on a Raspberry 2, 3 (<a href="/docs/administrators/installation/raspberrypi2/">SDCard</a>,
        <a href="/docs/administrators/installation/armv7h_container/">container</a>) or
        Pi&nbsp;4 (<a href="/docs/administrators/installation/raspberrypi4/">SDCard or USB disk</a>,
        <a href="/docs/administrators/installation/armv7h_container/">container</a>)</li>

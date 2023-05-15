@@ -12,7 +12,7 @@ The following diagram shows the UBOS build and release process graphically:
 UBOS is a derivative of {{% gl Arch_Linux %}}. As the Arch Linux project releases
 new {{% gls Package %}}, the {{% pageref "/docs/administrators/faq-howto-troubleshooting/why-arch.md" subset %}}
 relevant to UBOS is staged in the UBOS ``dev`` channel. We do this separately for each
-{{% gl Arch %}}, including ``x86_64``, ``armv6``, ``armv7`` and ``aarch64``.
+{{% gl Arch %}}, including ``x86_64``, ``armv7`` and ``aarch64``.
 
 Other {{% gls Package %}} that are part of UBOS but not (currently) part of Arch Linux, are also
 staged in the ``dev`` channel. This includes:

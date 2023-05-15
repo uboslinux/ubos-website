@@ -12,9 +12,7 @@ The links on this page are for the {{% pageref "/docs/developers/buildrelease.md
  <div>
   <img src="/images/rpi-83x100.png" alt="[Raspberry Pi]">
   <p><b>To run UBOS on the Raspberry Pi:</b></p>
-  <p>Download <a href="http://depot.ubos.net/green/armv6h/images/ubos_green_armv6h-rpi_LATEST.img.xz">this
-     image for Raspberry Pi&nbsp;Zero or the original Raspberry Pi 1</a>, or
-     <a href="http://depot.ubos.net/green/armv7h/images/ubos_green_armv7h-rpi2_LATEST.img.xz">this
+  <p>Download <a href="http://depot.ubos.net/green/armv7h/images/ubos_green_armv7h-rpi2_LATEST.img.xz">this
      image for Raspberry Pi&nbsp;2 or Raspberry Pi&nbsp;3</a>, or
      <a href="http://depot.ubos.net/green/armv7h/images/ubos_green_armv7h-rpi4_LATEST.img.xz">this
      image for Raspberry Pi&nbsp;4</a>,
