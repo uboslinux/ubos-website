@@ -16,6 +16,7 @@ Notable app upgrades:
 * Nextcloud is now at version 26.
 * Mediawiki is now at version 1.39.3.
 * Decko is now at version 0.15.6.
+* Mastodon is now at version 4.1.2 (yellow channel only)
 
 ## To upgrade
 
