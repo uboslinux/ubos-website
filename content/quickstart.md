@@ -49,7 +49,7 @@ Once booted, log in from the console as root, or via ssh using the
 <div class="platforms">
  <div>
   <p><b>To run UBOS on Amazon EC2:</b></p>
-  <script id="ubos-amazon-ec2-image-latest" src="/include/amazon-ec2-image-latest.js"></script>
+  <script id="ubos-amazon-ec2-image-green" src="/include/amazon-ec2-image-green.js"></script>
   <p>Click on the logo and follow the Amazon wizard.</p>
   <p style="color: #c04040">Do NOT use a t2 (old-generation) instance type; this image does not have XEN support
      and won't boot on t2 instances.</p>
