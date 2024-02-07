@@ -36,7 +36,7 @@ described in {{% pageref prepare-arch-pc.md %}} or {{% pageref prepare-arch-virt
 
       ```
       # sgdisk --new=1::+1M /dev/sda
-      # sgdisk --new=2::+100M /dev/sda
+      # sgdisk --new=2::+512M /dev/sda
       # sgdisk --new=3:: /dev/sda
       # sgdisk --typecode=1:EF02 /dev/sda
       # sgdisk --typecode=2:EF00 /dev/sda
@@ -116,7 +116,7 @@ described in {{% pageref prepare-arch-pc.md %}} or {{% pageref prepare-arch-virt
       * You also need a boot loader, ``sudo`` and an editor such as ``vim``:
 
         ```
-        #   pacman -S grub sudo vim
+        #   pacman -S grub sudo vim mkinitcpio linux
         ```
 
         If asked, choose to install from the ``core`` repository.
@@ -176,7 +176,7 @@ described in {{% pageref prepare-arch-pc.md %}} or {{% pageref prepare-arch-virt
         title Arch
         linux /vmlinuz-linux
         initrd /initramfs-linux.img
-        options root=PARTUUID=XXX rw
+        options root=PARTUUID=XXX rw init=/usr/lib/systemd/systemd
         ```
 
         (sorry, this is a bit more complicated than we'd like; thanks UEFI!)
@@ -199,12 +199,6 @@ described in {{% pageref prepare-arch-pc.md %}} or {{% pageref prepare-arch-virt
         #   locale-gen
         ```
 
-        Set this locale as the system locale:
-
-        ```
-        #   localectl set-locale LANG=en_US.UTF-8
-        ```
-
       * Set a root password:
 
         ```
@@ -216,6 +210,8 @@ described in {{% pageref prepare-arch-pc.md %}} or {{% pageref prepare-arch-virt
         ```
         #   passwd -d root
         ```
+
+        Do not skip this step, otherwise you will not be able to log into your system.
 
       * Exit from the chroot shell with ctrl-d.
 
@@ -268,6 +264,12 @@ described in {{% pageref prepare-arch-pc.md %}} or {{% pageref prepare-arch-virt
 
    1. Then, start the machine again and log on as root with the password you set
       earlier.
+
+   1. Set this locale as the system locale:
+
+      ```
+      # localectl set-locale LANG=en_US.UTF-8
+      ```
 
    1. Create a non-root user (example: ``joe``, change as needed). Use this user when
       developing instead of doing everything as ``root``. Also allow the user to become

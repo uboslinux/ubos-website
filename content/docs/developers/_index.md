@@ -1,5 +1,5 @@
 ---
 title: Developer documentation
-breadcrumbtitle: For developers
+breadcrumbtitle: Developers
 weight: 20
 ---

@@ -60,13 +60,11 @@ Easy, right?
 1. Set up the UBOS development environment by running:
 
    ```
-   % ubosdev-container setup --channel red --flavor mesh
+   % ubosdev-container setup
    ```
 
-   Use `--flavor mesh` if you plan to do UBOS Mesh development or you aren't certain.
-
-   Note the argument specifying the `red` release channel; the `yellow` default one
-   does not work yet.
+   This sets up development on the `yellow` release channel, which is the
+   recommended channel.
 
    This might take 5-30 min, depending on your network, computer and disk speed.
 
@@ -85,10 +83,19 @@ Easy, right?
 1. Run your UBOS Linux container:
 
    ```
-   % ubosdev-container run --name <name>
+   % ubosdev-container run --name <name> --flavor linux
+   ```
+
+   or
+
+   ```
+   % ubosdev-container run --name <name> --flavor mesh
    ```
 
    where `<name>` is one of the names from the list, e.g. `ubos-mesh-red`.
+
+   Use `--flavor mesh` if you plan to do UBOS Mesh development or you aren't certain;
+   `--flavor linux` otherwise.
 
    This gives you console access to the container. You can shut it down with `^]`.
 

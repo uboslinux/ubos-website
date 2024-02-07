@@ -1,43 +1,44 @@
 ---
-title: How to create a UBOS development VM for Parallels on Apple Silicon
-weight: 2010
+title: How to create a UBOS development VM for Parallels Desktop on Apple Silicon
+weight: 2020
 ---
 
 ### Run the Arch Linux ARM ISO as the virtual machine to create the appliance with
 
-1. Download the ISO with the string "local" in it from https://pkgbuild.com/~tpowa/archboot/iso/aarch64/latest/
+1. Download the ISO with the string "local" in it from
+   https://archboot.com/iso/aarch64/latest/
    (I had issues with the other ISOs in Nov 2022)
 
-1. In Parallels, create a new virtual machine:
+1. In Parallels Desktop, create a new virtual machine:
 
    * Click “+”.
 
    * Select "Install Windows or another OS from a DVD or image file", and "Continue".
 
-   * Select "Choose Manually"*
-
    * Click "select a file" and select the downloaded ISO.
 
-   * Ignore "Unable to detect operating system" and "Continue"
+   * Ignore "Unable to detect operating system" and "Continue".
 
-   * Select "Other Linux"
+   * Select "Other Linux".
 
-   * Enter name: “ubosdev”, check "Customize settings before installation",
+   * Enter name: “ubosdev-YYYYMMDD-I” where YYYYMMDD is the date, and I is a number
+     starting with 1.
+
+   * Check "Customize settings before installation",
      accept the other defaults, and "Create".
 
    * In the "Hardware" tab, enter 8192 MB for "Memory". (4096 produces a very strange
-     error message later in the boot.)
+     error message later in the boot.) Make any other customizations that you want.
 
    * Close the popup and click "Continue".
 
-1. The VM automatically starts. Accept the defaults in the boot loader (or just wait).
-   and wait until first the boot sequence ends, and then the "Starting assembling of
-   archboot environment ..." with its 9 steps ends, and it asks you to hit ENTER.
+1. The VM automatically starts. Accept all defaults until you get to
+   "Hit ENTER for shell login"; that will take a 5-10 minutes.
+   Then hit ^C to
+   abort. (If you find yourself in the Archboot Arch Linux Installation with its blue
+   background: cancel, and select "Exit Program".)
 
 1. Install Arch on the empty disk:
-
-   * Do not use the "Archboot Arch Linux Installation" program that comes up. Instead,
-     hit "OK" and then select the "Exit Install" option.
 
    * Zero out the first bytes on the disk for extra robustness:
 
@@ -75,9 +76,6 @@ weight: 2010
      # mkfs.vfat  /dev/sda2
      # mkfs.btrfs /dev/sda3
      ```
-
-     There may be warnings about "Cannot initialize conversion from codepage..." but they
-     appear to be harmless and can be ignored.
 
    * Mount the partitions so we can install:
 
@@ -118,7 +116,7 @@ weight: 2010
       ```
       # echo '' >> /etc/pacman.conf
       # echo '[ubos-tools-arch]' >> /etc/pacman.conf
-      # echo 'Server = http://depot.ubos.net/green/$arch/ubos-tools-arch' >> /etc/pacman.conf'
+       # echo 'Server = http://depot.ubos.net/green/$arch/ubos-tools-arch' >> /etc/pacman.conf
       ```
 
     * Install more packages:
@@ -131,10 +129,7 @@ weight: 2010
         ubos-tools-arch
       ```
 
-      When asked which alternatives to install, choose the defaults.
-
-      If there is a warning about a directory below `/usr/lib/perl5`, ignore that.
-      It needs fixing but doesn't currently hurt.
+       If asked which alternatives to install, choose the defaults.
 
     * Create a ramdisk:
 
@@ -195,10 +190,14 @@ weight: 2010
 
   * Configure UEFI:
 
+     Loader configuration:
     ```
     # echo timeout 4 > /mnt/boot/loader/loader.conf
     # echo default arch >> /mnt/boot/loader/loader.conf
+     ```
 
+     Boot entry configuration:
+     ```
     # echo title Arch > /mnt/boot/loader/entries/arch.conf
     # echo linux /Image >> /mnt/boot/loader/entries/arch.conf
     # echo initrd /amd-ucode.img >> /mnt/boot/loader/entries/arch.conf
@@ -214,8 +213,8 @@ weight: 2010
 
 1. Remove the ISO file from the VM:
 
-   * In the Parallels Control Center, click on the gears icon next to the "ubosdev" VM
-   * Select CD/DVC
+   * In the Parallels Control Center, select the "ubosdev" VM, right-click, and select "Configure..."
+   * In the "Hardware" tab, select CD/DVD
    * In the "Source" drop-down, select Disconnect.
    * Close the Configuration window
 

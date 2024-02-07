@@ -57,7 +57,7 @@ weight: 2000
 
      ```
      # sgdisk --new=1::+1M /dev/sda
-     # sgdisk --new=2::+100M /dev/sda
+     # sgdisk --new=2::+512M /dev/sda
      # sgdisk --new=3:: /dev/sda
      # sgdisk --typecode=1:EF02 /dev/sda
      # sgdisk --typecode=2:EF00 /dev/sda

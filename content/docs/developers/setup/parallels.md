@@ -1,6 +1,7 @@
 ---
-title: Developing using Arch Linux on Parallels on Apple Silicon with a systemd-nspawn container
-weight: 40
+title: Developing using Arch Linux using Parallels on Apple Silicon with a systemd-nspawn container
+breadcrumbtitle: With Arch Linux, systemd-nspawn, Parallels on Apple Silicon
+weight: 50
 ---
 
 ## Summary of the setup
@@ -31,7 +32,13 @@ Easy, right?
 1. Double-click the VM icon. This will unpack the file into the format that Parallels
    needs to run it.
 
+1. Right-click the VM icon and select "Configure ...". Make adjustments as needed for
+   your situation, such as how many CPUs the VM may use on your host, and how much
+   memory.
+
 1. Start the VM.
+
+1. If the VM doesn't open a window on its own, double-click the VM icon.
 
 1. Logon as `ubosdev`, there is no password. `root` does not have a password either: we
    assume that's safe enough on your computer. If you don't think so, set one :-)
