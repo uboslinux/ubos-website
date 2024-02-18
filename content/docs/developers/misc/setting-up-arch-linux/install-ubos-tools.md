@@ -11,8 +11,8 @@ First, download and install the UBOS keyring, so pacman will allow you to downlo
 and install UBOS tools:
 
 ```
-% curl -O http://depot.ubos.net/green/x86_64/os/ubos-keyring-0.8-1-any.pkg.tar.xz
-% sudo pacman -U ubos-keyring-0.8-1-any.pkg.tar.xz
+% curl -O http://depot.ubos.net/green/x86_64/os/ubos-keyring-0.9-1-any.pkg.tar.zst
+% sudo pacman -U ubos-keyring-0.9-1-any.pkg.tar.zst
 ```
 
 The, as root, edit ``/etc/pacman.conf``, and append, at the end, the following section:

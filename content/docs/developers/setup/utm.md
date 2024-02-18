@@ -1,33 +1,29 @@
 ---
-title: Developing using Arch Linux using Parallels on Apple Silicon with a systemd-nspawn container
-breadcrumbtitle: With Arch Linux, systemd-nspawn, Parallels on Apple Silicon
-weight: 50
+title: Developing using Arch Linux using UTM on Apple Silicon with a systemd-nspawn container
+breadcrumbtitle: With Arch Linux, systemd-nspawn, UTM on Apple Silicon
+weight: 40
 ---
-
-**Note: this setup is deprecated.**
-Follow {{% pageref utm.md %}} instead for more reliable setup.
 
 ## Summary of the setup
 
 {{% note %}}
-This setup is for Parallels users on Apple Silicon, such as the newer Macs. It
-does not work on x86_64 Macs or PCs.
+This setup is for [UTM](https://docs.getutm.app/) users on Apple Silicon, such as the newer
+Macs. It does not work on x86_64 Macs or PCs.
 {{%/ note %}}
 
 In brief:
 
-* Download a virtual machine and run it in Parallels. It has all the tools you
+* Download a virtual machine and run it in UTM. It has all the tools you
   are going to need pre-installed -- build tools, git, IDE etc.
 * In the virtual machine, run a single script, and you will have a UBOS Mesh
   site running that's even pre-configured for debugging.
 
 Easy, right?
 
-
 ## Steps in detail
 
 1. Download the this virtual appliance file:
-   http://depot.ubos.net/ubosdev/ubosdev-aarch64-20221123.pvmp (1.5GB)
+   http://depot.ubos.net/ubosdev/ubosdev-aarch64-FIXME.utm (1.5GB)
 
 1. Open the file with Parallels. A `ubosdev` VM will show up in the Parallels Control
    Center.
@@ -77,6 +73,22 @@ Easy, right?
    This might take 5-30 min, depending on your network, computer and disk speed.
 
 1. Once this command is complete, you can shutdown the VM any time if you like.
+
+## Setting up a container for development
+
+1. Determine which container templates you have available (that depends on the
+   previous step):
+
+   ```
+   % ubosdev-container list-templates
+   ```
+
+1. Instantiate one of the available templates into a container to be used for
+   development, such as:
+
+   ```
+   % ubosdev-container create --name ubosdev-red --template ubos-develop-red
+   ```
 
 ## Ongoing development work
 

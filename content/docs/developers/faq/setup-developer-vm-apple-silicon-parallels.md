@@ -3,7 +3,8 @@ title: How to create a UBOS development VM for Parallels Desktop on Apple Silico
 weight: 2020
 ---
 
-### Run the Arch Linux ARM ISO as the virtual machine to create the appliance with
+**Note: this setup is deprecated.**
+Follow {{% pageref setup-developer-vm-apple-silicon-utm.md %}} instead for more reliable setup.
 
 1. Download the ISO with the string "local" in it from
    https://archboot.com/iso/aarch64/latest/
@@ -103,107 +104,107 @@ weight: 2020
      # arch-chroot /mnt
      ```
 
-   * Add the UBOS keyring so we can install our own packages:
+     * Add the UBOS keyring so we can install our own packages:
 
-     ```
-     # curl -O http://depot.ubos.net/green/$(uname -m)/os/ubos-keyring-0.8-1-any.pkg.tar.xz
-     # pacman -U ubos-keyring-0.8-1-any.pkg.tar.xz
-     # rm ubos-keyring-0.8-1-any.pkg.tar.xz
-     ```
+       ```
+       # curl -O http://depot.ubos.net/green/$(uname -m)/os/ubos-keyring-0.8-1-any.pkg.tar.xz
+       # pacman -U ubos-keyring-0.8-1-any.pkg.tar.xz
+       # rm ubos-keyring-0.8-1-any.pkg.tar.xz
+       ```
 
-    * Add the UBOS tools repo:
+     * Add the UBOS tools repo:
 
-      ```
-      # echo '' >> /etc/pacman.conf
-      # echo '[ubos-tools-arch]' >> /etc/pacman.conf
+       ```
+       # echo '' >> /etc/pacman.conf
+       # echo '[ubos-tools-arch]' >> /etc/pacman.conf
        # echo 'Server = http://depot.ubos.net/green/$arch/ubos-tools-arch' >> /etc/pacman.conf
-      ```
+       ```
 
-    * Install more packages:
+     * Install more packages:
 
-      ```
-      # pacman -Sy
-      # pacman -S linux-aarch64 mkinitcpio amd-ucode sudo vim btrfs-progs \
-        gdm gnome-console gnome-control-center gnome-session gnome-settings-daemon \
-        gnome-shell gnome-keyring nautilus \
-        ubos-tools-arch
-      ```
+       ```
+       # pacman -Sy
+       # pacman -S linux-aarch64 mkinitcpio amd-ucode sudo vim btrfs-progs \
+         gdm gnome-console gnome-control-center gnome-session gnome-settings-daemon \
+         gnome-shell gnome-keyring nautilus \
+         ubos-tools-arch
+       ```
 
        If asked which alternatives to install, choose the defaults.
 
-    * Create a ramdisk:
+     * Create a ramdisk:
 
-      ```
-      # mkinitcpio -p linux-aarch64
-      ```
+       ```
+       # mkinitcpio -p linux-aarch64
+       ```
 
-    * Configure the boot loader:
+     * Configure the boot loader:
 
-      ```
-      # bootctl --path /boot install
-      ```
+       ```
+       # bootctl --path /boot install
+       ```
 
-    * Install a locale:
+     * Install a locale:
 
-      ```
-      # perl -pi -e 's!#en_US.UTF-8 UTF-8!en_US.UTF-8 UTF-8!' /etc/locale.gen
-      # locale-gen
-      ```
+       ```
+       # perl -pi -e 's!#en_US.UTF-8 UTF-8!en_US.UTF-8 UTF-8!' /etc/locale.gen
+       # locale-gen
+       ```
 
-    * Set up networking:
+     * Set up networking:
 
-      ```
-      # echo '[Match]' > /etc/systemd/network/wired.network
-      # echo 'Name=en*' >> /etc/systemd/network/wired.network
-      # echo '' >> /etc/systemd/network/wired.network
-      # echo '[Network]' >> /etc/systemd/network/wired.network
-      # echo 'DHCP=ipv4' >> /etc/systemd/network/wired.network
-      # echo 'IPForward=1' >> /etc/systemd/network/wired.network
+       ```
+       # echo '[Match]' > /etc/systemd/network/wired.network
+       # echo 'Name=en*' >> /etc/systemd/network/wired.network
+       # echo '' >> /etc/systemd/network/wired.network
+       # echo '[Network]' >> /etc/systemd/network/wired.network
+       # echo 'DHCP=ipv4' >> /etc/systemd/network/wired.network
+       # echo 'IPForward=1' >> /etc/systemd/network/wired.network
 
-      # systemctl enable systemd-networkd systemd-resolved
-      ```
+       # systemctl enable systemd-networkd systemd-resolved
+       ```
 
-    * Create a user:
+     * Create a user:
 
-      ```
-      # useradd -m ubosdev
-      # chmod 755 ~ubosdev
-      # passwd -d ubosdev
-      # echo ubosdev ALL = NOPASSWD: ALL > /etc/sudoers.d/ubosdev
-      # chmod 600 /etc/sudoers.d/ubosdev
-      ```
+       ```
+       # useradd -m ubosdev
+       # chmod 755 ~ubosdev
+       # passwd -d ubosdev
+       # echo ubosdev ALL = NOPASSWD: ALL > /etc/sudoers.d/ubosdev
+       # chmod 600 /etc/sudoers.d/ubosdev
+       ```
 
-    * No root password:
+     * No root password:
 
-      ```
-      # passwd -d root
-      ```
+       ```
+       # passwd -d root
+       ```
 
-    * Exit from the `arch-chroot` shell with `^D`.
+     * Exit from the `arch-chroot` shell with `^D`.
 
-  * Remainder of networking setup:
+   * Remainder of networking setup:
 
-    ```
-    # rm /mnt/etc/resolv.conf
-    # ln -s /run/systemd/resolve/resolv.conf /mnt/etc/resolv.conf
-    ```
+     ```
+     # rm /mnt/etc/resolv.conf
+     # ln -s /run/systemd/resolve/resolv.conf /mnt/etc/resolv.conf
+     ```
 
-  * Configure UEFI:
+   * Configure UEFI:
 
      Loader configuration:
-    ```
-    # echo timeout 4 > /mnt/boot/loader/loader.conf
-    # echo default arch >> /mnt/boot/loader/loader.conf
+     ```
+     # echo timeout 4 > /mnt/boot/loader/loader.conf
+     # echo default arch >> /mnt/boot/loader/loader.conf
      ```
 
      Boot entry configuration:
      ```
-    # echo title Arch > /mnt/boot/loader/entries/arch.conf
-    # echo linux /Image >> /mnt/boot/loader/entries/arch.conf
-    # echo initrd /amd-ucode.img >> /mnt/boot/loader/entries/arch.conf
-    # echo initrd /initramfs-linux.img >> /mnt/boot/loader/entries/arch.conf
-    # echo options root=PARTUUID=$(lsblk -o PARTUUID /dev/sda3 | tail -1 ) rootfstype=btrfs rw cgroup_disable=memory add_efi_memmap >> /mnt/boot/loader/entries/arch.conf
-    ```
+     # echo title Arch > /mnt/boot/loader/entries/arch.conf
+     # echo linux /Image >> /mnt/boot/loader/entries/arch.conf
+     # echo initrd /amd-ucode.img >> /mnt/boot/loader/entries/arch.conf
+     # echo initrd /initramfs-linux.img >> /mnt/boot/loader/entries/arch.conf
+     # echo options root=PARTUUID=$(lsblk -o PARTUUID /dev/sda3 | tail -1 ) rootfstype=btrfs rw cgroup_disable=memory add_efi_memmap >> /mnt/boot/loader/entries/arch.conf
+     ```
 
 1. Power off the virtual machine:
 
