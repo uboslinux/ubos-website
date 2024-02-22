@@ -23,7 +23,7 @@ div.banner {
  </div>
  <div style="width: 638px; padding: 25px 10px 10px 10px">
 
-The UBOS project is going through some major changes. All to the better, as we hope!
+UBOS is going through some major changes. All for the better, as we hope!
 
 In the meantime, please excuse the ongoing construction.
 
