@@ -37,7 +37,7 @@ Some of these Wordpress plugins are new on the `yellow` release channel.
 There's also:
 
 * `docroot`: A simple app for static file web hosting with secure, rsync/ssh-based upload
-  (see {{% pageref "/docs/administrators/apps/docroot.md" documentation %}});
+  (see {{% pageref "/docs/operation/apps/docroot.md" documentation %}});
 
 * `taligen` and `taliwodo`, currently only in the "experimental" repositories. That's because
   they are not ready for prime time. Except that we have been using them "for reals" already,

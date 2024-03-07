@@ -12,7 +12,7 @@ We are happy to release the updated UBOS website. Among other things:
   documentation has been updated to link to the glossary.
 
 * The user FAQ, howto and troubleshooting pages have been restructured and
-  merged into a single place {{% pageref "/docs/administrators/faq-howto-troubleshooting/" here %}},
+  merged into a single place {{% pageref "/docs/operation/faq-howto-troubleshooting/" here %}},
   so solution to problems are easier to find.
 
 * The {{% pageref "/docs/developers/" %}} has been restructured and

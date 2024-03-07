@@ -29,7 +29,7 @@ to the documentation.
 {{% note %}}
 On the ESPRESSObin, you need to update your boot loader, otherwise
 booting your system will fail. This is newly documented at
-{{% pageref "/docs/administrators/installation/espressobin.md" %}}.
+{{% pageref "/docs/operation/installation/espressobin.md" %}}.
 {{% /note %}}
 
 ## Need help?

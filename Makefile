@@ -18,8 +18,8 @@ hugo:
 static:
 	install -m644 images/logo2/ubos-16x16.ico $(STATICDIR)/favicon.ico
 	echo 'RedirectMatch /survey https://apps.indiecomputing.com/nextcloud/index.php/apps/forms/WBC8zjEb3omz3mRN' > $(STAGEDIR)/.htaccess
-	echo 'RedirectMatch /staff(.*)$$ https://ubos.net/docs/administrators/shepherd-staff/' >> $(STAGEDIR)/.htaccess
-	echo 'Redirect      /docs/users/ https://ubos.net/docs/administrators/' >> $(STAGEDIR)/.htaccess
+	echo 'RedirectMatch /staff(.*)$$ https://ubos.net/docs/operation/shepherd-staff/' >> $(STAGEDIR)/.htaccess
+	echo 'Redirect      /docs/users/ https://ubos.net/docs/operation/' >> $(STAGEDIR)/.htaccess
 	echo 'RedirectMatch /feed.xml https://ubos.net/index.xml' >> $(STAGEDIR)/.htaccess
 	mkdir -p $(STAGEDIR)/include
 	sed -e "s!UBOS_AWS_IMAGE_URL!$(UBOS_GREEN_AWS_IMAGE_URL)!g"  -e "s!CHANNEL!green!g"  templates/amazon-ec2-image.js.tmpl > $(STAGEDIR)/include/amazon-ec2-image-green.js

@@ -6,7 +6,7 @@ seealsoterm: [
     'SiteId',
     'Site_JSON'
 ]
-domain: UBOS Linux
+domain: UBOS Gears
 ---
 
 Short for website. Also known as "Virtual Host".

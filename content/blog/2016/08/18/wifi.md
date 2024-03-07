@@ -5,7 +5,7 @@ categories: [ front, howto ]
 ---
 
 **Update:** UBOS now has built-in WiFi support via the
-{{% pageref "/docs/administrators/shepherd-staff.md" "UBOS Staff" %}} and the manual
+{{% pageref "/docs/operation/shepherd-staff.md" "UBOS Staff" %}} and the manual
 setup described in this post should not be necessary any more.
 
 <hr/>

@@ -2,7 +2,7 @@
 title: Data Transfer Protocol
 plural: Data Transfer Protocols
 summary: A protocol to transfer data, such as backups, from one location to another
-domain: UBOS Linux
+domain: UBOS Gears
 ---
 
 UBOS supports a number of {{% gls Data_Transfer_Protocol %}} for the purposes

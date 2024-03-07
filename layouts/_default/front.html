@@ -1,4 +1,10 @@
+{{ define "header" }}
+{{ $noop := 0 }}
+{{ end }}
+
 {{ define "main" }}
+
+<div class="background"></div>
 
 {{   if .Params.class }}
 <main class="{{ .Params.class }}">

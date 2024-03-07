@@ -14,7 +14,6 @@ need to be recompiled between them.
 UBOS currently supports:
 
 * ``x86_64``: Intel 64bit
-* ``armv7h``: ARM v7 hard-float
 * ``aarch64``: ARM 64 bit
 
-Support for ARM v6 is discontinued.
+Support for ARM v7 and ARM v6 has been discontinued.

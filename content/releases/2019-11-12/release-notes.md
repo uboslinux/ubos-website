@@ -74,7 +74,7 @@ Then, update your device:
 
 Those apps that may send e-mail now automatically activate a local, outgoing e-mail server
 (``postfix``). However, you may need to work around your internet service provider to
-actually get mail out from your home network: see {{% pageref "/docs/administrators/apps/amazonses.md" %}}.
+actually get mail out from your home network: see {{% pageref "/docs/operation/apps/amazonses.md" %}}.
 
 ### Bug fixes
 

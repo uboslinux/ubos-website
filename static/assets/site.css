@@ -1,12 +1,11 @@
-@import url("http://fonts.googleapis.com/css?family=Roboto+Slab:400,700,300,100");
-@import url("http://fonts.googleapis.com/css?family=Roboto:400,700,500,300,100,900");
-
-@import url('https://fonts.googleapis.com/css2?family=Lato');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Display:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wdth,wght@62.5..100,100..900&display=swap');
 
 :root {
-    --base-font-family: Lato, Roboto, Helvetica, Arial, sans-serif;
+    --base-font-family: "Noto Sans", Helvetica, Arial, sans-serif;
     --base-font-size:   16px;
-    --h1-font-size:     calc( var( --base-font-size ) * 2.5 );
+    --h1-font-size:     calc( var( --base-font-size ) * 2.2 );
     --h2-font-size:     calc( var( --base-font-size ) * 1.5 );
     --small-font-size:  calc( var( --base-font-size ) * 0.75 );
     --base-line-height: 1.5;
@@ -15,14 +14,23 @@
     --spacing-unit:     40px;
     --collapse-width:   560px;
 
+    --code-font-family: "Noto Sans Mono", Menlo, "Courier New";
+    --code-font-size:   14px;
+
+    --ubos-color:       #2FD82F;
     --text-color:       #111;
+    --link-color:       #18b018;
+
     --background-color: #fdfdfd;
-    --brand-color:      #2a7ae2;
+    --code-background-color: #b7f3b5;
+    --dark-background-color: #080018;
+    --dark-overlay-background-color: #840A9180;
+
+    --admonition-border-color: var( --ubos-color );
 
     --grey-color:       #828282;
     --grey-color-light: #c0c0c0;
 
-    --code-font-size:   14px;
 }
 
 /* General elements */
@@ -37,9 +45,8 @@ body {
     -webkit-text-size-adjust: 100%;
     margin: 0;
 }
-
 h1 {
-    font-size: calc( var( --h1-font-size ));
+    font-size: var( --h1-font-size );
     line-height: 1.1;
     margin-bottom: calc( var( --spacing-unit ) * 0.7 );
     text-align: left;
@@ -47,7 +54,6 @@ h1 {
 h1 > a,
 h1 > a:visited {
     text-decoration: none;
-    color: inherit;
 }
 
 p, blockquote, pre, ul, ol, dl, li, figure {
@@ -56,12 +62,12 @@ p, blockquote, pre, ul, ol, dl, li, figure {
 }
 
 a {
-    color: var( --brand-color );
+    color: var( --link-color );
     text-decoration: none;
 }
 
 a:visited {
-    color: var( --brand-color );
+    color: var( --link-color );
 }
 
 a:hover {
@@ -70,24 +76,31 @@ a:hover {
 }
 
 tt, code, pre {
+    font-family: var( --code-font-family );
     font-size: var( --code-font-size );
     font-variant-ligatures: none;
-    background-color: #eef;
 }
 pre {
     padding: 8px 12px;
     overflow-x: auto;
 }
+pre,
 code {
-    padding:2px 5px;
+    background-color: var( --code-background-color );
 }
 pre > code {
     border: 0;
     padding: 0;
     margin: 0;
 }
-h1 > code,
-h2 > code,
+h1 > code {
+    font-size: var(--h1-font-size);
+    font-weight: 400;
+}
+h2 > code {
+    font-size: var(--h2-font-size);
+    font-weight: 400;
+}
 h3 > code {
     font-weight: 400;
 }
@@ -97,7 +110,7 @@ ul, ol {
 }
 
 article {
-    margin: 30px 0;
+    margin: 0;
     position: relative;
 }
 
@@ -151,11 +164,15 @@ header {
 footer {
     margin-top: 30px;
     padding: 10px 0;
-    border-top: 1px solid #D5D5D5;
-    border-bottom: 1px solid #D5D5D5;
+    border-top: 1px solid #808080;
     font-size: var( --small-font-size );
+    background: none;
 }
-
+footer a,
+footer a:hover,
+footer a:visited {
+    color: inherit;
+}
 footer .container {
     display: flex;
     flex-direction: row;
@@ -174,7 +191,7 @@ footer p {
 header > div.container,
 footer > div.container,
 main {
-    max-width: var( --width );
+    max-width: unset;
 }
 #page-nav li {
     padding-top: 0;
@@ -183,12 +200,26 @@ main {
 
 nav#breadcrumbnav {
     margin-bottom: 20px;
+    font-size: var( --small-font-size );
 }
 
 /* Layout-specific elements */
 
+div.doc {
+    display: flex;
+}
+div.doc > div.toc {
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+div.doc > main {
+    flex-grow: 1;
+    flex-shrink: 1;
+    margin: 30px 30px 0 50px;
+}
+
 article h1.title {
-    margin: 0 0 10px 0;
+    margin: 0 0 40px 0;
 }
 
 article h2,
@@ -271,51 +302,54 @@ section.docs-list > ol > li > ol > li {
     font-weight: normal;
 }
 
-aside.toc {
-    float: right;
+div.toc {
     width: 220px;
-    margin: 0 0 20px 20px;
-    padding: 3px 8px;
-    border-radius: 6px;
-    background: #fff;
-    box-shadow:  0 0 2px 2px #ddd;
-    position: relative;
-    z-index: 1;
+    background: var( --dark-background-color ) radial-gradient( at top right, var( --dark-overlay-background-color ), #00000000 50%);
 }
 
-aside.toc h1 {
-    margin: 1ex auto;
+div.toc h1 {
+    margin: 3ex auto;
     text-align: center;
     text-transform: uppercase;
 }
 
-aside.toc * {
+div.toc * {
     font-size: 12px;
     text-decoration: none;
     line-height: 120%;
 }
-aside.toc a:hover {
+div.toc a:hover {
     background: #e0e0e0;
 }
 
-aside.toc ol {
+div.toc ol {
     margin: 0;
     padding: 0;
 }
-aside.toc li {
+div.toc li {
     margin: 8px 0;
     padding: 0;
     list-style: none;
 }
-aside.toc a {
-    color: #404040;
+div.toc,
+div.toc a {
+    color: #e0e0e0;
 }
 
-aside.toc > ol > li > a {
+div.toc > ol > li {
+    text-align: center;
+    margin-top: 3ex;
+}
+div.toc > ol > li > ol {
+    text-align: left;
+}
+div.toc > ol > li > a {
     font-weight: bold;
+    text-transform: uppercase;
+    color: var(--link-color);
 }
 
-aside.toc li li {
+div.toc li li {
     margin-left: 2ex;
 }
 
@@ -345,8 +379,9 @@ aside.toc li li {
 div.admonition,
 div.status {
     margin: 10px 0px;
-    padding: 10px;
-    border: 1px solid #808080;
+    padding: 0 10px;
+    border: 3px solid;
+    border-color: var(--admonition-border-color);
     border-radius: 10px;
 }
 
@@ -372,7 +407,24 @@ div.status p.status-title {
 span.undef:before {
     content: "UNDEF: ";
 }
-
 span.undef {
     color: red;
+}
+
+body.background {
+    background: var( --dark-background-color );
+    color: #f8f8f8;
+}
+body.background a:hover {
+    color: #f8f8f8;
+}
+div.background {
+  position: absolute;
+  width: 100vw;
+  height: 100%;
+  z-index: -1;
+  background: radial-gradient( at top right, var( --dark-overlay-background-color ), #00000000 50%);
+}
+body.background main {
+    max-width: 980px;
 }

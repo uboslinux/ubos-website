@@ -7,7 +7,7 @@ seealsoterm: [
     'Shepherd',
     'UBOS_Staff'
 ]
-domain: UBOS Linux
+domain: UBOS Gears
 ---
 
 The set of all {{% gls Device %}} managed by a {{% gl Shepherd %}}.

@@ -28,7 +28,7 @@ Then, update your device:
 ## Documentation
 
 Common use cases for modifying deployed Sites are now described
-{{% pageref "/docs/administrators/faq-howto-troubleshooting/howto-modifysite.md" here %}}.
+{{% pageref "/docs/operation/faq-howto-troubleshooting/howto-modifysite.md" here %}}.
 
 ## Known issues
 

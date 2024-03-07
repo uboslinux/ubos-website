@@ -1,30 +1,38 @@
+{{ define "header" }}
+{{ $noop := 0 }}
+{{ end }}
+
 {{ define "main" }}
+<div class="doc">
+ <div class="toc">
+  <div class="logo">
+   <a href="/"><img src="/images/ubos-240x240.png" alt="UBOS logo" style="width: 100%"></a>
+  </div>
+  <h1><a href="/docs/">Documentation Overview</a></h1>
+{{   partial "toc.html" ( dict "root" ( .Site.GetPage "/docs/" ) "current" . ) }}
+ </div>
 
 {{   if .Params.class }}
-<main class="{{ .Params.class }}">
+ <main class="{{ .Params.class }}">
 {{   else }}
-<main>
+ <main>
 {{   end }}
 
 {{   partial "breadcrumbs.html" . }}
 
- <aside class="toc">
-  <h1>Documentation Overview</h1>
-{{   partial "toc.html" ( dict "root" ( .Site.GetPage "/docs/" ) "current" . ) }}
- </aside>
-
 {{   if eq .Params.display false }}
- <p>Post unavailable.</p>
+  <p>Post unavailable.</p>
 {{   else }}
- <article>
+  <article>
 
 {{ partial "title-et-al-main.html" . }}
 
-  <div class="content">
+   <div class="content">
 {{ .Content }}
-  </div>
+   </div>
 {{ partial "discuss.html" . }}
- </article>
+  </article>
 {{ end }}
-</main>
+ </main>
+</div>
 {{ end }}

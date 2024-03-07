@@ -7,7 +7,7 @@ seealsoterm: [
     'App',
     'Accessory'
 ]
-domain: UBOS Linux
+domain: UBOS Gears
 ---
 
 A file, directory, systemd service, database or other item that needs to be provisioned

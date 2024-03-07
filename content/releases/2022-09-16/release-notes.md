@@ -60,7 +60,7 @@ content:
 
 ```
 [mesh]
-Server = http://depot.ubos.net/$channel/$arch/mesh
+Server = http://depot.ubosfiles.net/$channel/$arch/mesh
 ```
 
 Source code and bug tracker can be found at

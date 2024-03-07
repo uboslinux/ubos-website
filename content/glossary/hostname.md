@@ -7,7 +7,7 @@ seealsoterm: [
     'HostId',
     'Site'
 ]
-domain: UBOS Linux
+domain: UBOS Gears
 ---
 
 The DNS name of a {{% gl Site %}}.

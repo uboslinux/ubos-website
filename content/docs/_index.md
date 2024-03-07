@@ -2,6 +2,7 @@
 title: UBOS Documentation
 layout: docs-front
 breadcrumbtitle: Documentation
+class: background
 ---
 <style>
 h1.title.main {
@@ -19,9 +20,8 @@ div.choice {
     padding: 10px;
     text-align: center;
     margin: 10px auto;
-    background: #fffdcc;
-    border: 1px solid #ffe0c0;
-    border-radius: 20px">
+    background: #00000040;
+    border-radius: 20px;
 }
 div.choice h2 {
     text-align: center;
@@ -30,25 +30,15 @@ div.choice h2 {
 
 <div class="choices">
  <div class="choice">
-  <h2><a href="/docs/administrators/">How to administer<br>UBOS devices</a></h2>
+  <h2><a href="/docs/operation/">How to operate<br>UBOS systems</a></h2>
   <p>If you are a user,<br>
-     <a href="/docs/administrators/">start here</a>.
+     <a href="/docs/operation/">start here</a>.
   </p>
  </div>
  <div class="choice">
-  <h2><a href="/docs/developers/">How to develop for<br>UBOS Linux or UBOS Mesh</a></h2>
+  <h2><a href="/docs/development/">How to develop<br>for UBOS</a></h2>
   <p>If you are a developer,<br>
-     <a href="/docs/developers/">start here</a>.
+     <a href="/docs/development/">start here</a>.
   </p>
  </div>
 </div>
-
-<p class="clearer" style="padding-top: 20px; text-align: center">
- There is also the <a href="/glossary/">Glossary</a> and the
- <a href="/releases/">Release Notes</a>.
-</p>
-
-<p class="clearer" style="padding-top: 20px; text-align: center">
- Found errors, omissions, improvements? Submit pull requests
- <a href="https://github.com/uboslinux/ubos-website/">in Github</a>.
-</p>

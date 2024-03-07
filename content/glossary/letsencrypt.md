@@ -1,7 +1,7 @@
 ---
 title: LetsEncrypt
 summary: A free SSL/TLS certificate authority.
-domain: UBOS Linux
+domain: UBOS Gears
 ---
 
 A certificate authority that provides free SSL/TLS certificates

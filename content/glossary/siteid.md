@@ -6,7 +6,7 @@ seealsoterm: [
     "AppConfigId",
     "Site"
 ]
-domain: UBOS Linux
+domain: UBOS Gears
 ---
 
 UBOS identifies each {{% gl Site %}} with a unique identifier, called the

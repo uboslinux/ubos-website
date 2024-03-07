@@ -24,7 +24,7 @@ My configuration:
 * Oracle VirtualBox version VirtualBox-4.3.24-98716-Win
 * My host for VirtualBox is Windows 8.1
 
-After setting up UBOS with the guide {{% pageref "/docs/administrators/installation/x86_virtualbox.md" here %}},
+After setting up UBOS with the guide {{% pageref "/docs/operation/installation/x86_virtualbox.md" here %}},
 I installed ownCloud with the video tutorial
 {{% pageref "/blog/2015/02/11/owncloud8-on-ubos.md" "Installing ownCloud 8 on UBOS with TLS" %}}.
 

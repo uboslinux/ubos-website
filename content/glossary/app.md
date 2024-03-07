@@ -5,7 +5,7 @@ summary: A software module that provides value to a user, such as a web app.
 seealsoterm: [
     'Accessory'
 ]
-domain: UBOS Linux
+domain: UBOS Gears
 ---
 
 On UBOS, an {{% gl App %}} is a software application that provides direct value to

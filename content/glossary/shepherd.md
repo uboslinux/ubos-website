@@ -4,7 +4,7 @@ summary: The account on a UBOS Device from which users can perform system admini
 seealsoterm: [
     'UBOS_Staff'
 ]
-domain: UBOS Linux
+domain: UBOS Gears
 ---
 
 The UBOS {{% gl Shepherd %}} is the person who administers one or more {{% gls Device %}}

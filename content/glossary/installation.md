@@ -5,7 +5,7 @@ summary: The action that makes the code for an App or other Package available on
 seealsoterm: [
     'Deployment'
 ]
-domain: UBOS Linux
+domain: UBOS Gears
 ---
 
 The action that makes the code for an {{% gl App %}}, {{% gl Accessory %}}

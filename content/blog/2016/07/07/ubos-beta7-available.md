@@ -15,7 +15,7 @@ device in production just so much easier.
 Where do we start?
 
 * You can now run UBOS natively on Amazon Web Services' cloud computing platform,
-  EC2. To to so, see {{% pageref "/docs/administrators/installation/x86_ec2.md" "details here" %}}.
+  EC2. To to so, see {{% pageref "/docs/operation/installation/x86_ec2.md" "details here" %}}.
 
 * The Raspberry Pi Foundation announced the much faster, quad-core Raspberry Pi 3.
   UBOS supports it, of course, just like on its older siblings Raspberry Pi Zero,

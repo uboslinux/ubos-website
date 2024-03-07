@@ -6,7 +6,7 @@ seealsoterm: [
     'Site',
     'Site_JSON'
 ]
-domain: UBOS Linux
+domain: UBOS Gears
 ---
 
 A {{% gl Site_JSON %}} file that is missing certain information, such as:

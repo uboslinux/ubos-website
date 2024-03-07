@@ -7,7 +7,7 @@ seealsoterm: [
     'App',
     'Site'
 ]
-domain: UBOS Linux
+domain: UBOS Gears
 ---
 
 A variable for a {{% gl Deployment deployed %}} {{% gl App %}} or {{% gl Accessory %}} whose value

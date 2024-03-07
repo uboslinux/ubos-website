@@ -114,7 +114,7 @@ upon reboot. Details see below.
 
 * There were a set of intermittent issues related to {{% gl Letsencrypt %}}
   certificates, either with or without running
-  {{% pageref "/docs/administrators/faq-howto-troubleshooting/howto-pagekite.md" Pagekite %}}.
+  {{% pageref "/docs/operation/faq-howto-troubleshooting/howto-pagekite.md" Pagekite %}}.
   The provisioning of {{% gl LetsEncrypt %}} certificates has been rewritten. Among
   other changes, UBOS now keeps valid {{% gl LetsEncrypt %}} certificates around, even if
   a site at the corresponding hostname has been undeployed. This avoids running
