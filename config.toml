@@ -2,7 +2,7 @@ baseurl       = "/"
 contentdir    = "content"
 layoutdir     = "layouts"
 publishdir    = "public"
-title = "UBOS - The Linux Distro for self-hosting your own cloud services"
+title = "UBOS - Peer Computing Platform"
 canonifyurls  = true
 
 DefaultContentLanguage = "en"
@@ -25,5 +25,5 @@ disableKinds = ["taxonomy", "term"]
   matomositeid = 3
 
 [Author]
-  name = "Indie Computing Corp."
+  name = "Dazzle Labs Inc."
 

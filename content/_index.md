@@ -33,7 +33,7 @@ Digital Ocean. **Expect broken links** and some of the VM images are out of date
 </div>
 
 
-We are developing what we call a **Peer Computing Platform** called **UBOS**.
+We are developing a **Peer Computing Platform** called **UBOS**.
 
 Peer Computing is the architectural computing pattern in which:
 
