@@ -301,6 +301,10 @@ section.docs-list > ol > li > ol > li {
     padding: 0;
     font-weight: normal;
 }
+section.docs-list > ol > li > ol > li ,
+section.docs-list > ol > li > ol > li > a {
+    color: #808080;
+}
 
 div.toc {
     width: 220px;
