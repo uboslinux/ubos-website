@@ -14,16 +14,17 @@ In brief:
 
 * Download a virtual machine and run it in VirtualBox. It has all the tools you
   are going to need pre-installed -- build tools, git, IDE etc.
-* In the virtual machine, run a single script, and you will have a {{% gl mesh %}}
-  site running that's even pre-configured for debugging.
+
+* In the virtual machine, run a single script to customize your setup for different
+  types of things you might want to develop on UBOS.
 
 Easy, right?
 
 
 ## Steps in detail
 
-1. Download the this virtual appliance file:
-   http://depot.ubosfiles.net/ubosdev/ubosdev-x86_64-20221122.ova (1.5GB)
+1. Download this virtual appliance file:
+   http://depot.ubosfiles.net/ubosdev/ubosdev-x86_64-20221122.ova
 
 1. In VirtualBox, select "File" / "Import Appliance..."
 

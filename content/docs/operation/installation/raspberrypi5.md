@@ -14,11 +14,16 @@ If you are not sure which model you have, consult
 Raspberry Pi models older than the Pi 5 are no longer supported, although it may work
 on the Pi 4.
 
+{{% note %}}
+Some monitor configurations may go black half-way through the boot process. UBOS still
+boots, though, and you can access it via `ssh` and the {{% gl ubos_staff %}}.
+{{% /note %}}
+
 To install UBOS on a Raspberry Pi, either on a micro-SD card or external USB disk:
 
 1. Download a UBOS boot image from the {{% gl Depot %}}.
    Images for the Raspberry Pi are at
-   [depot.ubosfiles.net/green/aarch64/images](http://depot.ubosfiles.net/green/aarch64/images).
+   [depot.ubosfiles.net/green/aarch64/images/index.html](http://depot.ubosfiles.net/green/aarch64/images/index.html).
    Look for a file named ``ubos_green_aarch64-rpi5_LATEST.img.xz``.
 
 1. Optionally, you may now verify that your image downloaded correctly by following
@@ -28,7 +33,7 @@ To install UBOS on a Raspberry Pi, either on a micro-SD card or external USB dis
    easy as double-clicking it, or executing
 
    ```
-   % sudo xz -d ubos_green_aarch64-rpi5_LATEST.img.xz
+   % xz -d ubos_green_aarch64-rpi5_LATEST.img.xz
    ```
 
    on the command line.

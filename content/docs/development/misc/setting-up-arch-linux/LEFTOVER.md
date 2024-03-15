@@ -1,10 +1,72 @@
 ---
-title: Continuing the Arch Linux installation on a PC or virtual machine
+title: LEFTOVER
+weight: 400
+---
+
+---
+title: Prepare a VirtualBox virtual machine to develop for UBOS on Arch Linux
+weight: 20
+breadcrumbtitle: VirtualBox
+---
+
+Use these instructions if you like to create your setup from scratch, rather than
+using one of the pre-built UBOS development images as described in
+{{% pageref "/docs/development/setup/virtualbox/" %}}.
+
+{{% warning %}}
+These instructions require a `x86_64` system. They are unlikely to work on ARM, such as
+Apple Silicon.
+{{% /warning %}}
+
+First prepare a suitable virtual machine. Installation for VMWare is quite similar although not
+documented in detail here (we are sure you can figure it out).
+
+1. [Download VirtualBox from here](https://www.virtualbox.org/wiki/Downloads) and install it
+   if you haven't already.
+
+1. Download a 64bit Arch Linux boot image from [here](https://www.archlinux.org/download/),
+   such as `archlinux-x86_64.iso` and save it in a convenient place. You only need it for
+   the installation and you can delete it later.
+
+1. In VirtualBox, create a new virtual machine:
+
+   * Click "New".
+
+   * Enter name: "ubosdev".
+
+   * ISO Image: select select the ISO image you downloaded.
+
+   * Type: "Linux"
+
+   * Version: "Other Linux (64 bit)"
+
+   * In the "Hardware" section, select the amount of RAM you want to give it. 4096MB is a
+     good start, and you can change that later.
+
+   * In the "Hard Disk" section, "Create a Virtual Hard Disk now". We suggest type "VDI"
+     with at least 60GB of space. This is dynamically allocated, so if you don't use the full
+     60GB, it won't take up as much space on your host system.
+
+   * Click "Finish".
+
+1. Now start the virtual machine by selecting it in the sidebar, and clicking "Start".
+   When it asks you, select the Arch Linux boot image ISO file that you downloaded earlier
+   as the start-up disk. You need to select the little icon there to get a file
+   selection dialog. Click "Start". The virtual machine should now be booting.
+
+1. The Arch Linux boot loader has several options. Accept the default by pressing the Return key.
+
+Continue with {{% pageref install-arch.md %}}.
+
+
+---
+title: Continuing the Arch Linux installation on a physical or virtual machine
 weight: 30
 ---
 
 This section assumes that you have prepared your PC or virtual machine as
-described in {{% pageref prepare-arch-pc.md %}} or {{% pageref prepare-arch-virtualbox.md %}}.
+described in {{% pageref prepare-arch-pc.md %}}, {{% pageref prepare-arch-virtualbox.md %}}
+or {{% pageref prepare-arch-utm.md %}}.
 
 1. Once the boot process has finished and you get a root shell, you are not done: you only
    managed to boot from the install disk image, you do not have a runnable system yet. In
@@ -13,6 +75,23 @@ described in {{% pageref prepare-arch-pc.md %}} or {{% pageref prepare-arch-virt
 1. In the shell that came up, perform the actual installation. The following steps should
    work. If you need more information, consult the
    [Arch Linux installation guide](https://wiki.archlinux.org/index.php/Installation_Guide).
+
+   1. Update your boostrap system and make sure you have all packages installed that we
+      need later:
+
+      ```
+      # pacman -Syu
+      # pacman -S btrfs-progs gptfdisk parted dosfstools arch-install-scripts
+      ```
+
+      If it asks you a question, accept the defaults.
+
+   1. Determine the name of the actual disk you will be using for your Arch Linux system.
+      This is often ``/dev/sda`` but may be something like ``/dev/vdb`` on UTM. ``lsblk``
+      may be helpful: look for a disk that is not currently mounted.
+
+      For these instructions, we will assume the disk is ``/dev/sda``. If it isn't in your
+      case, make sure to replace it with the correct name in all commands below.
 
    1. Partition your root disk ``/dev/sda`` in a way that makes sense to you. If you are not
       sure, here is a somewhat complicated scheme (sorry!) that should work with dual BIOS
@@ -119,7 +198,7 @@ described in {{% pageref prepare-arch-pc.md %}} or {{% pageref prepare-arch-virt
         #   pacman -S grub sudo vim mkinitcpio linux
         ```
 
-        If asked, choose to install from the ``core`` repository.
+        If you are given a choice, choose the default.
 
       * If you are on VirtualBox, also install the VirtualBox client tools:
 
@@ -135,7 +214,9 @@ described in {{% pageref prepare-arch-pc.md %}} or {{% pageref prepare-arch-virt
         #   mkinitcpio -p linux
         ```
 
-      * Configure the Grub boot loader for legacy (BIOS) boot:
+      * If you are on old physical `x86_64` PC, or you are running VirtualBox, configure
+        the Grub boot loader for legacy (BIOS) boot. Skip this step if you can do
+        EFI-based boot or if you are on ARM.
 
         ```
         #   grub-install --target=i386-pc --recheck /dev/sda
@@ -155,7 +236,7 @@ described in {{% pageref prepare-arch-pc.md %}} or {{% pageref prepare-arch-virt
         #   mkdir /boot/loader/entries
         ```
 
-      * Create file ``/boot/loader/loader.conf`` with content:
+      * Create file ``/boot/loader/loader.conf``, using an editor like ``vim`` with content:
 
         ```
         timeout 4
@@ -311,3 +392,52 @@ described in {{% pageref prepare-arch-pc.md %}} or {{% pageref prepare-arch-virt
       ```
 
 Continue to {{% pageref install-ubos-tools.md %}}.
+
+
+
+
+
+
+
+
+
+
+
+This applies to any physical or virtual machine that runs Arch.
+
+## Add the UBOS tools repository
+
+First, download and install the UBOS keyring, so pacman will allow you to download
+and install UBOS tools:
+
+```
+% curl -O http://depot.ubosfiles.net/green/x86_64/os/ubos-keyring-0.9-1-any.pkg.tar.zst
+% sudo pacman -U ubos-keyring-0.9-1-any.pkg.tar.zst
+```
+
+The, as root, edit ``/etc/pacman.conf``, and append, at the end, the following section:
+
+```
+[ubos-tools-arch]
+Server = http://depot.ubosfiles.net/green/$arch/ubos-tools-arch
+```
+
+This will get you the UBOS development tools in the green, aka production, channel.
+
+## Install the ubos-tools-arch metapackage
+
+Execute:
+
+```
+% sudo pacman -Sy
+% sudo pacman -S ubos-tools-arch
+```
+
+Now is a good time to install any other development tools you might want, such as:
+
+```
+% sudo pacman -S base-devel
+% sudo pacman -S git
+```
+
+You are now ready to develop for UBOS.

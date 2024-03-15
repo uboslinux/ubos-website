@@ -3,14 +3,21 @@ title: Run UBOS with Docker
 weight: 40
 ---
 
-UBOS is available on the Docker hub. To run UBOS using Docker:
+UBOS is available on the Docker hub for `x86_64`. These instructions are
+the same regardless of the operating system that Docker runs on.
+
+{{% warning %}}
+Running UBOS in Docker on an ARM computer, such as a Mac with Apple Silicon, is currently not supported.
+{{% /warning %}}
+
+To run UBOS using Docker:
 
 1. Make sure you have a reasonably recent Docker installation on your machine.
 
 1. Boot UBOS with a command such as this:
 
    ```
-   % docker run -i -t --privileged -p 8080:80 ubos/ubos-green
+   % docker run -i -t --privileged -p 8080:80 -p 8443:443 ubos/ubos-green
    ```
 
    <div class="admonition note"><p class="admonition-title">Note</p>
@@ -19,7 +26,7 @@ UBOS is available on the Docker hub. To run UBOS using Docker:
 
    While that looks somewhat intimidating, all this command really says is: "Boot the image called
    ``ubos/ubos-green``, keep the terminal around, give it the privileges it needs, and
-   let me access it with a web browser through my local 8080 port."
+   let me access it with a web browser through my local 8080 and 8443 ports."
 
    As UBOS is a full operating system, not just an application running in a container, it
    needs the ``--privileged`` flag.
@@ -38,9 +45,8 @@ UBOS is available on the Docker hub. To run UBOS using Docker:
    ```
 
    The Docker container takes entropy from the host computer, so make sure the host system
-   provides enough. Depending your Linux distro, you may be able to generate more by
-   typing on the keyboard, moving the mouse, generating hard drive activity etc. You can
-   also run:
+   provides enough. If your host operating system is Linux, you may be able  to generate
+   more by running:
 
    ```
    % sudo systemctl start haveged

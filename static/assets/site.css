@@ -15,7 +15,7 @@
     --collapse-width:   560px;
 
     --code-font-family: "Noto Sans Mono", Menlo, "Courier New";
-    --code-font-size:   14px;
+    --code-font-size:   80%;
 
     --ubos-color:       #2FD82F;
     --text-color:       #111;
@@ -74,7 +74,9 @@ a:hover {
     color: var( --text-color );
     text-decoration: underline;
 }
-
+a.nohover:hover {
+    text-decoration: none;
+}
 tt, code, pre {
     font-family: var( --code-font-family );
     font-size: var( --code-font-size );
@@ -398,8 +400,8 @@ div.admonition p.admonition-title:after {
     content: ":"
 }
 
-div.admonition div.admonition.warning {
-    background: #fff0f0;
+div.admonition.warning {
+    background: #fff4f4;
     border-color: #ff8080;
 }
 div.status p.status-title {

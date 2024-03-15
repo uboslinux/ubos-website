@@ -1,6 +1,6 @@
 ---
 title: Developing using a systemd-nspawn container (Linux host only)
-weight: 20
+weight: 10
 ---
 
 ## Prerequisites
@@ -13,8 +13,6 @@ setup on Arch Linux on `x86_64` and `aarch64` and with Ubuntu on `x86_64`.
 If you use ARM, replace all occurrences of `x86_64` in URLs and filenames
 in this document with `aarch64`.
 
-An alternative setup is {{% pageref docker.md %}}.
-
 Here are the steps:
 
 ## Make sure `systemd-nspawn` is installed
@@ -23,7 +21,7 @@ Some Linux distros keep this `systemd` executable in a separate package that
 you need to first install. For example, on Ubuntu, install it with:
 
 ```
-% sudo apt-get install systemd-container
+% sudo apt install systemd-container
 ```
 
 ## Optional: btrfs filesystem
@@ -56,7 +54,8 @@ management. There are two steps:
    own firewall.
 
 1. Make sure your host network interface forwards traffic from the the containers. Add
-   `IPForward=1` to the relevant `.network` file. For example,
+   `IPForward=1` to the relevant `.network` file so IP packets will be forwarded from the
+   container to the public internet (e.g. for package downloads). For example,
    `/etc/systemd/networkd/wired.network` should read as follows:
 
    ```
@@ -106,11 +105,12 @@ in all other commands.
 
 ## Download a container image
 
-Download a container image. Go to http://depot.ubosfiles.net/yellow/x86_64/images/
+Download a container image. Go to http://depot.ubosfiles.net/yellow/x86_64/images/index.html
 and look for the file ``ubos-develop_yellow_x86_64-container_LATEST.tar.xz``.
 
 If you chose a `${CHANNEL}` other than `yellow`, replace the `yellow` in the above URL,
-*and* then the `yellow` in the filename with the name of the `${CHANNEL}` you chose.
+*and* then the `yellow` in the filename with the name of the `${CHANNEL}` you chose. Also
+remember to replace `x86_64` with `aarch64` if you are on ARM.
 
 We will call the name of the downloaded image file `${IMAGE}`. Download it into your
 working directory.

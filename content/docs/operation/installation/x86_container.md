@@ -12,7 +12,7 @@ To do so:
 
 1. Download a UBOS container image from the {{% gl Depot %}}.
    Images for x86_64 containers are at
-   [depot.ubosfiles.net/green/x86_64/images](http://depot.ubosfiles.net/green/x86_64/images).
+   [depot.ubosfiles.net/green/x86_64/images/index.html](http://depot.ubosfiles.net/green/x86_64/images/index.html).
    Look for a file named ``ubos_green_x86_64-container_LATEST.tar.xz``.
 
 1. Optionally, you may now verify that your image downloaded correctly by following

@@ -5,7 +5,7 @@ summary: The website through which UBOS Packages are distributed.
 seealsoterm: [
     'Package'
 ]
-domain: UBOS Gears
+domain: UBOS Linux
 ---
 
 The website at [depot.ubosfiles.net](http://depot.ubosfiles.net/) through which UBOS

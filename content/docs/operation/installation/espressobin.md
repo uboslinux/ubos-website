@@ -10,7 +10,7 @@ container. This is described in {{% pageref aarch64_container.md %}}.)
 
 1. Download a UBOS boot image from the {{% gl Depot %}}.
    Images for the ESPRESSObin are at
-   [depot.ubosfiles.net/green/aarch64/images](http://depot.ubosfiles.net/green/aarch64/images).
+   [depot.ubosfiles.net/green/aarch64/images/index.html](http://depot.ubosfiles.net/green/aarch64/images/index.html).
    Look for a file named ``ubos_green_aarch64-espressobin_LATEST.img.xz``.
 
 1. Optionally, you may now verify that your image downloaded correctly by following

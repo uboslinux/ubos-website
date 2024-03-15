@@ -1,6 +1,7 @@
 ---
-title: How to create a UBOS development VM for Parallels Desktop on Apple Silicon
-weight: 2020
+title: How to create a UBOS development VM for Parallels Desktop on Apple Silicon computers
+weight: 50
+breadcrumbtitle: Parallels VM on Apple Silicon
 ---
 
 1. Download the ISO with the string "local" in it from

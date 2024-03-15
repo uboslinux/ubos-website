@@ -1,5 +1,5 @@
 ---
-title: Upgrading and keeping your Device current
+title: Upgrading and keeping UBOS current
 weight: 80
 ---
 

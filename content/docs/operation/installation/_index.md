@@ -1,5 +1,5 @@
 ---
-title: UBOS Linux installation
+title: UBOS installation
 weight: 10
 ---
 

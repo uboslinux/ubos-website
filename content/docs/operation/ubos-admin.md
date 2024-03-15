@@ -1,6 +1,6 @@
 ---
 title: Command reference
-weight: 140
+weight: 130
 ---
 
 ``ubos-admin`` is the central administration command for UBOS.  When invoked without arguments,

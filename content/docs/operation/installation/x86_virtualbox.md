@@ -3,8 +3,9 @@ title: Run UBOS in a VirtualBox virtual machine (64bit)
 weight: 30
 ---
 
-To run UBOS in a VirtualBox virtual machine, follow these instructions. Not counting
-download times, this should take no more than 10 minutes to set up.
+To run UBOS in a VirtualBox virtual machine on `x86_64`, follow these instructions. Not counting
+download times, this should take no more than 10 minutes to set up. These instructions are
+the same regardless of the operating system that VirtualBox runs on.
 
 While we don't have separate instructions for VMware, the process should be quite similar.
 
@@ -14,13 +15,17 @@ support. This is generally available on all reasonably modern processors, but ma
 be switched on in the BIOS first. See the
 [VirtualBox documentation](https://www.virtualbox.org/manual/ch10.html#hwvirt).
 {{% /note %}}
+{{% warning %}}
+Running UBOS in a VirtualBox on an ARM computer, such as a Mac with Apple Silicon, is
+currently not supported.
+{{% /warning %}}
 
 1. [Download VirtualBox](https://www.virtualbox.org/wiki/Downloads) from virtualbox.org
    and install it if you haven't already.
 
 1. Download a UBOS boot image from the {{% gl Depot %}}.
    Images for Virtualbox (64bit) are at
-   [depot.ubosfiles.net/green/x86_64/images](http://depot.ubosfiles.net/green/x86_64/images).
+   [depot.ubosfiles.net/green/x86_64/images/index.html](http://depot.ubosfiles.net/green/x86_64/images/index.html).
    Look for a file named ``ubos_green_x86_64-vbox_LATEST.vmdk.xz``.
 
 1. Optionally, you may now verify that your image downloaded correctly by following
@@ -30,7 +35,7 @@ be switched on in the BIOS first. See the
    easy as double-clicking it, or executing
 
    ```
-   % sudo xz -d ubos_green_x86_64-vbox_LATEST.vmdk.xz
+   % xz -d ubos_green_x86_64-vbox_LATEST.vmdk.xz
    ```
 
    on the command line.

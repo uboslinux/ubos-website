@@ -1,6 +1,7 @@
 ---
-title: Prepare a PC for installing Arch Linux
+title: How to set up a PC as a UBOS development workstation
 weight: 10
+breadcrumbtitle: Physical PC
 ---
 
 First prepare a suitable `x86_64` PC:

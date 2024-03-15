@@ -12,7 +12,7 @@ Follow these steps:
 
 1. Download a UBOS boot image from the {{% gl Depot %}}.
    Images for x86_64 are at
-   [depot.ubosfiles.net/green/x86_64/images](http://depot.ubosfiles.net/green/x86_64/images).
+   [depot.ubosfiles.net/green/x86_64/images/index.html](http://depot.ubosfiles.net/green/x86_64/images/index.html).
    Look for a file named ``ubos_green_x64_64-pc_LATEST.img.xz``.
 
 1. Optionally, you may now verify that your image downloaded correctly by following
@@ -22,7 +22,7 @@ Follow these steps:
    easy as double-clicking it, or executing
 
    ```
-   % sudo xz -d ubos_green_x86_64-pc_LATEST.img.xz
+   % xz -d ubos_green_x86_64-pc_LATEST.img.xz
    ```
 
    on the command line.

@@ -1,5 +1,5 @@
 ---
-title: Developing using Arch Linux using UTM on Apple Silicon with a systemd-nspawn container
+title: Developing using Arch Linux using UTM on Apple computers with a systemd-nspawn container
 breadcrumbtitle: With Arch Linux, systemd-nspawn, UTM on Apple Silicon
 weight: 40
 ---
@@ -15,8 +15,8 @@ In brief:
 
 * Download a virtual machine and run it in UTM. It has all the tools you
   are going to need pre-installed -- build tools, git, IDE etc.
-* In the virtual machine, run a single script, and you will have a {{% gl mesh %}}
-  site running that's even pre-configured for debugging.
+* In the virtual machine, run a single script to customize your setup for different
+  types of things you might want to develop on UBOS.
 
 Easy, right?
 

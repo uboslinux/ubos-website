@@ -1,14 +1,16 @@
 ---
 title: Developing using Docker (all Intel platforms)
-weight: 10
+weight: 30
 ---
 
 ## Prerequisites
 
-This should work on all `x86_64` platforms that run Docker. We have tested this
-setup on macOS Intel and Arch Linux on `x86_64`.
+This should work on all `x86_64` platforms that run Docker.
 
-An alternative setup is {{% pageref systemd-nspawn.md %}}.
+{{% note %}}
+The shell commands given here are in bash-style syntax as used on Linux and macOS.
+If you are using a Windows PC you may need to adjust them to PowerShell syntax.
+{{% /note %}}
 
 Here are the steps:
 

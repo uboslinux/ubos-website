@@ -1,7 +1,7 @@
 ---
 title: Developing using Arch Linux using Parallels on Apple Silicon with a systemd-nspawn container
 breadcrumbtitle: With Arch Linux, systemd-nspawn, Parallels on Apple Silicon
-weight: 50
+weight: 20
 ---
 
 ## Summary of the setup
