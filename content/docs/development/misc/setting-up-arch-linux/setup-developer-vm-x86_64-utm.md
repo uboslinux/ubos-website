@@ -66,45 +66,45 @@ on an `x86_64` computer, and in our experience, has reliability issues.
 1. Zero out the first bytes on the disk for extra robustness:
 
    ```
-   # dd if=/dev/zero of=/dev/sda bs=1M count=8 conv=notrunc
+   # dd if=/dev/zero of=/dev/vda bs=1M count=8 conv=notrunc
    ```
 
 1. Clear the partition table:
 
    ```
-   # sgdisk --clear /dev/sda
+   # sgdisk --clear /dev/vda
    ```
 
 1. Create the partitions (UEFI, /boot and /) and change them to the right types:
 
    ```
-   # sgdisk --new=1::+1M /dev/sda
-   # sgdisk --new=2::+512M /dev/sda
-   # sgdisk --new=3:: /dev/sda
-   # sgdisk --typecode=1:EF02 /dev/sda
-   # sgdisk --typecode=2:EF00 /dev/sda
+   # sgdisk --new=1::+1M /dev/vda
+   # sgdisk --new=2::+512M /dev/vda
+   # sgdisk --new=3:: /dev/vda
+   # sgdisk --typecode=1:EF02 /dev/vda
+   # sgdisk --typecode=2:EF00 /dev/vda
    ```
 
 1. Make sure changes are in effect:
 
    ```
    # sync
-   # partprobe /dev/sda
+   # partprobe /dev/vda
    ```
 
 1. Create filesystems for partitions other than the UEFI partition:
 
    ```
-   # mkfs.vfat  /dev/sda2
-   # mkfs.btrfs /dev/sda3
+   # mkfs.vfat  /dev/vda2
+   # mkfs.btrfs /dev/vda3
    ```
 
 1. Mount the partitions so we can install:
 
    ```
-   # mount /dev/sda3 /mnt
+   # mount /dev/vda3 /mnt
    # mkdir /mnt/boot
-   # mount /dev/sda2 /mnt/boot
+   # mount /dev/vda2 /mnt/boot
    ```
 
 1. Perform the actual install:
@@ -225,7 +225,7 @@ on an `x86_64` computer, and in our experience, has reliability issues.
    # echo title Arch > /mnt/boot/loader/entries/arch.conf
    # echo linux /vmlinuz-linux >> /mnt/boot/loader/entries/arch.conf
    # echo initrd /initramfs-linux.img >> /mnt/boot/loader/entries/arch.conf
-   # echo options root=PARTUUID=$(lsblk -o PARTUUID /dev/sda3 | tail -1 ) rw >> /mnt/boot/loader/entries/arch.conf
+   # echo options root=PARTUUID=$(lsblk -o PARTUUID /dev/vda3 | tail -1 ) rw >> /mnt/boot/loader/entries/arch.conf
    ```
 
 1. Power off the virtual machine:
@@ -236,6 +236,14 @@ on an `x86_64` computer, and in our experience, has reliability issues.
 
 1. Select VM "ubosdev" in the outline, and the at the bottom in the right page, in the CD/DVD
    popup menu, select "Clear".
+
+### Add virtual graphics for the "ubosdev" VM
+
+1. In UTM, select the "ubosdev" VM, and in the popup, "Edit".
+
+1. Under "Devices", click "New..." and "Display"
+
+1. Click "Save".
 
 ### Remaining configuration
 
@@ -279,15 +287,26 @@ development VM described in {{% pageref "/docs/development/setup/" %}}. Continue
 
    * In the Finder, open "config.plist" with a text editor.
 
-   * In the first `array`, there are three `dict`s representing virtual hard drives.
-     In the third `dict`, note the `string` for the `key` `ImageName`: this is the name
+   * In the XML file, find the entry `<key>Drive</key>` and the two-element `<array>`
+     that follows right after.
+
+   * In that array, find the entry that contains:
+
+     ```
+     <key>ImageType</key>
+     <string>Disk</string>
+     <key>Interface</key>
+     <string>VirtIO</string>
+     ```
+   * In that entry, look for the value of the `<string>` that is right after
+     `<key>ImageName</key>`: this is the name
      of the file that contains the new boot disk. This name will be a long UUID-style name.
 
    * Leave the text editor open. In the Finder, open subdirectory "Data", and find the
      file whose name you identified in the previous step. Move this file out of the
      current directory into a temporary location; do not delete the file.
 
-   * In the text editor, delete this third `dict` in its entirety.
+   * In the text editor, delete this `dict` element in its entirety.
 
    * Save "config.plist" and close the text editor.
 
@@ -333,13 +352,10 @@ development VM described in {{% pageref "/docs/development/setup/" %}}. Continue
 
    * Save the plist file.
 
-### Add virtual graphics for the "ubosdev" VM
 
-1. In UTM, select the "ubosdev" VM, and in the popup, "Edit".
 
-1. Under "Devices", click "New..." and "Display"
 
-1. Click "Save".
+
 
 ### Remaining configuration
 

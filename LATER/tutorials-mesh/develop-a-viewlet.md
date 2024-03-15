@@ -23,7 +23,7 @@ To parameterize things properly, we still need to know a few things.
 Name of the Viewlet package (e.g. ubos-mesh-underbars-vl-northpole): ubos-mesh-underbars-vl-order
 Name of the Viewlet (e.g. net.ubos.underbars.vl.northpole): net.ubos.underbars.vl.order
 The Maven Group ID for the Viewlet (e.g. net.ubos.underbars): net.ubos.underbars
-URL of the developer, such as your company URL: https://indiecomputing.com/
+URL of the developer, such as your company URL: https://example.com/
 URL of the package, such as a product information page on your company website: https://ubos.net/
 One-line description of your package, which will be shown to the user when
 they ask pacman about your package (-i flag to pacman): UBOS Mesh Viewlet to render commerce Orders

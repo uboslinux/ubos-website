@@ -62,8 +62,7 @@ Please refer to the main documentation for details.
 
   * Pagekite secrets can now be specified interactively.
 
-  * Wildcard sites (like the one we ship with
-    [UBOSbox Nextcloud](https://indiecomputing.com/products/) are now supported.
+  * Wildcard sites are now supported.
 
 * Backing up with ``ubos-admin backup`` has been improved:
 
